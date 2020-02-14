@@ -3,7 +3,7 @@
   "os": [
     "linux"
   ],
-  "sudo": false,
+  "root": false,
   "branches": {
     "only": [
       "master"
@@ -30,7 +30,7 @@
           "master"
         ]
       },
-      "skip_cleanup": true,
+      "cleanup": false,
       "token": "$GITHUB_TOKEN",
       "local_dir": "public",
       "keep_history": false
