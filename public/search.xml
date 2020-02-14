@@ -102,22 +102,22 @@
     
     
     <entry>
-      <title>tags</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
+      <title>about</title>
+      <link href="/about.html"/>
+      <url>/about.html</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<p>陳哲佑 台灣台南人 邊疆大學資工系廢材乙個<br>這邊應該全是工作筆記、土炮紀錄、耍腦發廚<br>愼入</p><p>gitlab : <a href="https://gitlab.com/joe1231231218" target="_blank" rel="noopener">https://gitlab.com/joe1231231218</a><br>email : <a href="mailto:connection@ericchen.name">connection@ericchen.name</a></p>]]></content>
       
     </entry>
     
     
     
     <entry>
-      <title>about</title>
-      <link href="/about.html"/>
-      <url>/about.html</url>
+      <title>tags</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
       
-        <content type="html"><![CDATA[<p>陳哲佑 台灣台南人 邊疆大學資工系廢材乙個<br>這邊應該全是工作筆記、土炮紀錄、耍腦發廚<br>愼入</p><p>gitlab : <a href="https://gitlab.com/joe1231231218" target="_blank" rel="noopener">https://gitlab.com/joe1231231218</a><br>email : <a href="mailto:connection@ericchen.name">connection@ericchen.name</a></p>]]></content>
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
