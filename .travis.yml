@@ -10,13 +10,13 @@
     ]
   },
   "cache": {
-    "npm": true
+    "npm": false
   },
   "node_js": [
     "12.15.0"
   ],
   "before_script": [
-    "npm install hexo"
+    "npm install -g hexo-cli"
   ],
   "script": [
     "hexo clean",
