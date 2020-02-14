@@ -1,8 +1,29 @@
 language: node_js
 
-node_js: node
+sudo: false
+
+branches:
+  only:
+  - master
 
 cache:
-  npm: true
+  - npm
 
-install: npm install
+node_js:
+  - "12"
+
+before_script:
+  - npm install hexo-cli
+
+script:
+  - hexo clean
+  - hexo generate
+
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  local-dir: public
+  keep-history: false
+  on:
+    branch: master
