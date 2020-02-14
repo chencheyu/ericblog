@@ -7,5 +7,5 @@ permalink: about
 這邊應該全是工作筆記、土炮紀錄、耍腦發廚
 愼入
 
-gitlab : 
+gitlab : https://gitlab.com/joe1231231218
 email : connection@ericchen.name

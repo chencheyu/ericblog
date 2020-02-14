@@ -1,29 +1,39 @@
-language: node_js
-
-sudo: false
-
-branches:
-  only:
-  - master
-
-cache:
-  - npm
-
-node_js:
-  - "12"
-
-before_script:
-  - npm install hexo-cli
-
-script:
-  - hexo clean
-  - hexo generate
-
-deploy:
-  provider: pages
-  skip-cleanup: true
-  github-token: $GITHUB_TOKEN
-  local-dir: public
-  keep-history: false
-  on:
-    branch: master
+{
+  "language": "node_js",
+  "os": [
+    "linux"
+  ],
+  "sudo": false,
+  "branches": {
+    "only": [
+      "master"
+    ]
+  },
+  "cache": {
+    "npm": true
+  },
+  "node_js": [
+    "12"
+  ],
+  "before_script": [
+    "npm install hexo-cli"
+  ],
+  "script": [
+    "hexo clean",
+    "hexo generate"
+  ],
+  "deploy": [
+    {
+      "provider": "pages",
+      "on": {
+        "branch": [
+          "master"
+        ]
+      },
+      "skip_cleanup": true,
+      "token": "$GITHUB_TOKEN",
+      "local_dir": "public",
+      "keep_history": false
+    }
+  ]
+}
