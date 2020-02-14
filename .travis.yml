@@ -16,7 +16,7 @@
     "12"
   ],
   "before_script": [
-    "npm install hexo-cli"
+    "npm install hexo"
   ],
   "script": [
     "hexo clean",
