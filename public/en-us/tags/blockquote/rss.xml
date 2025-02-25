@@ -1,7 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blockquote on Hugo NexT</title><link>//localhost:1414/en-us/tags/blockquote/</link><description>Recent content in Blockquote on Hugo NexT</description><generator>Hugo</generator><language>en-US</language><lastBuildDate>Wed, 29 Jan 2025 21:24:02 +0800</lastBuildDate><atom:link href="//localhost:1414/en-us/tags/blockquote/rss.xml" rel="self" type="application/rss+xml"/><item><title>Support block information emphasis annotation in Markdown documents</title><link>//localhost:1414/en-us/demo/hugo-blockquote.html</link><pubDate>Wed, 29 Jan 2025 21:24:02 +0800</pubDate><guid>//localhost:1414/en-us/demo/hugo-blockquote.html</guid><description>&lt;p>In the past, the &lt;code>Hugo NexT&lt;/code> theme used to annotate block information through custom phrases. Recently, it has been discovered that &lt;code>Hugo&lt;/code> has been updated from 
-&lt;a href="https://github.com/gohugoio/hugo/releases/tag/v0.134.0" title="v0.134.0" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
- v0.134.0
- 
- &lt;i class="fa fa-external-link-alt">&lt;/i>
- 
-&lt;/a>. From the beginning of the version, it is possible to support rendering Blockquote styles in Markdown documents through hook mode (which needs to be implemented by oneself), achieving warning style styles similar to Github. So 7 different styles were added to the &lt;code>Hugo NexT&lt;/code> theme for users to choose from, and they could also customize icons and color configurations.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blockquote on 哲佑碎碎念</title>
+    <link>//localhost:1414/en-us/tags/blockquote/</link>
+    <description>Recent content in Blockquote on 哲佑碎碎念</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <lastBuildDate>Wed, 29 Jan 2025 21:24:02 +0800</lastBuildDate>
+    <atom:link href="//localhost:1414/en-us/tags/blockquote/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Support block information emphasis annotation in Markdown documents</title>
+      <link>//localhost:1414/en-us/demo/hugo-blockquote.html</link>
+      <pubDate>Wed, 29 Jan 2025 21:24:02 +0800</pubDate>
+      <guid>//localhost:1414/en-us/demo/hugo-blockquote.html</guid>
+      <description>&lt;p&gt;In the past, the &lt;code&gt;Hugo NexT&lt;/code&gt; theme used to annotate block information through custom phrases. Recently, it has been discovered that &lt;code&gt;Hugo&lt;/code&gt; has been updated from &#xA;&lt;a href=&#34;https://github.com/gohugoio/hugo/releases/tag/v0.134.0&#34; title=&#34;v0.134.0&#34; rel=&#34;noopener external nofollow noreferrer&#34; target=&#34;_blank&#34; class=&#34; exturl&#34;&gt;&#xA;    v0.134.0&#xA;    &#xA;    &lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&#xA;    &#xA;&lt;/a&gt;. From the beginning of the version, it is possible to support rendering Blockquote styles in Markdown documents through hook mode (which needs to be implemented by oneself), achieving warning style styles similar to Github. So 7 different styles were added to the &lt;code&gt;Hugo NexT&lt;/code&gt; theme for users to choose from, and they could also customize icons and color configurations.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

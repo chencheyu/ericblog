@@ -19,17 +19,17 @@
 # -------------------------------------
 main:
   - identifier: home
-    name: 首页
+    name: 首頁
     pageRef: /
     pre: home
     weight: 1
   - identifier: about
-    name: 关于
+    name: 關於
     pageRef: /about
     pre: user
     weight: 2
   - identifier: flinks
-    name: 友情链接
+    name: 友情
     pageRef: /flinks
     pre: thumbs-up
     weight: 3
@@ -53,12 +53,17 @@ main:
     weight: 3
     parent: example
   - identifier: archives
-    name: 归档
+    name: 歸檔
     pageRef: /archives
     pre: archive
     weight: 5
+  - identifier: categories
+    name: 標籤
+    pageRef: /categories
+    pre: tags
+    weight: 6
   - identifier: commonweal
     name: 公益 404
     pageRef: /404.html
     pre: heartbeat
-    weight: 6
+    weight: 7

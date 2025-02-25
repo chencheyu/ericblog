@@ -10,28 +10,28 @@ mainSections: ["post"]
 # 年，月，日及时间的格式化样式
 # Format style for year,month,date & time
 yearFormat: "2006"
-monthFormat: "01月02日"
-dateFormat: "2006年01月02日"
-timeFormat: "2006年01月02日 15:04:05 CST"
+monthFormat: "01/02"
+dateFormat: "2006-01-02"
+timeFormat: "2006-01-02T15:04:05"
 
 # 页面模式
 # Schemes
-#scheme: Muse
+scheme: Muse
 #scheme: Mist
 #scheme: Pisces
-scheme: Gemini
+#scheme: Gemini
 
 # 开启暗模式
 # Dark Mode
-darkmode: true
+darkmode: false
 
 
 # 站点基本信息
 # Site Information Settings
-author: NexT 主题
+author: EricChen
 subtitle: 为 Hugo 打造的主题
 description: 保持简单的易用性和强大的功能。
-keywords: Hugo,NexT,主题,简单,强大
+keywords: EricChen,NexT,主题,简单,强大
 
 # 不同尺寸站点图标
 # Different size of favicon
@@ -88,7 +88,7 @@ openGraph:
 menuSets:
   icons: true
   transition: true
-  badges: true
+  badges: false
 
 
 # ---------------------------------------------------------------
@@ -162,9 +162,9 @@ siteState:
 # Key is the link label order.
 # Value before `||` delimiter is the target permalink, value after `||` delimiter is the name of Font Awesome icon.
 socials: 
-  social0: Github || https://github.com/elkan1788 || fab fa-github
-  #social1: E-Mail || mailto:yourname@gmail.com || fa fa-envelope
-  social2: 知乎 || https://www.zhihu.com/people/lisenhui || fa fa-book
+  social0: Gitlab || https://gitlab.com/joe1231231218 || fab fa-gitlab
+  social1: E-Mail || mailto:connection@ericchen.name || fa fa-envelope
+  #social2: 知乎 || https://www.zhihu.com/people/lisenhui || fa fa-book
   #Google: https://plus.google.com/yourname || fab fa-google
   #Twitter: https://twitter.com/yourname || fab fa-twitter
   #FB Page: https://www.facebook.com/yourname || fab fa-facebook
@@ -240,20 +240,20 @@ footer:
   # 站点开始年份，默认为当下时间的年份
   # Specify the year when the site was setup. 
   # If not defined, current year will be used.
-  since: 2010
+  since: 2021
 
   # 年份和版权信息之间的图标
   # Icon between year and copyright info.
   icon:
     # 图标名称
     # Icon name in Font Awesome.
-    name: fa fa-heart
+    name: fa fa-copyright
     # 开启图标动画效果
     # If you want to animate the icon, set it to true.
     animated: true
     # 使用16进制设置图标的颜色
     # Change the color of icon, using Hex Code.
-    color: "#ff0000"
+    color: "#000000"
 
   # 版权信息，如不设置将会使用 `author` 变量
   # If not defined, `author` from site information will be used.
@@ -267,7 +267,7 @@ footer:
   # Beian ICP and gongan information for Chinese users. 
   # See: https://beian.miit.gov.cn, http://www.beian.gov.cn
   beian:
-    enable: true
+    enable: false
     # ICP 备案的具体信息
     icp: 粤ICP备 18047355-1 号
     # 公安网备的省份简称
@@ -278,7 +278,7 @@ footer:
   # 站点支持供应商列表
   # Vendors list who support website. 
   vendors:
-    enable: true
+    enable: false
     # 支持说明
     # Some support information description.
     title: 提供CDN/云资源支持
@@ -391,7 +391,7 @@ rewardSets:
   # 是否开启捐赠按钮，开启后将在每个文章页面底部显示
   # If true, a donate button will be displayed 
   # in every article by default.
-  enable: true
+  enable: false
   # 是否开启捐赠方式的动画效果
   # If true, the donate type title will with animation.
   animation: true
@@ -415,7 +415,7 @@ rewardSets:
 followMe:
   #channel0: Twitter || https://twitter.com/username || fab fa-twitter
   #channel1: Telegram || https://t.me/channel_name || fab fa-telegram
-  channel2: WeChat || /images/wechat_channel.jpg || fab fa-weixin
+  #channel2: WeChat || /images/wechat_channel.jpg || fab fa-weixin
   channel3: RSS || /atom.xml || fa fa-rss
 
 # 文章的在线编辑
@@ -470,7 +470,7 @@ backTop:
   enable: true
   # 在侧边栏显示返回顶部按钮
   # Back to top in sidebar.
-  sidebar: false
+  sidebar: true
   # 在返回按钮上显示进度
   # Scroll percent label in b2t button.
   scrollpercent: true
@@ -673,7 +673,7 @@ quicklink:
 comments:
   # 开启评论组件
   # If true, will show comment component in post end.
-  enable: true   
+  enable: false   
   # 设置默认使用的评论插件
   # 可选值：livere | waline | waline3 | utterances | artalk | giscus
   # Choose a comment system to be displayed by default.
@@ -827,7 +827,7 @@ share:
   # Simple online sharing without statistical data function. 
   # For more information, please refer to: https://www.addtoany.com/
   addtoany:    
-    locale: zh-CN
+    locale: zh-TW
     num_services: 8 
 
 
