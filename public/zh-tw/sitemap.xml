@@ -13,7 +13,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-CN"
+                hreflang="zh-TW"
                 href="//localhost:1414/post/02-external-link/"
                 />
   </url><url>
@@ -28,7 +28,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-CN"
+                hreflang="zh-TW"
                 href="//localhost:1414/demo/hello-world.html"
                 />
   </url><url>
@@ -43,7 +43,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-CN"
+                hreflang="zh-TW"
                 href="//localhost:1414/tags/blockquote/"
                 />
   </url><url>
@@ -58,7 +58,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-CN"
+                hreflang="zh-TW"
                 href="//localhost:1414/categories/"
                 />
   </url><url>
@@ -73,7 +73,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-CN"
+                hreflang="zh-TW"
                 href="//localhost:1414/tags/hugo/"
                 />
   </url><url>
@@ -88,7 +88,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-CN"
+                hreflang="zh-TW"
                 href="//localhost:1414/post/"
                 />
   </url><url>
@@ -103,8 +103,23 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-CN"
+                hreflang="zh-TW"
                 href="//localhost:1414/tags/"
+                />
+  </url><url>
+    <loc>//localhost:1414/demo/hugo-blockquote.html</loc>
+    <lastmod>2025-01-02T19:08:02+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="//localhost:1414/en-us/demo/hugo-blockquote.html"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-TW"
+                href="//localhost:1414/demo/hugo-blockquote.html"
                 />
   </url><url>
     <loc>//localhost:1414/categories/%E7%A4%BA%E4%BE%8B%E6%96%87%E7%AB%A0/</loc>
@@ -128,29 +143,9 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-CN"
+                hreflang="zh-TW"
                 href="//localhost:1414/"
                 />
-  </url><url>
-    <loc>//localhost:1414/demo/hugo-blockquote.html</loc>
-    <lastmod>2025-01-02T19:08:02+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="//localhost:1414/en-us/demo/hugo-blockquote.html"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-CN"
-                href="//localhost:1414/demo/hugo-blockquote.html"
-                />
-  </url><url>
-    <loc>//localhost:1414/tags/%E6%B5%8F%E8%A7%88/</loc>
-    <lastmod>2024-07-21T10:28:12+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
   </url><url>
     <loc>//localhost:1414/tags/%E5%9B%BE%E5%83%8F/</loc>
     <lastmod>2024-07-21T10:28:12+08:00</lastmod>
@@ -168,9 +163,14 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-CN"
+                hreflang="zh-TW"
                 href="//localhost:1414/demo/image-viewer.html"
                 />
+  </url><url>
+    <loc>//localhost:1414/tags/%E6%B5%8F%E8%A7%88/</loc>
+    <lastmod>2024-07-21T10:28:12+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>//localhost:1414/tags/%E7%9B%B8%E5%86%8C/</loc>
     <lastmod>2024-07-21T10:28:12+08:00</lastmod>
@@ -188,14 +188,9 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-CN"
+                hreflang="zh-TW"
                 href="//localhost:1414/tags/toc/"
                 />
-  </url><url>
-    <loc>//localhost:1414/tags/%E6%A0%87%E9%A2%98/</loc>
-    <lastmod>2022-10-30T21:03:16+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
   </url><url>
     <loc>//localhost:1414/demo/no-header-title.html</loc>
     <lastmod>2022-10-30T21:03:16+08:00</lastmod>
@@ -208,9 +203,14 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-CN"
+                hreflang="zh-TW"
                 href="//localhost:1414/demo/no-header-title.html"
                 />
+  </url><url>
+    <loc>//localhost:1414/tags/%E6%A0%87%E9%A2%98/</loc>
+    <lastmod>2022-10-30T21:03:16+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>//localhost:1414/demo/mermaid-charts.html</loc>
     <lastmod>2022-09-18T20:58:13+08:00</lastmod>
@@ -223,19 +223,9 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-CN"
+                hreflang="zh-TW"
                 href="//localhost:1414/demo/mermaid-charts.html"
                 />
-  </url><url>
-    <loc>//localhost:1414/categories/%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BC%95%E5%85%A5/</loc>
-    <lastmod>2024-12-12T18:48:32+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>//localhost:1414/tags/%E6%B5%81%E7%A8%8B%E5%9B%BE/</loc>
-    <lastmod>2022-09-18T20:58:13+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
   </url><url>
     <loc>//localhost:1414/tags/%E6%97%B6%E5%BA%8F%E5%9B%BE/</loc>
     <lastmod>2022-09-18T20:58:13+08:00</lastmod>
@@ -244,6 +234,16 @@
   </url><url>
     <loc>//localhost:1414/categories/%E5%9B%BE%E5%BA%8F%E5%8A%9F%E8%83%BD/</loc>
     <lastmod>2022-09-18T20:58:13+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>//localhost:1414/tags/%E6%B5%81%E7%A8%8B%E5%9B%BE/</loc>
+    <lastmod>2022-09-18T20:58:13+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>//localhost:1414/categories/%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BC%95%E5%85%A5/</loc>
+    <lastmod>2024-12-12T18:48:32+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -258,7 +258,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-CN"
+                hreflang="zh-TW"
                 href="//localhost:1414/tags/katex/"
                 />
   </url><url>
@@ -273,7 +273,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-CN"
+                hreflang="zh-TW"
                 href="//localhost:1414/tags/mathjax/"
                 />
   </url><url>
@@ -298,14 +298,9 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-CN"
+                hreflang="zh-TW"
                 href="//localhost:1414/demo/math-formula.html"
                 />
-  </url><url>
-    <loc>//localhost:1414/tags/%E5%B8%83%E5%B1%80/</loc>
-    <lastmod>2022-09-10T21:02:32+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
   </url><url>
     <loc>//localhost:1414/tags/%E4%B8%AA%E6%80%A7%E5%8C%96/</loc>
     <lastmod>2022-09-10T21:02:32+08:00</lastmod>
@@ -323,22 +318,17 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-CN"
+                hreflang="zh-TW"
                 href="//localhost:1414/demo/custom-files.html"
                 />
   </url><url>
-    <loc>//localhost:1414/tags/%E8%87%AA%E5%AE%9A%E4%B9%89/</loc>
+    <loc>//localhost:1414/tags/%E5%B8%83%E5%B1%80/</loc>
     <lastmod>2022-09-10T21:02:32+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>//localhost:1414/tags/%E7%9F%AD%E4%BB%A3%E7%A0%81/</loc>
-    <lastmod>2022-08-06T14:41:50+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>//localhost:1414/tags/%E8%AF%AD%E6%B3%95/</loc>
-    <lastmod>2022-08-06T14:41:50+08:00</lastmod>
+    <loc>//localhost:1414/tags/%E8%87%AA%E5%AE%9A%E4%B9%89/</loc>
+    <lastmod>2022-09-10T21:02:32+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -353,9 +343,19 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-CN"
+                hreflang="zh-TW"
                 href="//localhost:1414/demo/shortcodes.html"
                 />
+  </url><url>
+    <loc>//localhost:1414/tags/%E8%AF%AD%E6%B3%95/</loc>
+    <lastmod>2022-08-06T14:41:50+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>//localhost:1414/tags/%E7%9F%AD%E4%BB%A3%E7%A0%81/</loc>
+    <lastmod>2022-08-06T14:41:50+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>//localhost:1414/archives/</loc>
     <lastmod>2022-07-26T21:46:25+08:00</lastmod>
@@ -368,7 +368,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-CN"
+                hreflang="zh-TW"
                 href="//localhost:1414/archives/"
                 />
   </url><url>
@@ -383,24 +383,9 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-CN"
+                hreflang="zh-TW"
                 href="//localhost:1414/about.html"
                 />
-  </url><url>
-    <loc>//localhost:1414/tags/%E5%8D%9A%E5%AE%A2/</loc>
-    <lastmod>2022-06-08T21:12:52+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>//localhost:1414/tags/%E5%AF%BC%E8%88%AA/</loc>
-    <lastmod>2022-06-08T21:12:52+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>//localhost:1414/tags/%E7%9B%AE%E5%BD%95/</loc>
-    <lastmod>2022-06-08T21:12:52+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
   </url><url>
     <loc>//localhost:1414/demo/table-of-content.html</loc>
     <lastmod>2022-06-08T21:12:52+08:00</lastmod>
@@ -413,9 +398,24 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-CN"
+                hreflang="zh-TW"
                 href="//localhost:1414/demo/table-of-content.html"
                 />
+  </url><url>
+    <loc>//localhost:1414/tags/%E7%9B%AE%E5%BD%95/</loc>
+    <lastmod>2022-06-08T21:12:52+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>//localhost:1414/tags/%E5%AF%BC%E8%88%AA/</loc>
+    <lastmod>2022-06-08T21:12:52+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>//localhost:1414/tags/%E5%8D%9A%E5%AE%A2/</loc>
+    <lastmod>2022-06-08T21:12:52+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>//localhost:1414/tags/chroma/</loc>
     <lastmod>2022-06-07T19:09:52+08:00</lastmod>
@@ -428,7 +428,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-CN"
+                hreflang="zh-TW"
                 href="//localhost:1414/tags/chroma/"
                 />
   </url><url>
@@ -443,7 +443,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-CN"
+                hreflang="zh-TW"
                 href="//localhost:1414/demo/syntax-highlighting.html"
                 />
   </url><url>
@@ -463,14 +463,9 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-CN"
+                hreflang="zh-TW"
                 href="//localhost:1414/tags/emoji/"
                 />
-  </url><url>
-    <loc>//localhost:1414/tags/%E8%A1%A8%E6%83%85/</loc>
-    <lastmod>2022-06-04T19:46:45+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
   </url><url>
     <loc>//localhost:1414/demo/emoji-support.html</loc>
     <lastmod>2022-06-04T19:46:45+08:00</lastmod>
@@ -483,9 +478,14 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-CN"
+                hreflang="zh-TW"
                 href="//localhost:1414/demo/emoji-support.html"
                 />
+  </url><url>
+    <loc>//localhost:1414/tags/%E8%A1%A8%E6%83%85/</loc>
+    <lastmod>2022-06-04T19:46:45+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>//localhost:1414/tags/markdown/</loc>
     <lastmod>2022-06-03T11:52:18+08:00</lastmod>
@@ -498,7 +498,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-CN"
+                hreflang="zh-TW"
                 href="//localhost:1414/tags/markdown/"
                 />
   </url><url>
@@ -513,7 +513,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-CN"
+                hreflang="zh-TW"
                 href="//localhost:1414/demo/markdown-syntax.html"
                 />
   </url><url>
@@ -543,7 +543,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-CN"
+                hreflang="zh-TW"
                 href="//localhost:1414/tags/next/"
                 />
   </url><url>
@@ -557,7 +557,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-CN"
+                hreflang="zh-TW"
                 href="//localhost:1414/flinks.html"
                 />
   </url>
