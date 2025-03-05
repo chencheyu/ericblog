@@ -1,0 +1,1499 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh-TW" data-theme="light">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1414&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)" />
+
+<meta name="generator" content="Hugo 0.143.1">
+<link rel="shortcut icon" type="image/x-icon" href="/imgs/icons/favicon.ico">
+<link rel="icon" type="image/x-icon" href="/imgs/icons/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="/imgs/icons/favicon_16x16_next.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/imgs/icons/favicon_32_32_next.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/imgs/icons/apple_touch_icon_next.png">
+<meta itemprop="name" content="RaspberryPi" />
+<meta itemprop="description" content="保持简单的易用性和强大的功能。" />
+<meta name="description" content="保持简单的易用性和强大的功能。" />
+
+
+<meta itemprop="datePublished" ZgotmplZ />
+
+
+<meta itemprop="dateModified" ZgotmplZ />
+
+
+
+
+
+<meta itemprop="image" content="//localhost:1414/imgs/hugo_next_avatar.png" />
+<meta itemprop="keywords" content="CS/Embedded" />
+
+
+<meta property="og:type" content="article" />
+<meta property="og:title" content="RaspberryPi" />
+<meta property="og:description" content="保持简单的易用性和强大的功能。" />
+<meta property="og:image" content="/imgs/hugo_next_avatar.png" />
+<meta property="og:image:width" content="312" />
+<meta property="og:image:height" content="312" />
+<meta property="og:image:type" content="image/jpeg/png/svg/jpg" />
+<meta property="og:url" content="//localhost:1414/post/f1fee151-70b1-4cb1-9b2b-8a45493dec3f/"/>
+<meta property="og:site_name" content="哲佑碎碎念" />
+<meta property="og:locale" content="zh-TW"/>
+
+<meta property="article:author" content="EricChen" />
+<meta property="article:published_time" content="2024-08-14 00:00:00 &#43;0000 UTC" />
+<meta property="article:modified_time" content="2024-08-14 00:00:00 &#43;0000 UTC" />
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <link type="text/css" rel="stylesheet" href="//localhost:1414/js/3rd/font-awesome/6.7.2/css/all.min.css" /> 
+
+  
+  <link type="text/css" rel="stylesheet" href="//localhost:1414/js/3rd/animate.css/3.1.1/animate.min.css" /> 
+
+  
+  <link type="text/css" rel="stylesheet" href="//localhost:1414/js/3rd/viewerjs/1.11.6/viewer.min.css" /> 
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/main.css?=1741103274">
+
+
+<style type="text/css">
+  .post-footer hr:after {
+    content: "~ 我可是有底线的哟 ~";
+  }
+
+  .flinks-list-footer hr:after {
+    content: "~ 我可是有底线的哟 ~";
+  }
+
+  
+  
+</style>
+
+
+
+
+  
+<script type="text/javascript">
+(function(){
+  localDB = {
+    set: function (key, value, ttl) {
+      if (ttl === 0) return;
+      const now = new Date();
+      const expiryDay = ttl * 86400000;
+      const item = {
+        value: value,
+        expiry: now.getTime() + expiryDay
+      };
+      localStorage.setItem(key, JSON.stringify(item));
+    },
+    get: function (key) {
+      const itemStr = localStorage.getItem(key);
+      if (!itemStr) {
+        return undefined;
+      }
+  
+      const item = JSON.parse(itemStr);
+      const now = new Date();
+  
+      if (now.getTime() > item.expiry) {
+        localStorage.removeItem(key);
+        return undefined;
+      }
+      return item.value;
+    }
+  };
+
+  theme = {
+    active: function() {
+      const localState = localDB.get('theme');
+      if (localState == undefined) return;
+      theme.toggle(localState);
+      window.matchMedia("(prefers-color-scheme: dark)").addListener(function (evt) {
+        theme.toggle(evt.matches ? 'dark' : 'light');
+      });
+    },
+
+    toggle: function (theme) {
+      document.documentElement.setAttribute('data-theme',  theme);
+      localDB.set('theme', theme, 2);
+      
+      const iframe = document.querySelector('iframe.giscus-frame');
+      if (iframe) {
+        const config = { setConfig: { theme: theme } };
+        iframe.contentWindow.postMessage({ giscus: config }, 'https://giscus.app');
+      }
+    }
+  };
+
+  theme.active();
+})(window);
+</script>
+
+
+
+
+  <script type="text/javascript">
+document.addEventListener('DOMContentLoaded', () => {
+  var script = document.createElement('script');
+    
+  script.charset = "UTF-8";
+  script.src     = "https:\/\/busuanzi.ibruce.info\/busuanzi\/2.3\/busuanzi.pure.mini.js";
+  script.async   = false
+  script.defer   = true
+  
+  document.head.appendChild(script);
+  script.onload = function() {
+    NexT.utils.fmtBusuanzi();
+  }
+});
+</script>
+  
+
+
+
+  <title>RaspberryPi - 哲佑碎碎念</title>
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage"  class="use-motion" >
+  <div class="headband"></div>
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner">
+        
+<div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+    
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">哲佑碎碎念</h1>
+      <i class="logo-line"></i>
+    </a>
+    
+      <p class="site-subtitle" itemprop="description">为 Hugo 打造的主题</p>
+    
+    
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+      
+      <i class="fa fa-search fa-fw fa-lg"></i>
+      
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">    
+  
+    
+    <li class="menu-item menu-item-home">
+      <a href="/" class=" hvr-icon-pulse " rel="section">
+        <i class="fa fa-home hvr-icon"></i>首頁
+        
+        
+      </a>
+      
+    </li>
+  
+    
+    <li class="menu-item menu-item-about">
+      <a href="/about.html" class=" hvr-icon-pulse " rel="section">
+        <i class="fa fa-user hvr-icon"></i>關於
+        
+        
+      </a>
+      
+    </li>
+  
+    
+    <li class="menu-item menu-item-flinks">
+      <a href="/flinks.html" class=" hvr-icon-pulse " rel="section">
+        <i class="fa fa-thumbs-up hvr-icon"></i>友情
+        
+        
+      </a>
+      
+    </li>
+  
+    
+    <li class="menu-item menu-item-example">
+      <a href="/" class="menus-parent hvr-icon-pulse " rel="section">
+        <i class="fa fa-angles-down hvr-icon"></i>语法示例
+        <span class="menu-item-shrink-icon"><i class="fa fa-angle-right"></i></span>
+        
+      </a>
+      
+      <ul class="menu-children">
+      
+      
+        <li class="menu-child-item">
+          <a href="/demo/syntax-highlighting.html" class="hvr-icon-pulse " rel="section">
+            <i class="fa hvr-icon"></i>语法高亮
+          </a>
+        </li>
+      
+      
+        <li class="menu-child-item">
+          <a href="/demo/math-formula.html" class="hvr-icon-pulse " rel="section">
+            <i class="fa hvr-icon"></i>数学公式
+          </a>
+        </li>
+      
+      
+        <li class="menu-child-item">
+          <a href="/demo/mermaid-charts.html" class="hvr-icon-pulse " rel="section">
+            <i class="fa hvr-icon"></i>流程图
+          </a>
+        </li>
+      
+      </ul>
+      
+    </li>
+  
+    
+    <li class="menu-item menu-item-archives">
+      <a href="/archives/" class=" hvr-icon-pulse " rel="section">
+        <i class="fa fa-archive hvr-icon"></i>歸檔
+        
+        
+      </a>
+      
+    </li>
+  
+    
+    <li class="menu-item menu-item-categories">
+      <a href="/categories/" class=" hvr-icon-pulse " rel="section">
+        <i class="fa fa-tags hvr-icon"></i>標籤
+        
+        
+      </a>
+      
+    </li>
+  
+    
+    <li class="menu-item menu-item-commonweal">
+      <a href="/404.html" class=" hvr-icon-pulse " rel="section">
+        <i class="fa fa-heartbeat hvr-icon"></i>公益 404
+        
+        
+      </a>
+      
+    </li>
+      
+
+  
+    <li class="menu-item menu-item-search">
+      <a role="button" class="popup-trigger hvr-icon-pulse">
+        <i class="fa fa-search fa-fw hvr-icon"></i>搜索
+      </a>
+    </li>
+  
+  </ul>
+</nav>
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+      
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+      
+    </div>
+  </div>
+
+      </div>
+      
+      
+      <div class="toggle sidebar-toggle" role="button">
+  <span class="toggle-line"></span>
+  <span class="toggle-line"></span>
+  <span class="toggle-line"></span>
+</div>
+
+<aside class="sidebar">
+  <div class="sidebar-inner sidebar-overview-active">
+    <ul class="sidebar-nav">
+      <li class="sidebar-nav-toc">
+        文章目錄
+      </li>
+      <li class="sidebar-nav-overview">
+        站點概覽
+      </li>
+    </ul>
+    <div class="sidebar-panel-container">
+      
+      <div class="post-toc-wrap sidebar-panel">
+        <div class="post-toc animated"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#pin">Pin</a></li>
+        <li><a href="#raspberry-pi-1">Raspberry Pi 1</a>
+          <ul>
+            <li><a href="#raspberry-pi-i2c-clock-stretching-bug">Raspberry Pi I2C clock-stretching bug</a></li>
+          </ul>
+        </li>
+        <li><a href="#gpio">GPIO</a>
+          <ul>
+            <li><a href="#gpio-sysfs">GPIO sysfs</a></li>
+            <li><a href="#hardware-register">Hardware Register</a></li>
+            <li><a href="#gpiochip">gpiochip</a></li>
+            <li><a href="#lib">Lib</a></li>
+          </ul>
+        </li>
+        <li><a href="#raspberry-pi-os">Raspberry Pi OS</a></li>
+        <li><a href="#pi-4">Pi 4</a></li>
+        <li><a href="#vcgencmdhttpselinuxorgrpi_vcgencmd_usage"><a href="https://elinux.org/RPI_vcgencmd_usage">vcgencmd</a></a></li>
+        <li><a href="#uart">Uart</a></li>
+        <li><a href="#dtoverlay">dtoverlay</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+      </div>
+      
+      <div class="site-overview-wrap sidebar-panel">
+        
+<div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  
+    <img class="site-author-image" itemprop="image" alt="EricChen"
+    src="/imgs/img-lazy-loading.gif" data-src="/imgs/hugo_next_avatar.png">
+  
+  <p class="site-author-name" itemprop="name">EricChen</p>
+  <div class="site-description" itemprop="description">保持简单的易用性和强大的功能。</div>
+</div>
+
+
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+    <div class="site-state-item site-state-posts">
+      <a href="/archives/">
+        <span class="site-state-item-count">74</span>
+        <span class="site-state-item-name">日誌</span>
+      </a>
+    </div>
+    <div class="site-state-item site-state-categories">
+      <a href="/categories/">
+        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-name">分類</span>
+      </a>
+    </div>
+    <div class="site-state-item site-state-tags">
+      <a href="/tags/">
+        <span class="site-state-item-count">47</span>
+        <span class="site-state-item-name">標籤</span>
+      </a>
+    </div>
+  </nav>
+</div>
+
+
+<div class="links-of-social site-overview-item animated">
+
+
+
+
+
+
+  <span class="links-of-social-item">
+    <a href="https://gitlab.com/joe1231231218" title="Gitlab → https://gitlab.com/joe1231231218" rel="noopener"  class="hvr-icon-pulse"  target="_blank">
+      
+      <i class="fab fa-gitlab fa-fw  hvr-icon "></i>
+      
+      
+      Gitlab
+      
+    </a>
+  </span>
+
+
+
+
+
+  <span class="links-of-social-item">
+    <a href="mailto:connection@ericchen.name" title="E-Mail → mailto:connection@ericchen.name" rel="noopener"  class="hvr-icon-pulse"  target="_blank">
+      
+      <i class="fa fa-envelope fa-fw  hvr-icon "></i>
+      
+      
+      E-Mail
+      
+    </a>
+  </span>
+
+</div>
+
+
+
+<div class="cc-license animated" itemprop="license">
+  <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" class="cc-opacity" rel="noopener" target="_blank" title="共享知識">
+    <img src="/imgs/img-lazy-loading.gif" data-src="/imgs/cc/big/by_nc_sa.svg" alt="共享知識">
+  </a>
+</div>
+
+
+
+
+<div class="links-of-blogroll site-overview-item animated">
+  <div class="links-of-blogroll-title">
+    
+    <i class="fa fa-globe fa-fw"></i>
+    
+    友情链接
+  </div>
+  <ul class="links-of-blogroll-list">
+    
+    
+    
+    
+    <li class="links-of-blogroll-item">
+      <a href="https://gitee.com/hugo-next/hugo-theme-next" title="https://gitee.com/hugo-next/hugo-theme-next" target="_blank">Hugo-NexT</a>
+    </li>
+    
+    
+    
+    
+    <li class="links-of-blogroll-item">
+      <a href="https://lisenhui.cn" title="https://lisenhui.cn" target="_blank">凡梦星尘空间站</a>
+    </li>
+    
+  </ul>
+</div>
+
+        
+        
+        
+      </div>
+    </div>
+  </div>
+
+  
+    
+<div id="siteinfo-card-widget" class="sidebar-card-widget">
+  <div class="item-headline">
+    <i class="fas fa-chart-line"></i>
+    <span>網站資訊</span>
+  </div>
+  <div class="siteinfo">
+    <div class="siteinfo-item">
+      <div class="item-name"><i class="fa-solid fa-calendar-check"></i>已運行：</div>
+      <div class="item-count" id="runTimes" data-publishdate="0001-01-01 00:00:00 &#43;0000 UTC"></div>
+    </div>
+    
+    
+    <div class="siteinfo-item">
+      <div class="item-name">
+        <i class="fas fa fa-user"></i>總訪客數：
+      </div>
+      <div class="item-count" id="busuanzi_value_site_uv"><i class="fa fa-sync fa-spin"></i></div>
+    </div>
+    <div class="siteinfo-item">
+      <div class="item-name">
+        <i class="fas fa fa-eye"></i>頁面瀏覽：
+      </div>
+      <div class="item-count" id="busuanzi_value_site_pv"><i class="fa fa-sync fa-spin"></i></div>
+    </div> 
+        
+        
+    
+    <div class="siteinfo-item">
+      <div class="item-name"><i class="fa fa-font"></i>總字數：</div>
+      <div class="item-count" id="wordsCount" data-count="98389"></div>
+    </div>
+    <div class="siteinfo-item">
+      <div class="item-name"><i class="fa fa-mug-hot"></i>閱讀約：</div>
+      <div class="item-count" id="readTimes" data-times="245"></div>
+    </div>
+    <div class="siteinfo-item">
+      <div class="item-name"><i class="fa fa-clock-rotate-left"></i>最後更新於：</div>
+      <div class="item-count" id="last-push-date" data-lastpushdate="2025-02-28 00:00:00 &#43;0000 UTC"></div>
+    </div>
+  </div>
+</div>
+  
+
+  
+  <div class="sidebar-card-widget back-to-top-card">
+    <div class="back-to-top animated" role="button" aria-label="">
+      <i class="fa fa-arrow-up"></i>
+      <span>0%</span>
+    </div>
+  </div>
+  
+</aside>
+<div class="sidebar-dimmer"></div>
+
+      
+    </header>
+    
+    <div class="tool-buttons" >
+  
+  
+  <div id="goto-i18n-translate" class="button"  title="多語言翻譯">
+    <i class="fas fa-globe"></i>
+  </div> 
+  
+  <div id="toggle-theme" class="button" title="深淺模式切換">
+    <i class="fas fa-adjust"></i>
+  </div>
+   
+</div>
+
+
+  <div class="reading-progress-bar"></div>
+
+
+
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+
+
+
+<a href="https://github.com/hugo-next" rel="noopener external nofollow noreferrer" target="_blank" title="Follow me on GitHub" class="exturl github-corner">
+  <svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg>
+</a>
+
+
+
+
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+    <div class="main-inner post posts-expand">
+      
+      
+  <div class="post-block">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    
+    <link itemprop="mainEntityOfPage" href="//localhost:1414/post/f1fee151-70b1-4cb1-9b2b-8a45493dec3f/">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/imgs/hugo_next_avatar.png">
+      <meta itemprop="name" content="EricChen">
+    </span>
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="EricChen">
+      <meta itemprop="description" content="保持简单的易用性和强大的功能。">
+    </span>
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="RaspberryPi">
+      <meta itemprop="description" content="
+
+Pi3 的chip文件
+
+
+    BCM2837
+    
+
+
+
+Bare metal Raspberry Pi 3 tutorials
+
+
+    raspi3-tutorial
+    
+    
+    
+
+
+
+Pi4 的chip文件
+
+
+    Bcm2711
+    
+
+
+
+Pin
+
+
+
+Raspberry Pi GPIO pin define
+
+
+    Raspberry Pi Pinout
+    
+    
+    
+
+
+
+
+
+    pigg
+    
+    
+    
+
+GUI for View and Config RaspberryPi GPIO
+
+
+GPIO 引腳可設定為高電平 3.3V 或低電平 0V，Pi 4 用電源供應器實測可以感受到 1 mA 3.3V，最低 1.2 還會判 Hight
+">
+    </span>
+    
+    <header class="post-header">
+      
+ <h1  class="post-title" itemprop="name headline">
+  
+  
+  RaspberryPi
+  
+  
+  <a href="https://github.com/user-name/repo-name/tree/branch-name/subdirectory-name/post/463cb0c2-9ffe-4bd8-864c-3025d54ce17d/index.md" rel="noopener external nofollow noreferrer" target="_blank" class="exturl post-edit-link" title="編輯"><i class="fa fa-pen-nib"></i></a>
+  
+  
+   </h1> 
+
+<div class="post-meta-container">
+  <div class="post-meta-items">
+    
+
+
+<span class="post-meta-item">
+  <span class="post-meta-item-icon">
+    <i class="fas fa-solid fa-calendar"></i>
+  </span>
+  <span class="post-meta-item-text" title="發表於">
+    發表於：
+  </span>
+  <time title="創建時間：2024-08-14T00:00:00&#43;00:00 CST" itemprop="dateCreated datePublished" datetime="2024-08-14 00:00:00 &#43;0000 UTC">
+    2024-08-14
+  </time>
+</span>
+
+    
+
+
+    
+
+
+        
+  </div>
+  
+  <div class="post-meta-items">
+    
+<span class="post-meta-item" title="字數">
+  <span class="post-meta-item-icon">
+    <i class="fas fa-solid fa-file-word"></i>
+  </span>
+  <span class="post-meta-item-text">字數：</span>
+  <span>1345</span>
+</span>
+
+    
+<span class="post-meta-item" title="閱讀">
+  <span class="post-meta-item-icon">
+    <i class="fas fa-solid fa-clock"></i>
+  </span>
+  <span class="post-meta-item-text">閱讀：&asymp;</span>
+  <span>3分鐘</span>
+</span>
+
+
+    
+
+
+<span class="post-meta-item" title="瀏覽">
+  <span class="post-meta-item-icon">
+    <i class="fas fa-solid fa-eye"></i>
+  </span>
+  <span class="post-meta-item-text">
+  瀏覽：
+  </span>
+  <span id="pageview-count" data-path="/post/f1fee151-70b1-4cb1-9b2b-8a45493dec3f/">
+    <i class="fa fa-sync fa-spin"></i>
+  </span>
+</span>
+
+    
+  </div>
+  
+</div>
+
+    </header>
+    
+    <div class="post-body " itemprop="articleBody">
+      
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <ul>
+<li>
+<p>Pi3 的chip文件
+
+<a href="../92ef7eed-5d57-4c6a-a429-e4f999cd02b3.pdf" title="BCM2837" >
+    BCM2837
+    
+</a></p>
+</li>
+<li>
+<p>Bare metal Raspberry Pi 3 tutorials
+
+<a href="https://github.com/bztsrc/raspi3-tutorial" title="raspi3-tutorial" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+    raspi3-tutorial
+    
+    <i class="fa fa-external-link-alt"></i>
+    
+</a></p>
+</li>
+<li>
+<p>Pi4 的chip文件
+
+<a href="../9ebac9d8-97f3-40d8-b0ce-e5f75a958a38.pdf" title="Bcm2711" >
+    Bcm2711
+    
+</a></p>
+</li>
+</ul>
+<h3 id="pin">Pin
+<a class="header-anchor" href="#pin"></a>
+</h3><ul>
+<li>
+<p>Raspberry Pi GPIO pin define
+
+<a href="https://pinout.xyz/" title="Raspberry Pi Pinout" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+    Raspberry Pi Pinout
+    
+    <i class="fa fa-external-link-alt"></i>
+    
+</a></p>
+</li>
+<li>
+<p>
+<a href="https://github.com/andrewdavidmackenzie/pigg" title="pigg" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+    pigg
+    
+    <i class="fa fa-external-link-alt"></i>
+    
+</a>
+GUI for View and Config RaspberryPi GPIO</p>
+</li>
+</ul>
+<p>GPIO 引腳可設定為高電平 3.3V 或低電平 0V，Pi 4 用電源供應器實測可以感受到 1 mA 3.3V，最低 1.2 還會判 Hight
+<img src="/imgs/img-lazy-loading.gif" data-src="../41b895ea-1347-488a-a295-35d250cd26f8.png" alt=""  /></p>
+  
+  <a id="more"></a>
+  <h3 id="raspberry-pi-1">Raspberry Pi 1
+<a class="header-anchor" href="#raspberry-pi-1"></a>
+</h3><h4 id="raspberry-pi-i2c-clock-stretching-bug">Raspberry Pi I2C clock-stretching bug
+<a class="header-anchor" href="#raspberry-pi-i2c-clock-stretching-bug"></a>
+</h4><p>
+<a href="https://forums.raspberrypi.com/viewtopic.php?f=44&amp;amp;t=13771&amp;amp;p=405024" title="Raspberry Pi I2C clock-stretching bug" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+    Raspberry Pi I2C clock-stretching bug
+    
+    <i class="fa fa-external-link-alt"></i>
+    
+</a></p>
+<ul>
+<li>時鐘拉伸僅在 I2C 讀取確認階段之後（讀取 ACK/NACK 後）直接起作用，並且僅當時鐘拉伸超過 0.5 個時脈週期時才起作用。</li>
+<li>時鐘延長在 I2C 寫入確認階段開始時不起作用（即從機必須決定是否發送 ACK 或 NACK 的時刻）</li>
+<li>除了從機可能會錯過太短的時脈的問題之外，當時脈拉長時， Raspberry Pi 還會過早讀取 SDA。因此，即使在 I2C 讀取確認階段將時鐘拉伸非常非常小，也會導致資料損壞。</li>
+</ul>
+<h3 id="gpio">GPIO
+<a class="header-anchor" href="#gpio"></a>
+</h3><h4 id="gpio-sysfs">GPIO sysfs
+<a class="header-anchor" href="#gpio-sysfs"></a>
+</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-0-1"><a class="lnlinks" href="#hl-0-1"> 1</a>
+</span><span class="lnt" id="hl-0-2"><a class="lnlinks" href="#hl-0-2"> 2</a>
+</span><span class="lnt" id="hl-0-3"><a class="lnlinks" href="#hl-0-3"> 3</a>
+</span><span class="lnt" id="hl-0-4"><a class="lnlinks" href="#hl-0-4"> 4</a>
+</span><span class="lnt" id="hl-0-5"><a class="lnlinks" href="#hl-0-5"> 5</a>
+</span><span class="lnt" id="hl-0-6"><a class="lnlinks" href="#hl-0-6"> 6</a>
+</span><span class="lnt" id="hl-0-7"><a class="lnlinks" href="#hl-0-7"> 7</a>
+</span><span class="lnt" id="hl-0-8"><a class="lnlinks" href="#hl-0-8"> 8</a>
+</span><span class="lnt" id="hl-0-9"><a class="lnlinks" href="#hl-0-9"> 9</a>
+</span><span class="lnt" id="hl-0-10"><a class="lnlinks" href="#hl-0-10">10</a>
+</span><span class="lnt" id="hl-0-11"><a class="lnlinks" href="#hl-0-11">11</a>
+</span><span class="lnt" id="hl-0-12"><a class="lnlinks" href="#hl-0-12">12</a>
+</span><span class="lnt" id="hl-0-13"><a class="lnlinks" href="#hl-0-13">13</a>
+</span><span class="lnt" id="hl-0-14"><a class="lnlinks" href="#hl-0-14">14</a>
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ <span class="nb">cd</span> /sys/class/gpio
+</span></span><span class="line"><span class="cl">$ ls
+</span></span><span class="line"><span class="cl"><span class="nb">export</span>  gpiochip0  gpiochip504  unexport
+</span></span><span class="line"><span class="cl">$ <span class="nb">echo</span> <span class="m">26</span> &gt; <span class="nb">export</span>
+</span></span><span class="line"><span class="cl">$ ls
+</span></span><span class="line"><span class="cl"><span class="nb">export</span>  gpio26  gpiochip0  gpiochip504  unexport
+</span></span><span class="line"><span class="cl">$ ls gpio26
+</span></span><span class="line"><span class="cl">active_low  device  direction  edge  power  subsystem  uevent  value
+</span></span><span class="line"><span class="cl">$ cat gpio26/direction
+</span></span><span class="line"><span class="cl">in
+</span></span><span class="line"><span class="cl">$ <span class="nb">echo</span> out &gt; gpio26/direction
+</span></span><span class="line"><span class="cl">$ cat gpio26/value
+</span></span><span class="line"><span class="cl"><span class="m">0</span>
+</span></span><span class="line"><span class="cl">$ <span class="nb">echo</span> <span class="m">1</span> &gt; gpio26/value</span></span></code></pre></td></tr></table>
+</div>
+</div>
+
+<p>古老的手段，準備棄用，非常慢
+直接操作 /sys/class/gpio ，無法確定是否爭用，程式意外結束時不會被 OS 清理</p>
+<h4 id="hardware-register">Hardware Register
+<a class="header-anchor" href="#hardware-register"></a>
+</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-1-1"><a class="lnlinks" href="#hl-1-1"> 1</a>
+</span><span class="lnt" id="hl-1-2"><a class="lnlinks" href="#hl-1-2"> 2</a>
+</span><span class="lnt" id="hl-1-3"><a class="lnlinks" href="#hl-1-3"> 3</a>
+</span><span class="lnt" id="hl-1-4"><a class="lnlinks" href="#hl-1-4"> 4</a>
+</span><span class="lnt" id="hl-1-5"><a class="lnlinks" href="#hl-1-5"> 5</a>
+</span><span class="lnt" id="hl-1-6"><a class="lnlinks" href="#hl-1-6"> 6</a>
+</span><span class="lnt" id="hl-1-7"><a class="lnlinks" href="#hl-1-7"> 7</a>
+</span><span class="lnt" id="hl-1-8"><a class="lnlinks" href="#hl-1-8"> 8</a>
+</span><span class="lnt" id="hl-1-9"><a class="lnlinks" href="#hl-1-9"> 9</a>
+</span><span class="lnt" id="hl-1-10"><a class="lnlinks" href="#hl-1-10">10</a>
+</span><span class="lnt" id="hl-1-11"><a class="lnlinks" href="#hl-1-11">11</a>
+</span><span class="lnt" id="hl-1-12"><a class="lnlinks" href="#hl-1-12">12</a>
+</span><span class="lnt" id="hl-1-13"><a class="lnlinks" href="#hl-1-13">13</a>
+</span><span class="lnt" id="hl-1-14"><a class="lnlinks" href="#hl-1-14">14</a>
+</span><span class="lnt" id="hl-1-15"><a class="lnlinks" href="#hl-1-15">15</a>
+</span><span class="lnt" id="hl-1-16"><a class="lnlinks" href="#hl-1-16">16</a>
+</span><span class="lnt" id="hl-1-17"><a class="lnlinks" href="#hl-1-17">17</a>
+</span><span class="lnt" id="hl-1-18"><a class="lnlinks" href="#hl-1-18">18</a>
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="c1">// Open the master /dev/ memory control device
+</span></span></span><span class="line"><span class="cl"><span class="c1">// Device strategy: December 2016:
+</span></span></span><span class="line"><span class="cl"><span class="c1">//	Try /dev/mem. If that fails, then
+</span></span></span><span class="line"><span class="cl"><span class="c1">//	try /dev/gpiomem. If that fails then game over.
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="p">((</span><span class="n">fd</span> <span class="o">=</span> <span class="nf">open</span> <span class="p">(</span><span class="s">&#34;/dev/mem&#34;</span><span class="p">,</span> <span class="n">O_RDWR</span> <span class="o">|</span> <span class="n">O_SYNC</span> <span class="o">|</span> <span class="n">O_CLOEXEC</span><span class="p">))</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">((</span><span class="n">fd</span> <span class="o">=</span> <span class="nf">open</span> <span class="p">(</span><span class="s">&#34;/dev/gpiomem&#34;</span><span class="p">,</span> <span class="n">O_RDWR</span> <span class="o">|</span> <span class="n">O_SYNC</span> <span class="o">|</span> <span class="n">O_CLOEXEC</span><span class="p">)</span> <span class="p">)</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">)</span>	<span class="c1">// We&#39;re using gpiomem
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="n">piGpioBase</span>   <span class="o">=</span> <span class="mi">0</span> <span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="n">usingGpioMem</span> <span class="o">=</span> <span class="n">TRUE</span> <span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="k">else</span>
+</span></span><span class="line"><span class="cl">      <span class="k">return</span> <span class="nf">wiringPiFailure</span> <span class="p">(</span><span class="n">WPI_ALMOST</span><span class="p">,</span> <span class="s">&#34;wiringPiSetup: Unable to open /dev/mem or /dev/gpiomem: %s.</span><span class="se">\n</span><span class="s">&#34;</span>
+</span></span><span class="line"><span class="cl">	<span class="s">&#34;  Aborting your program because if it can not access the GPIO</span><span class="se">\n</span><span class="s">&#34;</span>
+</span></span><span class="line"><span class="cl">	<span class="s">&#34;  hardware then it most certianly won&#39;t work</span><span class="se">\n</span><span class="s">&#34;</span>
+</span></span><span class="line"><span class="cl">	<span class="s">&#34;  Try running with sudo?</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="nf">strerror</span> <span class="p">(</span><span class="n">errno</span><span class="p">))</span> <span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+
+<p>不能夠處裡 edge detection
+wiringPi, pigpio, RPi.GPIO, and gpiozero’s “native” driver 使用此方式</p>
+
+  <blockquote>
+    <p>They’d “play nice” and use the sysfs interface for edge detection, but then stomp all over the hardware registers whenever they wanted to do anything else (reading the value of a GPIO, setting its direction, writing a value, etc.).</p>
+  </blockquote>
+
+  <blockquote>
+    <h4 id="gpiochip">gpiochip
+<a class="header-anchor" href="#gpiochip"></a>
+</h4>
+  </blockquote>
+
+  <blockquote>
+    <p>kernel 4.8 後支援
+新增 /dev/gpiochip* 用 ioctl 在 user mode 控制 GPIO
+會正確處裡所有權，在程式結束後刪除控制
+用戶空間庫是 libgpiod
+<code>gpioinfo</code> 確定存在哪些 GPIO 以及它們當前是否正在使用任何事物</p>
+  </blockquote>
+<h4 id="lib">Lib
+<a class="header-anchor" href="#lib"></a>
+</h4><ul>
+<li>
+<p>
+<a href="https://pypi.org/project/RPi.GPIO" title="RPi.GPIO" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+    RPi.GPIO
+    
+    <i class="fa fa-external-link-alt"></i>
+    
+</a>
+Pi 5 不可用</p>
+</li>
+<li>
+<p>
+<a href="https://pypi.org/project/gpiod/" title="GPIOD" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+    GPIOD
+    
+    <i class="fa fa-external-link-alt"></i>
+    
+</a>
+
+<a href="https://git.kernel.org/pub/scm/libs/libgpiod/libgpiod.git/" title="libgpiod/libgpiod.git" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+    libgpiod/libgpiod.git
+    
+    <i class="fa fa-external-link-alt"></i>
+    
+</a> 的 python 綁定</p>
+</li>
+</ul>
+
+  <blockquote>
+    <p>server and client sides in the form of the gpio-manager daemon and the gpiocli command-line utility for talking to the manager
+使用 /dev/gpiochip</p>
+  </blockquote>
+<ul>
+<li>
+<p>
+<a href="https://gpiozero.readthedocs.io/en/latest/index.html" title="gpiozero" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+    gpiozero
+    
+    <i class="fa fa-external-link-alt"></i>
+    
+</a>
+有設備抽象，Raspberry Pi OS 預設安裝
+純 python 實施，只會幫忙呼叫後端函式庫(預設RPi.GPIO)</p>
+</li>
+<li>
+<p>
+<a href="https://abyz.me.uk/rpi/pigpio/python.html" title="pigpio library" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+    pigpio library
+    
+    <i class="fa fa-external-link-alt"></i>
+    
+</a>
+
+<a href="https://github.com/joan2937/pigpio" title="pigpio C" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+    pigpio C
+    
+    <i class="fa fa-external-link-alt"></i>
+    
+</a> 的 python 綁定</p>
+</li>
+<li>
+<p>
+<a href="https://github.com/WiringPi/WiringPi-Python" title="WiringPi-Python" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+    WiringPi-Python
+    
+    <i class="fa fa-external-link-alt"></i>
+    
+</a>
+
+<a href="https://github.com/WiringPi/WiringPi/tree/master" title="WiringPi" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+    WiringPi
+    
+    <i class="fa fa-external-link-alt"></i>
+    
+</a> 的 python 綁定
+WiringPi 於 2019 年 8 月被其作者棄用</p>
+</li>
+</ul>
+<h3 id="raspberry-pi-os">Raspberry Pi OS
+<a class="header-anchor" href="#raspberry-pi-os"></a>
+</h3><p>Pi 3 裝 32 位作業系統速度較快，記憶體用量較小
+Pi 4 裝 64 位作業系統速度較快 10% 以上
+64Bit 會占用比 32 Bit 多的記憶體(指針及整數較長)</p>
+<h3 id="pi-4">Pi 4
+<a class="header-anchor" href="#pi-4"></a>
+</h3><p>在使用中發現即使 CPU 使用率小於 20% 但機器反應還是很慢，包括開 GUI 程式及移動滑鼠
+- Raspberry Diagnostics
+指令為 <code>agnostics</code>，需要 GUI
+一個沒有官方文檔的程式檢查 SD 卡速度
+Raspberry Diagnostics 要求 random read 1500 IOPS , random write 500 IOPS</p>
+<ul>
+<li>
+<p>修改滑鼠輪詢率
+在 /boot/firmware/cmdline.txt 末端加入選項 usbhid.mousepoll=8</p>
+</li>
+<li>
+<p>0 表示按滑鼠要求</p>
+</li>
+<li>
+<p>1 每秒 1000 次</p>
+</li>
+<li>
+<p>2 每秒 500 次</p>
+</li>
+<li>
+<p>確保電源供應器符合官方標準 (Raspberry Pi 4 1.2A 5V)</p>
+</li>
+</ul>
+<h3 id="vcgencmdhttpselinuxorgrpi_vcgencmd_usage">
+<a href="https://elinux.org/RPI_vcgencmd_usage" title="vcgencmd" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+    vcgencmd
+    
+    <i class="fa fa-external-link-alt"></i>
+    
+</a>
+<a class="header-anchor" href="#vcgencmdhttpselinuxorgrpi_vcgencmd_usage"></a>
+</h3><p>又是一個沒有官方文件的 tool，查詢及設定 Raspberry Pi 硬體</p>
+<ul>
+<li>vcgencmd measure_temp
+CPU 溫度，應小於 50 度 C</li>
+</ul>
+<h3 id="uart">Uart
+<a class="header-anchor" href="#uart"></a>
+</h3>
+  <blockquote>
+    <p>Raspberry Pi 上有兩種類型的 UART - PL011和 mini UART。 PL011 是一款功能強大、廣泛相容 16550 的 UART，而迷你 UART 的功能集則減少。</p>
+  </blockquote>
+
+  <blockquote>
+    <p>Raspberry Pi 上的所有 UART 均為 3.3V - 如果將它們連接到 5V 系統，則會發生損壞。適配器可用於連接 5V 系統。或者，可以從各個第三方獲得低成本 USB 轉 3.3V 串行適配器</p>
+  </blockquote>
+<p>P3 只有 
+<a href="https://developer.arm.com/documentation/ddi0183/g/introduction/about-the-uart" title="UART - PL011" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+    UART - PL011
+    
+    <i class="fa fa-external-link-alt"></i>
+    
+</a> 跟 mini UART 各一組，UART - PL011 被藍芽占用</p>
+<p>P4 有 6 組 UART - PL011，0, 1 被藍芽占用</p>
+
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-2-1"><a class="lnlinks" href="#hl-2-1"> 1</a>
+</span><span class="lnt" id="hl-2-2"><a class="lnlinks" href="#hl-2-2"> 2</a>
+</span><span class="lnt" id="hl-2-3"><a class="lnlinks" href="#hl-2-3"> 3</a>
+</span><span class="lnt" id="hl-2-4"><a class="lnlinks" href="#hl-2-4"> 4</a>
+</span><span class="lnt" id="hl-2-5"><a class="lnlinks" href="#hl-2-5"> 5</a>
+</span><span class="lnt" id="hl-2-6"><a class="lnlinks" href="#hl-2-6"> 6</a>
+</span><span class="lnt" id="hl-2-7"><a class="lnlinks" href="#hl-2-7"> 7</a>
+</span><span class="lnt" id="hl-2-8"><a class="lnlinks" href="#hl-2-8"> 8</a>
+</span><span class="lnt" id="hl-2-9"><a class="lnlinks" href="#hl-2-9"> 9</a>
+</span><span class="lnt" id="hl-2-10"><a class="lnlinks" href="#hl-2-10">10</a>
+</span><span class="lnt" id="hl-2-11"><a class="lnlinks" href="#hl-2-11">11</a>
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">GPIO14 = TXD0 -&gt; ttyAMA0
+</span></span><span class="line"><span class="cl">GPIO0  = TXD2 -&gt; ttyAMA1
+</span></span><span class="line"><span class="cl">GPIO4  = TXD3 -&gt; ttyAMA2
+</span></span><span class="line"><span class="cl">GPIO8  = TXD4 -&gt; ttyAMA3
+</span></span><span class="line"><span class="cl">GPIO12 = TXD5 -&gt; ttyAMA4
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">GPIO15 = RXD0 -&gt; ttyAMA0
+</span></span><span class="line"><span class="cl">GPIO1  = RXD2 -&gt; ttyAMA1
+</span></span><span class="line"><span class="cl">GPIO5  = RXD3 -&gt; ttyAMA2
+</span></span><span class="line"><span class="cl">GPIO9  = RXD4 -&gt; ttyAMA3
+</span></span><span class="line"><span class="cl">GPIO13 = RXD5 -&gt; ttyAMA4</span></span></code></pre></td></tr></table>
+</div>
+</div>
+
+<p>Raspberry Pi Pin pair with uart</p>
+<h3 id="dtoverlay">dtoverlay
+<a class="header-anchor" href="#dtoverlay"></a>
+</h3><p>device tree overlay
+dtoverlay命令無法訪問啟動時加載的覆蓋；即該dtoverlay命令僅處理在運行時載入的覆蓋
+an overlay or parameter applied by the firmware becomes &ldquo;baked in&rdquo; such that it won’t be listed by dtoverlay and can’t be removed.</p>
+<ul>
+<li><code>dtoverlay -a</code> 列出所有可以 overlay 的 device</li>
+<li><code>dtoverlay -h uart4</code> 列出參數</li>
+<li><code>dtoverlay uart4</code> 載入</li>
+</ul>
+
+
+    </div>
+    <footer class="post-footer">
+      
+
+
+<div class="post-tags">
+  
+    <a href="/tags/cs/embedded/">
+    CS/Embedded
+  </a>
+  
+</div>
+
+
+
+  
+    <div class="post-share-tools"> 
+      <div class="post-share-loading">
+        <i class="fa-solid fa-ellipsis fa-spin"></i>
+      </div>  
+      
+      
+        <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+  <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+  <a class="a2a_button_wechat"></a>
+  <a class="a2a_button_qzone"></a>
+  <a class="a2a_button_sina_weibo"></a>
+  <a class="a2a_button_douban"></a>
+  <a class="a2a_button_facebook"></a>
+  <a class="a2a_button_x"></a>
+  <a class="a2a_button_email"></a>
+  <a class="a2a_button_printfriendly"></a>
+</div>
+      
+    </div>
+    
+
+<hr/>
+
+
+
+
+
+
+<div class="post-copyright">
+  <img src="/imgs/cc/cc.svg" width="75" height="75" align="right" alt="共享知識"/>
+  <ul>
+    <li class="post-copyright-title">
+      <strong>文章標題：</strong>
+      RaspberryPi
+    </li>
+    <li class="post-copyright-author">
+      
+        <strong>本文作者： </strong>
+        EricChen
+      
+    </li>
+    <li class="post-copyright-link">
+       
+        <strong>本文鏈接：</strong>
+        <a id="post-cr-link" href="//localhost:1414/post/f1fee151-70b1-4cb1-9b2b-8a45493dec3f/" title="RaspberryPi">//localhost:1414/post/f1fee151-70b1-4cb1-9b2b-8a45493dec3f/</a>
+      
+    </li>
+    <li class="post-copyright-license">
+      <strong>版權聲明： </strong>
+      
+      
+      本博客所有文章除特別聲明外，均採用 <i class="fab fa-fw fa-creative-commons"></i><a target='_blank' href='https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh'>BY-NC-SA</a> 許可協議。轉載請註明出處！
+    </li>
+  </ul>
+</div>
+
+
+
+
+  <div class="followme">
+  <span>歡迎關注我的其它發布渠道</span>
+  <div class="social-list">
+    
+    
+    
+    
+    
+    <div class="social-item">
+        <a target="_blank" class="social-link" href="/atom.xml">
+          <span class="icon">
+            <i class="fa fa-rss"></i>
+          </span>
+          <span class="label">RSS</span>
+        </a>
+      </div>
+    
+  </div>
+</div>
+
+
+
+<div class="post-nav">
+  <div class="post-nav-next post-nav-item">
+    
+    <a href="/post/23f3d3f6-e57e-444d-9b52-f6bed6518069/" rel="next" title="Ubuntu.md">
+      <i class="fa fa-chevron-left"></i> Ubuntu.md
+    </a>
+    
+  </div>
+  <div class="post-nav-prev post-nav-item">
+    
+    <a href="/post/9bea2131-a6e8-4a63-8f12-2b41a49f32fd/" rel="prev" title="Mitigating Integer Overflow in C">
+      Mitigating Integer Overflow in C
+      <i class="fa fa-chevron-right"></i>
+    </a>
+    
+  </div>
+</div>
+
+
+
+    </footer>
+  </article>
+</div>
+
+      
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer-inner">
+      
+<div id="i18n-translate" class="i18n-translate">
+  <i class="fa fa-language"></i>
+  <div id="lang-select" class="lang-select">
+    <div id="lang-selected" class="selected-option">
+      <span class="flag-icon flag-icon-zh-tw"></span>
+      <span class="selected-language">繁體中文</span>
+      <i class="fa fa-chevron-down"></i>
+    </div>
+    <div id="lang-options" class="lang-options">
+      
+      
+      
+        <div class="lang-option" lang-code="zh-tw" lang-name="繁體中文" lang-url="/post/f1fee151-70b1-4cb1-9b2b-8a45493dec3f/">
+          <span class="flag-icon flag-icon-zh-tw"></span>
+          <span class="lang-name">繁體中文</span>
+        </div>
+      
+      
+    </div>
+  </div>
+</div>
+
+      
+<div class="copyright">
+  &copy;
+  <span itemprop="copyrightYear">
+    
+    
+    
+    2021 - 2025
+    
+    
+  </span>
+  <span class="with-love">
+    <i class="fa fa-copyright"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">EricChen</span>
+</div>
+
+<div class="powered-by">
+  
+  %!(EXTRA string=<a href='https://gohugo.io' title='0.143.1' target='_blank'>Hugo</a> &amp; <a href='https://github.com/hugo-next/hugo-theme-next' title='4.7.2' target='_blank'>Hugo NexT.Muse</a>)
+</div>
+
+
+
+
+
+ 
+
+
+
+
+
+    </div>
+  </footer>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    
+    
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"clipboard":{"js":{"file":"dist/clipboard.min.js","name":"clipboard","version":"2.0.11"}},"comments":false,"expired":false,"isHome":false,"isPage":true,"path":"f1fee151-70b1-4cb1-9b2b-8a45493dec3f","permalink":"//localhost:1414/post/f1fee151-70b1-4cb1-9b2b-8a45493dec3f/","title":"RaspberryPi","toc":false,"waline3":{"pagecnt":{"alias":"@waline/client","alias_name":"waline","file":"dist/pageview.js","name":"pageview","version":"3.3.0"}}}</script>
+  
+
+
+
+ 
+  
+  <script type="text/javascript" src="//localhost:1414/js/3rd/animejs/3.2.2/anime.min.js" crossorigin="anonymous" defer></script>
+ 
+  
+  <script type="text/javascript" src="//localhost:1414/js/3rd/viewerjs/1.11.6/viewer.min.js" crossorigin="anonymous" defer></script>
+
+
+<script class="next-config" data-name="main" type="application/json">{"bookmark":{"color":"#222","enable":true,"save":"manual"},"copybtn":true,"darkmode":false,"giscus":{"cfg":{"category":"Comments","categoryid":null,"emit":false,"inputposition":"top","mapping":"title","reactions":false,"repo":"username/repo-name","repoid":null,"theme":"preferred_color_scheme"},"js":"https://giscus.app/client.js"},"hostname":"//localhost:1414/","i18n":{"ds_day":" 天前","ds_days":" 天 ","ds_hour":" 小時前","ds_hours":" 小時 ","ds_just":"剛剛","ds_min":" 分鐘前","ds_mins":" 分鐘","ds_month":" 個月前","ds_years":" 年 ","empty":"沒有找到任何搜索結果：${query}","hits":"找到 ${hits} 個搜索結果","hits_time":"找到 ${hits} 個搜索結果（用時 ${time} 毫秒）","placeholder":"搜索..."},"isMultiLang":true,"lang":"zh-TW","lazyload":false,"localSearch":{"enable":true,"limit":1000,"path":"/searchindexes.xml","preload":false,"topnperarticle":-1,"trigger":"auto","unescape":false},"motion":{"async":true,"enable":true,"transition":{"collheader":"fadeInLeft","postblock":"fadeIn","postbody":"fadeInDown","postheader":"fadeInDown","sidebar":"fadeInUp"}},"postmeta":{"comments":{"enable":false,"plugin":"waline3"},"views":{"enable":true,"plugin":"waline3"}},"root":"/","scheme":"Muse","share":{"addtoany":{"js":"https://static.addtoany.com/menu/page.js","locale":"zh-TW","num":8},"enable":true},"sidebar":{"display":"post","offset":12,"padding":18,"position":"right","width":264},"vendor":{"plugins":"local","router":{"name":"local","type":"modern","url":"//localhost:1414/js/3rd"}},"version":"4.7.2","waline3":{"cfg":{"emoji":false,"imguploader":false,"placeholder":"请文明发言哟 ヾ(≧▽≦*)o 可用快捷键选取表情符号：😀😄😁🥳👻👽👀🚄 (Window系统：Win+.，Mac系统：Control+Command+Space)","reaction":true,"reactiontext":["点赞","踩一下","得意","不屑","尴尬","睡觉"],"reactiontitle":"你认为这篇文章怎么样？","requiredmeta":["nick","mail"],"search":true,"serverurl":"https://walinejs.comment.lithub.cc","sofa":"快来发表你的意见吧 (≧∀≦)ゞ","wordlimit":200},"css":{"alias":"@waline/client","file":"dist/waline.min.css","name":"waline","version":"3.3.0"},"js":{"alias":"@waline/client","file":"dist/waline.js","name":"waline","version":"3.3.0"}}}</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+    
+  
+  
+
+
+
+
+
+  
+  
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<script type="text/javascript" src="/js/main.js?=1741103274" defer></script>
+
+
+
+
+
+  
+
+
+
+
+
+
+
+<script type="text/javascript" src="/js/clipboard.js?=1741103274" defer></script>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

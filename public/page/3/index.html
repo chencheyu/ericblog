@@ -1,0 +1,3124 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh-TW" data-theme="light">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1414&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)" />
+
+<meta name="generator" content="Hugo 0.143.1">
+<link rel="shortcut icon" type="image/x-icon" href="/imgs/icons/favicon.ico">
+<link rel="icon" type="image/x-icon" href="/imgs/icons/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="/imgs/icons/favicon_16x16_next.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/imgs/icons/favicon_32_32_next.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/imgs/icons/apple_touch_icon_next.png">
+<meta itemprop="name" content="哲佑碎碎念" />
+<meta itemprop="description" content="保持简单的易用性和强大的功能。" />
+<meta name="description" content="保持简单的易用性和强大的功能。" />
+
+
+
+
+<meta itemprop="image" content="//localhost:1414/imgs/hugo_next_avatar.png" />
+<meta itemprop="keywords" content="EricChen,NexT,主题,简单,强大" />
+
+
+<meta property="og:type" content="website" />
+<meta property="og:title" content="哲佑碎碎念" />
+<meta property="og:description" content="保持简单的易用性和强大的功能。" />
+<meta property="og:image" content="/imgs/hugo_next_avatar.png" />
+<meta property="og:image:width" content="312" />
+<meta property="og:image:height" content="312" />
+<meta property="og:image:type" content="image/jpeg/png/svg/jpg" />
+<meta property="og:url" content="//localhost:1414/"/>
+<meta property="og:site_name" content="哲佑碎碎念" />
+<meta property="og:locale" content="zh-TW"/>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <link type="text/css" rel="stylesheet" href="//localhost:1414/js/3rd/font-awesome/6.7.2/css/all.min.css" /> 
+
+  
+  <link type="text/css" rel="stylesheet" href="//localhost:1414/js/3rd/animate.css/3.1.1/animate.min.css" /> 
+
+  
+  <link type="text/css" rel="stylesheet" href="//localhost:1414/js/3rd/viewerjs/1.11.6/viewer.min.css" /> 
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/main.css?=1741103274">
+
+
+<style type="text/css">
+  .post-footer hr:after {
+    content: "~ 我可是有底线的哟 ~";
+  }
+
+  .flinks-list-footer hr:after {
+    content: "~ 我可是有底线的哟 ~";
+  }
+
+  
+  
+</style>
+
+
+
+
+  
+<script type="text/javascript">
+(function(){
+  localDB = {
+    set: function (key, value, ttl) {
+      if (ttl === 0) return;
+      const now = new Date();
+      const expiryDay = ttl * 86400000;
+      const item = {
+        value: value,
+        expiry: now.getTime() + expiryDay
+      };
+      localStorage.setItem(key, JSON.stringify(item));
+    },
+    get: function (key) {
+      const itemStr = localStorage.getItem(key);
+      if (!itemStr) {
+        return undefined;
+      }
+  
+      const item = JSON.parse(itemStr);
+      const now = new Date();
+  
+      if (now.getTime() > item.expiry) {
+        localStorage.removeItem(key);
+        return undefined;
+      }
+      return item.value;
+    }
+  };
+
+  theme = {
+    active: function() {
+      const localState = localDB.get('theme');
+      if (localState == undefined) return;
+      theme.toggle(localState);
+      window.matchMedia("(prefers-color-scheme: dark)").addListener(function (evt) {
+        theme.toggle(evt.matches ? 'dark' : 'light');
+      });
+    },
+
+    toggle: function (theme) {
+      document.documentElement.setAttribute('data-theme',  theme);
+      localDB.set('theme', theme, 2);
+      
+      const iframe = document.querySelector('iframe.giscus-frame');
+      if (iframe) {
+        const config = { setConfig: { theme: theme } };
+        iframe.contentWindow.postMessage({ giscus: config }, 'https://giscus.app');
+      }
+    }
+  };
+
+  theme.active();
+})(window);
+</script>
+
+
+
+
+  <script type="text/javascript">
+document.addEventListener('DOMContentLoaded', () => {
+  var script = document.createElement('script');
+    
+  script.charset = "UTF-8";
+  script.src     = "https:\/\/busuanzi.ibruce.info\/busuanzi\/2.3\/busuanzi.pure.mini.js";
+  script.async   = false
+  script.defer   = true
+  
+  document.head.appendChild(script);
+  script.onload = function() {
+    NexT.utils.fmtBusuanzi();
+  }
+});
+</script>
+  
+
+
+
+  <title>哲佑碎碎念</title>
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage"  class="use-motion" >
+  <div class="headband"></div>
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner">
+        
+<div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+    
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">哲佑碎碎念</h1>
+      <i class="logo-line"></i>
+    </a>
+    
+      <p class="site-subtitle" itemprop="description">为 Hugo 打造的主题</p>
+    
+    
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+      
+      <i class="fa fa-search fa-fw fa-lg"></i>
+      
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">    
+  
+    
+    <li class="menu-item menu-item-home">
+      <a href="/" class=" hvr-icon-pulse  menu-item-active" rel="section">
+        <i class="fa fa-home hvr-icon"></i>首頁
+        
+        
+      </a>
+      
+    </li>
+  
+    
+    <li class="menu-item menu-item-about">
+      <a href="/about.html" class=" hvr-icon-pulse " rel="section">
+        <i class="fa fa-user hvr-icon"></i>關於
+        
+        
+      </a>
+      
+    </li>
+  
+    
+    <li class="menu-item menu-item-flinks">
+      <a href="/flinks.html" class=" hvr-icon-pulse " rel="section">
+        <i class="fa fa-thumbs-up hvr-icon"></i>友情
+        
+        
+      </a>
+      
+    </li>
+  
+    
+    <li class="menu-item menu-item-example">
+      <a href="/" class="menus-parent hvr-icon-pulse " rel="section">
+        <i class="fa fa-angles-down hvr-icon"></i>语法示例
+        <span class="menu-item-shrink-icon"><i class="fa fa-angle-right"></i></span>
+        
+      </a>
+      
+      <ul class="menu-children">
+      
+      
+        <li class="menu-child-item">
+          <a href="/demo/syntax-highlighting.html" class="hvr-icon-pulse " rel="section">
+            <i class="fa hvr-icon"></i>语法高亮
+          </a>
+        </li>
+      
+      
+        <li class="menu-child-item">
+          <a href="/demo/math-formula.html" class="hvr-icon-pulse " rel="section">
+            <i class="fa hvr-icon"></i>数学公式
+          </a>
+        </li>
+      
+      
+        <li class="menu-child-item">
+          <a href="/demo/mermaid-charts.html" class="hvr-icon-pulse " rel="section">
+            <i class="fa hvr-icon"></i>流程图
+          </a>
+        </li>
+      
+      </ul>
+      
+    </li>
+  
+    
+    <li class="menu-item menu-item-archives">
+      <a href="/archives/" class=" hvr-icon-pulse " rel="section">
+        <i class="fa fa-archive hvr-icon"></i>歸檔
+        
+        
+      </a>
+      
+    </li>
+  
+    
+    <li class="menu-item menu-item-categories">
+      <a href="/categories/" class=" hvr-icon-pulse " rel="section">
+        <i class="fa fa-tags hvr-icon"></i>標籤
+        
+        
+      </a>
+      
+    </li>
+  
+    
+    <li class="menu-item menu-item-commonweal">
+      <a href="/404.html" class=" hvr-icon-pulse " rel="section">
+        <i class="fa fa-heartbeat hvr-icon"></i>公益 404
+        
+        
+      </a>
+      
+    </li>
+      
+
+  
+    <li class="menu-item menu-item-search">
+      <a role="button" class="popup-trigger hvr-icon-pulse">
+        <i class="fa fa-search fa-fw hvr-icon"></i>搜索
+      </a>
+    </li>
+  
+  </ul>
+</nav>
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+      
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+      
+    </div>
+  </div>
+
+      </div>
+      
+      
+      <div class="toggle sidebar-toggle" role="button">
+  <span class="toggle-line"></span>
+  <span class="toggle-line"></span>
+  <span class="toggle-line"></span>
+</div>
+
+<aside class="sidebar">
+  <div class="sidebar-inner sidebar-overview-active">
+    <ul class="sidebar-nav">
+      <li class="sidebar-nav-toc">
+        文章目錄
+      </li>
+      <li class="sidebar-nav-overview">
+        站點概覽
+      </li>
+    </ul>
+    <div class="sidebar-panel-container">
+      
+      <div class="post-toc-wrap sidebar-panel">
+        <div class="post-toc animated"><nav id="TableOfContents"></nav></div>
+      </div>
+      
+      <div class="site-overview-wrap sidebar-panel">
+        
+<div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  
+    <img class="site-author-image" itemprop="image" alt="EricChen"
+    src="/imgs/img-lazy-loading.gif" data-src="/imgs/hugo_next_avatar.png">
+  
+  <p class="site-author-name" itemprop="name">EricChen</p>
+  <div class="site-description" itemprop="description">保持简单的易用性和强大的功能。</div>
+</div>
+
+
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+    <div class="site-state-item site-state-posts">
+      <a href="/archives/">
+        <span class="site-state-item-count">74</span>
+        <span class="site-state-item-name">日誌</span>
+      </a>
+    </div>
+    <div class="site-state-item site-state-categories">
+      <a href="/categories/">
+        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-name">分類</span>
+      </a>
+    </div>
+    <div class="site-state-item site-state-tags">
+      <a href="/tags/">
+        <span class="site-state-item-count">47</span>
+        <span class="site-state-item-name">標籤</span>
+      </a>
+    </div>
+  </nav>
+</div>
+
+
+<div class="links-of-social site-overview-item animated">
+
+
+
+
+
+
+  <span class="links-of-social-item">
+    <a href="https://gitlab.com/joe1231231218" title="Gitlab → https://gitlab.com/joe1231231218" rel="noopener"  class="hvr-icon-pulse"  target="_blank">
+      
+      <i class="fab fa-gitlab fa-fw  hvr-icon "></i>
+      
+      
+      Gitlab
+      
+    </a>
+  </span>
+
+
+
+
+
+  <span class="links-of-social-item">
+    <a href="mailto:connection@ericchen.name" title="E-Mail → mailto:connection@ericchen.name" rel="noopener"  class="hvr-icon-pulse"  target="_blank">
+      
+      <i class="fa fa-envelope fa-fw  hvr-icon "></i>
+      
+      
+      E-Mail
+      
+    </a>
+  </span>
+
+</div>
+
+
+
+<div class="cc-license animated" itemprop="license">
+  <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" class="cc-opacity" rel="noopener" target="_blank" title="共享知識">
+    <img src="/imgs/img-lazy-loading.gif" data-src="/imgs/cc/big/by_nc_sa.svg" alt="共享知識">
+  </a>
+</div>
+
+
+
+
+<div class="links-of-blogroll site-overview-item animated">
+  <div class="links-of-blogroll-title">
+    
+    <i class="fa fa-globe fa-fw"></i>
+    
+    友情链接
+  </div>
+  <ul class="links-of-blogroll-list">
+    
+    
+    
+    
+    <li class="links-of-blogroll-item">
+      <a href="https://gitee.com/hugo-next/hugo-theme-next" title="https://gitee.com/hugo-next/hugo-theme-next" target="_blank">Hugo-NexT</a>
+    </li>
+    
+    
+    
+    
+    <li class="links-of-blogroll-item">
+      <a href="https://lisenhui.cn" title="https://lisenhui.cn" target="_blank">凡梦星尘空间站</a>
+    </li>
+    
+  </ul>
+</div>
+
+        
+        
+        
+      </div>
+    </div>
+  </div>
+
+  
+    
+<div id="siteinfo-card-widget" class="sidebar-card-widget">
+  <div class="item-headline">
+    <i class="fas fa-chart-line"></i>
+    <span>網站資訊</span>
+  </div>
+  <div class="siteinfo">
+    <div class="siteinfo-item">
+      <div class="item-name"><i class="fa-solid fa-calendar-check"></i>已運行：</div>
+      <div class="item-count" id="runTimes" data-publishdate="0001-01-01 00:00:00 &#43;0000 UTC"></div>
+    </div>
+    
+    
+    <div class="siteinfo-item">
+      <div class="item-name">
+        <i class="fas fa fa-user"></i>總訪客數：
+      </div>
+      <div class="item-count" id="busuanzi_value_site_uv"><i class="fa fa-sync fa-spin"></i></div>
+    </div>
+    <div class="siteinfo-item">
+      <div class="item-name">
+        <i class="fas fa fa-eye"></i>頁面瀏覽：
+      </div>
+      <div class="item-count" id="busuanzi_value_site_pv"><i class="fa fa-sync fa-spin"></i></div>
+    </div> 
+        
+        
+    
+    <div class="siteinfo-item">
+      <div class="item-name"><i class="fa fa-font"></i>總字數：</div>
+      <div class="item-count" id="wordsCount" data-count="98389"></div>
+    </div>
+    <div class="siteinfo-item">
+      <div class="item-name"><i class="fa fa-mug-hot"></i>閱讀約：</div>
+      <div class="item-count" id="readTimes" data-times="245"></div>
+    </div>
+    <div class="siteinfo-item">
+      <div class="item-name"><i class="fa fa-clock-rotate-left"></i>最後更新於：</div>
+      <div class="item-count" id="last-push-date" data-lastpushdate="2025-02-28 00:00:00 &#43;0000 UTC"></div>
+    </div>
+  </div>
+</div>
+  
+
+  
+  <div class="sidebar-card-widget back-to-top-card">
+    <div class="back-to-top animated" role="button" aria-label="">
+      <i class="fa fa-arrow-up"></i>
+      <span>0%</span>
+    </div>
+  </div>
+  
+</aside>
+<div class="sidebar-dimmer"></div>
+
+      
+    </header>
+    
+    <div class="tool-buttons" >
+  
+  
+  <div id="goto-i18n-translate" class="button"  title="多語言翻譯">
+    <i class="fas fa-globe"></i>
+  </div> 
+  
+  <div id="toggle-theme" class="button" title="深淺模式切換">
+    <i class="fas fa-adjust"></i>
+  </div>
+   
+</div>
+
+
+  <div class="reading-progress-bar"></div>
+
+
+
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+
+
+
+<a href="https://github.com/hugo-next" rel="noopener external nofollow noreferrer" target="_blank" title="Follow me on GitHub" class="exturl github-corner">
+  <svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg>
+</a>
+
+
+
+
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+    <div class="main-inner index posts-expand">
+      
+      
+
+
+
+  <div class="post-block">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    
+    <link itemprop="mainEntityOfPage" href="//localhost:1414/post/9bea2131-a6e8-4a63-8f12-2b41a49f32fd/">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/imgs/hugo_next_avatar.png">
+      <meta itemprop="name" content="EricChen">
+    </span>
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="EricChen">
+      <meta itemprop="description" content="保持简单的易用性和强大的功能。">
+    </span>
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Mitigating Integer Overflow in C">
+      <meta itemprop="description" content="現代編譯器 Integer Overflow 行為調查
+
+
+    Mitigating Integer Overflow in C
+    
+    
+    
+ 
+
+    Side
+    
+    
+    
+
+Overflow
+
+整數超過其所能表示的最大值
+在 C 中，沒有任何語言層級的功能能處理
+
+  
+    Can’t calculate 3 * 128 (384) with 8 bit unsigned storage:
+1 1000 0000 (9th bit has nowhere to go…) == 128
+8 value bits (representation range of 0-255)">
+    </span>
+    
+    <header class="post-header">
+      
+ <h2  class="post-title" itemprop="name headline">
+  
+  
+  
+  <a href="/post/9bea2131-a6e8-4a63-8f12-2b41a49f32fd/" itemprop="url" class="post-title-link">Mitigating Integer Overflow in C</a>
+  
+  
+   </h2> 
+
+<div class="post-meta-container">
+  <div class="post-meta-items">
+    
+
+
+<span class="post-meta-item">
+  <span class="post-meta-item-icon">
+    <i class="fas fa-solid fa-calendar"></i>
+  </span>
+  <span class="post-meta-item-text" title="發表於">
+    發表於：
+  </span>
+  <time title="創建時間：2024-08-02T00:00:00&#43;00:00 CST" itemprop="dateCreated datePublished" datetime="2024-08-02 00:00:00 &#43;0000 UTC">
+    2024-08-02
+  </time>
+</span>
+
+    
+
+
+    
+
+
+    
+      
+        
+
+
+<span class="post-meta-item" title="瀏覽">
+  <span class="post-meta-item-icon">
+    <i class="fas fa-solid fa-eye"></i>
+  </span>
+  <span class="post-meta-item-text">
+  瀏覽：
+  </span>
+  <span id="pageview-count" data-path="/post/9bea2131-a6e8-4a63-8f12-2b41a49f32fd/">
+    <i class="fa fa-sync fa-spin"></i>
+  </span>
+</span>
+
+      
+      
+        
+  </div>
+  
+</div>
+
+    </header>
+    
+    <div class="post-body " itemprop="articleBody">
+      
+
+  
+  <p>現代編譯器 Integer Overflow 行為調查
+
+<a href="https://www.youtube.com/watch?v=PLcZkgHCk90" title="Mitigating Integer Overflow in C" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+    Mitigating Integer Overflow in C
+    
+    <i class="fa fa-external-link-alt"></i>
+    
+</a> 
+<a href="https://static.sched.com/hosted_files/lssna24/fb/Mitigating%20Integer%20Overflow%20in%20C.pdf" title="Side" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+    Side
+    
+    <i class="fa fa-external-link-alt"></i>
+    
+</a></p>
+<h4 id="overflow">Overflow
+<a class="header-anchor" href="#overflow"></a>
+</h4><p>整數超過其所能表示的最大值
+在 C 中，沒有任何語言層級的功能能處理</p>
+
+  <blockquote>
+    <p>Can’t calculate 3 * 128 (384) with 8 bit unsigned storage:
+1 1000 0000 (9th bit has nowhere to go…) == 128
+8 value bits (representation range of 0-255)</p>
+  
+
+
+    </div>
+    <footer class="post-footer">
+      
+ 
+
+<div class="post-button">
+  <a class="btn" href="/post/9bea2131-a6e8-4a63-8f12-2b41a49f32fd/#more" rel="contents">
+    閱讀全文 &raquo;
+  </a>
+</div>
+
+<div class="post-eof"></div>
+
+
+    </footer>
+  </article>
+</div>
+
+  <div class="post-block">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    
+    <link itemprop="mainEntityOfPage" href="//localhost:1414/demo/image-viewer.html">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/imgs/hugo_next_avatar.png">
+      <meta itemprop="name" content="EricChen">
+    </span>
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="EricChen">
+      <meta itemprop="description" content="保持简单的易用性和强大的功能。">
+    </span>
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="图像浏览工具 ">
+      <meta itemprop="description" content="默认会对文章内的图片， 进行图片浏览，点击图片可以查看大图，点击空白处可以关闭。">
+    </span>
+    
+    <header class="post-header">
+      
+ <h2  class="post-title" itemprop="name headline">
+  
+  
+  
+  <a href="/demo/image-viewer.html" itemprop="url" class="post-title-link">图像浏览工具 </a>
+  
+  
+   </h2> 
+
+<div class="post-meta-container">
+  <div class="post-meta-items">
+    
+
+
+<span class="post-meta-item">
+  <span class="post-meta-item-icon">
+    <i class="fas fa-solid fa-calendar"></i>
+  </span>
+  <span class="post-meta-item-text" title="發表於">
+    發表於：
+  </span>
+  <time title="創建時間：2024-07-21T10:28:12&#43;08:00 CST" itemprop="dateCreated datePublished" datetime="2024-07-21 10:28:12 &#43;0800 CST">
+    2024-07-21
+  </time>
+</span>
+
+    
+
+
+    
+
+<span class="post-meta-item">
+  <span class="post-meta-item-icon">
+    <i class="fas fa-solid fa-folder-open"></i>
+  </span>
+  <span class="post-meta-item-text" title="分類於">
+    分類於：
+  </span>
+  <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+    <a href="/categories/%E7%A4%BA%E4%BE%8B%E6%96%87%E7%AB%A0/" itemprop="url" rel="index">
+      <span itemprop="name">示例文章</span>
+    </a>
+  </span>
+</span>
+
+
+    
+      
+        
+
+
+<span class="post-meta-item" title="瀏覽">
+  <span class="post-meta-item-icon">
+    <i class="fas fa-solid fa-eye"></i>
+  </span>
+  <span class="post-meta-item-text">
+  瀏覽：
+  </span>
+  <span id="pageview-count" data-path="/demo/image-viewer.html">
+    <i class="fa fa-sync fa-spin"></i>
+  </span>
+</span>
+
+      
+      
+        
+  </div>
+  
+</div>
+
+    </header>
+    
+    <div class="post-body " itemprop="articleBody">
+      
+
+  
+  <p>本主题自带图像浏览器功能，支持对文章区域内出现的图片进行浏览，点击图片可以查看大图，点击空白处可以关闭。不需要配置任何参数，只要在文章里面相应的位置添加图片信息即可 。</p>
+  
+
+
+    </div>
+    <footer class="post-footer">
+      
+ 
+
+<div class="post-button">
+  <a class="btn" href="/demo/image-viewer.html#more" rel="contents">
+    閱讀全文 &raquo;
+  </a>
+</div>
+
+<div class="post-eof"></div>
+
+
+    </footer>
+  </article>
+</div>
+
+  <div class="post-block">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    
+    <link itemprop="mainEntityOfPage" href="//localhost:1414/post/b3e3b48f-c104-4741-a33e-f024d009b60d/">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/imgs/hugo_next_avatar.png">
+      <meta itemprop="name" content="EricChen">
+    </span>
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="EricChen">
+      <meta itemprop="description" content="保持简单的易用性和强大的功能。">
+    </span>
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Bash">
+      <meta itemprop="description" content="重導向
+
+
+
+
+1
+2
+
+
+echo &#34;echo&#34; &gt; log.txt
+echo &#34;echo&#34; 2&gt; log.txt
+
+
+
+第一行會重導向 stdout，第二行會重導向 stderr
+
+
+
+1
+
+
+ls /dev 2&gt;&amp;1 | tee result.txt
+
+
+
+把 stdout and stderr 複製到 result.txt 及銀幕
+tee -a result.txt 附加在 result.txt 原內容後面
+Echo
+
+
+
+
+1
+
+
+echo &#34;Date $(date)&#34;
+
+
+
+直接在 echo 中呼叫指令">
+    </span>
+    
+    <header class="post-header">
+      
+ <h2  class="post-title" itemprop="name headline">
+  
+  
+  
+  <a href="/post/b3e3b48f-c104-4741-a33e-f024d009b60d/" itemprop="url" class="post-title-link">Bash</a>
+  
+  
+   </h2> 
+
+<div class="post-meta-container">
+  <div class="post-meta-items">
+    
+
+
+<span class="post-meta-item">
+  <span class="post-meta-item-icon">
+    <i class="fas fa-solid fa-calendar"></i>
+  </span>
+  <span class="post-meta-item-text" title="發表於">
+    發表於：
+  </span>
+  <time title="創建時間：2024-07-08T00:00:00&#43;00:00 CST" itemprop="dateCreated datePublished" datetime="2024-07-08 00:00:00 &#43;0000 UTC">
+    2024-07-08
+  </time>
+</span>
+
+    
+
+
+    
+
+
+    
+      
+        
+
+
+<span class="post-meta-item" title="瀏覽">
+  <span class="post-meta-item-icon">
+    <i class="fas fa-solid fa-eye"></i>
+  </span>
+  <span class="post-meta-item-text">
+  瀏覽：
+  </span>
+  <span id="pageview-count" data-path="/post/b3e3b48f-c104-4741-a33e-f024d009b60d/">
+    <i class="fa fa-sync fa-spin"></i>
+  </span>
+</span>
+
+      
+      
+        
+  </div>
+  
+</div>
+
+    </header>
+    
+    <div class="post-body " itemprop="articleBody">
+      
+
+  
+  <h3 id="重導向">重導向
+<a class="header-anchor" href="#%e9%87%8d%e5%b0%8e%e5%90%91"></a>
+</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-0-1"><a class="lnlinks" href="#hl-0-1">1</a>
+</span><span class="lnt" id="hl-0-2"><a class="lnlinks" href="#hl-0-2">2</a>
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;echo&#34;</span> &gt; log.txt
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;echo&#34;</span> 2&gt; log.txt</span></span></code></pre></td></tr></table>
+</div>
+</div>
+
+<p>第一行會重導向 stdout，第二行會重導向 stderr</p>
+
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-1-1"><a class="lnlinks" href="#hl-1-1">1</a>
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ls /dev 2&gt;<span class="p">&amp;</span><span class="m">1</span> <span class="p">|</span> tee result.txt</span></span></code></pre></td></tr></table>
+</div>
+</div>
+
+<p>把 stdout and stderr 複製到 result.txt 及銀幕
+<code>tee -a result.txt</code> 附加在 result.txt 原內容後面</p>
+<h3 id="echo">Echo
+<a class="header-anchor" href="#echo"></a>
+</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-2-1"><a class="lnlinks" href="#hl-2-1">1</a>
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;Date </span><span class="k">$(</span>date<span class="k">)</span><span class="s2">&#34;</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+
+<p>直接在 echo 中呼叫指令</p>
+  
+
+
+    </div>
+    <footer class="post-footer">
+      
+ 
+
+<div class="post-button">
+  <a class="btn" href="/post/b3e3b48f-c104-4741-a33e-f024d009b60d/#more" rel="contents">
+    閱讀全文 &raquo;
+  </a>
+</div>
+
+<div class="post-eof"></div>
+
+
+    </footer>
+  </article>
+</div>
+
+  <div class="post-block">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    
+    <link itemprop="mainEntityOfPage" href="//localhost:1414/post/7e28fec8-2657-4833-8f82-d04150658085/">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/imgs/hugo_next_avatar.png">
+      <meta itemprop="name" content="EricChen">
+    </span>
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="EricChen">
+      <meta itemprop="description" content="保持简单的易用性和强大的功能。">
+    </span>
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Ch340.md">
+      <meta itemprop="description" content="簡介
+
+南京沁恒 (WCH) 製造的 USB 轉 RS-232,Uert 晶片，在國際上不好買
+有很多廠商選用
+中文文件(比英文完整)
+
+
+    
+    
+
+英文文件
+
+
+    
+    
+
+型號選擇
+
+使用 CH341 的驅動 
+
+    CH341SER
+    
+    
+    
+ CH341 支援轉換 i2c,spi">
+    </span>
+    
+    <header class="post-header">
+      
+ <h2  class="post-title" itemprop="name headline">
+  
+  
+  
+  <a href="/post/7e28fec8-2657-4833-8f82-d04150658085/" itemprop="url" class="post-title-link">Ch340.md</a>
+  
+  
+   </h2> 
+
+<div class="post-meta-container">
+  <div class="post-meta-items">
+    
+
+
+<span class="post-meta-item">
+  <span class="post-meta-item-icon">
+    <i class="fas fa-solid fa-calendar"></i>
+  </span>
+  <span class="post-meta-item-text" title="發表於">
+    發表於：
+  </span>
+  <time title="創建時間：2024-06-29T00:00:00&#43;00:00 CST" itemprop="dateCreated datePublished" datetime="2024-06-29 00:00:00 &#43;0000 UTC">
+    2024-06-29
+  </time>
+</span>
+
+    
+
+
+    
+
+
+    
+      
+        
+
+
+<span class="post-meta-item" title="瀏覽">
+  <span class="post-meta-item-icon">
+    <i class="fas fa-solid fa-eye"></i>
+  </span>
+  <span class="post-meta-item-text">
+  瀏覽：
+  </span>
+  <span id="pageview-count" data-path="/post/7e28fec8-2657-4833-8f82-d04150658085/">
+    <i class="fa fa-sync fa-spin"></i>
+  </span>
+</span>
+
+      
+      
+        
+  </div>
+  
+</div>
+
+    </header>
+    
+    <div class="post-body " itemprop="articleBody">
+      
+
+  
+  <h3 id="簡介">簡介
+<a class="header-anchor" href="#%e7%b0%a1%e4%bb%8b"></a>
+</h3><p>南京沁恒 (WCH) 製造的 USB 轉 RS-232,Uert 晶片，在國際上不好買
+有很多廠商選用
+中文文件(比英文完整)
+
+<a href="../290c0572-2350-474f-8e8e-dc13e5e46912.pdf" title="" >
+    
+    
+</a>
+英文文件
+
+<a href="../fa4821e5-7f5a-44db-9ecc-084664907e3b.pdf" title="" >
+    
+    
+</a></p>
+<h3 id="型號選擇">型號選擇
+<a class="header-anchor" href="#%e5%9e%8b%e8%99%9f%e9%81%b8%e6%93%87"></a>
+</h3><p>使用 CH341 的驅動 
+<a href="https://www.wch.cn/downloads/CH341SER_ZIP.html" title="CH341SER" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+    CH341SER
+    
+    <i class="fa fa-external-link-alt"></i>
+    
+</a> CH341 支援轉換 i2c,spi</p>
+  
+
+
+    </div>
+    <footer class="post-footer">
+      
+ 
+
+<div class="post-button">
+  <a class="btn" href="/post/7e28fec8-2657-4833-8f82-d04150658085/#more" rel="contents">
+    閱讀全文 &raquo;
+  </a>
+</div>
+
+<div class="post-eof"></div>
+
+
+    </footer>
+  </article>
+</div>
+
+  <div class="post-block">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    
+    <link itemprop="mainEntityOfPage" href="//localhost:1414/post/bb4160f4-dc8e-432c-8631-6100b47b6814/">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/imgs/hugo_next_avatar.png">
+      <meta itemprop="name" content="EricChen">
+    </span>
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="EricChen">
+      <meta itemprop="description" content="保持简单的易用性和强大的功能。">
+    </span>
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Rclone">
+      <meta itemprop="description" content="
+
+    rclone
+    
+    
+    
+
+Rclone 是一个用于管理云存储上的文件的命令行程序
+Windows 上設定檔在 C:\Users\eric2_chen\AppData\Roaming\rclone\rclone.conf
+--interactive 在執行操作前先詢問，通常在錯誤復原中使用
+config
+
+
+
+
+1
+
+
+rclone config
+
+
+
+命令行互動式設定遠端
+ls
+
+
+
+
+1
+2
+
+
+rclone ls note:
+rclone ls --max-depth 1 note: 
+
+
+
+列出遠端資源，遠端一定要加冒號 note:，會遞迴的列出檔案樹上的全部資源
+--max-depth 1 用以限制只列一級資料夾">
+    </span>
+    
+    <header class="post-header">
+      
+ <h2  class="post-title" itemprop="name headline">
+  
+  
+  
+  <a href="/post/bb4160f4-dc8e-432c-8631-6100b47b6814/" itemprop="url" class="post-title-link">Rclone</a>
+  
+  
+   </h2> 
+
+<div class="post-meta-container">
+  <div class="post-meta-items">
+    
+
+
+<span class="post-meta-item">
+  <span class="post-meta-item-icon">
+    <i class="fas fa-solid fa-calendar"></i>
+  </span>
+  <span class="post-meta-item-text" title="發表於">
+    發表於：
+  </span>
+  <time title="創建時間：2024-06-28T00:00:00&#43;00:00 CST" itemprop="dateCreated datePublished" datetime="2024-06-28 00:00:00 &#43;0000 UTC">
+    2024-06-28
+  </time>
+</span>
+
+    
+
+
+    
+
+
+    
+      
+        
+
+
+<span class="post-meta-item" title="瀏覽">
+  <span class="post-meta-item-icon">
+    <i class="fas fa-solid fa-eye"></i>
+  </span>
+  <span class="post-meta-item-text">
+  瀏覽：
+  </span>
+  <span id="pageview-count" data-path="/post/bb4160f4-dc8e-432c-8631-6100b47b6814/">
+    <i class="fa fa-sync fa-spin"></i>
+  </span>
+</span>
+
+      
+      
+        
+  </div>
+  
+</div>
+
+    </header>
+    
+    <div class="post-body " itemprop="articleBody">
+      
+
+  
+  <p>
+<a href="https://rclone.org/" title="rclone" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+    rclone
+    
+    <i class="fa fa-external-link-alt"></i>
+    
+</a>
+Rclone 是一个用于管理云存储上的文件的命令行程序
+Windows 上設定檔在 <code>C:\Users\eric2_chen\AppData\Roaming\rclone\rclone.conf</code>
+<code>--interactive</code> 在執行操作前先詢問，通常在錯誤復原中使用</p>
+<h3 id="config">config
+<a class="header-anchor" href="#config"></a>
+</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-0-1"><a class="lnlinks" href="#hl-0-1">1</a>
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">rclone config</span></span></code></pre></td></tr></table>
+</div>
+</div>
+
+<p>命令行互動式設定遠端</p>
+<h3 id="ls">ls
+<a class="header-anchor" href="#ls"></a>
+</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-1-1"><a class="lnlinks" href="#hl-1-1">1</a>
+</span><span class="lnt" id="hl-1-2"><a class="lnlinks" href="#hl-1-2">2</a>
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">rclone ls note:
+</span></span><span class="line"><span class="cl">rclone ls --max-depth <span class="m">1</span> note: </span></span></code></pre></td></tr></table>
+</div>
+</div>
+
+<p>列出遠端資源，遠端一定要加冒號 <code>note:</code>，會遞迴的列出檔案樹上的全部資源
+<code>--max-depth 1</code> 用以限制只列一級資料夾</p>
+  
+
+
+    </div>
+    <footer class="post-footer">
+      
+ 
+
+<div class="post-button">
+  <a class="btn" href="/post/bb4160f4-dc8e-432c-8631-6100b47b6814/#more" rel="contents">
+    閱讀全文 &raquo;
+  </a>
+</div>
+
+<div class="post-eof"></div>
+
+
+    </footer>
+  </article>
+</div>
+
+  <div class="post-block">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    
+    <link itemprop="mainEntityOfPage" href="//localhost:1414/post/48bb57d6-f1e1-4508-b798-1bea1cb67465/">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/imgs/hugo_next_avatar.png">
+      <meta itemprop="name" content="EricChen">
+    </span>
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="EricChen">
+      <meta itemprop="description" content="保持简单的易用性和强大的功能。">
+    </span>
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Markdown Parse Survey On Js and Python">
+      <meta itemprop="description" content="目標
+
+取得一份 markdown 的 ast，在遍歷樹結構時同時修改節點值，不會增刪節點，最後在轉換回 markdown
+具體專案需求請見
+最基本要支援 common markdown，註腳可選
+結論
+
+只有 
+
+    mistune
+    
+    
+    
+ 可以做到">
+    </span>
+    
+    <header class="post-header">
+      
+ <h2  class="post-title" itemprop="name headline">
+  
+  
+  
+  <a href="/post/48bb57d6-f1e1-4508-b798-1bea1cb67465/" itemprop="url" class="post-title-link">Markdown Parse Survey On Js and Python</a>
+  
+  
+   </h2> 
+
+<div class="post-meta-container">
+  <div class="post-meta-items">
+    
+
+
+<span class="post-meta-item">
+  <span class="post-meta-item-icon">
+    <i class="fas fa-solid fa-calendar"></i>
+  </span>
+  <span class="post-meta-item-text" title="發表於">
+    發表於：
+  </span>
+  <time title="創建時間：2024-06-26T00:00:00&#43;00:00 CST" itemprop="dateCreated datePublished" datetime="2024-06-26 00:00:00 &#43;0000 UTC">
+    2024-06-26
+  </time>
+</span>
+
+    
+
+
+    
+
+
+    
+      
+        
+
+
+<span class="post-meta-item" title="瀏覽">
+  <span class="post-meta-item-icon">
+    <i class="fas fa-solid fa-eye"></i>
+  </span>
+  <span class="post-meta-item-text">
+  瀏覽：
+  </span>
+  <span id="pageview-count" data-path="/post/48bb57d6-f1e1-4508-b798-1bea1cb67465/">
+    <i class="fa fa-sync fa-spin"></i>
+  </span>
+</span>
+
+      
+      
+        
+  </div>
+  
+</div>
+
+    </header>
+    
+    <div class="post-body " itemprop="articleBody">
+      
+
+  
+  <h3 id="目標">目標
+<a class="header-anchor" href="#%e7%9b%ae%e6%a8%99"></a>
+</h3><p>取得一份 markdown 的 ast，在遍歷樹結構時同時修改節點值，不會增刪節點，最後在轉換回 markdown
+具體專案需求請見
+最基本要支援 common markdown，註腳可選</p>
+<h3 id="結論">結論
+<a class="header-anchor" href="#%e7%b5%90%e8%ab%96"></a>
+</h3><p>只有 
+<a href="https://mistune.lepture.com/en/latest/index.html" title="mistune" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+    mistune
+    
+    <i class="fa fa-external-link-alt"></i>
+    
+</a> 可以做到</p>
+  
+
+
+    </div>
+    <footer class="post-footer">
+      
+ 
+
+<div class="post-button">
+  <a class="btn" href="/post/48bb57d6-f1e1-4508-b798-1bea1cb67465/#more" rel="contents">
+    閱讀全文 &raquo;
+  </a>
+</div>
+
+<div class="post-eof"></div>
+
+
+    </footer>
+  </article>
+</div>
+
+  <div class="post-block">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    
+    <link itemprop="mainEntityOfPage" href="//localhost:1414/post/4b7b09c2-a42a-44c6-b942-36f2fd3929db/">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/imgs/hugo_next_avatar.png">
+      <meta itemprop="name" content="EricChen">
+    </span>
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="EricChen">
+      <meta itemprop="description" content="保持简单的易用性和强大的功能。">
+    </span>
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="LinuxLink">
+      <meta itemprop="description" content="執行期尋找 shared library 的流程
+
+
+若 shared library 名稱內有 “/”，表示它是路徑，直接用這個路徑找
+若 executable 內有定義 DT_RPATH 沒定義 DT_RUNPATH，從 DT_RPATH 列的目錄裡找
+從 LD_LIBRARY_PATH 列的目錄裡找
+從 DT_RUNPATH 列的目錄裡找
+從 ldconfig 產生的 cache 內找 (/etc/ld.so.cache)
+從 OS 的預設位置找: 先找 /lib 再找 /usr/lib
+
+Tool
+
+
+
+
+1
+
+
+nm -Du /bin/ls  
+
+
+
+列出未定義需要外部提供的 symbol">
+    </span>
+    
+    <header class="post-header">
+      
+ <h2  class="post-title" itemprop="name headline">
+  
+  
+  
+  <a href="/post/4b7b09c2-a42a-44c6-b942-36f2fd3929db/" itemprop="url" class="post-title-link">LinuxLink</a>
+  
+  
+   </h2> 
+
+<div class="post-meta-container">
+  <div class="post-meta-items">
+    
+
+
+<span class="post-meta-item">
+  <span class="post-meta-item-icon">
+    <i class="fas fa-solid fa-calendar"></i>
+  </span>
+  <span class="post-meta-item-text" title="發表於">
+    發表於：
+  </span>
+  <time title="創建時間：2024-06-21T00:00:00&#43;00:00 CST" itemprop="dateCreated datePublished" datetime="2024-06-21 00:00:00 &#43;0000 UTC">
+    2024-06-21
+  </time>
+</span>
+
+    
+
+
+    
+
+
+    
+      
+        
+
+
+<span class="post-meta-item" title="瀏覽">
+  <span class="post-meta-item-icon">
+    <i class="fas fa-solid fa-eye"></i>
+  </span>
+  <span class="post-meta-item-text">
+  瀏覽：
+  </span>
+  <span id="pageview-count" data-path="/post/4b7b09c2-a42a-44c6-b942-36f2fd3929db/">
+    <i class="fa fa-sync fa-spin"></i>
+  </span>
+</span>
+
+      
+      
+        
+  </div>
+  
+</div>
+
+    </header>
+    
+    <div class="post-body " itemprop="articleBody">
+      
+
+  
+  <h3 id="執行期尋找-shared-library-的流程">執行期尋找 shared library 的流程
+<a class="header-anchor" href="#%e5%9f%b7%e8%a1%8c%e6%9c%9f%e5%b0%8b%e6%89%be-shared-library-%e7%9a%84%e6%b5%81%e7%a8%8b"></a>
+</h3><ol>
+<li>若 shared library 名稱內有 “/”，表示它是路徑，直接用這個路徑找</li>
+<li>若 executable 內有定義 DT_RPATH 沒定義 DT_RUNPATH，從 DT_RPATH 列的目錄裡找</li>
+<li>從 LD_LIBRARY_PATH 列的目錄裡找</li>
+<li>從 DT_RUNPATH 列的目錄裡找</li>
+<li>從 ldconfig 產生的 cache 內找 (/etc/ld.so.cache)</li>
+<li>從 OS 的預設位置找: 先找 /lib 再找 /usr/lib</li>
+</ol>
+<h3 id="tool">Tool
+<a class="header-anchor" href="#tool"></a>
+</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-0-1"><a class="lnlinks" href="#hl-0-1">1</a>
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">nm -Du /bin/ls  </span></span></code></pre></td></tr></table>
+</div>
+</div>
+
+<p>列出未定義需要外部提供的 symbol</p>
+  
+
+
+    </div>
+    <footer class="post-footer">
+      
+ 
+
+<div class="post-button">
+  <a class="btn" href="/post/4b7b09c2-a42a-44c6-b942-36f2fd3929db/#more" rel="contents">
+    閱讀全文 &raquo;
+  </a>
+</div>
+
+<div class="post-eof"></div>
+
+
+    </footer>
+  </article>
+</div>
+
+  <div class="post-block">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    
+    <link itemprop="mainEntityOfPage" href="//localhost:1414/post/446c60e9-03ca-4944-b3ab-5c73e1ed00ee/">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/imgs/hugo_next_avatar.png">
+      <meta itemprop="name" content="EricChen">
+    </span>
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="EricChen">
+      <meta itemprop="description" content="保持简单的易用性和强大的功能。">
+    </span>
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="可變參數的 C 函數">
+      <meta itemprop="description" content="VariadicFunction
+
+
+
+
+1
+2
+3
+4
+5
+6
+7
+8
+
+
+#include &lt;stdarg.h&gt;  
+void error(const char *fmt, ...)  
+{  
+va_list argp;  
+va_start(argp, fmt);  
+vfprintf(stderr, fmt, argp);  
+va_end(argp);  
+}  
+
+
+
+
+用 ...表達接受可變數量的參數，va_list argp 是一個指向第一個可變參數的指針，無法知道長度及型態，
+
+    沒有可移植
+    
+) 的方法把可變數量的參數傳給下一個可變數量的參數的函式，有一些相依CPU的
+
+    方法
+    
+    
+    
+，有部分可變數量參數的函式也提供接收 va_list  的版本如 vprintf, vfprintf, vsprintf">
+    </span>
+    
+    <header class="post-header">
+      
+ <h2  class="post-title" itemprop="name headline">
+  
+  
+  
+  <a href="/post/446c60e9-03ca-4944-b3ab-5c73e1ed00ee/" itemprop="url" class="post-title-link">可變參數的 C 函數</a>
+  
+  
+   </h2> 
+
+<div class="post-meta-container">
+  <div class="post-meta-items">
+    
+
+
+<span class="post-meta-item">
+  <span class="post-meta-item-icon">
+    <i class="fas fa-solid fa-calendar"></i>
+  </span>
+  <span class="post-meta-item-text" title="發表於">
+    發表於：
+  </span>
+  <time title="創建時間：2024-06-21T00:00:00&#43;00:00 CST" itemprop="dateCreated datePublished" datetime="2024-06-21 00:00:00 &#43;0000 UTC">
+    2024-06-21
+  </time>
+</span>
+
+    
+
+
+    
+
+
+    
+      
+        
+
+
+<span class="post-meta-item" title="瀏覽">
+  <span class="post-meta-item-icon">
+    <i class="fas fa-solid fa-eye"></i>
+  </span>
+  <span class="post-meta-item-text">
+  瀏覽：
+  </span>
+  <span id="pageview-count" data-path="/post/446c60e9-03ca-4944-b3ab-5c73e1ed00ee/">
+    <i class="fa fa-sync fa-spin"></i>
+  </span>
+</span>
+
+      
+      
+        
+  </div>
+  
+</div>
+
+    </header>
+    
+    <div class="post-body " itemprop="articleBody">
+      
+
+  
+  <h3 id="variadicfunction">VariadicFunction
+<a class="header-anchor" href="#variadicfunction"></a>
+</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-0-1"><a class="lnlinks" href="#hl-0-1">1</a>
+</span><span class="lnt" id="hl-0-2"><a class="lnlinks" href="#hl-0-2">2</a>
+</span><span class="lnt" id="hl-0-3"><a class="lnlinks" href="#hl-0-3">3</a>
+</span><span class="lnt" id="hl-0-4"><a class="lnlinks" href="#hl-0-4">4</a>
+</span><span class="lnt" id="hl-0-5"><a class="lnlinks" href="#hl-0-5">5</a>
+</span><span class="lnt" id="hl-0-6"><a class="lnlinks" href="#hl-0-6">6</a>
+</span><span class="lnt" id="hl-0-7"><a class="lnlinks" href="#hl-0-7">7</a>
+</span><span class="lnt" id="hl-0-8"><a class="lnlinks" href="#hl-0-8">8</a>
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdarg.h&gt;  </span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="kt">void</span> <span class="nf">error</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">fmt</span><span class="p">,</span> <span class="p">...)</span>  
+</span></span><span class="line"><span class="cl"><span class="p">{</span>  
+</span></span><span class="line"><span class="cl"><span class="n">va_list</span> <span class="n">argp</span><span class="p">;</span>  
+</span></span><span class="line"><span class="cl"><span class="nf">va_start</span><span class="p">(</span><span class="n">argp</span><span class="p">,</span> <span class="n">fmt</span><span class="p">);</span>  
+</span></span><span class="line"><span class="cl"><span class="nf">vfprintf</span><span class="p">(</span><span class="n">stderr</span><span class="p">,</span> <span class="n">fmt</span><span class="p">,</span> <span class="n">argp</span><span class="p">);</span>  
+</span></span><span class="line"><span class="cl"><span class="nf">va_end</span><span class="p">(</span><span class="n">argp</span><span class="p">);</span>  
+</span></span><span class="line"><span class="cl"><span class="p">}</span>  
+</span></span></code></pre></td></tr></table>
+</div>
+</div>
+
+<p>用 <code>...</code>表達接受可變數量的參數，<code>va_list argp</code> 是一個指向第一個可變參數的指針，無法知道長度及型態，
+<a href="%5Bhttps://c-faq.com/varargs/invvarargs.19920714.html%5D%28https://c-faq.com/varargs/invvarargs.19920714.html" title="沒有可移植" >
+    沒有可移植
+    
+</a>) 的方法把可變數量的參數傳給下一個可變數量的參數的函式，有一些相依CPU的
+<a href="https://c-faq.com/varargs/invvarargs.19890604.html" title="方法" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+    方法
+    
+    <i class="fa fa-external-link-alt"></i>
+    
+</a>，有部分可變數量參數的函式也提供接收 <code>va_list </code> 的版本如 <code>vprintf, vfprintf, vsprintf</code></p>
+  
+
+
+    </div>
+    <footer class="post-footer">
+      
+ 
+
+<div class="post-button">
+  <a class="btn" href="/post/446c60e9-03ca-4944-b3ab-5c73e1ed00ee/#more" rel="contents">
+    閱讀全文 &raquo;
+  </a>
+</div>
+
+<div class="post-eof"></div>
+
+
+    </footer>
+  </article>
+</div>
+
+  <div class="post-block">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    
+    <link itemprop="mainEntityOfPage" href="//localhost:1414/post/8c34c80e-aff7-4435-bb96-53b6aff10ae5/">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/imgs/hugo_next_avatar.png">
+      <meta itemprop="name" content="EricChen">
+    </span>
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="EricChen">
+      <meta itemprop="description" content="保持简单的易用性和强大的功能。">
+    </span>
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Forgetting the history of Unix is coding us into a corner">
+      <meta itemprop="description" content="簡介
+
+
+
+    Forgetting the history of Unix is coding us into a corner
+    
+    
+    
+
+FOSDEM 2024 的演講，從 UNIX 歷史來講解 Everything is a File 的概念，蠻詳細的，對每一個時代的 UNIX 都有介紹">
+    </span>
+    
+    <header class="post-header">
+      
+ <h2  class="post-title" itemprop="name headline">
+  
+  
+  
+  <a href="/post/8c34c80e-aff7-4435-bb96-53b6aff10ae5/" itemprop="url" class="post-title-link">Forgetting the history of Unix is coding us into a corner</a>
+  
+  
+   </h2> 
+
+<div class="post-meta-container">
+  <div class="post-meta-items">
+    
+
+
+<span class="post-meta-item">
+  <span class="post-meta-item-icon">
+    <i class="fas fa-solid fa-calendar"></i>
+  </span>
+  <span class="post-meta-item-text" title="發表於">
+    發表於：
+  </span>
+  <time title="創建時間：2024-03-23T00:00:00&#43;00:00 CST" itemprop="dateCreated datePublished" datetime="2024-03-23 00:00:00 &#43;0000 UTC">
+    2024-03-23
+  </time>
+</span>
+
+    
+
+
+    
+
+
+    
+      
+        
+
+
+<span class="post-meta-item" title="瀏覽">
+  <span class="post-meta-item-icon">
+    <i class="fas fa-solid fa-eye"></i>
+  </span>
+  <span class="post-meta-item-text">
+  瀏覽：
+  </span>
+  <span id="pageview-count" data-path="/post/8c34c80e-aff7-4435-bb96-53b6aff10ae5/">
+    <i class="fa fa-sync fa-spin"></i>
+  </span>
+</span>
+
+      
+      
+        
+  </div>
+  
+</div>
+
+    </header>
+    
+    <div class="post-body " itemprop="articleBody">
+      
+
+  
+  <h3 id="簡介">簡介
+<a class="header-anchor" href="#%e7%b0%a1%e4%bb%8b"></a>
+</h3><p>
+<a href="https://www.theregister.com/2024/02/16/what_is_unix/" title="Forgetting the history of Unix is coding us into a corner" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+    Forgetting the history of Unix is coding us into a corner
+    
+    <i class="fa fa-external-link-alt"></i>
+    
+</a></p>
+<p>FOSDEM 2024 的演講，從 UNIX 歷史來講解 Everything is a File 的概念，蠻詳細的，對每一個時代的 UNIX 都有介紹</p>
+  
+
+
+    </div>
+    <footer class="post-footer">
+      
+ 
+
+<div class="post-button">
+  <a class="btn" href="/post/8c34c80e-aff7-4435-bb96-53b6aff10ae5/#more" rel="contents">
+    閱讀全文 &raquo;
+  </a>
+</div>
+
+<div class="post-eof"></div>
+
+
+    </footer>
+  </article>
+</div>
+
+  <div class="post-block">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    
+    <link itemprop="mainEntityOfPage" href="//localhost:1414/post/2ae157a5-afc0-4b65-bf04-4da2d97e14f0/">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/imgs/hugo_next_avatar.png">
+      <meta itemprop="name" content="EricChen">
+    </span>
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="EricChen">
+      <meta itemprop="description" content="保持简单的易用性和强大的功能。">
+    </span>
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Balanced Allocations with the Choice of Noise">
+      <meta itemprop="description" content="
+
+    Balanced Allocations with the Choice of Noise
+    
+    
+    
+">
+    </span>
+    
+    <header class="post-header">
+      
+ <h2  class="post-title" itemprop="name headline">
+  
+  
+  
+  <a href="/post/2ae157a5-afc0-4b65-bf04-4da2d97e14f0/" itemprop="url" class="post-title-link">Balanced Allocations with the Choice of Noise</a>
+  
+  
+   </h2> 
+
+<div class="post-meta-container">
+  <div class="post-meta-items">
+    
+
+
+<span class="post-meta-item">
+  <span class="post-meta-item-icon">
+    <i class="fas fa-solid fa-calendar"></i>
+  </span>
+  <span class="post-meta-item-text" title="發表於">
+    發表於：
+  </span>
+  <time title="創建時間：2024-03-18T00:00:00&#43;00:00 CST" itemprop="dateCreated datePublished" datetime="2024-03-18 00:00:00 &#43;0000 UTC">
+    2024-03-18
+  </time>
+</span>
+
+    
+
+
+    
+
+
+    
+      
+        
+
+
+<span class="post-meta-item" title="瀏覽">
+  <span class="post-meta-item-icon">
+    <i class="fas fa-solid fa-eye"></i>
+  </span>
+  <span class="post-meta-item-text">
+  瀏覽：
+  </span>
+  <span id="pageview-count" data-path="/post/2ae157a5-afc0-4b65-bf04-4da2d97e14f0/">
+    <i class="fa fa-sync fa-spin"></i>
+  </span>
+</span>
+
+      
+      
+        
+  </div>
+  
+</div>
+
+    </header>
+    
+    <div class="post-body " itemprop="articleBody">
+      
+
+  
+  <p>
+<a href="https://dl.acm.org/doi/10.1145/3625386" title="Balanced Allocations with the Choice of Noise" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+    Balanced Allocations with the Choice of Noise
+    
+    <i class="fa fa-external-link-alt"></i>
+    
+</a></p>
+  
+
+
+    </div>
+    <footer class="post-footer">
+      
+ 
+
+<div class="post-button">
+  <a class="btn" href="/post/2ae157a5-afc0-4b65-bf04-4da2d97e14f0/#more" rel="contents">
+    閱讀全文 &raquo;
+  </a>
+</div>
+
+<div class="post-eof"></div>
+
+
+    </footer>
+  </article>
+</div>
+
+  <div class="post-block">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    
+    <link itemprop="mainEntityOfPage" href="//localhost:1414/post/99524a79-96b2-4c1a-bc09-289d54c63c9c/">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/imgs/hugo_next_avatar.png">
+      <meta itemprop="name" content="EricChen">
+    </span>
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="EricChen">
+      <meta itemprop="description" content="保持简单的易用性和强大的功能。">
+    </span>
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Linux Serial">
+      <meta itemprop="description" content="Serial Device
+
+
+RS-485
+
+接口洞很多，但只需要兩條線，原則上地線不用接，半雙工
+指令
+
+原則上 Serial Device 會出現在 /dev/ttyS[數字] 路徑上
+
+
+
+1
+
+
+setserial -g /dev/ttyS[0123]
+
+
+
+列出串口晶片名及中斷
+
+
+
+1
+
+
+dmesg | grep tty
+
+
+
+
+
+
+1
+
+
+stty -F /dev/ttyS0 -a
+
+
+
+顯示該 Serial Device 的連線設定資料，其他應用程式連接時也可能會更改">
+    </span>
+    
+    <header class="post-header">
+      
+ <h2  class="post-title" itemprop="name headline">
+  
+  
+  
+  <a href="/post/99524a79-96b2-4c1a-bc09-289d54c63c9c/" itemprop="url" class="post-title-link">Linux Serial</a>
+  
+  
+   </h2> 
+
+<div class="post-meta-container">
+  <div class="post-meta-items">
+    
+
+
+<span class="post-meta-item">
+  <span class="post-meta-item-icon">
+    <i class="fas fa-solid fa-calendar"></i>
+  </span>
+  <span class="post-meta-item-text" title="發表於">
+    發表於：
+  </span>
+  <time title="創建時間：2024-03-01T00:00:00&#43;00:00 CST" itemprop="dateCreated datePublished" datetime="2024-03-01 00:00:00 &#43;0000 UTC">
+    2024-03-01
+  </time>
+</span>
+
+    
+
+
+    
+
+
+    
+      
+        
+
+
+<span class="post-meta-item" title="瀏覽">
+  <span class="post-meta-item-icon">
+    <i class="fas fa-solid fa-eye"></i>
+  </span>
+  <span class="post-meta-item-text">
+  瀏覽：
+  </span>
+  <span id="pageview-count" data-path="/post/99524a79-96b2-4c1a-bc09-289d54c63c9c/">
+    <i class="fa fa-sync fa-spin"></i>
+  </span>
+</span>
+
+      
+      
+        
+  </div>
+  
+</div>
+
+    </header>
+    
+    <div class="post-body " itemprop="articleBody">
+      
+
+  
+  <h3 id="serial-device">Serial Device
+<a class="header-anchor" href="#serial-device"></a>
+</h3><p><img src="/imgs/img-lazy-loading.gif" data-src="../abaf8766-a644-4999-ad7b-f7e525d316dd.png" alt=""  /></p>
+<h4 id="rs-485">RS-485
+<a class="header-anchor" href="#rs-485"></a>
+</h4><p>接口洞很多，但只需要兩條線，原則上地線不用接，半雙工</p>
+<h3 id="指令">指令
+<a class="header-anchor" href="#%e6%8c%87%e4%bb%a4"></a>
+</h3><p>原則上 Serial Device 會出現在 <code>/dev/ttyS[數字]</code> 路徑上</p>
+
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-0-1"><a class="lnlinks" href="#hl-0-1">1</a>
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">setserial -g /dev/ttyS<span class="o">[</span>0123<span class="o">]</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+
+<p>列出串口晶片名及中斷</p>
+
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-1-1"><a class="lnlinks" href="#hl-1-1">1</a>
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">dmesg <span class="p">|</span> grep tty</span></span></code></pre></td></tr></table>
+</div>
+</div>
+
+
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-2-1"><a class="lnlinks" href="#hl-2-1">1</a>
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">stty -F /dev/ttyS0 -a</span></span></code></pre></td></tr></table>
+</div>
+</div>
+
+<p>顯示該 Serial Device 的連線設定資料，其他應用程式連接時也可能會更改</p>
+  
+
+
+    </div>
+    <footer class="post-footer">
+      
+ 
+
+<div class="post-button">
+  <a class="btn" href="/post/99524a79-96b2-4c1a-bc09-289d54c63c9c/#more" rel="contents">
+    閱讀全文 &raquo;
+  </a>
+</div>
+
+<div class="post-eof"></div>
+
+
+    </footer>
+  </article>
+</div>
+
+  <div class="post-block">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    
+    <link itemprop="mainEntityOfPage" href="//localhost:1414/post/abd3de75-6e22-4fec-a859-031d0dc09f57/">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/imgs/hugo_next_avatar.png">
+      <meta itemprop="name" content="EricChen">
+    </span>
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="EricChen">
+      <meta itemprop="description" content="保持简单的易用性和强大的功能。">
+    </span>
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="
+
+
+    MQTT Explorer
+    
+    
+    
+
+好用的 MQTT 多平台 GUI 客戶端，有可攜版本
+
+
+    MqttX
+    
+    
+    
+
+EMQX cloud 寫的，畫面良好，mqtt 有的設定都有
+">
+    </span>
+    
+    <header class="post-header">
+      
+ <h2  class="post-title" itemprop="name headline">
+  
+  
+  
+  <a href="/post/abd3de75-6e22-4fec-a859-031d0dc09f57/" itemprop="url" class="post-title-link"></a>
+  
+  
+   </h2> 
+
+<div class="post-meta-container">
+  <div class="post-meta-items">
+    
+
+
+<span class="post-meta-item">
+  <span class="post-meta-item-icon">
+    <i class="fas fa-solid fa-calendar"></i>
+  </span>
+  <span class="post-meta-item-text" title="發表於">
+    發表於：
+  </span>
+  <time title="創建時間：2024-02-23T00:00:00&#43;00:00 CST" itemprop="dateCreated datePublished" datetime="2024-02-23 00:00:00 &#43;0000 UTC">
+    2024-02-23
+  </time>
+</span>
+
+    
+
+
+    
+
+
+    
+      
+        
+
+
+<span class="post-meta-item" title="瀏覽">
+  <span class="post-meta-item-icon">
+    <i class="fas fa-solid fa-eye"></i>
+  </span>
+  <span class="post-meta-item-text">
+  瀏覽：
+  </span>
+  <span id="pageview-count" data-path="/post/abd3de75-6e22-4fec-a859-031d0dc09f57/">
+    <i class="fa fa-sync fa-spin"></i>
+  </span>
+</span>
+
+      
+      
+        
+  </div>
+  
+</div>
+
+    </header>
+    
+    <div class="post-body " itemprop="articleBody">
+      
+
+  
+  <ul>
+<li>
+<a href="https://mqtt-explorer.com/" title="MQTT Explorer" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+    MQTT Explorer
+    
+    <i class="fa fa-external-link-alt"></i>
+    
+</a>
+好用的 MQTT 多平台 GUI 客戶端，有可攜版本</li>
+<li>
+<a href="https://mqttx.app/" title="MqttX" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+    MqttX
+    
+    <i class="fa fa-external-link-alt"></i>
+    
+</a>
+EMQX cloud 寫的，畫面良好，mqtt 有的設定都有</li>
+</ul>
+  
+
+
+    </div>
+    <footer class="post-footer">
+      
+ 
+
+<div class="post-button">
+  <a class="btn" href="/post/abd3de75-6e22-4fec-a859-031d0dc09f57/#more" rel="contents">
+    閱讀全文 &raquo;
+  </a>
+</div>
+
+<div class="post-eof"></div>
+
+
+    </footer>
+  </article>
+</div>
+
+  <div class="post-block">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    
+    <link itemprop="mainEntityOfPage" href="//localhost:1414/post/2e29d3fa-9701-4855-98f4-2e0e4bf6d359/">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/imgs/hugo_next_avatar.png">
+      <meta itemprop="name" content="EricChen">
+    </span>
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="EricChen">
+      <meta itemprop="description" content="保持简单的易用性和强大的功能。">
+    </span>
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="MQTT.md">
+      <meta itemprop="description" content="簡介
+
+用於 IOT 裝置的消息傳送協議，可在不穩定的網路下運作
+Publish Subscribe
+
+Publisher 向一個 topic 發布消息， Subscriber 從訂閱的 topic 中接收消息，在同一個 topic 中 Publisher 和 Subscriber 都可以有多個客戶端同時使用
+Topic
+
+
+UTF-8 string
+如Germany/Bavaria/car/2382340923453/latitude 用 / 表示層級
+訂閱時可以使用通配符，&#43; 選取同一層級，# 選取同一層級及往下所有層級，如# 表示機器上所有的 topic, Topic 區分大小寫
+客戶端在發布或訂閱主題之前不需要建立所需的主題。代理接受每個有效主題，無需任何事先初始化。
+前綴 $SYS/ 表示 broker 內部狀態，不會被 # 選取
+雖然可以，但不建議斜線開頭
+
+QOS
+
+
+0 只傳送一次，射後不理
+1 自少傳送一次，訊息可能會重複
+2 一定只傳送一次
+QOS 會引響 broker 與客戶端的封包發送量
+QOS,封包數
+0,1
+1,2
+2,4
+Publisher 和 Subscriber 可以使用不同的 QOS
+
+持久化
+
+
+broker 會記住 Subscriber 的訂閱，當同一個 ClientId 重新連線時
+當 QOS 為 1 和 2 時維持尚未確認消息
+ClientId 應特定於每個客戶和經紀商。如果代理不需要維護任何狀態，則 MQTT 3.1.1 允許使用空 ClientId。但是，此連線必須將 clean_session 標誌設為 true，否則代理將拒絕該連線。
+clean_session 為 True 時表示不需要持久化
+
+Retain
+
+原則上，broker 不會保留 Publish 的訊息，訊息要不被傳送給 Subscriber 要不被拋棄，Publish 的 Retain 選項會讓 broker 保留最後一則訊息">
+    </span>
+    
+    <header class="post-header">
+      
+ <h2  class="post-title" itemprop="name headline">
+  
+  
+  
+  <a href="/post/2e29d3fa-9701-4855-98f4-2e0e4bf6d359/" itemprop="url" class="post-title-link">MQTT.md</a>
+  
+  
+   </h2> 
+
+<div class="post-meta-container">
+  <div class="post-meta-items">
+    
+
+
+<span class="post-meta-item">
+  <span class="post-meta-item-icon">
+    <i class="fas fa-solid fa-calendar"></i>
+  </span>
+  <span class="post-meta-item-text" title="發表於">
+    發表於：
+  </span>
+  <time title="創建時間：2024-02-22T00:00:00&#43;00:00 CST" itemprop="dateCreated datePublished" datetime="2024-02-22 00:00:00 &#43;0000 UTC">
+    2024-02-22
+  </time>
+</span>
+
+    
+
+
+    
+
+
+    
+      
+        
+
+
+<span class="post-meta-item" title="瀏覽">
+  <span class="post-meta-item-icon">
+    <i class="fas fa-solid fa-eye"></i>
+  </span>
+  <span class="post-meta-item-text">
+  瀏覽：
+  </span>
+  <span id="pageview-count" data-path="/post/2e29d3fa-9701-4855-98f4-2e0e4bf6d359/">
+    <i class="fa fa-sync fa-spin"></i>
+  </span>
+</span>
+
+      
+      
+        
+  </div>
+  
+</div>
+
+    </header>
+    
+    <div class="post-body " itemprop="articleBody">
+      
+
+  
+  <h3 id="簡介">簡介
+<a class="header-anchor" href="#%e7%b0%a1%e4%bb%8b"></a>
+</h3><p>用於 IOT 裝置的消息傳送協議，可在不穩定的網路下運作</p>
+<h3 id="publish-subscribe">Publish Subscribe
+<a class="header-anchor" href="#publish-subscribe"></a>
+</h3><p>Publisher 向一個 topic 發布消息， Subscriber 從訂閱的 topic 中接收消息，在同一個 topic 中 Publisher 和 Subscriber 都可以有多個客戶端同時使用</p>
+<h3 id="topic">Topic
+<a class="header-anchor" href="#topic"></a>
+</h3><ul>
+<li>UTF-8 string</li>
+<li>如<code>Germany/Bavaria/car/2382340923453/latitude</code> 用 <code>/</code> 表示層級</li>
+<li>訂閱時可以使用通配符，<code>+</code> 選取同一層級，<code>#</code> 選取同一層級及往下所有層級，如<code>#</code> 表示機器上所有的 topic, Topic 區分大小寫</li>
+<li>客戶端在發布或訂閱主題之前不需要建立所需的主題。代理接受每個有效主題，無需任何事先初始化。</li>
+<li>前綴 <code>$SYS/</code> 表示 broker 內部狀態，不會被 <code>#</code> 選取</li>
+<li>雖然可以，但不建議斜線開頭</li>
+</ul>
+<h3 id="qos">QOS
+<a class="header-anchor" href="#qos"></a>
+</h3><ul>
+<li>0 只傳送一次，射後不理</li>
+<li>1 自少傳送一次，訊息可能會重複</li>
+<li>2 一定只傳送一次
+QOS 會引響 broker 與客戶端的封包發送量
+QOS,封包數
+0,1
+1,2
+2,4
+Publisher 和 Subscriber 可以使用不同的 QOS</li>
+</ul>
+<h3 id="持久化">持久化
+<a class="header-anchor" href="#%e6%8c%81%e4%b9%85%e5%8c%96"></a>
+</h3><ul>
+<li>broker 會記住 Subscriber 的訂閱，當同一個 ClientId 重新連線時</li>
+<li>當 QOS 為 1 和 2 時維持尚未確認消息</li>
+<li>ClientId 應特定於每個客戶和經紀商。如果代理不需要維護任何狀態，則 MQTT 3.1.1 允許使用空 ClientId。但是，此連線必須將 clean_session 標誌設為 true，否則代理將拒絕該連線。</li>
+<li>clean_session 為 True 時表示不需要持久化</li>
+</ul>
+<h3 id="retain">Retain
+<a class="header-anchor" href="#retain"></a>
+</h3><p>原則上，broker 不會保留 Publish 的訊息，訊息要不被傳送給 Subscriber 要不被拋棄，Publish 的 Retain 選項會讓 broker 保留最後一則訊息</p>
+  
+
+
+    </div>
+    <footer class="post-footer">
+      
+ 
+
+<div class="post-button">
+  <a class="btn" href="/post/2e29d3fa-9701-4855-98f4-2e0e4bf6d359/#more" rel="contents">
+    閱讀全文 &raquo;
+  </a>
+</div>
+
+<div class="post-eof"></div>
+
+
+    </footer>
+  </article>
+</div>
+
+  <div class="post-block">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    
+    <link itemprop="mainEntityOfPage" href="//localhost:1414/post/f882dda2-9843-4e2e-b4fe-6bc06a189b1a/">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/imgs/hugo_next_avatar.png">
+      <meta itemprop="name" content="EricChen">
+    </span>
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="EricChen">
+      <meta itemprop="description" content="保持简单的易用性和强大的功能。">
+    </span>
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Cherrypy Cookie">
+      <meta itemprop="description" content="cherrypy cookie
+
+概述
+
+他是用python的simple cookie，所以Morsel屬性該有的多有(屬性要小寫)，但她不能刪除只能設程過期
+Cookie 設定
+
+
+
+
+1
+2
+
+
+cherrypy.response.cookie[key] = value #設質  
+cherrypy.response.cookie[key][&#34;max-age&#34;] = 60*60*8 #有效期8小時
+
+
+
+Cookie 讀取
+
+
+
+
+1
+2
+
+
+cie = cherrypy.request.cookie.keys() #取得所有cookie  
+uid = cherrypy.request.cookie[&#34;uid&#34;].value
+
+
+
+設定跟讀取在不同物件上
+在cherrypy 18.5 上測試">
+    </span>
+    
+    <header class="post-header">
+      
+ <h2  class="post-title" itemprop="name headline">
+  
+  
+  
+  <a href="/post/f882dda2-9843-4e2e-b4fe-6bc06a189b1a/" itemprop="url" class="post-title-link">Cherrypy Cookie</a>
+  
+  
+   </h2> 
+
+<div class="post-meta-container">
+  <div class="post-meta-items">
+    
+
+
+<span class="post-meta-item">
+  <span class="post-meta-item-icon">
+    <i class="fas fa-solid fa-calendar"></i>
+  </span>
+  <span class="post-meta-item-text" title="發表於">
+    發表於：
+  </span>
+  <time title="創建時間：2024-02-18T00:00:00&#43;00:00 CST" itemprop="dateCreated datePublished" datetime="2024-02-18 00:00:00 &#43;0000 UTC">
+    2024-02-18
+  </time>
+</span>
+
+    
+
+
+    
+
+
+    
+      
+        
+
+
+<span class="post-meta-item" title="瀏覽">
+  <span class="post-meta-item-icon">
+    <i class="fas fa-solid fa-eye"></i>
+  </span>
+  <span class="post-meta-item-text">
+  瀏覽：
+  </span>
+  <span id="pageview-count" data-path="/post/f882dda2-9843-4e2e-b4fe-6bc06a189b1a/">
+    <i class="fa fa-sync fa-spin"></i>
+  </span>
+</span>
+
+      
+      
+        
+  </div>
+  
+</div>
+
+    </header>
+    
+    <div class="post-body " itemprop="articleBody">
+      
+
+  
+  <h1 id="cherrypy-cookie">cherrypy cookie
+<a class="header-anchor" href="#cherrypy-cookie"></a>
+</h1><h3 id="概述">概述
+<a class="header-anchor" href="#%e6%a6%82%e8%bf%b0"></a>
+</h3><p>他是用python的simple cookie，所以Morsel屬性該有的多有(屬性要小寫)，但她不能刪除只能設程過期</p>
+<h3 id="cookie-設定">Cookie 設定
+<a class="header-anchor" href="#cookie-%e8%a8%ad%e5%ae%9a"></a>
+</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-0-1"><a class="lnlinks" href="#hl-0-1">1</a>
+</span><span class="lnt" id="hl-0-2"><a class="lnlinks" href="#hl-0-2">2</a>
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">cherrypy</span><span class="o">.</span><span class="n">response</span><span class="o">.</span><span class="n">cookie</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span> <span class="c1">#設質  </span>
+</span></span><span class="line"><span class="cl"><span class="n">cherrypy</span><span class="o">.</span><span class="n">response</span><span class="o">.</span><span class="n">cookie</span><span class="p">[</span><span class="n">key</span><span class="p">][</span><span class="s2">&#34;max-age&#34;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">60</span><span class="o">*</span><span class="mi">60</span><span class="o">*</span><span class="mi">8</span> <span class="c1">#有效期8小時</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+
+<h3 id="cookie-讀取">Cookie 讀取
+<a class="header-anchor" href="#cookie-%e8%ae%80%e5%8f%96"></a>
+</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-1-1"><a class="lnlinks" href="#hl-1-1">1</a>
+</span><span class="lnt" id="hl-1-2"><a class="lnlinks" href="#hl-1-2">2</a>
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">cie</span> <span class="o">=</span> <span class="n">cherrypy</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">cookie</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span> <span class="c1">#取得所有cookie  </span>
+</span></span><span class="line"><span class="cl"><span class="n">uid</span> <span class="o">=</span> <span class="n">cherrypy</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">cookie</span><span class="p">[</span><span class="s2">&#34;uid&#34;</span><span class="p">]</span><span class="o">.</span><span class="n">value</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+
+<p>設定跟讀取在不同物件上<br>
+在cherrypy 18.5 上測試</p>
+  
+
+
+    </div>
+    <footer class="post-footer">
+      
+ 
+
+<div class="post-button">
+  <a class="btn" href="/post/f882dda2-9843-4e2e-b4fe-6bc06a189b1a/#more" rel="contents">
+    閱讀全文 &raquo;
+  </a>
+</div>
+
+<div class="post-eof"></div>
+
+
+    </footer>
+  </article>
+</div>
+
+  <div class="post-block">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    
+    <link itemprop="mainEntityOfPage" href="//localhost:1414/post/a2f21f02-edd8-4956-87a7-098edc267b7a/">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/imgs/hugo_next_avatar.png">
+      <meta itemprop="name" content="EricChen">
+    </span>
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="EricChen">
+      <meta itemprop="description" content="保持简单的易用性和强大的功能。">
+    </span>
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="OpenSsh.md">
+      <meta itemprop="description" content="交換openssh登入金鑰
+
+
+必須先做一把RSA出來(我只用puttygen讀出來的格式試過)
+公鑰放到遠端主機要登入使用者的家目錄 ~/.ssh/authorized_keys
+~/.ssh/authorized_keys 必須是 600
+~/.ssh 必須是 700
+使用者級組別必須與登入名稱一致
+
+以上在cent os7 及 6上試過">
+    </span>
+    
+    <header class="post-header">
+      
+ <h2  class="post-title" itemprop="name headline">
+  
+  
+  
+  <a href="/post/a2f21f02-edd8-4956-87a7-098edc267b7a/" itemprop="url" class="post-title-link">OpenSsh.md</a>
+  
+  
+   </h2> 
+
+<div class="post-meta-container">
+  <div class="post-meta-items">
+    
+
+
+<span class="post-meta-item">
+  <span class="post-meta-item-icon">
+    <i class="fas fa-solid fa-calendar"></i>
+  </span>
+  <span class="post-meta-item-text" title="發表於">
+    發表於：
+  </span>
+  <time title="創建時間：2024-02-18T00:00:00&#43;00:00 CST" itemprop="dateCreated datePublished" datetime="2024-02-18 00:00:00 &#43;0000 UTC">
+    2024-02-18
+  </time>
+</span>
+
+    
+
+
+    
+
+
+    
+      
+        
+
+
+<span class="post-meta-item" title="瀏覽">
+  <span class="post-meta-item-icon">
+    <i class="fas fa-solid fa-eye"></i>
+  </span>
+  <span class="post-meta-item-text">
+  瀏覽：
+  </span>
+  <span id="pageview-count" data-path="/post/a2f21f02-edd8-4956-87a7-098edc267b7a/">
+    <i class="fa fa-sync fa-spin"></i>
+  </span>
+</span>
+
+      
+      
+        
+  </div>
+  
+</div>
+
+    </header>
+    
+    <div class="post-body " itemprop="articleBody">
+      
+
+  
+  <h2 id="交換openssh登入金鑰">交換openssh登入金鑰
+<a class="header-anchor" href="#%e4%ba%a4%e6%8f%9bopenssh%e7%99%bb%e5%85%a5%e9%87%91%e9%91%b0"></a>
+</h2><ul>
+<li>必須先做一把RSA出來(我只用puttygen讀出來的格式試過)</li>
+<li>公鑰放到遠端主機要登入使用者的家目錄 ~/.ssh/authorized_keys</li>
+<li>~/.ssh/authorized_keys 必須是 600</li>
+<li>~/.ssh 必須是 700</li>
+<li>使用者級組別必須與登入名稱一致</li>
+</ul>
+<p>以上在cent os7 及 6上試過</p>
+  
+
+
+    </div>
+    <footer class="post-footer">
+      
+ 
+
+<div class="post-button">
+  <a class="btn" href="/post/a2f21f02-edd8-4956-87a7-098edc267b7a/#more" rel="contents">
+    閱讀全文 &raquo;
+  </a>
+</div>
+
+<div class="post-eof"></div>
+
+
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+  
+  
+
+
+<nav class="pagination">
+  
+  <a class="extend prev" rel="prev" href="/page/2/">
+    <i class="fa fa-angle-left"></i>
+  </a>
+  
+  
+      
+      
+        <a class="page-number" href="/">1</a>
+      
+      
+  
+      
+      
+        <a class="page-number" href="/page/2/">2</a>
+      
+      
+  
+      
+      
+        <span class="page-number current">3</span>
+      
+      
+  
+      
+      
+        <a class="page-number" href="/page/4/">4</a>
+      
+      
+  
+      
+      
+        <a class="page-number" href="/page/5/">5</a>
+      
+      
+  
+  
+  <a class="extend next" rel="next" href="/page/4/">
+    <i class="fa fa-angle-right"></i>
+  </a>
+  
+</nav>  
+
+      
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer-inner">
+      
+<div id="i18n-translate" class="i18n-translate">
+  <i class="fa fa-language"></i>
+  <div id="lang-select" class="lang-select">
+    <div id="lang-selected" class="selected-option">
+      <span class="flag-icon flag-icon-zh-tw"></span>
+      <span class="selected-language">繁體中文</span>
+      <i class="fa fa-chevron-down"></i>
+    </div>
+    <div id="lang-options" class="lang-options">
+      
+      
+      
+        <div class="lang-option" lang-code="zh-tw" lang-name="繁體中文" lang-url="/">
+          <span class="flag-icon flag-icon-zh-tw"></span>
+          <span class="lang-name">繁體中文</span>
+        </div>
+      
+      
+        <div class="lang-option" lang-code="en-us" lang-name="English" lang-url="/en-us/">
+          <span class="flag-icon flag-icon-en-us"></span>
+          <span class="lang-name">English</span>
+        </div>
+      
+      
+    </div>
+  </div>
+</div>
+
+      
+<div class="copyright">
+  &copy;
+  <span itemprop="copyrightYear">
+    
+    
+    
+    2021 - 2025
+    
+    
+  </span>
+  <span class="with-love">
+    <i class="fa fa-copyright"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">EricChen</span>
+</div>
+
+<div class="powered-by">
+  
+  %!(EXTRA string=<a href='https://gohugo.io' title='0.143.1' target='_blank'>Hugo</a> &amp; <a href='https://github.com/hugo-next/hugo-theme-next' title='4.7.2' target='_blank'>Hugo NexT.Muse</a>)
+</div>
+
+
+
+
+
+ 
+
+
+
+
+
+    </div>
+  </footer>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    
+    
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"comments":false,"expired":false,"isHome":true,"isPage":false,"path":"localhost:1414","permalink":"//localhost:1414/","title":"哲佑碎碎念","toc":false,"waline3":{"pagecnt":{"alias":"@waline/client","alias_name":"waline","file":"dist/pageview.js","name":"pageview","version":"3.3.0"}}}</script>
+  
+
+
+
+ 
+  
+  <script type="text/javascript" src="//localhost:1414/js/3rd/animejs/3.2.2/anime.min.js" crossorigin="anonymous" defer></script>
+ 
+  
+  <script type="text/javascript" src="//localhost:1414/js/3rd/viewerjs/1.11.6/viewer.min.js" crossorigin="anonymous" defer></script>
+
+
+<script class="next-config" data-name="main" type="application/json">{"bookmark":{"color":"#222","enable":true,"save":"manual"},"copybtn":true,"darkmode":false,"giscus":{"cfg":{"category":"Comments","categoryid":null,"emit":false,"inputposition":"top","mapping":"title","reactions":false,"repo":"username/repo-name","repoid":null,"theme":"preferred_color_scheme"},"js":"https://giscus.app/client.js"},"hostname":"//localhost:1414/","i18n":{"ds_day":" 天前","ds_days":" 天 ","ds_hour":" 小時前","ds_hours":" 小時 ","ds_just":"剛剛","ds_min":" 分鐘前","ds_mins":" 分鐘","ds_month":" 個月前","ds_years":" 年 ","empty":"沒有找到任何搜索結果：${query}","hits":"找到 ${hits} 個搜索結果","hits_time":"找到 ${hits} 個搜索結果（用時 ${time} 毫秒）","placeholder":"搜索..."},"isMultiLang":true,"lang":"zh-TW","lazyload":false,"localSearch":{"enable":true,"limit":1000,"path":"/searchindexes.xml","preload":false,"topnperarticle":-1,"trigger":"auto","unescape":false},"motion":{"async":true,"enable":true,"transition":{"collheader":"fadeInLeft","postblock":"fadeIn","postbody":"fadeInDown","postheader":"fadeInDown","sidebar":"fadeInUp"}},"postmeta":{"comments":{"enable":false,"plugin":"waline3"},"views":{"enable":true,"plugin":"waline3"}},"root":"/","scheme":"Muse","share":{"addtoany":{"js":"https://static.addtoany.com/menu/page.js","locale":"zh-TW","num":8},"enable":true},"sidebar":{"display":"post","offset":12,"padding":18,"position":"right","width":264},"vendor":{"plugins":"local","router":{"name":"local","type":"modern","url":"//localhost:1414/js/3rd"}},"version":"4.7.2","waline3":{"cfg":{"emoji":false,"imguploader":false,"placeholder":"请文明发言哟 ヾ(≧▽≦*)o 可用快捷键选取表情符号：😀😄😁🥳👻👽👀🚄 (Window系统：Win+.，Mac系统：Control+Command+Space)","reaction":true,"reactiontext":["点赞","踩一下","得意","不屑","尴尬","睡觉"],"reactiontitle":"你认为这篇文章怎么样？","requiredmeta":["nick","mail"],"search":true,"serverurl":"https://walinejs.comment.lithub.cc","sofa":"快来发表你的意见吧 (≧∀≦)ゞ","wordlimit":200},"css":{"alias":"@waline/client","file":"dist/waline.min.css","name":"waline","version":"3.3.0"},"js":{"alias":"@waline/client","file":"dist/waline.js","name":"waline","version":"3.3.0"}}}</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+    
+  
+  
+
+
+
+
+
+  
+  
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<script type="text/javascript" src="/js/main.js?=1741103274" defer></script>
+
+
+</body>
+
+</html>

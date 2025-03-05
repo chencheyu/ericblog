@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CS/Hardware on 哲佑碎碎念</title>
+    <link>//localhost:1414/tags/cs/hardware/</link>
+    <description>Recent content in CS/Hardware on 哲佑碎碎念</description>
+    <generator>Hugo</generator>
+    <language>zh-TW</language>
+    <lastBuildDate>Fri, 21 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1414/tags/cs/hardware/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Relay</title>
+      <link>//localhost:1414/post/41d12c14-72e4-430d-a80c-b1e11ca3b39b/</link>
+      <pubDate>Fri, 21 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1414/post/41d12c14-72e4-430d-a80c-b1e11ca3b39b/</guid>
+      <description>&lt;p&gt;繼電器&#xA;由 Coil 的電壓決定 COM 跟 NO 或 NC 導通&lt;/p&gt;&#xA;&lt;h2 id=&#34;pin&#34;&gt;Pin&#xA;&lt;a class=&#34;header-anchor&#34; href=&#34;#pin&#34;&gt;&lt;/a&gt;&#xA;&lt;/h2&gt;&lt;ul&gt;&#xA;&lt;li&gt;線圈（Coil）&lt;/li&gt;&#xA;&lt;li&gt;COM（Common）表示共接點&lt;/li&gt;&#xA;&lt;li&gt;NO（Normally Open）表示常開接點（俗稱A接點）。平常處於開路（斷路），線圈通電後才成為閉路（與共接點COM接通）&lt;/li&gt;&#xA;&lt;li&gt;NC（Normally Closed）表示常閉接點（俗稱B接點）。平常處於閉路（與共接點COM接通），線圈通電後才成為開路（斷路）&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;img src=&#34;//localhost:1414/imgs/img-lazy-loading.gif&#34; data-src=&#34;../2c571545-ba49-43fb-9052-e9f0f1d82beb.jpg&#34; alt=&#34;&#34;  /&gt;&#xA;I, Wasami007, CC BY-SA 2.5, &#xA;&lt;a href=&#34;https://commons.wikimedia.org/w/index.php?curid=2431299&#34; title=&#34;https://commons.wikimedia.org/w/index.php?curid=2431299&#34; rel=&#34;noopener external nofollow noreferrer&#34; target=&#34;_blank&#34; class=&#34; exturl&#34;&gt;&#xA;    https://commons.wikimedia.org/w/index.php?curid=2431299&#xA;    &#xA;    &lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&#xA;    &#xA;&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Arm Server</title>
+      <link>//localhost:1414/post/6d3eff97-5a1e-48e5-885f-18e2290b2c20/</link>
+      <pubDate>Tue, 29 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1414/post/6d3eff97-5a1e-48e5-885f-18e2290b2c20/</guid>
+      <description>&lt;h3 id=&#34;arm-tech-symposia-2024-wywynn&#34;&gt;Arm Tech Symposia 2024 Wywynn&#xA;&lt;a class=&#34;header-anchor&#34; href=&#34;#arm-tech-symposia-2024-wywynn&#34;&gt;&lt;/a&gt;&#xA;&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;//localhost:1414/imgs/img-lazy-loading.gif&#34; data-src=&#34;../1bfdd1b9-85ed-4543-8433-ba2efd82b889.jpg&#34; alt=&#34;&#34;  /&gt;&#xA;Amd 作過Arm Cpu&#xA;Wywynn 作過的 Arm base server&#xA;&lt;img src=&#34;//localhost:1414/imgs/img-lazy-loading.gif&#34; data-src=&#34;../9b6917f0-933d-405c-83bb-7a30fd36ca5a.jpg&#34; alt=&#34;&#34;  /&gt;&lt;/p&gt;&#xA;&lt;p&gt;每個機架 100-300 W 耗能&#xA;直接冷卻晶片&#xA;AI 晶片可能需要互聯&#xA;&lt;img src=&#34;//localhost:1414/imgs/img-lazy-loading.gif&#34; data-src=&#34;../477e5dc4-75eb-404b-a8c4-320e9da617fe.jpg&#34; alt=&#34;&#34;  /&gt;&#xA;Arm base AI 機櫃產品範例&#xA;大概一億台幣每機櫃&#xA;該機櫃可能會漏水&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

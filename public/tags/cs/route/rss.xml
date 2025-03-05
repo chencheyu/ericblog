@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CS/Route on 哲佑碎碎念</title>
+    <link>//localhost:1414/tags/cs/route/</link>
+    <description>Recent content in CS/Route on 哲佑碎碎念</description>
+    <generator>Hugo</generator>
+    <language>zh-TW</language>
+    <lastBuildDate>Mon, 24 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1414/tags/cs/route/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Route.md</title>
+      <link>//localhost:1414/post/6db73751-d87b-45f5-996d-2f60b4d1086c/</link>
+      <pubDate>Mon, 24 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1414/post/6db73751-d87b-45f5-996d-2f60b4d1086c/</guid>
+      <description>&lt;p&gt;練習路由交換的網路系統&#xA;&#xA;&lt;a href=&#34;https://stuin.net/&#34; title=&#34;stuin&#34; rel=&#34;noopener external nofollow noreferrer&#34; target=&#34;_blank&#34; class=&#34; exturl&#34;&gt;&#xA;    stuin&#xA;    &#xA;    &lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&#xA;    &#xA;&lt;/a&gt;&#xA;&#xA;&lt;a href=&#34;https://stuix.io/&#34; title=&#34;STUIX&#34; rel=&#34;noopener external nofollow noreferrer&#34; target=&#34;_blank&#34; class=&#34; exturl&#34;&gt;&#xA;    STUIX&#xA;    &#xA;    &lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&#xA;    &#xA;&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;twnic&#34;&gt;TWNIC&#xA;&lt;a class=&#34;header-anchor&#34; href=&#34;#twnic&#34;&gt;&lt;/a&gt;&#xA;&lt;/h3&gt;&lt;p&gt;&#xA;&lt;a href=&#34;https://map.twnic.tw/&#34; title=&#34;台灣網際網路連線頻寬圖&#34; rel=&#34;noopener external nofollow noreferrer&#34; target=&#34;_blank&#34; class=&#34; exturl&#34;&gt;&#xA;    台灣網際網路連線頻寬圖&#xA;    &#xA;    &lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&#xA;    &#xA;&lt;/a&gt;&#xA;&lt;img src=&#34;//localhost:1414/imgs/img-lazy-loading.gif&#34; data-src=&#34;../339aff5a-f282-4b9c-9939-4a7426882617.png&#34; alt=&#34;&#34;  /&gt;&#xA;&#xA;&lt;a href=&#34;https://www.submarinecablemap.com/&#34; title=&#34;Submarine Cable Map&#34; rel=&#34;noopener external nofollow noreferrer&#34; target=&#34;_blank&#34; class=&#34; exturl&#34;&gt;&#xA;    Submarine Cable Map&#xA;    &#xA;    &lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&#xA;    &#xA;&lt;/a&gt;&#xA;全球海纜地圖&lt;/p&gt;&#xA;&lt;p&gt;&#xA;&lt;a href=&#34;https://github.com/cjdelisle/cjdns&#34; title=&#34;cjdns&#34; rel=&#34;noopener external nofollow noreferrer&#34; target=&#34;_blank&#34; class=&#34; exturl&#34;&gt;&#xA;    cjdns&#xA;    &#xA;    &lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&#xA;    &#xA;&lt;/a&gt;&lt;/p&gt;&#xA;&#xA;  &lt;blockquote&gt;&#xA;    &lt;p&gt;Cjdns 利用加密的IPv6及公鑰加密來分配網路地址並利用 Distributed Hash Table 逕行路由。它能提供近似零配置網路（Zero-Configuration Networking），並且能防範在現有網路中存在的很多和安全、可擴展性相關的問題&#xA;重新設計的 IP 層&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

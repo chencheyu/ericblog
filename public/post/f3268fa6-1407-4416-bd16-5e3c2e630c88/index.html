@@ -1,0 +1,1239 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh-TW" data-theme="light">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1414&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)" />
+
+<meta name="generator" content="Hugo 0.143.1">
+<link rel="shortcut icon" type="image/x-icon" href="/imgs/icons/favicon.ico">
+<link rel="icon" type="image/x-icon" href="/imgs/icons/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="/imgs/icons/favicon_16x16_next.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/imgs/icons/favicon_32_32_next.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/imgs/icons/apple_touch_icon_next.png">
+<meta itemprop="name" content="" />
+<meta itemprop="description" content="保持简单的易用性和强大的功能。" />
+<meta name="description" content="保持简单的易用性和强大的功能。" />
+
+
+<meta itemprop="datePublished" ZgotmplZ />
+
+
+<meta itemprop="dateModified" ZgotmplZ />
+
+
+
+
+
+<meta itemprop="image" content="//localhost:1414/imgs/hugo_next_avatar.png" />
+<meta itemprop="keywords" content="CS/ComputerSystemOrganization" />
+
+
+<meta property="og:type" content="article" />
+<meta property="og:title" content="哲佑碎碎念" />
+<meta property="og:description" content="保持简单的易用性和强大的功能。" />
+<meta property="og:image" content="/imgs/hugo_next_avatar.png" />
+<meta property="og:image:width" content="312" />
+<meta property="og:image:height" content="312" />
+<meta property="og:image:type" content="image/jpeg/png/svg/jpg" />
+<meta property="og:url" content="//localhost:1414/post/f3268fa6-1407-4416-bd16-5e3c2e630c88/"/>
+<meta property="og:site_name" content="哲佑碎碎念" />
+<meta property="og:locale" content="zh-TW"/>
+
+<meta property="article:author" content="EricChen" />
+<meta property="article:published_time" content="2024-12-02 00:00:00 &#43;0000 UTC" />
+<meta property="article:modified_time" content="2024-12-02 00:00:00 &#43;0000 UTC" />
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <link type="text/css" rel="stylesheet" href="//localhost:1414/js/3rd/font-awesome/6.7.2/css/all.min.css" /> 
+
+  
+  <link type="text/css" rel="stylesheet" href="//localhost:1414/js/3rd/animate.css/3.1.1/animate.min.css" /> 
+
+  
+  <link type="text/css" rel="stylesheet" href="//localhost:1414/js/3rd/viewerjs/1.11.6/viewer.min.css" /> 
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/main.css?=1741103274">
+
+
+<style type="text/css">
+  .post-footer hr:after {
+    content: "~ 我可是有底线的哟 ~";
+  }
+
+  .flinks-list-footer hr:after {
+    content: "~ 我可是有底线的哟 ~";
+  }
+
+  
+  
+</style>
+
+
+
+
+  
+<script type="text/javascript">
+(function(){
+  localDB = {
+    set: function (key, value, ttl) {
+      if (ttl === 0) return;
+      const now = new Date();
+      const expiryDay = ttl * 86400000;
+      const item = {
+        value: value,
+        expiry: now.getTime() + expiryDay
+      };
+      localStorage.setItem(key, JSON.stringify(item));
+    },
+    get: function (key) {
+      const itemStr = localStorage.getItem(key);
+      if (!itemStr) {
+        return undefined;
+      }
+  
+      const item = JSON.parse(itemStr);
+      const now = new Date();
+  
+      if (now.getTime() > item.expiry) {
+        localStorage.removeItem(key);
+        return undefined;
+      }
+      return item.value;
+    }
+  };
+
+  theme = {
+    active: function() {
+      const localState = localDB.get('theme');
+      if (localState == undefined) return;
+      theme.toggle(localState);
+      window.matchMedia("(prefers-color-scheme: dark)").addListener(function (evt) {
+        theme.toggle(evt.matches ? 'dark' : 'light');
+      });
+    },
+
+    toggle: function (theme) {
+      document.documentElement.setAttribute('data-theme',  theme);
+      localDB.set('theme', theme, 2);
+      
+      const iframe = document.querySelector('iframe.giscus-frame');
+      if (iframe) {
+        const config = { setConfig: { theme: theme } };
+        iframe.contentWindow.postMessage({ giscus: config }, 'https://giscus.app');
+      }
+    }
+  };
+
+  theme.active();
+})(window);
+</script>
+
+
+
+
+  <script type="text/javascript">
+document.addEventListener('DOMContentLoaded', () => {
+  var script = document.createElement('script');
+    
+  script.charset = "UTF-8";
+  script.src     = "https:\/\/busuanzi.ibruce.info\/busuanzi\/2.3\/busuanzi.pure.mini.js";
+  script.async   = false
+  script.defer   = true
+  
+  document.head.appendChild(script);
+  script.onload = function() {
+    NexT.utils.fmtBusuanzi();
+  }
+});
+</script>
+  
+
+
+
+  <title> - 哲佑碎碎念</title>
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage"  class="use-motion" >
+  <div class="headband"></div>
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner">
+        
+<div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+    
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">哲佑碎碎念</h1>
+      <i class="logo-line"></i>
+    </a>
+    
+      <p class="site-subtitle" itemprop="description">为 Hugo 打造的主题</p>
+    
+    
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+      
+      <i class="fa fa-search fa-fw fa-lg"></i>
+      
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">    
+  
+    
+    <li class="menu-item menu-item-home">
+      <a href="/" class=" hvr-icon-pulse " rel="section">
+        <i class="fa fa-home hvr-icon"></i>首頁
+        
+        
+      </a>
+      
+    </li>
+  
+    
+    <li class="menu-item menu-item-about">
+      <a href="/about.html" class=" hvr-icon-pulse " rel="section">
+        <i class="fa fa-user hvr-icon"></i>關於
+        
+        
+      </a>
+      
+    </li>
+  
+    
+    <li class="menu-item menu-item-flinks">
+      <a href="/flinks.html" class=" hvr-icon-pulse " rel="section">
+        <i class="fa fa-thumbs-up hvr-icon"></i>友情
+        
+        
+      </a>
+      
+    </li>
+  
+    
+    <li class="menu-item menu-item-example">
+      <a href="/" class="menus-parent hvr-icon-pulse " rel="section">
+        <i class="fa fa-angles-down hvr-icon"></i>语法示例
+        <span class="menu-item-shrink-icon"><i class="fa fa-angle-right"></i></span>
+        
+      </a>
+      
+      <ul class="menu-children">
+      
+      
+        <li class="menu-child-item">
+          <a href="/demo/syntax-highlighting.html" class="hvr-icon-pulse " rel="section">
+            <i class="fa hvr-icon"></i>语法高亮
+          </a>
+        </li>
+      
+      
+        <li class="menu-child-item">
+          <a href="/demo/math-formula.html" class="hvr-icon-pulse " rel="section">
+            <i class="fa hvr-icon"></i>数学公式
+          </a>
+        </li>
+      
+      
+        <li class="menu-child-item">
+          <a href="/demo/mermaid-charts.html" class="hvr-icon-pulse " rel="section">
+            <i class="fa hvr-icon"></i>流程图
+          </a>
+        </li>
+      
+      </ul>
+      
+    </li>
+  
+    
+    <li class="menu-item menu-item-archives">
+      <a href="/archives/" class=" hvr-icon-pulse " rel="section">
+        <i class="fa fa-archive hvr-icon"></i>歸檔
+        
+        
+      </a>
+      
+    </li>
+  
+    
+    <li class="menu-item menu-item-categories">
+      <a href="/categories/" class=" hvr-icon-pulse " rel="section">
+        <i class="fa fa-tags hvr-icon"></i>標籤
+        
+        
+      </a>
+      
+    </li>
+  
+    
+    <li class="menu-item menu-item-commonweal">
+      <a href="/404.html" class=" hvr-icon-pulse " rel="section">
+        <i class="fa fa-heartbeat hvr-icon"></i>公益 404
+        
+        
+      </a>
+      
+    </li>
+      
+
+  
+    <li class="menu-item menu-item-search">
+      <a role="button" class="popup-trigger hvr-icon-pulse">
+        <i class="fa fa-search fa-fw hvr-icon"></i>搜索
+      </a>
+    </li>
+  
+  </ul>
+</nav>
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+      
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+      
+    </div>
+  </div>
+
+      </div>
+      
+      
+      <div class="toggle sidebar-toggle" role="button">
+  <span class="toggle-line"></span>
+  <span class="toggle-line"></span>
+  <span class="toggle-line"></span>
+</div>
+
+<aside class="sidebar">
+  <div class="sidebar-inner sidebar-overview-active">
+    <ul class="sidebar-nav">
+      <li class="sidebar-nav-toc">
+        文章目錄
+      </li>
+      <li class="sidebar-nav-overview">
+        站點概覽
+      </li>
+    </ul>
+    <div class="sidebar-panel-container">
+      
+      <div class="post-toc-wrap sidebar-panel">
+        <div class="post-toc animated"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#frequencies">Frequencies</a></li>
+      </ul>
+    </li>
+    <li><a href="#時序">時序</a></li>
+    <li><a href="#data-transfer">Data Transfer</a>
+      <ul>
+        <li><a href="#0-啟動">0. 啟動</a></li>
+        <li><a href="#1-address">1. ADDRESS</a></li>
+        <li><a href="#2-data">2. DATA</a></li>
+        <li><a href="#3-停止">3. 停止</a></li>
+        <li><a href="#repeated-start">repeated START</a></li>
+      </ul>
+    </li>
+    <li><a href="#write">Write</a></li>
+    <li><a href="#read">Read</a></li>
+    <li><a href="#write-then-read">Write Then Read</a></li>
+    <li><a href="#reset-bus">Reset Bus</a></li>
+    <li><a href="#reserved-addresses">Reserved addresses</a></li>
+    <li><a href="#i2c-ack">I2C Ack</a></li>
+    <li><a href="#chip">Chip</a></li>
+    <li><a href="#常見錯誤">常見錯誤</a>
+      <ul>
+        <li><a href="#仲裁丢失arlost">仲裁丢失（ARLOST）</a></li>
+        <li><a href="#总线错误buserr">总线错误(BUSERR)</a></li>
+        <li><a href="#reference">Reference</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+      </div>
+      
+      <div class="site-overview-wrap sidebar-panel">
+        
+<div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  
+    <img class="site-author-image" itemprop="image" alt="EricChen"
+    src="/imgs/img-lazy-loading.gif" data-src="/imgs/hugo_next_avatar.png">
+  
+  <p class="site-author-name" itemprop="name">EricChen</p>
+  <div class="site-description" itemprop="description">保持简单的易用性和强大的功能。</div>
+</div>
+
+
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+    <div class="site-state-item site-state-posts">
+      <a href="/archives/">
+        <span class="site-state-item-count">74</span>
+        <span class="site-state-item-name">日誌</span>
+      </a>
+    </div>
+    <div class="site-state-item site-state-categories">
+      <a href="/categories/">
+        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-name">分類</span>
+      </a>
+    </div>
+    <div class="site-state-item site-state-tags">
+      <a href="/tags/">
+        <span class="site-state-item-count">47</span>
+        <span class="site-state-item-name">標籤</span>
+      </a>
+    </div>
+  </nav>
+</div>
+
+
+<div class="links-of-social site-overview-item animated">
+
+
+
+
+
+
+  <span class="links-of-social-item">
+    <a href="https://gitlab.com/joe1231231218" title="Gitlab → https://gitlab.com/joe1231231218" rel="noopener"  class="hvr-icon-pulse"  target="_blank">
+      
+      <i class="fab fa-gitlab fa-fw  hvr-icon "></i>
+      
+      
+      Gitlab
+      
+    </a>
+  </span>
+
+
+
+
+
+  <span class="links-of-social-item">
+    <a href="mailto:connection@ericchen.name" title="E-Mail → mailto:connection@ericchen.name" rel="noopener"  class="hvr-icon-pulse"  target="_blank">
+      
+      <i class="fa fa-envelope fa-fw  hvr-icon "></i>
+      
+      
+      E-Mail
+      
+    </a>
+  </span>
+
+</div>
+
+
+
+<div class="cc-license animated" itemprop="license">
+  <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" class="cc-opacity" rel="noopener" target="_blank" title="共享知識">
+    <img src="/imgs/img-lazy-loading.gif" data-src="/imgs/cc/big/by_nc_sa.svg" alt="共享知識">
+  </a>
+</div>
+
+
+
+
+<div class="links-of-blogroll site-overview-item animated">
+  <div class="links-of-blogroll-title">
+    
+    <i class="fa fa-globe fa-fw"></i>
+    
+    友情链接
+  </div>
+  <ul class="links-of-blogroll-list">
+    
+    
+    
+    
+    <li class="links-of-blogroll-item">
+      <a href="https://gitee.com/hugo-next/hugo-theme-next" title="https://gitee.com/hugo-next/hugo-theme-next" target="_blank">Hugo-NexT</a>
+    </li>
+    
+    
+    
+    
+    <li class="links-of-blogroll-item">
+      <a href="https://lisenhui.cn" title="https://lisenhui.cn" target="_blank">凡梦星尘空间站</a>
+    </li>
+    
+  </ul>
+</div>
+
+        
+        
+        
+      </div>
+    </div>
+  </div>
+
+  
+    
+<div id="siteinfo-card-widget" class="sidebar-card-widget">
+  <div class="item-headline">
+    <i class="fas fa-chart-line"></i>
+    <span>網站資訊</span>
+  </div>
+  <div class="siteinfo">
+    <div class="siteinfo-item">
+      <div class="item-name"><i class="fa-solid fa-calendar-check"></i>已運行：</div>
+      <div class="item-count" id="runTimes" data-publishdate="0001-01-01 00:00:00 &#43;0000 UTC"></div>
+    </div>
+    
+    
+    <div class="siteinfo-item">
+      <div class="item-name">
+        <i class="fas fa fa-user"></i>總訪客數：
+      </div>
+      <div class="item-count" id="busuanzi_value_site_uv"><i class="fa fa-sync fa-spin"></i></div>
+    </div>
+    <div class="siteinfo-item">
+      <div class="item-name">
+        <i class="fas fa fa-eye"></i>頁面瀏覽：
+      </div>
+      <div class="item-count" id="busuanzi_value_site_pv"><i class="fa fa-sync fa-spin"></i></div>
+    </div> 
+        
+        
+    
+    <div class="siteinfo-item">
+      <div class="item-name"><i class="fa fa-font"></i>總字數：</div>
+      <div class="item-count" id="wordsCount" data-count="98389"></div>
+    </div>
+    <div class="siteinfo-item">
+      <div class="item-name"><i class="fa fa-mug-hot"></i>閱讀約：</div>
+      <div class="item-count" id="readTimes" data-times="245"></div>
+    </div>
+    <div class="siteinfo-item">
+      <div class="item-name"><i class="fa fa-clock-rotate-left"></i>最後更新於：</div>
+      <div class="item-count" id="last-push-date" data-lastpushdate="2025-02-28 00:00:00 &#43;0000 UTC"></div>
+    </div>
+  </div>
+</div>
+  
+
+  
+  <div class="sidebar-card-widget back-to-top-card">
+    <div class="back-to-top animated" role="button" aria-label="">
+      <i class="fa fa-arrow-up"></i>
+      <span>0%</span>
+    </div>
+  </div>
+  
+</aside>
+<div class="sidebar-dimmer"></div>
+
+      
+    </header>
+    
+    <div class="tool-buttons" >
+  
+  
+  <div id="goto-i18n-translate" class="button"  title="多語言翻譯">
+    <i class="fas fa-globe"></i>
+  </div> 
+  
+  <div id="toggle-theme" class="button" title="深淺模式切換">
+    <i class="fas fa-adjust"></i>
+  </div>
+   
+</div>
+
+
+  <div class="reading-progress-bar"></div>
+
+
+
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+
+
+
+<a href="https://github.com/hugo-next" rel="noopener external nofollow noreferrer" target="_blank" title="Follow me on GitHub" class="exturl github-corner">
+  <svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg>
+</a>
+
+
+
+
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+    <div class="main-inner post posts-expand">
+      
+      
+  <div class="post-block">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    
+    <link itemprop="mainEntityOfPage" href="//localhost:1414/post/f3268fa6-1407-4416-bd16-5e3c2e630c88/">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/imgs/hugo_next_avatar.png">
+      <meta itemprop="name" content="EricChen">
+    </span>
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="EricChen">
+      <meta itemprop="description" content="保持简单的易用性和强大的功能。">
+    </span>
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="Frequencies
+
+
+Standard mode: 100 kilobits per second.
+Fast mode: 400 kilobits per second.
+
+時序
+
+在 UM10204 6 Electrical specifications and timing for I/O stages and bus lines，需要時請直接查閱
+
+
+tr
+SCL, SDA 上升或下降從 70% 到 30% 的時間
+Max Standard 300 ns, Fast 300 ns
+tLOW
+SCL 維持低電平
+Min Standard 4.7 μs, Fast1.2 μs
+tHIGH
+SCL 維持高電平
+Min Standard 4.0 μs, Fast0.6 μs
+tHD;DAT
+SCL 下降到SDA 狀態改變完成的時間
+沒有最小時間規範
+tSU;DAT
+SDA 狀態改變完成到 SCL 重新拉高的時間
+Min Standard 250 ns, Fast 100 ns
+
+Data Transfer
+
+
+所有位元組均以 MSB 位元先移位的方式傳送
+除了啟動和停止訊號外，SDA 線僅在時脈為低電平時變化">
+    </span>
+    
+    <header class="post-header">
+      
+ <h1  class="post-title" itemprop="name headline">
+  
+  
+  
+  
+  
+  <a href="https://github.com/user-name/repo-name/tree/branch-name/subdirectory-name/post/f3268fa6-1407-4416-bd16-5e3c2e630c88.md" rel="noopener external nofollow noreferrer" target="_blank" class="exturl post-edit-link" title="編輯"><i class="fa fa-pen-nib"></i></a>
+  
+  
+   </h1> 
+
+<div class="post-meta-container">
+  <div class="post-meta-items">
+    
+
+
+<span class="post-meta-item">
+  <span class="post-meta-item-icon">
+    <i class="fas fa-solid fa-calendar"></i>
+  </span>
+  <span class="post-meta-item-text" title="發表於">
+    發表於：
+  </span>
+  <time title="創建時間：2024-12-02T00:00:00&#43;00:00 CST" itemprop="dateCreated datePublished" datetime="2024-12-02 00:00:00 &#43;0000 UTC">
+    2024-12-02
+  </time>
+</span>
+
+    
+
+
+    
+
+
+        
+  </div>
+  
+  <div class="post-meta-items">
+    
+<span class="post-meta-item" title="字數">
+  <span class="post-meta-item-icon">
+    <i class="fas fa-solid fa-file-word"></i>
+  </span>
+  <span class="post-meta-item-text">字數：</span>
+  <span>1249</span>
+</span>
+
+    
+<span class="post-meta-item" title="閱讀">
+  <span class="post-meta-item-icon">
+    <i class="fas fa-solid fa-clock"></i>
+  </span>
+  <span class="post-meta-item-text">閱讀：&asymp;</span>
+  <span>3分鐘</span>
+</span>
+
+
+    
+
+
+<span class="post-meta-item" title="瀏覽">
+  <span class="post-meta-item-icon">
+    <i class="fas fa-solid fa-eye"></i>
+  </span>
+  <span class="post-meta-item-text">
+  瀏覽：
+  </span>
+  <span id="pageview-count" data-path="/post/f3268fa6-1407-4416-bd16-5e3c2e630c88/">
+    <i class="fa fa-sync fa-spin"></i>
+  </span>
+</span>
+
+    
+  </div>
+  
+</div>
+
+    </header>
+    
+    <div class="post-body " itemprop="articleBody">
+      
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 id="frequencies">Frequencies
+<a class="header-anchor" href="#frequencies"></a>
+</h3><ul>
+<li>Standard mode: 100 kilobits per second.</li>
+<li>Fast mode: 400 kilobits per second.</li>
+</ul>
+<h2 id="時序">時序
+<a class="header-anchor" href="#%e6%99%82%e5%ba%8f"></a>
+</h2><p>在 UM10204 6 Electrical specifications and timing for I/O stages and bus lines，需要時請直接查閱
+<img src="/imgs/img-lazy-loading.gif" data-src="CS/ComputerSystemOrganization/I2C/2024_12_17_154719.png" alt=""  /></p>
+<ul>
+<li>t<sup>r</sup>
+SCL, SDA 上升或下降從 70% 到 30% 的時間
+Max Standard 300 ns, Fast 300 ns</li>
+<li>t<sup>LOW</sup>
+SCL 維持低電平
+Min Standard 4.7 μs, Fast1.2 μs</li>
+<li>t<sup>HIGH</sup>
+SCL 維持高電平
+Min Standard 4.0 μs, Fast0.6 μs</li>
+<li>t<sup>HD;DAT</sup>
+SCL 下降到SDA 狀態改變完成的時間
+沒有最小時間規範</li>
+<li>t<sup>SU;DAT</sup>
+SDA 狀態改變完成到 SCL 重新拉高的時間
+Min Standard 250 ns, Fast 100 ns</li>
+</ul>
+<h2 id="data-transfer">Data Transfer
+<a class="header-anchor" href="#data-transfer"></a>
+</h2><p><img src="/imgs/img-lazy-loading.gif" data-src="CS/ComputerSystemOrganization/I2C/2024_12_06_170600.png" alt=""  />
+所有位元組均以 MSB 位元先移位的方式傳送
+除了啟動和停止訊號外，SDA 線僅在時脈為低電平時變化</p>
+  
+  <a id="more"></a>
+  <h3 id="0-啟動">0. 啟動
+<a class="header-anchor" href="#0-%e5%95%9f%e5%8b%95"></a>
+</h3><p>主設備發起的每個 I2C 指令都以START 條件開始，以STOP 條件結束。對於這兩種情況，SCL 必須維持高。 SDA 從高到低的轉換被視為START，從低到高的轉換被視為STOP</p>
+<h3 id="1-address">1. ADDRESS
+<a class="header-anchor" href="#1-address"></a>
+</h3><p>在啟動條件之後，主設備可以產生重複的啟動。這相當於正常的啟動，並且通常後面跟著從 I2C 位址
+每一次啟動後 Master 通常會向 bus 寫 slave 的地址(7 bit or 10 bit)加上 1 bit 的讀寫指示(1 = Read
+, 0 = Write)，Slave 須向 master 寫 ACK</p>
+<h3 id="2-data">2. DATA
+<a class="header-anchor" href="#2-data"></a>
+</h3><p>需要一些時間來處理接收到的位元組或尚未準備好發送下一個位元組的從設備可以將時鐘拉低以向主設備發出信號以指示其應該等待。一旦時鐘被釋放，主設備就可以繼續處理下一個位元組</p>
+<h3 id="3-停止">3. 停止
+<a class="header-anchor" href="#3-%e5%81%9c%e6%ad%a2"></a>
+</h3><p>SCL 必須維持高，SDA 從低到高的轉換被視為STOP</p>
+<h3 id="repeated-start">repeated START
+<a class="header-anchor" href="#repeated-start"></a>
+</h3><p><img src="/imgs/img-lazy-loading.gif" data-src="CS/ComputerSystemOrganization/I2C/2025_02_19_121040.png" alt=""  />
+如果控制器仍然希望在总线上通信，它可以生成一个重复的 START 条件 (Sr) 并寻址另一个目标，而无需首先生成 STOP 条件
+如果產生重複的 START (Sr) 而不是 STOP 條件，則匯流排保持忙碌。在這方面，START (S) 和重複的 START (Sr) 條件在功能上是相同的
+如果送一个重复的 START 条件，可以在重复的 START 条件之前发送一个非确认，如附圖</p>
+<h2 id="write">Write
+<a class="header-anchor" href="#write"></a>
+</h2><p><img src="/imgs/img-lazy-loading.gif" data-src="CS/ComputerSystemOrganization/I2C/2024_12_06_172921.png" alt=""  />
+<img src="/imgs/img-lazy-loading.gif" data-src="CS/ComputerSystemOrganization/I2C/2025_03_04_171617.png" alt=""  />
+Master 對 Slave (Address 0x50) 寫入 0x1133
+<img src="/imgs/img-lazy-loading.gif" data-src="CS/ComputerSystemOrganization/I2C/2024_12_12_150026.png" alt=""  />
+Master 對 Slave (Address 0x0B) 寫入 0x442100
+CLK 不需要是穩定一致的，Slave 可以拉住 CLK</p>
+<h2 id="read">Read
+<a class="header-anchor" href="#read"></a>
+</h2><p><img src="/imgs/img-lazy-loading.gif" data-src="CS/ComputerSystemOrganization/I2C/2024_12_06_171516.png" alt=""  />
+<img src="/imgs/img-lazy-loading.gif" data-src="CS/ComputerSystemOrganization/I2C/2025_03_04_172237.png" alt=""  />
+灰色部份表示 Master to Slave，白色部分為 Slave to Master
+Master 對 Slave (Address 0x50) 讀到 0x3300
+在 read 資料的最後一個 byte 必須要是 NACK</p>
+<h2 id="write-then-read">Write Then Read
+<a class="header-anchor" href="#write-then-read"></a>
+</h2><p><img src="/imgs/img-lazy-loading.gif" data-src="CS/ComputerSystemOrganization/I2C/2025_03_04_173527.png" alt=""  />
+Master 對 Slave (Address 0x5B) 寫入 0xAA 後直接讀到 0x00</p>
+<h2 id="reset-bus">Reset Bus
+<a class="header-anchor" href="#reset-bus"></a>
+</h2><ul>
+<li>對於將 SCL/SDA 腳位與 GPIO 多工使用的主裝置，最簡單的方法是將這些腳位配置為 GPIO 模式，並通過切換 SCL 來操作，直到從裝置釋放 SDA。此時，您應該能夠恢復正常操作</li>
+</ul>
+<h2 id="reserved-addresses">Reserved addresses
+<a class="header-anchor" href="#reserved-addresses"></a>
+</h2><ul>
+<li>0000 0000 general call address</li>
+<li>0000 0001 START byte</li>
+<li>0000 001X CBUS address</li>
+<li>0000 010X reserved for different bus format</li>
+<li>0000 011X reserved for future purposes</li>
+<li>0000 1XXX Hs-mode controller code</li>
+<li>1111 1XX1 device ID</li>
+<li>1111 0XXX 10-bit target addressing
+此外，如果確定某個保留地址 (Reserved Address) 不會用於其原始用途，則該保留地址也可以被用作目標設備的地址。但這種做法需要謹慎考量，以避免與標準 I²C 協議的潛在衝突</li>
+</ul>
+<h2 id="i2c-ack">I2C Ack
+<a class="header-anchor" href="#i2c-ack"></a>
+</h2><p><img src="/imgs/img-lazy-loading.gif" data-src="CS/ComputerSystemOrganization/I2C/I2cAck.png" alt=""  />
+Ack 時，如果是 master 要把 SDA 的控制權轉給 slave 寫 Ack bit 時，可能會發生 SDA 突然短暫被拉高的現象，這是正常的</p>
+<h2 id="chip">Chip
+<a class="header-anchor" href="#chip"></a>
+</h2><ul>
+<li>
+<a href="https://www.ti.com/lit/ds/symlink/tca9548a.pdf" title="TCA9548A" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+    TCA9548A
+    
+    <i class="fa fa-external-link-alt"></i>
+    
+</a>
+Low-Voltage 8-Channel I2C Switch with Reset</li>
+</ul>
+<h2 id="常見錯誤">常見錯誤
+<a class="header-anchor" href="#%e5%b8%b8%e8%a6%8b%e9%8c%af%e8%aa%a4"></a>
+</h2><h3 id="仲裁丢失arlost">仲裁丢失（ARLOST）
+<a class="header-anchor" href="#%e4%bb%b2%e8%a3%81%e4%b8%a2%e5%a4%b1arlost"></a>
+</h3><p>当设备控制 SDA 线输出高电平，但是总线上实际输出低电平时，发生仲裁丢失事件。
+― 主机发送数据：仲裁可以发生在地址传输、数据传输阶段；
+― 主机接收数据：仲裁可以发生在地址传输、响应ACK阶段；
+― 从机发送数据：仲裁可以发生在数据传输阶段；
+― 从机接收数据：仲裁可以发生在响应ACK阶段。
+当在发生仲裁丢失后，硬件自动将 I2C_STS 的 ARLOST 置 1，无论是主机还是从机，都将会立即释放
+SCL、SDA 总线，并自动回到从机状态。</p>
+<h3 id="总线错误buserr">总线错误(BUSERR)
+<a class="header-anchor" href="#%e6%80%bb%e7%ba%bf%e9%94%99%e8%af%afbuserr"></a>
+</h3><p>在数据传输阶段，在 SCL 高周期区间 SDA 线必须保持稳定，当 SCL 信号为低时，SDA 才能改变，否则将会出现总线错误</p>
+<h3 id="reference">Reference
+<a class="header-anchor" href="#reference"></a>
+</h3><ul>
+<li>
+<a href="https://www.nxp.com/docs/en/user-guide/UM10204.pdf" title="UM10204 I2C-bus specification and user manual" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+    UM10204 I2C-bus specification and user manual
+    
+    <i class="fa fa-external-link-alt"></i>
+    
+</a></li>
+</ul>
+
+
+    </div>
+    <footer class="post-footer">
+      
+
+
+<div class="post-tags">
+  
+    <a href="/tags/cs/computersystemorganization/">
+    CS/ComputerSystemOrganization
+  </a>
+  
+</div>
+
+
+
+  
+    <div class="post-share-tools"> 
+      <div class="post-share-loading">
+        <i class="fa-solid fa-ellipsis fa-spin"></i>
+      </div>  
+      
+      
+        <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+  <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+  <a class="a2a_button_wechat"></a>
+  <a class="a2a_button_qzone"></a>
+  <a class="a2a_button_sina_weibo"></a>
+  <a class="a2a_button_douban"></a>
+  <a class="a2a_button_facebook"></a>
+  <a class="a2a_button_x"></a>
+  <a class="a2a_button_email"></a>
+  <a class="a2a_button_printfriendly"></a>
+</div>
+      
+    </div>
+    
+
+<hr/>
+
+
+
+
+
+
+<div class="post-copyright">
+  <img src="/imgs/cc/cc.svg" width="75" height="75" align="right" alt="共享知識"/>
+  <ul>
+    <li class="post-copyright-title">
+      <strong>文章標題：</strong>
+      
+    </li>
+    <li class="post-copyright-author">
+      
+        <strong>本文作者： </strong>
+        EricChen
+      
+    </li>
+    <li class="post-copyright-link">
+       
+        <strong>本文鏈接：</strong>
+        <a id="post-cr-link" href="//localhost:1414/post/f3268fa6-1407-4416-bd16-5e3c2e630c88/" title="">//localhost:1414/post/f3268fa6-1407-4416-bd16-5e3c2e630c88/</a>
+      
+    </li>
+    <li class="post-copyright-license">
+      <strong>版權聲明： </strong>
+      
+      
+      本博客所有文章除特別聲明外，均採用 <i class="fab fa-fw fa-creative-commons"></i><a target='_blank' href='https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh'>BY-NC-SA</a> 許可協議。轉載請註明出處！
+    </li>
+  </ul>
+</div>
+
+
+
+
+  <div class="followme">
+  <span>歡迎關注我的其它發布渠道</span>
+  <div class="social-list">
+    
+    
+    
+    
+    
+    <div class="social-item">
+        <a target="_blank" class="social-link" href="/atom.xml">
+          <span class="icon">
+            <i class="fa fa-rss"></i>
+          </span>
+          <span class="label">RSS</span>
+        </a>
+      </div>
+    
+  </div>
+</div>
+
+
+
+<div class="post-nav">
+  <div class="post-nav-next post-nav-item">
+    
+    <a href="/post/2a5584d3-64f9-4035-8c51-9b034eb8e7aa/" rel="next" title="Path">
+      <i class="fa fa-chevron-left"></i> Path
+    </a>
+    
+  </div>
+  <div class="post-nav-prev post-nav-item">
+    
+    <a href="/post/6a87e9b5-a9ff-4ccd-bcdd-055fc6c0a4f8/" rel="prev" title="I2C.md">
+      I2C.md
+      <i class="fa fa-chevron-right"></i>
+    </a>
+    
+  </div>
+</div>
+
+
+
+    </footer>
+  </article>
+</div>
+
+      
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer-inner">
+      
+<div id="i18n-translate" class="i18n-translate">
+  <i class="fa fa-language"></i>
+  <div id="lang-select" class="lang-select">
+    <div id="lang-selected" class="selected-option">
+      <span class="flag-icon flag-icon-zh-tw"></span>
+      <span class="selected-language">繁體中文</span>
+      <i class="fa fa-chevron-down"></i>
+    </div>
+    <div id="lang-options" class="lang-options">
+      
+      
+      
+        <div class="lang-option" lang-code="zh-tw" lang-name="繁體中文" lang-url="/post/f3268fa6-1407-4416-bd16-5e3c2e630c88/">
+          <span class="flag-icon flag-icon-zh-tw"></span>
+          <span class="lang-name">繁體中文</span>
+        </div>
+      
+      
+    </div>
+  </div>
+</div>
+
+      
+<div class="copyright">
+  &copy;
+  <span itemprop="copyrightYear">
+    
+    
+    
+    2021 - 2025
+    
+    
+  </span>
+  <span class="with-love">
+    <i class="fa fa-copyright"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">EricChen</span>
+</div>
+
+<div class="powered-by">
+  
+  %!(EXTRA string=<a href='https://gohugo.io' title='0.143.1' target='_blank'>Hugo</a> &amp; <a href='https://github.com/hugo-next/hugo-theme-next' title='4.7.2' target='_blank'>Hugo NexT.Muse</a>)
+</div>
+
+
+
+
+
+ 
+
+
+
+
+
+    </div>
+  </footer>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    
+    
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"comments":false,"expired":false,"isHome":false,"isPage":true,"path":"f3268fa6-1407-4416-bd16-5e3c2e630c88","permalink":"//localhost:1414/post/f3268fa6-1407-4416-bd16-5e3c2e630c88/","title":"","toc":false,"waline3":{"pagecnt":{"alias":"@waline/client","alias_name":"waline","file":"dist/pageview.js","name":"pageview","version":"3.3.0"}}}</script>
+  
+
+
+
+ 
+  
+  <script type="text/javascript" src="//localhost:1414/js/3rd/animejs/3.2.2/anime.min.js" crossorigin="anonymous" defer></script>
+ 
+  
+  <script type="text/javascript" src="//localhost:1414/js/3rd/viewerjs/1.11.6/viewer.min.js" crossorigin="anonymous" defer></script>
+
+
+<script class="next-config" data-name="main" type="application/json">{"bookmark":{"color":"#222","enable":true,"save":"manual"},"copybtn":true,"darkmode":false,"giscus":{"cfg":{"category":"Comments","categoryid":null,"emit":false,"inputposition":"top","mapping":"title","reactions":false,"repo":"username/repo-name","repoid":null,"theme":"preferred_color_scheme"},"js":"https://giscus.app/client.js"},"hostname":"//localhost:1414/","i18n":{"ds_day":" 天前","ds_days":" 天 ","ds_hour":" 小時前","ds_hours":" 小時 ","ds_just":"剛剛","ds_min":" 分鐘前","ds_mins":" 分鐘","ds_month":" 個月前","ds_years":" 年 ","empty":"沒有找到任何搜索結果：${query}","hits":"找到 ${hits} 個搜索結果","hits_time":"找到 ${hits} 個搜索結果（用時 ${time} 毫秒）","placeholder":"搜索..."},"isMultiLang":true,"lang":"zh-TW","lazyload":false,"localSearch":{"enable":true,"limit":1000,"path":"/searchindexes.xml","preload":false,"topnperarticle":-1,"trigger":"auto","unescape":false},"motion":{"async":true,"enable":true,"transition":{"collheader":"fadeInLeft","postblock":"fadeIn","postbody":"fadeInDown","postheader":"fadeInDown","sidebar":"fadeInUp"}},"postmeta":{"comments":{"enable":false,"plugin":"waline3"},"views":{"enable":true,"plugin":"waline3"}},"root":"/","scheme":"Muse","share":{"addtoany":{"js":"https://static.addtoany.com/menu/page.js","locale":"zh-TW","num":8},"enable":true},"sidebar":{"display":"post","offset":12,"padding":18,"position":"right","width":264},"vendor":{"plugins":"local","router":{"name":"local","type":"modern","url":"//localhost:1414/js/3rd"}},"version":"4.7.2","waline3":{"cfg":{"emoji":false,"imguploader":false,"placeholder":"请文明发言哟 ヾ(≧▽≦*)o 可用快捷键选取表情符号：😀😄😁🥳👻👽👀🚄 (Window系统：Win+.，Mac系统：Control+Command+Space)","reaction":true,"reactiontext":["点赞","踩一下","得意","不屑","尴尬","睡觉"],"reactiontitle":"你认为这篇文章怎么样？","requiredmeta":["nick","mail"],"search":true,"serverurl":"https://walinejs.comment.lithub.cc","sofa":"快来发表你的意见吧 (≧∀≦)ゞ","wordlimit":200},"css":{"alias":"@waline/client","file":"dist/waline.min.css","name":"waline","version":"3.3.0"},"js":{"alias":"@waline/client","file":"dist/waline.js","name":"waline","version":"3.3.0"}}}</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+    
+  
+  
+
+
+
+
+
+  
+  
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<script type="text/javascript" src="/js/main.js?=1741103274" defer></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

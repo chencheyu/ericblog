@@ -1,0 +1,1577 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh-TW" data-theme="light">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1414&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)" />
+
+<meta name="generator" content="Hugo 0.143.1">
+<link rel="shortcut icon" type="image/x-icon" href="/imgs/icons/favicon.ico">
+<link rel="icon" type="image/x-icon" href="/imgs/icons/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="/imgs/icons/favicon_16x16_next.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/imgs/icons/favicon_32_32_next.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/imgs/icons/apple_touch_icon_next.png">
+<meta itemprop="name" content="Bash" />
+<meta itemprop="description" content="保持简单的易用性和强大的功能。" />
+<meta name="description" content="保持简单的易用性和强大的功能。" />
+
+
+<meta itemprop="datePublished" ZgotmplZ />
+
+
+<meta itemprop="dateModified" ZgotmplZ />
+
+
+
+
+
+<meta itemprop="image" content="//localhost:1414/imgs/hugo_next_avatar.png" />
+<meta itemprop="keywords" content="CS/Linux" />
+
+
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Bash" />
+<meta property="og:description" content="保持简单的易用性和强大的功能。" />
+<meta property="og:image" content="/imgs/hugo_next_avatar.png" />
+<meta property="og:image:width" content="312" />
+<meta property="og:image:height" content="312" />
+<meta property="og:image:type" content="image/jpeg/png/svg/jpg" />
+<meta property="og:url" content="//localhost:1414/post/b3e3b48f-c104-4741-a33e-f024d009b60d/"/>
+<meta property="og:site_name" content="哲佑碎碎念" />
+<meta property="og:locale" content="zh-TW"/>
+
+<meta property="article:author" content="EricChen" />
+<meta property="article:published_time" content="2024-07-08 00:00:00 &#43;0000 UTC" />
+<meta property="article:modified_time" content="2024-07-08 00:00:00 &#43;0000 UTC" />
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <link type="text/css" rel="stylesheet" href="//localhost:1414/js/3rd/font-awesome/6.7.2/css/all.min.css" /> 
+
+  
+  <link type="text/css" rel="stylesheet" href="//localhost:1414/js/3rd/animate.css/3.1.1/animate.min.css" /> 
+
+  
+  <link type="text/css" rel="stylesheet" href="//localhost:1414/js/3rd/viewerjs/1.11.6/viewer.min.css" /> 
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/main.css?=1741103274">
+
+
+<style type="text/css">
+  .post-footer hr:after {
+    content: "~ 我可是有底线的哟 ~";
+  }
+
+  .flinks-list-footer hr:after {
+    content: "~ 我可是有底线的哟 ~";
+  }
+
+  
+  
+</style>
+
+
+
+
+  
+<script type="text/javascript">
+(function(){
+  localDB = {
+    set: function (key, value, ttl) {
+      if (ttl === 0) return;
+      const now = new Date();
+      const expiryDay = ttl * 86400000;
+      const item = {
+        value: value,
+        expiry: now.getTime() + expiryDay
+      };
+      localStorage.setItem(key, JSON.stringify(item));
+    },
+    get: function (key) {
+      const itemStr = localStorage.getItem(key);
+      if (!itemStr) {
+        return undefined;
+      }
+  
+      const item = JSON.parse(itemStr);
+      const now = new Date();
+  
+      if (now.getTime() > item.expiry) {
+        localStorage.removeItem(key);
+        return undefined;
+      }
+      return item.value;
+    }
+  };
+
+  theme = {
+    active: function() {
+      const localState = localDB.get('theme');
+      if (localState == undefined) return;
+      theme.toggle(localState);
+      window.matchMedia("(prefers-color-scheme: dark)").addListener(function (evt) {
+        theme.toggle(evt.matches ? 'dark' : 'light');
+      });
+    },
+
+    toggle: function (theme) {
+      document.documentElement.setAttribute('data-theme',  theme);
+      localDB.set('theme', theme, 2);
+      
+      const iframe = document.querySelector('iframe.giscus-frame');
+      if (iframe) {
+        const config = { setConfig: { theme: theme } };
+        iframe.contentWindow.postMessage({ giscus: config }, 'https://giscus.app');
+      }
+    }
+  };
+
+  theme.active();
+})(window);
+</script>
+
+
+
+
+  <script type="text/javascript">
+document.addEventListener('DOMContentLoaded', () => {
+  var script = document.createElement('script');
+    
+  script.charset = "UTF-8";
+  script.src     = "https:\/\/busuanzi.ibruce.info\/busuanzi\/2.3\/busuanzi.pure.mini.js";
+  script.async   = false
+  script.defer   = true
+  
+  document.head.appendChild(script);
+  script.onload = function() {
+    NexT.utils.fmtBusuanzi();
+  }
+});
+</script>
+  
+
+
+
+  <title>Bash - 哲佑碎碎念</title>
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage"  class="use-motion" >
+  <div class="headband"></div>
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner">
+        
+<div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+    
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">哲佑碎碎念</h1>
+      <i class="logo-line"></i>
+    </a>
+    
+      <p class="site-subtitle" itemprop="description">为 Hugo 打造的主题</p>
+    
+    
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+      
+      <i class="fa fa-search fa-fw fa-lg"></i>
+      
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">    
+  
+    
+    <li class="menu-item menu-item-home">
+      <a href="/" class=" hvr-icon-pulse " rel="section">
+        <i class="fa fa-home hvr-icon"></i>首頁
+        
+        
+      </a>
+      
+    </li>
+  
+    
+    <li class="menu-item menu-item-about">
+      <a href="/about.html" class=" hvr-icon-pulse " rel="section">
+        <i class="fa fa-user hvr-icon"></i>關於
+        
+        
+      </a>
+      
+    </li>
+  
+    
+    <li class="menu-item menu-item-flinks">
+      <a href="/flinks.html" class=" hvr-icon-pulse " rel="section">
+        <i class="fa fa-thumbs-up hvr-icon"></i>友情
+        
+        
+      </a>
+      
+    </li>
+  
+    
+    <li class="menu-item menu-item-example">
+      <a href="/" class="menus-parent hvr-icon-pulse " rel="section">
+        <i class="fa fa-angles-down hvr-icon"></i>语法示例
+        <span class="menu-item-shrink-icon"><i class="fa fa-angle-right"></i></span>
+        
+      </a>
+      
+      <ul class="menu-children">
+      
+      
+        <li class="menu-child-item">
+          <a href="/demo/syntax-highlighting.html" class="hvr-icon-pulse " rel="section">
+            <i class="fa hvr-icon"></i>语法高亮
+          </a>
+        </li>
+      
+      
+        <li class="menu-child-item">
+          <a href="/demo/math-formula.html" class="hvr-icon-pulse " rel="section">
+            <i class="fa hvr-icon"></i>数学公式
+          </a>
+        </li>
+      
+      
+        <li class="menu-child-item">
+          <a href="/demo/mermaid-charts.html" class="hvr-icon-pulse " rel="section">
+            <i class="fa hvr-icon"></i>流程图
+          </a>
+        </li>
+      
+      </ul>
+      
+    </li>
+  
+    
+    <li class="menu-item menu-item-archives">
+      <a href="/archives/" class=" hvr-icon-pulse " rel="section">
+        <i class="fa fa-archive hvr-icon"></i>歸檔
+        
+        
+      </a>
+      
+    </li>
+  
+    
+    <li class="menu-item menu-item-categories">
+      <a href="/categories/" class=" hvr-icon-pulse " rel="section">
+        <i class="fa fa-tags hvr-icon"></i>標籤
+        
+        
+      </a>
+      
+    </li>
+  
+    
+    <li class="menu-item menu-item-commonweal">
+      <a href="/404.html" class=" hvr-icon-pulse " rel="section">
+        <i class="fa fa-heartbeat hvr-icon"></i>公益 404
+        
+        
+      </a>
+      
+    </li>
+      
+
+  
+    <li class="menu-item menu-item-search">
+      <a role="button" class="popup-trigger hvr-icon-pulse">
+        <i class="fa fa-search fa-fw hvr-icon"></i>搜索
+      </a>
+    </li>
+  
+  </ul>
+</nav>
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+      
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+      
+    </div>
+  </div>
+
+      </div>
+      
+      
+      <div class="toggle sidebar-toggle" role="button">
+  <span class="toggle-line"></span>
+  <span class="toggle-line"></span>
+  <span class="toggle-line"></span>
+</div>
+
+<aside class="sidebar">
+  <div class="sidebar-inner sidebar-overview-active">
+    <ul class="sidebar-nav">
+      <li class="sidebar-nav-toc">
+        文章目錄
+      </li>
+      <li class="sidebar-nav-overview">
+        站點概覽
+      </li>
+    </ul>
+    <div class="sidebar-panel-container">
+      
+      <div class="post-toc-wrap sidebar-panel">
+        <div class="post-toc animated"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#重導向">重導向</a></li>
+        <li><a href="#echo">Echo</a></li>
+        <li><a href="#file">File</a></li>
+        <li><a href="#變數">變數</a></li>
+        <li><a href="#debug">Debug</a></li>
+        <li><a href="#array">Array</a></li>
+        <li><a href="#conditionhttpswwwgnuorgsoftwarebashmanualhtml_nodebash-conditional-expressionshtml"><a href="https://www.gnu.org/software/bash/manual/html_node/Bash-Conditional-Expressions.html">Condition</a></a></li>
+        <li><a href="#command-substitution">Command Substitution</a></li>
+        <li><a href="#new-line">New Line</a></li>
+        <li><a href="#function">Function</a></li>
+        <li><a href="#list-directory">List Directory</a></li>
+        <li><a href="#bash-init">Bash Init</a></li>
+        <li><a href="#eof">EOF</a></li>
+        <li><a href="#exec">exec</a></li>
+        <li><a href="#gerp-in-condition">Gerp in Condition</a></li>
+        <li><a href="#sh-0-getcwd-failed-no-such-file-or-directory"><code>sh: 0: getcwd() failed: No such file or directory</code></a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+      </div>
+      
+      <div class="site-overview-wrap sidebar-panel">
+        
+<div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  
+    <img class="site-author-image" itemprop="image" alt="EricChen"
+    src="/imgs/img-lazy-loading.gif" data-src="/imgs/hugo_next_avatar.png">
+  
+  <p class="site-author-name" itemprop="name">EricChen</p>
+  <div class="site-description" itemprop="description">保持简单的易用性和强大的功能。</div>
+</div>
+
+
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+    <div class="site-state-item site-state-posts">
+      <a href="/archives/">
+        <span class="site-state-item-count">74</span>
+        <span class="site-state-item-name">日誌</span>
+      </a>
+    </div>
+    <div class="site-state-item site-state-categories">
+      <a href="/categories/">
+        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-name">分類</span>
+      </a>
+    </div>
+    <div class="site-state-item site-state-tags">
+      <a href="/tags/">
+        <span class="site-state-item-count">47</span>
+        <span class="site-state-item-name">標籤</span>
+      </a>
+    </div>
+  </nav>
+</div>
+
+
+<div class="links-of-social site-overview-item animated">
+
+
+
+
+
+
+  <span class="links-of-social-item">
+    <a href="https://gitlab.com/joe1231231218" title="Gitlab → https://gitlab.com/joe1231231218" rel="noopener"  class="hvr-icon-pulse"  target="_blank">
+      
+      <i class="fab fa-gitlab fa-fw  hvr-icon "></i>
+      
+      
+      Gitlab
+      
+    </a>
+  </span>
+
+
+
+
+
+  <span class="links-of-social-item">
+    <a href="mailto:connection@ericchen.name" title="E-Mail → mailto:connection@ericchen.name" rel="noopener"  class="hvr-icon-pulse"  target="_blank">
+      
+      <i class="fa fa-envelope fa-fw  hvr-icon "></i>
+      
+      
+      E-Mail
+      
+    </a>
+  </span>
+
+</div>
+
+
+
+<div class="cc-license animated" itemprop="license">
+  <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" class="cc-opacity" rel="noopener" target="_blank" title="共享知識">
+    <img src="/imgs/img-lazy-loading.gif" data-src="/imgs/cc/big/by_nc_sa.svg" alt="共享知識">
+  </a>
+</div>
+
+
+
+
+<div class="links-of-blogroll site-overview-item animated">
+  <div class="links-of-blogroll-title">
+    
+    <i class="fa fa-globe fa-fw"></i>
+    
+    友情链接
+  </div>
+  <ul class="links-of-blogroll-list">
+    
+    
+    
+    
+    <li class="links-of-blogroll-item">
+      <a href="https://gitee.com/hugo-next/hugo-theme-next" title="https://gitee.com/hugo-next/hugo-theme-next" target="_blank">Hugo-NexT</a>
+    </li>
+    
+    
+    
+    
+    <li class="links-of-blogroll-item">
+      <a href="https://lisenhui.cn" title="https://lisenhui.cn" target="_blank">凡梦星尘空间站</a>
+    </li>
+    
+  </ul>
+</div>
+
+        
+        
+        
+      </div>
+    </div>
+  </div>
+
+  
+    
+<div id="siteinfo-card-widget" class="sidebar-card-widget">
+  <div class="item-headline">
+    <i class="fas fa-chart-line"></i>
+    <span>網站資訊</span>
+  </div>
+  <div class="siteinfo">
+    <div class="siteinfo-item">
+      <div class="item-name"><i class="fa-solid fa-calendar-check"></i>已運行：</div>
+      <div class="item-count" id="runTimes" data-publishdate="0001-01-01 00:00:00 &#43;0000 UTC"></div>
+    </div>
+    
+    
+    <div class="siteinfo-item">
+      <div class="item-name">
+        <i class="fas fa fa-user"></i>總訪客數：
+      </div>
+      <div class="item-count" id="busuanzi_value_site_uv"><i class="fa fa-sync fa-spin"></i></div>
+    </div>
+    <div class="siteinfo-item">
+      <div class="item-name">
+        <i class="fas fa fa-eye"></i>頁面瀏覽：
+      </div>
+      <div class="item-count" id="busuanzi_value_site_pv"><i class="fa fa-sync fa-spin"></i></div>
+    </div> 
+        
+        
+    
+    <div class="siteinfo-item">
+      <div class="item-name"><i class="fa fa-font"></i>總字數：</div>
+      <div class="item-count" id="wordsCount" data-count="98389"></div>
+    </div>
+    <div class="siteinfo-item">
+      <div class="item-name"><i class="fa fa-mug-hot"></i>閱讀約：</div>
+      <div class="item-count" id="readTimes" data-times="245"></div>
+    </div>
+    <div class="siteinfo-item">
+      <div class="item-name"><i class="fa fa-clock-rotate-left"></i>最後更新於：</div>
+      <div class="item-count" id="last-push-date" data-lastpushdate="2025-02-28 00:00:00 &#43;0000 UTC"></div>
+    </div>
+  </div>
+</div>
+  
+
+  
+  <div class="sidebar-card-widget back-to-top-card">
+    <div class="back-to-top animated" role="button" aria-label="">
+      <i class="fa fa-arrow-up"></i>
+      <span>0%</span>
+    </div>
+  </div>
+  
+</aside>
+<div class="sidebar-dimmer"></div>
+
+      
+    </header>
+    
+    <div class="tool-buttons" >
+  
+  
+  <div id="goto-i18n-translate" class="button"  title="多語言翻譯">
+    <i class="fas fa-globe"></i>
+  </div> 
+  
+  <div id="toggle-theme" class="button" title="深淺模式切換">
+    <i class="fas fa-adjust"></i>
+  </div>
+   
+</div>
+
+
+  <div class="reading-progress-bar"></div>
+
+
+
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+
+
+
+<a href="https://github.com/hugo-next" rel="noopener external nofollow noreferrer" target="_blank" title="Follow me on GitHub" class="exturl github-corner">
+  <svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg>
+</a>
+
+
+
+
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+    <div class="main-inner post posts-expand">
+      
+      
+  <div class="post-block">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    
+    <link itemprop="mainEntityOfPage" href="//localhost:1414/post/b3e3b48f-c104-4741-a33e-f024d009b60d/">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/imgs/hugo_next_avatar.png">
+      <meta itemprop="name" content="EricChen">
+    </span>
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="EricChen">
+      <meta itemprop="description" content="保持简单的易用性和强大的功能。">
+    </span>
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Bash">
+      <meta itemprop="description" content="重導向
+
+
+
+
+1
+2
+
+
+echo &#34;echo&#34; &gt; log.txt
+echo &#34;echo&#34; 2&gt; log.txt
+
+
+
+第一行會重導向 stdout，第二行會重導向 stderr
+
+
+
+1
+
+
+ls /dev 2&gt;&amp;1 | tee result.txt
+
+
+
+把 stdout and stderr 複製到 result.txt 及銀幕
+tee -a result.txt 附加在 result.txt 原內容後面
+Echo
+
+
+
+
+1
+
+
+echo &#34;Date $(date)&#34;
+
+
+
+直接在 echo 中呼叫指令">
+    </span>
+    
+    <header class="post-header">
+      
+ <h1  class="post-title" itemprop="name headline">
+  
+  
+  Bash
+  
+  
+  <a href="https://github.com/user-name/repo-name/tree/branch-name/subdirectory-name/post/69e203d9-2424-4685-aa31-248add482550/index.md" rel="noopener external nofollow noreferrer" target="_blank" class="exturl post-edit-link" title="編輯"><i class="fa fa-pen-nib"></i></a>
+  
+  
+   </h1> 
+
+<div class="post-meta-container">
+  <div class="post-meta-items">
+    
+
+
+<span class="post-meta-item">
+  <span class="post-meta-item-icon">
+    <i class="fas fa-solid fa-calendar"></i>
+  </span>
+  <span class="post-meta-item-text" title="發表於">
+    發表於：
+  </span>
+  <time title="創建時間：2024-07-08T00:00:00&#43;00:00 CST" itemprop="dateCreated datePublished" datetime="2024-07-08 00:00:00 &#43;0000 UTC">
+    2024-07-08
+  </time>
+</span>
+
+    
+
+
+    
+
+
+        
+  </div>
+  
+  <div class="post-meta-items">
+    
+<span class="post-meta-item" title="字數">
+  <span class="post-meta-item-icon">
+    <i class="fas fa-solid fa-file-word"></i>
+  </span>
+  <span class="post-meta-item-text">字數：</span>
+  <span>1035</span>
+</span>
+
+    
+<span class="post-meta-item" title="閱讀">
+  <span class="post-meta-item-icon">
+    <i class="fas fa-solid fa-clock"></i>
+  </span>
+  <span class="post-meta-item-text">閱讀：&asymp;</span>
+  <span>3分鐘</span>
+</span>
+
+
+    
+
+
+<span class="post-meta-item" title="瀏覽">
+  <span class="post-meta-item-icon">
+    <i class="fas fa-solid fa-eye"></i>
+  </span>
+  <span class="post-meta-item-text">
+  瀏覽：
+  </span>
+  <span id="pageview-count" data-path="/post/b3e3b48f-c104-4741-a33e-f024d009b60d/">
+    <i class="fa fa-sync fa-spin"></i>
+  </span>
+</span>
+
+    
+  </div>
+  
+</div>
+
+    </header>
+    
+    <div class="post-body " itemprop="articleBody">
+      
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 id="重導向">重導向
+<a class="header-anchor" href="#%e9%87%8d%e5%b0%8e%e5%90%91"></a>
+</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-0-1"><a class="lnlinks" href="#hl-0-1">1</a>
+</span><span class="lnt" id="hl-0-2"><a class="lnlinks" href="#hl-0-2">2</a>
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;echo&#34;</span> &gt; log.txt
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;echo&#34;</span> 2&gt; log.txt</span></span></code></pre></td></tr></table>
+</div>
+</div>
+
+<p>第一行會重導向 stdout，第二行會重導向 stderr</p>
+
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-1-1"><a class="lnlinks" href="#hl-1-1">1</a>
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ls /dev 2&gt;<span class="p">&amp;</span><span class="m">1</span> <span class="p">|</span> tee result.txt</span></span></code></pre></td></tr></table>
+</div>
+</div>
+
+<p>把 stdout and stderr 複製到 result.txt 及銀幕
+<code>tee -a result.txt</code> 附加在 result.txt 原內容後面</p>
+<h3 id="echo">Echo
+<a class="header-anchor" href="#echo"></a>
+</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-2-1"><a class="lnlinks" href="#hl-2-1">1</a>
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;Date </span><span class="k">$(</span>date<span class="k">)</span><span class="s2">&#34;</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+
+<p>直接在 echo 中呼叫指令</p>
+  
+  <a id="more"></a>
+  <div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-3-1"><a class="lnlinks" href="#hl-3-1">1</a>
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;</span><span class="si">${</span><span class="nv">var</span><span class="si">}</span><span class="s2">&#34;</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+
+<p>顯示變數的值</p>
+
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-4-1"><a class="lnlinks" href="#hl-4-1">1</a>
+</span><span class="lnt" id="hl-4-2"><a class="lnlinks" href="#hl-4-2">2</a>
+</span><span class="lnt" id="hl-4-3"><a class="lnlinks" href="#hl-4-3">3</a>
+</span><span class="lnt" id="hl-4-4"><a class="lnlinks" href="#hl-4-4">4</a>
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">echo</span> -e <span class="s2">&#34;Hello\nworld&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> -e <span class="s1">&#39;Hello\nworld&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> Hello<span class="s1">$&#39;\n&#39;</span>world
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> Hello <span class="p">;</span> <span class="nb">echo</span> world</span></span></code></pre></td></tr></table>
+</div>
+</div>
+
+<p>換行，只有 bash 支援</p>
+
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-5-1"><a class="lnlinks" href="#hl-5-1">1</a>
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">printf</span> <span class="s2">&#34;hello\nworld\n&#34;</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+
+<p>在 UNIX 上可攜</p>
+<h3 id="file">File
+<a class="header-anchor" href="#file"></a>
+</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-6-1"><a class="lnlinks" href="#hl-6-1">1</a>
+</span><span class="lnt" id="hl-6-2"><a class="lnlinks" href="#hl-6-2">2</a>
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">tail -n <span class="m">20000</span> -q sync.md &gt; .sync.md
+</span></span><span class="line"><span class="cl">mv .sync.md sync.md</span></span></code></pre></td></tr></table>
+</div>
+</div>
+
+<p>如果 sync.md 大於 20000 行則將檔頭截斷否則保留原始檔案</p>
+<h3 id="變數">變數
+<a class="header-anchor" href="#%e8%ae%8a%e6%95%b8"></a>
+</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-7-1"><a class="lnlinks" href="#hl-7-1">1</a>
+</span><span class="lnt" id="hl-7-2"><a class="lnlinks" href="#hl-7-2">2</a>
+</span><span class="lnt" id="hl-7-3"><a class="lnlinks" href="#hl-7-3">3</a>
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nv">SyncRlt</span><span class="o">=</span><span class="s2">&#34;</span><span class="nv">$?</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">RltFile</span><span class="o">=</span><span class="s2">&#34;r.log&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;SyncRlt </span><span class="si">${</span><span class="nv">SyncRlt</span><span class="si">}</span><span class="s2">&#34;</span> &gt; <span class="si">${</span><span class="nv">RltFile</span><span class="si">}</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+
+<p>型態只有字串，等號兩側不可以有空格
+<code>${var}</code> 可以使用變數，會在執行該行前被替換</p>
+<h3 id="debug">Debug
+<a class="header-anchor" href="#debug"></a>
+</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-8-1"><a class="lnlinks" href="#hl-8-1">1</a>
+</span><span class="lnt" id="hl-8-2"><a class="lnlinks" href="#hl-8-2">2</a>
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">bash +x sync.bash
+</span></span><span class="line"><span class="cl">bash --verbose sync.bash</span></span></code></pre></td></tr></table>
+</div>
+</div>
+
+<h3 id="array">Array
+<a class="header-anchor" href="#array"></a>
+</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-9-1"><a class="lnlinks" href="#hl-9-1">1</a>
+</span><span class="lnt" id="hl-9-2"><a class="lnlinks" href="#hl-9-2">2</a>
+</span><span class="lnt" id="hl-9-3"><a class="lnlinks" href="#hl-9-3">3</a>
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">array=(1,2,3,4)
+</span></span><span class="line"><span class="cl">array=(1 2 3 4)
+</span></span><span class="line"><span class="cl">echo ${arary[@]}</span></span></code></pre></td></tr></table>
+</div>
+</div>
+
+<p>定義跟顯示</p>
+
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-10-1"><a class="lnlinks" href="#hl-10-1">1</a>
+</span><span class="lnt" id="hl-10-2"><a class="lnlinks" href="#hl-10-2">2</a>
+</span><span class="lnt" id="hl-10-3"><a class="lnlinks" href="#hl-10-3">3</a>
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="k">for</span> str in <span class="si">${</span><span class="nv">myArray</span><span class="p">[@]</span><span class="si">}</span><span class="p">;</span> <span class="k">do</span>
+</span></span><span class="line"><span class="cl">  <span class="nb">echo</span> <span class="nv">$str</span>
+</span></span><span class="line"><span class="cl"><span class="k">done</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+
+<p>尋訪</p>
+
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-11-1"><a class="lnlinks" href="#hl-11-1">1</a>
+</span><span class="lnt" id="hl-11-2"><a class="lnlinks" href="#hl-11-2">2</a>
+</span><span class="lnt" id="hl-11-3"><a class="lnlinks" href="#hl-11-3">3</a>
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="k">for</span> i in <span class="si">${</span><span class="p">!myArray[@]</span><span class="si">}</span><span class="p">;</span> <span class="k">do</span>
+</span></span><span class="line"><span class="cl">  <span class="nb">echo</span> <span class="s2">&#34;element </span><span class="nv">$i</span><span class="s2"> is </span><span class="si">${</span><span class="nv">myArray</span><span class="p">[</span><span class="nv">$i</span><span class="p">]</span><span class="si">}</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="k">done</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+
+<p>索引尋訪</p>
+<h3 id="conditionhttpswwwgnuorgsoftwarebashmanualhtml_nodebash-conditional-expressionshtml">
+<a href="https://www.gnu.org/software/bash/manual/html_node/Bash-Conditional-Expressions.html" title="Condition" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+    Condition
+    
+    <i class="fa fa-external-link-alt"></i>
+    
+</a>
+<a class="header-anchor" href="#conditionhttpswwwgnuorgsoftwarebashmanualhtml_nodebash-conditional-expressionshtml"></a>
+</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-12-1"><a class="lnlinks" href="#hl-12-1"> 1</a>
+</span><span class="lnt" id="hl-12-2"><a class="lnlinks" href="#hl-12-2"> 2</a>
+</span><span class="lnt" id="hl-12-3"><a class="lnlinks" href="#hl-12-3"> 3</a>
+</span><span class="lnt" id="hl-12-4"><a class="lnlinks" href="#hl-12-4"> 4</a>
+</span><span class="lnt" id="hl-12-5"><a class="lnlinks" href="#hl-12-5"> 5</a>
+</span><span class="lnt" id="hl-12-6"><a class="lnlinks" href="#hl-12-6"> 6</a>
+</span><span class="lnt" id="hl-12-7"><a class="lnlinks" href="#hl-12-7"> 7</a>
+</span><span class="lnt" id="hl-12-8"><a class="lnlinks" href="#hl-12-8"> 8</a>
+</span><span class="lnt" id="hl-12-9"><a class="lnlinks" href="#hl-12-9"> 9</a>
+</span><span class="lnt" id="hl-12-10"><a class="lnlinks" href="#hl-12-10">10</a>
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="k">if</span> <span class="o">[</span> &lt;some test&gt; <span class="o">]</span>
+</span></span><span class="line"><span class="cl"><span class="k">then</span>
+</span></span><span class="line"><span class="cl">	&lt;commands&gt;
+</span></span><span class="line"><span class="cl"><span class="k">fi</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="o">[</span> &lt;some test&gt; <span class="o">]</span><span class="p">;</span><span class="k">then</span>
+</span></span><span class="line"><span class="cl">	&lt;commands&gt;
+</span></span><span class="line"><span class="cl"><span class="k">else</span>
+</span></span><span class="line"><span class="cl">	&lt;commands&gt;
+</span></span><span class="line"><span class="cl"><span class="k">fi</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+
+<p><code>&amp;lt;some test&amp;gt;</code></p>
+<ul>
+<li><code>! EXPRESSION</code> The EXPRESSION is false.</li>
+<li><code>-n STRING</code> The length of STRING is greater than zero.</li>
+<li><code>-z STRING</code> The lengh of STRING is zero (ie it is empty).</li>
+<li><code>STRING1 = STRING2</code> STRING1 is equal to STRING2</li>
+<li><code>STRING1 != STRING2</code> STRING1 is not equal to STRING2</li>
+<li><code>INTEGER1 -eq INTEGER2</code> INTEGER1 is numerically equal to INTEGER2</li>
+<li><code>INTEGER1 -gt INTEGER2</code> INTEGER1 is numerically greater than INTEGER2</li>
+<li><code>INTEGER1 -lt INTEGER2</code> INTEGER1 is numerically less than INTEGER2</li>
+<li><code>-d FILE</code> FILE exists and is a directory.</li>
+<li><code>-e FILE</code> FILE exists.</li>
+<li><code>-f file</code> True if file exists and is a regular file.</li>
+<li><code>-r FILE</code> FILE exists and the read permission is granted.</li>
+<li><code>-s FILE</code> FILE exists and it&rsquo;s size is greater than zero (ie. it is not empty).</li>
+<li><code>-w FILE</code> FILE exists and the write permission is granted.</li>
+<li><code>-x FILE</code> FILE exists and the execute permission is granted.</li>
+</ul>
+
+
+
+  <div class="post-alert-note">
+    <div class="post-alert-title">
+      <i class="fa-solid fa-bell"></i>
+      <span>
+        
+          注意
+        
+      </span>
+    </div>
+    <div class="post-alert-content">
+      <p><code>&amp;lt;some test&amp;gt;</code> 接受字串後轉變為 Operator 需要的型別
+if 與 <code>[</code> 間的空白是必要的</p>
+    </div>
+  </div>
+
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-13-1"><a class="lnlinks" href="#hl-13-1">1</a>
+</span><span class="lnt" id="hl-13-2"><a class="lnlinks" href="#hl-13-2">2</a>
+</span><span class="lnt" id="hl-13-3"><a class="lnlinks" href="#hl-13-3">3</a>
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="k">if</span> <span class="o">[[</span> <span class="nv">$num</span> -eq <span class="m">3</span> <span class="o">&amp;&amp;</span> <span class="s2">&#34;</span><span class="nv">$stringvar</span><span class="s2">&#34;</span> <span class="o">==</span> foo <span class="o">]]</span><span class="p">;</span> <span class="k">then</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">fi</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+
+<p><code>&amp;amp;&amp;amp;</code>, <code>||</code> 只在 if 使用 <code>[[]]</code> 時可用</p>
+<p>if 接受一個命令並運行它，並使用該命令的返回值來決定如何繼續，零表示 true，非零表示 false</p>
+
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-14-1"><a class="lnlinks" href="#hl-14-1">1</a>
+</span><span class="lnt" id="hl-14-2"><a class="lnlinks" href="#hl-14-2">2</a>
+</span><span class="lnt" id="hl-14-3"><a class="lnlinks" href="#hl-14-3">3</a>
+</span><span class="lnt" id="hl-14-4"><a class="lnlinks" href="#hl-14-4">4</a>
+</span><span class="lnt" id="hl-14-5"><a class="lnlinks" href="#hl-14-5">5</a>
+</span><span class="lnt" id="hl-14-6"><a class="lnlinks" href="#hl-14-6">6</a>
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">eric@16AHP9:~$ <span class="o">[</span> <span class="m">0</span> -eq <span class="m">0</span>  <span class="o">]</span>
+</span></span><span class="line"><span class="cl">eric@16AHP9:~$ <span class="nb">echo</span> <span class="nv">$?</span>
+</span></span><span class="line"><span class="cl"><span class="m">0</span>
+</span></span><span class="line"><span class="cl">eric@16AHP9:~$ <span class="o">[</span> <span class="m">0</span> -eq <span class="m">1</span>  <span class="o">]</span>
+</span></span><span class="line"><span class="cl">eric@16AHP9:~$ <span class="nb">echo</span> <span class="nv">$?</span>
+</span></span><span class="line"><span class="cl"><span class="m">1</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+
+<p><code>[&amp;lt;some test&amp;gt;]</code> 也是一個命令（以前，現在由 bash 內建），估值 <code>&amp;lt;some test&amp;gt;</code> 成功返回 0，失敗返回 1</p>
+<h3 id="command-substitution">Command Substitution
+<a class="header-anchor" href="#command-substitution"></a>
+</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-15-1"><a class="lnlinks" href="#hl-15-1">1</a>
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">file <span class="k">$(</span>which bash<span class="k">)</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+
+<p>命令替換允許命令的輸出替換命令本身</p>
+<h3 id="new-line">New Line
+<a class="header-anchor" href="#new-line"></a>
+</h3><p>如果 bash file 用了 windows style(<code>\n\r</code>) 的換行，可能導致 <code>unexpected end of file</code></p>
+<h3 id="function">Function
+<a class="header-anchor" href="#function"></a>
+</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-16-1"><a class="lnlinks" href="#hl-16-1">1</a>
+</span><span class="lnt" id="hl-16-2"><a class="lnlinks" href="#hl-16-2">2</a>
+</span><span class="lnt" id="hl-16-3"><a class="lnlinks" href="#hl-16-3">3</a>
+</span><span class="lnt" id="hl-16-4"><a class="lnlinks" href="#hl-16-4">4</a>
+</span><span class="lnt" id="hl-16-5"><a class="lnlinks" href="#hl-16-5">5</a>
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">greeting <span class="o">()</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nb">echo</span> <span class="s2">&#34;Hello </span><span class="nv">$1</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">greeting <span class="s2">&#34;Joe&#34;</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+
+<h3 id="list-directory">List Directory
+<a class="header-anchor" href="#list-directory"></a>
+</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-17-1"><a class="lnlinks" href="#hl-17-1">1</a>
+</span><span class="lnt" id="hl-17-2"><a class="lnlinks" href="#hl-17-2">2</a>
+</span><span class="lnt" id="hl-17-3"><a class="lnlinks" href="#hl-17-3">3</a>
+</span><span class="lnt" id="hl-17-4"><a class="lnlinks" href="#hl-17-4">4</a>
+</span><span class="lnt" id="hl-17-5"><a class="lnlinks" href="#hl-17-5">5</a>
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="nv">search_dir</span><span class="o">=</span>/the/path/to/base/dir
+</span></span><span class="line"><span class="cl"><span class="k">for</span> entry in <span class="s2">&#34;</span><span class="nv">$search_dir</span><span class="s2">&#34;</span>/*
+</span></span><span class="line"><span class="cl"><span class="k">do</span>
+</span></span><span class="line"><span class="cl">  <span class="nb">echo</span> <span class="s2">&#34;</span><span class="nv">$entry</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="k">done</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+
+<h3 id="bash-init">Bash Init
+<a class="header-anchor" href="#bash-init"></a>
+</h3><ul>
+<li><code>~/.bash_profile</code> 為登入 shell 運行</li>
+<li><code>~/.bashrc</code> 為非互動式shell運行
+有設定可能會把 bash_profile 將 BASH_ENV 設定為指向 .bashrc，
+<a href="https://github.com/pyenv/pyenv/issues/264" title="可能引起無限遞迴" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+    可能引起無限遞迴
+    
+    <i class="fa fa-external-link-alt"></i>
+    
+</a>，強烈不建議</li>
+<li><code>/etc/profile.d/</code> 資料夾下的檔案為系統上全部 shell 登入前運行</li>
+</ul>
+<h3 id="eof">EOF
+<a class="header-anchor" href="#eof"></a>
+</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-18-1"><a class="lnlinks" href="#hl-18-1">1</a>
+</span><span class="lnt" id="hl-18-2"><a class="lnlinks" href="#hl-18-2">2</a>
+</span><span class="lnt" id="hl-18-3"><a class="lnlinks" href="#hl-18-3">3</a>
+</span><span class="lnt" id="hl-18-4"><a class="lnlinks" href="#hl-18-4">4</a>
+</span><span class="lnt" id="hl-18-5"><a class="lnlinks" href="#hl-18-5">5</a>
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">cat &gt; sim.conf <span class="s">&lt;&lt; EOF
+</span></span></span><span class="line"><span class="cl"><span class="s">conf-0 : 0
+</span></span></span><span class="line"><span class="cl"><span class="s">conf-1 : 2
+</span></span></span><span class="line"><span class="cl"><span class="s">conf-2 : str
+</span></span></span><span class="line"><span class="cl"><span class="s">EOF</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+
+<p>將 EOF 中間的字串視為多行字串覆寫進 sim.conf</p>
+<h3 id="exec">exec
+<a class="header-anchor" href="#exec"></a>
+</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-19-1"><a class="lnlinks" href="#hl-19-1">1</a>
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">exec</span> bash sync.bash</span></span></code></pre></td></tr></table>
+</div>
+</div>
+
+
+  <blockquote>
+    <p>Replace the shell with the given command.
+Execute COMMAND, replacing this shell with the specified program. ARGUMENTS become the arguments to COMMAND.  If COMMAND is not specified, any redirections take effect in the current shell.</p>
+  </blockquote>
+
+
+
+  <div class="post-alert-note">
+    <div class="post-alert-title">
+      <i class="fa-solid fa-bell"></i>
+      <span>
+        
+          注意
+        
+      </span>
+    </div>
+    <div class="post-alert-content">
+      <p>不可以用 <code>'</code> 把要替換的指令包起來
+<code>exec 'bash sync.bash'</code> 會導致 <code>bash: exec: bash sync.bash: not found</code></p>
+    </div>
+  </div>
+<p>exec 會呼叫 FD_CLOEXEC 關閉在 exec 前開啟的檔案，但不會關閉其他資源</p>
+<h3 id="gerp-in-condition">Gerp in Condition
+<a class="header-anchor" href="#gerp-in-condition"></a>
+</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-20-1"><a class="lnlinks" href="#hl-20-1">1</a>
+</span><span class="lnt" id="hl-20-2"><a class="lnlinks" href="#hl-20-2">2</a>
+</span><span class="lnt" id="hl-20-3"><a class="lnlinks" href="#hl-20-3">3</a>
+</span><span class="lnt" id="hl-20-4"><a class="lnlinks" href="#hl-20-4">4</a>
+</span><span class="lnt" id="hl-20-5"><a class="lnlinks" href="#hl-20-5">5</a>
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="k">if</span> grep --quiet <span class="nv">MYSQL_ROLE</span><span class="o">=</span>master /etc/aws/hosts.conf<span class="p">;</span> <span class="k">then</span>
+</span></span><span class="line"><span class="cl">  <span class="nb">echo</span> exists
+</span></span><span class="line"><span class="cl"><span class="k">else</span>
+</span></span><span class="line"><span class="cl">  <span class="nb">echo</span> not found
+</span></span><span class="line"><span class="cl"><span class="k">fi</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+
+
+  <blockquote>
+    <p>From <code>grep --help</code>
+若選擇任何行，退出狀態為 0，否則為 1；如果發生任何錯誤且未給予 -q，則退出狀態為 2</p>
+  </blockquote>
+<h3 id="sh-0-getcwd-failed-no-such-file-or-directory"><code>sh: 0: getcwd() failed: No such file or directory</code>
+<a class="header-anchor" href="#sh-0-getcwd-failed-no-such-file-or-directory"></a>
+</h3><p>在 dash 中 <code>cd ~</code> 解</p>
+
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-21-1"><a class="lnlinks" href="#hl-21-1">1</a>
+</span><span class="lnt" id="hl-21-2"><a class="lnlinks" href="#hl-21-2">2</a>
+</span><span class="lnt" id="hl-21-3"><a class="lnlinks" href="#hl-21-3">3</a>
+</span><span class="lnt" id="hl-21-4"><a class="lnlinks" href="#hl-21-4">4</a>
+</span><span class="lnt" id="hl-21-5"><a class="lnlinks" href="#hl-21-5">5</a>
+</span><span class="lnt" id="hl-21-6"><a class="lnlinks" href="#hl-21-6">6</a>
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">eric@16AHP9:~$ mkdir /tmp/z
+</span></span><span class="line"><span class="cl">eric@16AHP9:~$ <span class="nb">cd</span> /tmp/z
+</span></span><span class="line"><span class="cl">eric@16AHP9:/tmp/z$ rm -r /tmp/z
+</span></span><span class="line"><span class="cl">eric@16AHP9:/tmp/z$ /bin/bash
+</span></span><span class="line"><span class="cl">shell-init: error retrieving current directory: getcwd: cannot access parent directories: No such file or directory
+</span></span><span class="line"><span class="cl">sh: 0: getcwd<span class="o">()</span> failed: No such file or directory</span></span></code></pre></td></tr></table>
+</div>
+</div>
+
+<p>問題主應是 dash 不喜歡不存在的工作目錄
+此問題會同時導致其他依賴 <code>/bin/sh</code> 的指令失效如 pyenv, egrep</p>
+
+
+    </div>
+    <footer class="post-footer">
+      
+
+
+<div class="post-tags">
+  
+    <a href="/tags/cs/linux/">
+    CS/Linux
+  </a>
+  
+</div>
+
+
+
+  
+    <div class="post-share-tools"> 
+      <div class="post-share-loading">
+        <i class="fa-solid fa-ellipsis fa-spin"></i>
+      </div>  
+      
+      
+        <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+  <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+  <a class="a2a_button_wechat"></a>
+  <a class="a2a_button_qzone"></a>
+  <a class="a2a_button_sina_weibo"></a>
+  <a class="a2a_button_douban"></a>
+  <a class="a2a_button_facebook"></a>
+  <a class="a2a_button_x"></a>
+  <a class="a2a_button_email"></a>
+  <a class="a2a_button_printfriendly"></a>
+</div>
+      
+    </div>
+    
+
+<hr/>
+
+
+
+
+
+
+<div class="post-copyright">
+  <img src="/imgs/cc/cc.svg" width="75" height="75" align="right" alt="共享知識"/>
+  <ul>
+    <li class="post-copyright-title">
+      <strong>文章標題：</strong>
+      Bash
+    </li>
+    <li class="post-copyright-author">
+      
+        <strong>本文作者： </strong>
+        EricChen
+      
+    </li>
+    <li class="post-copyright-link">
+       
+        <strong>本文鏈接：</strong>
+        <a id="post-cr-link" href="//localhost:1414/post/b3e3b48f-c104-4741-a33e-f024d009b60d/" title="Bash">//localhost:1414/post/b3e3b48f-c104-4741-a33e-f024d009b60d/</a>
+      
+    </li>
+    <li class="post-copyright-license">
+      <strong>版權聲明： </strong>
+      
+      
+      本博客所有文章除特別聲明外，均採用 <i class="fab fa-fw fa-creative-commons"></i><a target='_blank' href='https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh'>BY-NC-SA</a> 許可協議。轉載請註明出處！
+    </li>
+  </ul>
+</div>
+
+
+
+
+  <div class="followme">
+  <span>歡迎關注我的其它發布渠道</span>
+  <div class="social-list">
+    
+    
+    
+    
+    
+    <div class="social-item">
+        <a target="_blank" class="social-link" href="/atom.xml">
+          <span class="icon">
+            <i class="fa fa-rss"></i>
+          </span>
+          <span class="label">RSS</span>
+        </a>
+      </div>
+    
+  </div>
+</div>
+
+
+
+<div class="post-nav">
+  <div class="post-nav-next post-nav-item">
+    
+    <a href="/demo/image-viewer.html" rel="next" title="图像浏览工具 ">
+      <i class="fa fa-chevron-left"></i> 图像浏览工具 
+    </a>
+    
+  </div>
+  <div class="post-nav-prev post-nav-item">
+    
+    <a href="/post/7e28fec8-2657-4833-8f82-d04150658085/" rel="prev" title="Ch340.md">
+      Ch340.md
+      <i class="fa fa-chevron-right"></i>
+    </a>
+    
+  </div>
+</div>
+
+
+
+    </footer>
+  </article>
+</div>
+
+      
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer-inner">
+      
+<div id="i18n-translate" class="i18n-translate">
+  <i class="fa fa-language"></i>
+  <div id="lang-select" class="lang-select">
+    <div id="lang-selected" class="selected-option">
+      <span class="flag-icon flag-icon-zh-tw"></span>
+      <span class="selected-language">繁體中文</span>
+      <i class="fa fa-chevron-down"></i>
+    </div>
+    <div id="lang-options" class="lang-options">
+      
+      
+      
+        <div class="lang-option" lang-code="zh-tw" lang-name="繁體中文" lang-url="/post/b3e3b48f-c104-4741-a33e-f024d009b60d/">
+          <span class="flag-icon flag-icon-zh-tw"></span>
+          <span class="lang-name">繁體中文</span>
+        </div>
+      
+      
+    </div>
+  </div>
+</div>
+
+      
+<div class="copyright">
+  &copy;
+  <span itemprop="copyrightYear">
+    
+    
+    
+    2021 - 2025
+    
+    
+  </span>
+  <span class="with-love">
+    <i class="fa fa-copyright"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">EricChen</span>
+</div>
+
+<div class="powered-by">
+  
+  %!(EXTRA string=<a href='https://gohugo.io' title='0.143.1' target='_blank'>Hugo</a> &amp; <a href='https://github.com/hugo-next/hugo-theme-next' title='4.7.2' target='_blank'>Hugo NexT.Muse</a>)
+</div>
+
+
+
+
+
+ 
+
+
+
+
+
+    </div>
+  </footer>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    
+    
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"clipboard":{"js":{"file":"dist/clipboard.min.js","name":"clipboard","version":"2.0.11"}},"comments":false,"expired":false,"isHome":false,"isPage":true,"path":"b3e3b48f-c104-4741-a33e-f024d009b60d","permalink":"//localhost:1414/post/b3e3b48f-c104-4741-a33e-f024d009b60d/","title":"Bash","toc":false,"waline3":{"pagecnt":{"alias":"@waline/client","alias_name":"waline","file":"dist/pageview.js","name":"pageview","version":"3.3.0"}}}</script>
+  
+
+
+
+ 
+  
+  <script type="text/javascript" src="//localhost:1414/js/3rd/animejs/3.2.2/anime.min.js" crossorigin="anonymous" defer></script>
+ 
+  
+  <script type="text/javascript" src="//localhost:1414/js/3rd/viewerjs/1.11.6/viewer.min.js" crossorigin="anonymous" defer></script>
+
+
+<script class="next-config" data-name="main" type="application/json">{"bookmark":{"color":"#222","enable":true,"save":"manual"},"copybtn":true,"darkmode":false,"giscus":{"cfg":{"category":"Comments","categoryid":null,"emit":false,"inputposition":"top","mapping":"title","reactions":false,"repo":"username/repo-name","repoid":null,"theme":"preferred_color_scheme"},"js":"https://giscus.app/client.js"},"hostname":"//localhost:1414/","i18n":{"ds_day":" 天前","ds_days":" 天 ","ds_hour":" 小時前","ds_hours":" 小時 ","ds_just":"剛剛","ds_min":" 分鐘前","ds_mins":" 分鐘","ds_month":" 個月前","ds_years":" 年 ","empty":"沒有找到任何搜索結果：${query}","hits":"找到 ${hits} 個搜索結果","hits_time":"找到 ${hits} 個搜索結果（用時 ${time} 毫秒）","placeholder":"搜索..."},"isMultiLang":true,"lang":"zh-TW","lazyload":false,"localSearch":{"enable":true,"limit":1000,"path":"/searchindexes.xml","preload":false,"topnperarticle":-1,"trigger":"auto","unescape":false},"motion":{"async":true,"enable":true,"transition":{"collheader":"fadeInLeft","postblock":"fadeIn","postbody":"fadeInDown","postheader":"fadeInDown","sidebar":"fadeInUp"}},"postmeta":{"comments":{"enable":false,"plugin":"waline3"},"views":{"enable":true,"plugin":"waline3"}},"root":"/","scheme":"Muse","share":{"addtoany":{"js":"https://static.addtoany.com/menu/page.js","locale":"zh-TW","num":8},"enable":true},"sidebar":{"display":"post","offset":12,"padding":18,"position":"right","width":264},"vendor":{"plugins":"local","router":{"name":"local","type":"modern","url":"//localhost:1414/js/3rd"}},"version":"4.7.2","waline3":{"cfg":{"emoji":false,"imguploader":false,"placeholder":"请文明发言哟 ヾ(≧▽≦*)o 可用快捷键选取表情符号：😀😄😁🥳👻👽👀🚄 (Window系统：Win+.，Mac系统：Control+Command+Space)","reaction":true,"reactiontext":["点赞","踩一下","得意","不屑","尴尬","睡觉"],"reactiontitle":"你认为这篇文章怎么样？","requiredmeta":["nick","mail"],"search":true,"serverurl":"https://walinejs.comment.lithub.cc","sofa":"快来发表你的意见吧 (≧∀≦)ゞ","wordlimit":200},"css":{"alias":"@waline/client","file":"dist/waline.min.css","name":"waline","version":"3.3.0"},"js":{"alias":"@waline/client","file":"dist/waline.js","name":"waline","version":"3.3.0"}}}</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+    
+  
+  
+
+
+
+
+
+  
+  
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<script type="text/javascript" src="/js/main.js?=1741103274" defer></script>
+
+
+
+
+
+  
+
+
+
+
+
+
+
+<script type="text/javascript" src="/js/clipboard.js?=1741103274" defer></script>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

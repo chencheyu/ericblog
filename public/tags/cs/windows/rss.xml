@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CS/Windows on 哲佑碎碎念</title>
+    <link>//localhost:1414/tags/cs/windows/</link>
+    <description>Recent content in CS/Windows on 哲佑碎碎念</description>
+    <generator>Hugo</generator>
+    <language>zh-TW</language>
+    <lastBuildDate>Sat, 07 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1414/tags/cs/windows/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Path</title>
+      <link>//localhost:1414/post/2a5584d3-64f9-4035-8c51-9b034eb8e7aa/</link>
+      <pubDate>Sat, 07 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1414/post/2a5584d3-64f9-4035-8c51-9b034eb8e7aa/</guid>
+      <description>&lt;p&gt;&#xA;&lt;a href=&#34;https://learn.microsoft.com/en-us/windows/win32/fileio/naming-a-file&#34; title=&#34;Naming Files, Paths, and Namespaces&#34; rel=&#34;noopener external nofollow noreferrer&#34; target=&#34;_blank&#34; class=&#34; exturl&#34;&gt;&#xA;    Naming Files, Paths, and Namespaces&#xA;    &#xA;    &lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&#xA;    &#xA;&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;dos-path&#34;&gt;DOS Path&#xA;&lt;a class=&#34;header-anchor&#34; href=&#34;#dos-path&#34;&gt;&lt;/a&gt;&#xA;&lt;/h2&gt;&lt;p&gt;&lt;code&gt;C:\File&lt;/code&gt;&#xA;路徑不得有以下保留字元：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&amp;lt; (less than)&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;&amp;amp;gt;&lt;/code&gt; (greater than)&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;:&lt;/code&gt; (colon)&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;&amp;amp;quot;&lt;/code&gt; (double quote)&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;/&lt;/code&gt; (forward slash)&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;\&lt;/code&gt; (backslash)&lt;/li&gt;&#xA;&lt;li&gt;| (vertical bar or pipe)&lt;/li&gt;&#xA;&lt;li&gt;? (question mark)&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;*&lt;/code&gt; (asterisk)&lt;/li&gt;&#xA;&lt;li&gt;ASCII NULL&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;檔案名稱或目錄名稱請勿以空格或句點結尾。儘管底層檔案系統可能支援此類名稱，但 Windows shell 和使用者介面不支援。但是，可以將句點指定為名稱的第一個字元&#xA;shell 和檔案系統有不同的要求。可以使用 Windows API 建立 shell 使用者介面無法正確解釋的路徑&#xA;Do not use the following reserved names for the name of a file:&#xA;CON, PRN, AUX, NUL, COM0, COM1, COM2, COM3, COM4, COM5, COM6, COM7, COM8, COM9, LPT0, LPT1, LPT2, LPT3, LPT4, LPT5, LPT6, LPT7, LPT8, LPT9&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -6,8 +6,92 @@
     <description>Recent content in Tags on 哲佑碎碎念</description>
     <generator>Hugo</generator>
     <language>zh-TW</language>
-    <lastBuildDate>Thu, 02 Jan 2025 19:08:02 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 28 Feb 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="//localhost:1414/tags/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CS</title>
+      <link>//localhost:1414/tags/cs/</link>
+      <pubDate>Fri, 28 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1414/tags/cs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>CS/Backend</title>
+      <link>//localhost:1414/tags/cs/backend/</link>
+      <pubDate>Fri, 28 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1414/tags/cs/backend/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>CS/Software</title>
+      <link>//localhost:1414/tags/cs/software/</link>
+      <pubDate>Wed, 26 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1414/tags/cs/software/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>CS/Route</title>
+      <link>//localhost:1414/tags/cs/route/</link>
+      <pubDate>Mon, 24 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1414/tags/cs/route/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>CS/Hardware</title>
+      <link>//localhost:1414/tags/cs/hardware/</link>
+      <pubDate>Fri, 21 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1414/tags/cs/hardware/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>CS/Hardware/Relay</title>
+      <link>//localhost:1414/tags/cs/hardware/relay/</link>
+      <pubDate>Fri, 21 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1414/tags/cs/hardware/relay/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>CS/Embedded</title>
+      <link>//localhost:1414/tags/cs/embedded/</link>
+      <pubDate>Thu, 20 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1414/tags/cs/embedded/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>CS/Embedded/Arterytek</title>
+      <link>//localhost:1414/tags/cs/embedded/arterytek/</link>
+      <pubDate>Thu, 20 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1414/tags/cs/embedded/arterytek/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>CS/Linux</title>
+      <link>//localhost:1414/tags/cs/linux/</link>
+      <pubDate>Sat, 15 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1414/tags/cs/linux/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>CS/ComputerSystemOrganization</title>
+      <link>//localhost:1414/tags/cs/computersystemorganization/</link>
+      <pubDate>Thu, 06 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1414/tags/cs/computersystemorganization/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>CS/Algorithm</title>
+      <link>//localhost:1414/tags/cs/algorithm/</link>
+      <pubDate>Sat, 18 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1414/tags/cs/algorithm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>CS/Ai</title>
+      <link>//localhost:1414/tags/cs/ai/</link>
+      <pubDate>Thu, 16 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1414/tags/cs/ai/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Blockquote</title>
       <link>//localhost:1414/tags/blockquote/</link>
@@ -20,6 +104,48 @@
       <link>//localhost:1414/tags/hugo/</link>
       <pubDate>Thu, 02 Jan 2025 16:08:02 +0800</pubDate>
       <guid>//localhost:1414/tags/hugo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>CS/Windows</title>
+      <link>//localhost:1414/tags/cs/windows/</link>
+      <pubDate>Sat, 07 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1414/tags/cs/windows/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>CS/NetWork</title>
+      <link>//localhost:1414/tags/cs/network/</link>
+      <pubDate>Fri, 22 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1414/tags/cs/network/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>生活</title>
+      <link>//localhost:1414/tags/%E7%94%9F%E6%B4%BB/</link>
+      <pubDate>Sat, 02 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1414/tags/%E7%94%9F%E6%B4%BB/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>CS/CAndCpp</title>
+      <link>//localhost:1414/tags/cs/candcpp/</link>
+      <pubDate>Fri, 25 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1414/tags/cs/candcpp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>CS/VirtualMachine</title>
+      <link>//localhost:1414/tags/cs/virtualmachine/</link>
+      <pubDate>Wed, 16 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1414/tags/cs/virtualmachine/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>CS/Python</title>
+      <link>//localhost:1414/tags/cs/python/</link>
+      <pubDate>Tue, 15 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1414/tags/cs/python/</guid>
       <description></description>
     </item>
     <item>
@@ -41,6 +167,20 @@
       <link>//localhost:1414/tags/%E7%9B%B8%E5%86%8C/</link>
       <pubDate>Sun, 21 Jul 2024 10:28:12 +0800</pubDate>
       <guid>//localhost:1414/tags/%E7%9B%B8%E5%86%8C/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Todo</title>
+      <link>//localhost:1414/tags/todo/</link>
+      <pubDate>Mon, 18 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1414/tags/todo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sci</title>
+      <link>//localhost:1414/tags/sci/</link>
+      <pubDate>Sat, 04 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>//localhost:1414/tags/sci/</guid>
       <description></description>
     </item>
     <item>
