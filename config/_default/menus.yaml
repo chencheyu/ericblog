@@ -59,7 +59,7 @@ main:
     weight: 5
   - identifier: categories
     name: 標籤
-    pageRef: /categories
+    pageRef: /tags
     pre: tags
     weight: 6
   - identifier: commonweal
