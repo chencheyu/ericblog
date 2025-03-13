@@ -423,7 +423,7 @@ followMe:
 # Easily browse and edit blog source code online.
 postEdit:
   enable: true
-  url: https://github.com/user-name/repo-name/tree/branch-name/subdirectory-name/
+  url: https://github.com/chencheyu/chencheyu.github.io
 
 
 # 设置文本的对齐方式
@@ -502,7 +502,7 @@ readingProgress:
 bookmark:
   # 开启书签功能
   # If true, will display bookmark in all page.
-  enable: true
+  enable: false
   # 自定义书签显示颜色
   # Customize the color of the bookmark.
   color: "#222"
@@ -521,7 +521,7 @@ githubBanner:
   enable: true
   # 你的 Github 仓库地址
   # Your repository url on Github.
-  permalink: https://github.com/hugo-next
+  permalink: https://gitlab.com/joe1231231218
   # 关注说明
   # Show this title when cursor move on.
   title: Follow me on GitHub
