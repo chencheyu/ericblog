@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>NexT on 哲佑碎碎念</title>
-    <link>//localhost:1414/en-us/tags/next/</link>
+    <link>//localhost:1414///blog.ericchen.name/en-us/tags/next/</link>
     <description>Recent content in NexT on 哲佑碎碎念</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <lastBuildDate>Sat, 25 Jan 2025 20:59:12 +0800</lastBuildDate>
-    <atom:link href="//localhost:1414/en-us/tags/next/rss.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1414///blog.ericchen.name/en-us/tags/next/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Welcome to the Hugo NexT organization</title>
-      <link>//localhost:1414/en-us/post/02-external-link/</link>
+      <link>//localhost:1414///blog.ericchen.name/en-us/post/02-external-link/</link>
       <pubDate>Sat, 25 Jan 2025 20:59:12 +0800</pubDate>
-      <guid>//localhost:1414/en-us/post/02-external-link/</guid>
+      <guid>//localhost:1414///blog.ericchen.name/en-us/post/02-external-link/</guid>
       <description>&lt;p&gt;Welcome to the Hugo NexT documentation site! It is from &#xA;&lt;a href=&#34;https://theme-next.js.org/&#34; title=&#34;Theme NexT&#34; rel=&#34;noopener external nofollow noreferrer&#34; target=&#34;_blank&#34; class=&#34; exturl&#34;&gt;&#xA;    Theme NexT&#xA;    &#xA;    &lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&#xA;    &#xA;&lt;/a&gt; The transplanted one is &#xA;&lt;a href=&#34;https://gohugo.io/&#34; title=&#34;Hugo&#34; rel=&#34;noopener external nofollow noreferrer&#34; target=&#34;_blank&#34; class=&#34; exturl&#34;&gt;&#xA;    Hugo&#xA;    &#xA;    &lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&#xA;    &#xA;&lt;/a&gt; The high-quality and elegant theme created maintains its easy-to-use features and powerful functionality.&lt;/p&gt;&#xA;&lt;h2 id=&#34;user-guide&#34;&gt;User Guide&#xA;&lt;a class=&#34;header-anchor&#34; href=&#34;#user-guide&#34;&gt;&lt;/a&gt;&#xA;&lt;/h2&gt;&lt;p&gt;Setting up a NexT theme is easy. Simply follow the documentation to quickly create your personal website!&lt;/p&gt;&#xA;&lt;h2 id=&#34;feedback&#34;&gt;Feedback&#xA;&lt;a class=&#34;header-anchor&#34; href=&#34;#feedback&#34;&gt;&lt;/a&gt;&#xA;&lt;/h2&gt;&lt;ul&gt;&#xA;&lt;li&gt;Visit the Awesome NexT list to share plugins and tutorials with other users.&lt;/li&gt;&#xA;&lt;li&gt;Join our Gitter chat.&lt;/li&gt;&#xA;&lt;li&gt;Add or improve translations within seconds.&lt;/li&gt;&#xA;&lt;li&gt;Report one in GitHub Issues &amp;#x1f41b; .&lt;/li&gt;&#xA;&lt;li&gt;Apply for a new feature on GitHub.&lt;/li&gt;&#xA;&lt;li&gt;Request a vote for the most popular feature.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
   </channel>

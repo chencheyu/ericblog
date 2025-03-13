@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Toc on 哲佑碎碎念</title>
-    <link>//localhost:1414/tags/toc/</link>
+    <link>//localhost:1414///blog.ericchen.name/tags/toc/</link>
     <description>Recent content in Toc on 哲佑碎碎念</description>
     <generator>Hugo</generator>
     <language>zh-TW</language>
     <lastBuildDate>Sun, 30 Oct 2022 21:03:16 +0800</lastBuildDate>
-    <atom:link href="//localhost:1414/tags/toc/rss.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1414///blog.ericchen.name/tags/toc/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>没有H1-6标题头和评论的文章</title>
-      <link>//localhost:1414/demo/no-header-title.html</link>
+      <link>//localhost:1414///blog.ericchen.name/demo/no-header-title.html</link>
       <pubDate>Thu, 06 Oct 2022 09:02:26 +0800</pubDate>
-      <guid>//localhost:1414/demo/no-header-title.html</guid>
+      <guid>//localhost:1414///blog.ericchen.name/demo/no-header-title.html</guid>
       <description>&lt;p&gt;刘慈欣2018克拉克奖获奖感言（部分内容节选）。&lt;/p&gt;&#xA;&#xA;&#xA;&#xA;  &lt;div class=&#34;post-alert-info&#34;&gt;&#xA;    &lt;div class=&#34;post-alert-title&#34;&gt;&#xA;      &lt;i class=&#34;fa-solid fa-circle-info&#34;&gt;&lt;/i&gt;&#xA;      &lt;span&gt;&#xA;        &#xA;          信息 &#xA;        &#xA;      &lt;/span&gt;&#xA;    &lt;/div&gt;&#xA;    &lt;div class=&#34;post-alert-content&#34;&gt;&#xA;      &lt;p&gt;用于测试在没有H1-6标题头时，文章的目录导航是否会直接关闭，并关闭评论功能。&lt;/p&gt;&#xA;    &lt;/div&gt;&#xA;  &lt;/div&gt;</description>
     </item>
   </channel>

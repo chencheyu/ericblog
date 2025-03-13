@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>哲佑碎碎念</title>
-    <link>//localhost:1414/en-us/archives/</link>
+    <link>//localhost:1414///blog.ericchen.name/en-us/archives/</link>
     <description>Recent content on 哲佑碎碎念</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="//localhost:1414/en-us/archives/rss.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1414///blog.ericchen.name/en-us/archives/rss.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

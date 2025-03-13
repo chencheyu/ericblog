@@ -2,967 +2,626 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:1414/post/02-external-link/</loc>
-    <lastmod>2022-06-01T15:59:41+08:00</lastmod>
+    <loc>//localhost:1414///blog.ericchen.name/tags/cs/</loc>
+    <lastmod>2025-03-10T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>//localhost:1414///blog.ericchen.name/tags/cs/network/</loc>
+    <lastmod>2025-03-10T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>//localhost:1414///blog.ericchen.name/post/</loc>
+    <lastmod>2025-03-10T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>//localhost:1414///blog.ericchen.name/post/4107812e-c049-481c-8108-fec3b7c7f568/</loc>
+    <lastmod>2025-03-10T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>//localhost:1414///blog.ericchen.name/tags/</loc>
+    <lastmod>2025-03-10T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="//localhost:1414/en-us/post/02-external-link/"
+                href="//localhost:1414///blog.ericchen.name/en-us/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-TW"
-                href="//localhost:1414/post/02-external-link/"
+                href="//localhost:1414///blog.ericchen.name/tags/"
                 />
   </url><url>
-    <loc>//localhost:1414/demo/hello-world.html</loc>
-    <lastmod>2022-06-03T16:43:23+08:00</lastmod>
+    <loc>//localhost:1414///blog.ericchen.name/</loc>
+    <lastmod>2025-03-10T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="//localhost:1414/en-us/demo/hello-world.html"
+                href="//localhost:1414///blog.ericchen.name/en-us/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-TW"
-                href="//localhost:1414/demo/hello-world.html"
+                href="//localhost:1414///blog.ericchen.name/"
                 />
   </url><url>
-    <loc>//localhost:1414/tags/cs/</loc>
+    <loc>//localhost:1414///blog.ericchen.name/tags/cs/sitcon2025/</loc>
+    <lastmod>2025-03-08T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>//localhost:1414///blog.ericchen.name/post/75ae54c3-bd53-4cbb-b266-c8443dedd772/</loc>
+    <lastmod>2025-03-08T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>//localhost:1414///blog.ericchen.name/post/46d6887d-f93d-4d9f-a7e0-160df2058815/</loc>
+    <lastmod>2025-03-08T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>//localhost:1414///blog.ericchen.name/post/1255ac49-7ece-465a-bb53-28842557c9cd/</loc>
+    <lastmod>2025-03-08T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>//localhost:1414///blog.ericchen.name/tags/cs/linux/</loc>
+    <lastmod>2025-03-06T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>//localhost:1414///blog.ericchen.name/post/512cbf9b-c640-447f-a155-27f9ec82b1c9/</loc>
+    <lastmod>2025-03-06T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>//localhost:1414///blog.ericchen.name/post/49855f48-927e-4094-9e5f-df8ed6ff3bfd/</loc>
+    <lastmod>2025-03-06T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>//localhost:1414///blog.ericchen.name/tags/cs/security/</loc>
+    <lastmod>2025-03-05T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>//localhost:1414///blog.ericchen.name/post/39d812bc-a700-4370-ab1b-0097c9dc8efa/</loc>
+    <lastmod>2025-03-05T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>//localhost:1414///blog.ericchen.name/tags/cs/backend/</loc>
     <lastmod>2025-02-28T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>//localhost:1414/tags/cs/backend/</loc>
+    <loc>//localhost:1414///blog.ericchen.name/post/4fe78d11-f057-4b24-bd19-74d765fde998/</loc>
     <lastmod>2025-02-28T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>//localhost:1414/post/66d357e7-d624-49f3-a77a-9a82b3ca42f5/</loc>
-    <lastmod>2025-02-28T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>//localhost:1414/post/</loc>
-    <lastmod>2025-02-28T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="//localhost:1414/en-us/post/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-TW"
-                href="//localhost:1414/post/"
-                />
-  </url><url>
-    <loc>//localhost:1414/tags/</loc>
-    <lastmod>2025-02-28T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="//localhost:1414/en-us/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-TW"
-                href="//localhost:1414/tags/"
-                />
-  </url><url>
-    <loc>//localhost:1414/</loc>
-    <lastmod>2025-02-28T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="//localhost:1414/en-us/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-TW"
-                href="//localhost:1414/"
-                />
-  </url><url>
-    <loc>//localhost:1414/tags/cs/software/</loc>
+    <loc>//localhost:1414///blog.ericchen.name/tags/cs/software/</loc>
     <lastmod>2025-02-26T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>//localhost:1414/post/1b04ff8b-c804-4237-a1d1-1f92e7da1373/</loc>
+    <loc>//localhost:1414///blog.ericchen.name/post/c0897b97-cf65-43b2-9801-74dd1de82e4f/</loc>
     <lastmod>2025-02-26T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>//localhost:1414/tags/cs/route/</loc>
+    <loc>//localhost:1414///blog.ericchen.name/tags/cs/route/</loc>
     <lastmod>2025-02-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>//localhost:1414/post/6db73751-d87b-45f5-996d-2f60b4d1086c/</loc>
+    <loc>//localhost:1414///blog.ericchen.name/post/a4849ceb-3c51-4926-9821-158f24a2a2eb/</loc>
     <lastmod>2025-02-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>//localhost:1414/tags/cs/hardware/</loc>
+    <loc>//localhost:1414///blog.ericchen.name/tags/cs/hardware/</loc>
     <lastmod>2025-02-21T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>//localhost:1414/tags/cs/hardware/relay/</loc>
+    <loc>//localhost:1414///blog.ericchen.name/post/1a2138fc-76fd-45ce-89b6-0b76ab64bc82/</loc>
     <lastmod>2025-02-21T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>//localhost:1414/post/41d12c14-72e4-430d-a80c-b1e11ca3b39b/</loc>
-    <lastmod>2025-02-21T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>//localhost:1414/post/165d5732-73d6-4e7e-a891-dd95333d593a/</loc>
+    <loc>//localhost:1414///blog.ericchen.name/post/c12ecda3-0232-4770-81ce-ca249796fcc9/</loc>
     <lastmod>2025-02-20T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>//localhost:1414/tags/cs/embedded/</loc>
+    <loc>//localhost:1414///blog.ericchen.name/tags/cs/embedded/</loc>
     <lastmod>2025-02-20T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>//localhost:1414/tags/cs/embedded/arterytek/</loc>
+    <loc>//localhost:1414///blog.ericchen.name/tags/cs/embedded/arterytek/</loc>
     <lastmod>2025-02-20T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>//localhost:1414/tags/cs/linux/</loc>
+    <loc>//localhost:1414///blog.ericchen.name/post/1b2d5623-1bb1-4531-8c19-bc45cf80c341/</loc>
     <lastmod>2025-02-15T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>//localhost:1414/post/f8ddc275-6f3b-4117-88b5-2b14527ccbb4/</loc>
-    <lastmod>2025-02-15T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>//localhost:1414/tags/cs/computersystemorganization/</loc>
+    <loc>//localhost:1414///blog.ericchen.name/tags/cs/computersystemorganization/</loc>
     <lastmod>2025-02-06T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>//localhost:1414/post/f0842eaa-d806-4806-b785-6d7975f8b087/</loc>
+    <loc>//localhost:1414///blog.ericchen.name/post/84953244-9cf1-4de4-b541-2d0b8aa0ed46/</loc>
     <lastmod>2025-02-06T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>//localhost:1414/post/05ee5711-df20-429a-b36b-98f91eab2871/</loc>
-    <lastmod>2025-01-18T00:00:00+00:00</lastmod>
+    <loc>//localhost:1414///blog.ericchen.name/post/c2bd8c22-9200-4e77-9436-1215d9620693/</loc>
+    <lastmod>2025-01-23T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>//localhost:1414/tags/cs/algorithm/</loc>
-    <lastmod>2025-01-18T00:00:00+00:00</lastmod>
+    <loc>//localhost:1414///blog.ericchen.name/tags/cs/csharp/</loc>
+    <lastmod>2025-01-23T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>//localhost:1414/post/be8f6764-2348-4473-a9b7-07887501fe34/</loc>
+    <loc>//localhost:1414///blog.ericchen.name/tags/cs/windows/</loc>
+    <lastmod>2025-01-23T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>//localhost:1414///blog.ericchen.name/post/a7e8ae6e-3e00-42a0-924a-df2cf070acd4/</loc>
+    <lastmod>2025-01-23T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>//localhost:1414///blog.ericchen.name/post/76ef0689-2246-46ff-85ae-7b23f5fc7044/</loc>
+    <lastmod>2025-01-23T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>//localhost:1414///blog.ericchen.name/post/d81b3931-6700-4bd6-8031-ad18bdffaf61/</loc>
     <lastmod>2025-01-17T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>//localhost:1414/tags/cs/ai/</loc>
+    <loc>//localhost:1414///blog.ericchen.name/tags/cs/ai/</loc>
     <lastmod>2025-01-16T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>//localhost:1414/post/6ec15d54-4c04-4511-b758-97d934f5fe55/</loc>
+    <loc>//localhost:1414///blog.ericchen.name/post/75927838-f695-4e61-b2b2-a5a977bf958a/</loc>
     <lastmod>2025-01-16T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>//localhost:1414/tags/blockquote/</loc>
-    <lastmod>2025-01-02T19:08:02+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="//localhost:1414/en-us/tags/blockquote/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-TW"
-                href="//localhost:1414/tags/blockquote/"
-                />
-  </url><url>
-    <loc>//localhost:1414/categories/</loc>
-    <lastmod>2025-01-02T19:08:02+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="//localhost:1414/en-us/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-TW"
-                href="//localhost:1414/categories/"
-                />
-  </url><url>
-    <loc>//localhost:1414/tags/hugo/</loc>
-    <lastmod>2025-01-02T19:08:02+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="//localhost:1414/en-us/tags/hugo/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-TW"
-                href="//localhost:1414/tags/hugo/"
-                />
-  </url><url>
-    <loc>//localhost:1414/demo/hugo-blockquote.html</loc>
-    <lastmod>2025-01-02T19:08:02+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="//localhost:1414/en-us/demo/hugo-blockquote.html"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-TW"
-                href="//localhost:1414/demo/hugo-blockquote.html"
-                />
-  </url><url>
-    <loc>//localhost:1414/categories/%E7%A4%BA%E4%BE%8B%E6%96%87%E7%AB%A0/</loc>
-    <lastmod>2025-01-02T19:08:02+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>//localhost:1414/categories/%E8%AF%AD%E6%B3%95/</loc>
-    <lastmod>2025-01-02T19:08:02+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>//localhost:1414/post/fe4f432a-c5e2-4118-89b1-32cd71d66eda/</loc>
+    <loc>//localhost:1414///blog.ericchen.name/post/82553640-d8ae-4473-b812-60d05029ea92/</loc>
     <lastmod>2025-01-02T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>//localhost:1414/post/079e4896-48a5-4978-a346-3845c06703bf/</loc>
+    <loc>//localhost:1414///blog.ericchen.name/post/cf8e5f13-a6de-4624-9e14-975a34df1b86/</loc>
+    <lastmod>2024-12-20T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>//localhost:1414///blog.ericchen.name/tags/cs/algorithm/</loc>
+    <lastmod>2024-12-20T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>//localhost:1414///blog.ericchen.name/post/7fefe2e9-2470-4d7e-ae49-b2f468a38668/</loc>
     <lastmod>2024-12-16T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>//localhost:1414/tags/cs/windows/</loc>
+    <loc>//localhost:1414///blog.ericchen.name/post/18be0903-ac92-45ce-8fcf-64028969acc8/</loc>
     <lastmod>2024-12-07T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>//localhost:1414/post/2a5584d3-64f9-4035-8c51-9b034eb8e7aa/</loc>
+    <loc>//localhost:1414///blog.ericchen.name/post/fb4a3895-4d9e-4bf9-9aa3-793c4edba7eb/</loc>
     <lastmod>2024-12-07T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>//localhost:1414/post/f3268fa6-1407-4416-bd16-5e3c2e630c88/</loc>
+    <loc>//localhost:1414///blog.ericchen.name/post/1e365a3b-44aa-4f00-8e6b-133087b49721/</loc>
     <lastmod>2024-12-02T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>//localhost:1414/post/6a87e9b5-a9ff-4ccd-bcdd-055fc6c0a4f8/</loc>
+    <loc>//localhost:1414///blog.ericchen.name/post/eb1707ef-96ef-464c-9d29-986539a917d8/</loc>
     <lastmod>2024-12-02T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>//localhost:1414/tags/cs/network/</loc>
+    <loc>//localhost:1414///blog.ericchen.name/post/eb5aaa26-2558-4988-97d9-ffc3a9841c54/</loc>
     <lastmod>2024-11-22T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>//localhost:1414/post/5c060905-893f-49e8-945a-ecdf42c1fcd7/</loc>
-    <lastmod>2024-11-22T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>//localhost:1414/post/16ae5c5b-e5c0-4019-8027-762c599f2db6/</loc>
+    <loc>//localhost:1414///blog.ericchen.name/post/28cf4e4e-f29b-45ad-9f2d-7dac332528f0/</loc>
     <lastmod>2024-11-02T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>//localhost:1414/tags/%E7%94%9F%E6%B4%BB/</loc>
+    <loc>//localhost:1414///blog.ericchen.name/tags/%E7%94%9F%E6%B4%BB/</loc>
     <lastmod>2024-11-02T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>//localhost:1414/post/6e2d5f7c-9666-4aba-9605-0f6b21cc518c/</loc>
+    <loc>//localhost:1414///blog.ericchen.name/post/065361b2-5f95-4d9d-bdc2-c271db9cb620/</loc>
     <lastmod>2024-10-29T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>//localhost:1414/post/fae740c2-5206-4ff2-9676-3455dad9ff38/</loc>
+    <loc>//localhost:1414///blog.ericchen.name/post/849c7d8d-acce-43fc-9048-4e50087721a7/</loc>
     <lastmod>2024-10-29T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>//localhost:1414/post/6d3eff97-5a1e-48e5-885f-18e2290b2c20/</loc>
+    <loc>//localhost:1414///blog.ericchen.name/post/84b1b7ab-0228-4156-b820-ec12bc320d07/</loc>
     <lastmod>2024-10-29T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>//localhost:1414/tags/cs/candcpp/</loc>
+    <loc>//localhost:1414///blog.ericchen.name/tags/cs/candcpp/</loc>
     <lastmod>2024-10-25T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>//localhost:1414/post/b31f2d26-3c2e-4c6d-87d1-379ea36049b1/</loc>
+    <loc>//localhost:1414///blog.ericchen.name/post/1fdbf723-c084-4ace-a8e6-9963fa249e46/</loc>
     <lastmod>2024-10-25T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>//localhost:1414/tags/cs/virtualmachine/</loc>
+    <loc>//localhost:1414///blog.ericchen.name/tags/cs/virtualmachine/</loc>
     <lastmod>2024-10-16T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>//localhost:1414/post/6fb417d7-7230-4747-ad4d-01f7e55efcea/</loc>
+    <loc>//localhost:1414///blog.ericchen.name/post/1fc8bbc7-b8d8-4f8b-93a4-bfa25ba89e43/</loc>
     <lastmod>2024-10-16T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>//localhost:1414/tags/cs/python/</loc>
+    <loc>//localhost:1414///blog.ericchen.name/tags/cs/python/</loc>
     <lastmod>2024-10-15T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>//localhost:1414/post/2a8d5903-c184-46ca-ab80-9109293a5eec/</loc>
+    <loc>//localhost:1414///blog.ericchen.name/post/011fd027-8dc9-4de3-9088-1d847f051249/</loc>
     <lastmod>2024-10-15T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>//localhost:1414/post/bf86cc87-0634-4352-865b-8ce49f9be36f/</loc>
+    <loc>//localhost:1414///blog.ericchen.name/post/de25b679-7703-4966-a0f2-fb6ba8fb87ec/</loc>
     <lastmod>2024-10-09T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>//localhost:1414/post/c9e74ceb-b903-47b3-98c5-34e68f50d6df/</loc>
+    <loc>//localhost:1414///blog.ericchen.name/post/3ac42953-505d-4e18-a27b-b0453137ea86/</loc>
     <lastmod>2024-10-08T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>//localhost:1414/post/23f3d3f6-e57e-444d-9b52-f6bed6518069/</loc>
+    <loc>//localhost:1414///blog.ericchen.name/post/331678a7-2813-44de-bdbf-8995adca022d/</loc>
     <lastmod>2024-10-08T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>//localhost:1414/post/f1fee151-70b1-4cb1-9b2b-8a45493dec3f/</loc>
+    <loc>//localhost:1414///blog.ericchen.name/post/293b9caf-1953-477e-a2f4-e2fc76e6cc1f/</loc>
     <lastmod>2024-08-14T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>//localhost:1414/post/9bea2131-a6e8-4a63-8f12-2b41a49f32fd/</loc>
+    <loc>//localhost:1414///blog.ericchen.name/tags/cs/theoryofcomputation/</loc>
+    <lastmod>2024-08-04T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>//localhost:1414///blog.ericchen.name/post/c15558f7-397c-4977-862e-4885899a87a5/</loc>
+    <lastmod>2024-08-04T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>//localhost:1414///blog.ericchen.name/post/0c9ef01e-49cf-4925-91c7-eba7e3ee8bec/</loc>
     <lastmod>2024-08-02T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>//localhost:1414/tags/%E5%9B%BE%E5%83%8F/</loc>
-    <lastmod>2024-07-21T10:28:12+08:00</lastmod>
+    <loc>//localhost:1414///blog.ericchen.name/post/15f9338a-1f8e-4195-adf9-ea6d9e258a98/</loc>
+    <lastmod>2024-07-10T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>//localhost:1414/demo/image-viewer.html</loc>
-    <lastmod>2024-07-21T10:28:12+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="//localhost:1414/en-us/demo/image-viewer.html"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-TW"
-                href="//localhost:1414/demo/image-viewer.html"
-                />
-  </url><url>
-    <loc>//localhost:1414/tags/%E6%B5%8F%E8%A7%88/</loc>
-    <lastmod>2024-07-21T10:28:12+08:00</lastmod>
+    <loc>//localhost:1414///blog.ericchen.name/post/aced79f2-f880-4aba-a6c9-96ec8656b635/</loc>
+    <lastmod>2024-07-10T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>//localhost:1414/tags/%E7%9B%B8%E5%86%8C/</loc>
-    <lastmod>2024-07-21T10:28:12+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>//localhost:1414/post/b3e3b48f-c104-4741-a33e-f024d009b60d/</loc>
+    <loc>//localhost:1414///blog.ericchen.name/post/a7694bb4-65f2-4762-9808-d1b1d1897006/</loc>
     <lastmod>2024-07-08T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>//localhost:1414/post/7e28fec8-2657-4833-8f82-d04150658085/</loc>
+    <loc>//localhost:1414///blog.ericchen.name/post/b751c62a-82d6-4054-944a-ec34e0c6fbd0/</loc>
     <lastmod>2024-06-29T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>//localhost:1414/post/bb4160f4-dc8e-432c-8631-6100b47b6814/</loc>
+    <loc>//localhost:1414///blog.ericchen.name/post/118e86fc-d6e6-4905-a118-c8ac21078b38/</loc>
     <lastmod>2024-06-28T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>//localhost:1414/post/48bb57d6-f1e1-4508-b798-1bea1cb67465/</loc>
+    <loc>//localhost:1414///blog.ericchen.name/post/7a35b127-d9f1-47e4-a15f-e2e00c824dcf/</loc>
+    <lastmod>2024-06-28T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>//localhost:1414///blog.ericchen.name/post/deecd741-5c0a-4e06-a8c5-4f9195e19935/</loc>
     <lastmod>2024-06-26T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>//localhost:1414/post/4b7b09c2-a42a-44c6-b942-36f2fd3929db/</loc>
+    <loc>//localhost:1414///blog.ericchen.name/post/ed79c016-42c2-48fa-821d-1869dfcfaad5/</loc>
     <lastmod>2024-06-21T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>//localhost:1414/post/446c60e9-03ca-4944-b3ab-5c73e1ed00ee/</loc>
+    <loc>//localhost:1414///blog.ericchen.name/post/3e809070-d9f0-4c16-bb4d-e8a777ddec32/</loc>
     <lastmod>2024-06-21T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>//localhost:1414/post/8c34c80e-aff7-4435-bb96-53b6aff10ae5/</loc>
+    <loc>//localhost:1414///blog.ericchen.name/post/8dda7ba1-be2d-4883-a49d-e475012c4a61/</loc>
+    <lastmod>2024-06-21T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>//localhost:1414///blog.ericchen.name/post/7d126e73-4398-4f3f-a16b-5fd4ebf5868c/</loc>
+    <lastmod>2024-05-10T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>//localhost:1414///blog.ericchen.name/post/772cf18e-62ae-4e48-a846-044fbeffa2a9/</loc>
     <lastmod>2024-03-23T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>//localhost:1414/post/2ae157a5-afc0-4b65-bf04-4da2d97e14f0/</loc>
+    <loc>//localhost:1414///blog.ericchen.name/post/41ec7a20-d1c5-4cfe-b27f-8604a0a8e670/</loc>
+    <lastmod>2024-03-23T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>//localhost:1414///blog.ericchen.name/post/93b3123f-a580-42b0-802d-2a209b3369c2/</loc>
     <lastmod>2024-03-18T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>//localhost:1414/tags/todo/</loc>
+    <loc>//localhost:1414///blog.ericchen.name/tags/todo/</loc>
     <lastmod>2024-03-18T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>//localhost:1414/post/99524a79-96b2-4c1a-bc09-289d54c63c9c/</loc>
+    <loc>//localhost:1414///blog.ericchen.name/post/9cef3dac-51e0-41f4-a222-f9640e16589f/</loc>
     <lastmod>2024-03-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>//localhost:1414/post/abd3de75-6e22-4fec-a859-031d0dc09f57/</loc>
+    <loc>//localhost:1414///blog.ericchen.name/post/124d0767-57d5-45b9-b08f-7c59b36ad919/</loc>
     <lastmod>2024-02-23T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>//localhost:1414/post/2e29d3fa-9701-4855-98f4-2e0e4bf6d359/</loc>
+    <loc>//localhost:1414///blog.ericchen.name/post/48b1c318-2a55-4d16-957e-6f1d3f7540dd/</loc>
     <lastmod>2024-02-22T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>//localhost:1414/post/f882dda2-9843-4e2e-b4fe-6bc06a189b1a/</loc>
+    <loc>//localhost:1414///blog.ericchen.name/post/c95f885a-47bc-4716-825c-1b362b0f1c72/</loc>
     <lastmod>2024-02-18T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>//localhost:1414/post/a2f21f02-edd8-4956-87a7-098edc267b7a/</loc>
+    <loc>//localhost:1414///blog.ericchen.name/post/00d21e87-dfff-4644-b457-3c61f7139cb6/</loc>
     <lastmod>2024-02-18T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>//localhost:1414/post/48e5bfe8-e5b5-4297-bf0d-39e8a645fba8/</loc>
+    <loc>//localhost:1414///blog.ericchen.name/post/514b717a-7463-493b-85c8-338291f4b3b1/</loc>
     <lastmod>2024-02-17T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>//localhost:1414/post/8e8c9bcc-8b41-4a92-89e6-5ff3f1a4868f/</loc>
+    <loc>//localhost:1414///blog.ericchen.name/post/47a09282-2dcf-46bd-8ce6-845de40ea95c/</loc>
     <lastmod>2024-02-02T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>//localhost:1414/post/5f06df1c-8446-4b62-9a57-19b279ef7d9e/</loc>
+    <loc>//localhost:1414///blog.ericchen.name/post/22d6876c-b099-46db-b714-e983e6254cf8/</loc>
     <lastmod>2023-10-20T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>//localhost:1414/tags/sci/</loc>
+    <loc>//localhost:1414///blog.ericchen.name/tags/sci/</loc>
     <lastmod>2023-03-04T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>//localhost:1414/post/d608a7ce-6e08-4754-b309-b44d16620249/</loc>
+    <loc>//localhost:1414///blog.ericchen.name/post/993c1d7e-0812-40c3-9cc2-3c3fc45935ca/</loc>
     <lastmod>2023-03-04T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>//localhost:1414/post/baa52eac-c9c9-4384-9475-c9c0be5767e1/</loc>
+    <loc>//localhost:1414///blog.ericchen.name/post/76933a22-b53c-409d-96a8-ebd39028f239/</loc>
     <lastmod>2023-02-20T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>//localhost:1414/post/140dbcdc-f5a9-405e-9aca-ba69c09d7978/</loc>
+    <loc>//localhost:1414///blog.ericchen.name/post/206351c4-5db9-4ce9-8752-05db0a29bec0/</loc>
     <lastmod>2023-02-05T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>//localhost:1414/tags/toc/</loc>
-    <lastmod>2022-10-30T21:03:16+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="//localhost:1414/en-us/tags/toc/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-TW"
-                href="//localhost:1414/tags/toc/"
-                />
-  </url><url>
-    <loc>//localhost:1414/demo/no-header-title.html</loc>
-    <lastmod>2022-10-30T21:03:16+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="//localhost:1414/en-us/demo/no-header-title.html"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-TW"
-                href="//localhost:1414/demo/no-header-title.html"
-                />
-  </url><url>
-    <loc>//localhost:1414/tags/%E6%A0%87%E9%A2%98/</loc>
-    <lastmod>2022-10-30T21:03:16+08:00</lastmod>
+    <loc>//localhost:1414///blog.ericchen.name/post/3ee99909-c1aa-44e9-98c1-2d4ee754caa2/</loc>
+    <lastmod>2023-01-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>//localhost:1414/demo/mermaid-charts.html</loc>
-    <lastmod>2022-09-18T20:58:13+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="//localhost:1414/en-us/demo/mermaid-charts.html"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-TW"
-                href="//localhost:1414/demo/mermaid-charts.html"
-                />
-  </url><url>
-    <loc>//localhost:1414/tags/%E6%97%B6%E5%BA%8F%E5%9B%BE/</loc>
-    <lastmod>2022-09-18T20:58:13+08:00</lastmod>
+    <loc>//localhost:1414///blog.ericchen.name/post/e9d30901-1f83-4f7b-9a71-5991bf00a562/</loc>
+    <lastmod>2022-11-07T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>//localhost:1414/categories/%E5%9B%BE%E5%BA%8F%E5%8A%9F%E8%83%BD/</loc>
-    <lastmod>2022-09-18T20:58:13+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>//localhost:1414/tags/%E6%B5%81%E7%A8%8B%E5%9B%BE/</loc>
-    <lastmod>2022-09-18T20:58:13+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>//localhost:1414/categories/%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BC%95%E5%85%A5/</loc>
-    <lastmod>2024-12-12T18:48:32+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>//localhost:1414/tags/katex/</loc>
-    <lastmod>2024-12-12T18:48:32+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="//localhost:1414/en-us/tags/katex/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-TW"
-                href="//localhost:1414/tags/katex/"
-                />
-  </url><url>
-    <loc>//localhost:1414/tags/mathjax/</loc>
-    <lastmod>2024-12-12T18:48:32+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="//localhost:1414/en-us/tags/mathjax/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-TW"
-                href="//localhost:1414/tags/mathjax/"
-                />
-  </url><url>
-    <loc>//localhost:1414/tags/%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/</loc>
-    <lastmod>2024-12-12T18:48:32+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>//localhost:1414/categories/%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/</loc>
-    <lastmod>2024-12-12T18:48:32+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>//localhost:1414/demo/math-formula.html</loc>
-    <lastmod>2024-12-12T18:48:32+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="//localhost:1414/en-us/demo/math-formula.html"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-TW"
-                href="//localhost:1414/demo/math-formula.html"
-                />
-  </url><url>
-    <loc>//localhost:1414/tags/%E4%B8%AA%E6%80%A7%E5%8C%96/</loc>
-    <lastmod>2022-09-10T21:02:32+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>//localhost:1414/demo/custom-files.html</loc>
-    <lastmod>2022-09-10T21:02:32+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="//localhost:1414/en-us/demo/custom-files.html"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-TW"
-                href="//localhost:1414/demo/custom-files.html"
-                />
-  </url><url>
-    <loc>//localhost:1414/tags/%E5%B8%83%E5%B1%80/</loc>
-    <lastmod>2022-09-10T21:02:32+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>//localhost:1414/tags/%E8%87%AA%E5%AE%9A%E4%B9%89/</loc>
-    <lastmod>2022-09-10T21:02:32+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>//localhost:1414/demo/shortcodes.html</loc>
-    <lastmod>2022-08-06T14:41:50+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="//localhost:1414/en-us/demo/shortcodes.html"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-TW"
-                href="//localhost:1414/demo/shortcodes.html"
-                />
-  </url><url>
-    <loc>//localhost:1414/tags/%E8%AF%AD%E6%B3%95/</loc>
-    <lastmod>2022-08-06T14:41:50+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>//localhost:1414/tags/%E7%9F%AD%E4%BB%A3%E7%A0%81/</loc>
-    <lastmod>2022-08-06T14:41:50+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>//localhost:1414/archives/</loc>
+    <loc>//localhost:1414///blog.ericchen.name/archives/</loc>
     <lastmod>2022-07-26T21:46:25+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="//localhost:1414/en-us/archives/"
+                href="//localhost:1414///blog.ericchen.name/en-us/archives/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-TW"
-                href="//localhost:1414/archives/"
+                href="//localhost:1414///blog.ericchen.name/archives/"
                 />
   </url><url>
-    <loc>//localhost:1414/about.html</loc>
+    <loc>//localhost:1414///blog.ericchen.name/about.html</loc>
     <lastmod>2022-06-09T20:12:52+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="//localhost:1414/en-us/about.html"
+                href="//localhost:1414///blog.ericchen.name/en-us/about.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-TW"
-                href="//localhost:1414/about.html"
+                href="//localhost:1414///blog.ericchen.name/about.html"
                 />
   </url><url>
-    <loc>//localhost:1414/demo/table-of-content.html</loc>
-    <lastmod>2022-06-08T21:12:52+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="//localhost:1414/en-us/demo/table-of-content.html"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-TW"
-                href="//localhost:1414/demo/table-of-content.html"
-                />
-  </url><url>
-    <loc>//localhost:1414/tags/%E7%9B%AE%E5%BD%95/</loc>
-    <lastmod>2022-06-08T21:12:52+08:00</lastmod>
+    <loc>//localhost:1414///blog.ericchen.name/post/90558492-b82a-4a49-98f3-f59b76d61223/</loc>
+    <lastmod>2022-06-07T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>//localhost:1414/tags/%E5%AF%BC%E8%88%AA/</loc>
-    <lastmod>2022-06-08T21:12:52+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>//localhost:1414/tags/%E5%8D%9A%E5%AE%A2/</loc>
-    <lastmod>2022-06-08T21:12:52+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>//localhost:1414/tags/chroma/</loc>
-    <lastmod>2022-06-07T19:09:52+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="//localhost:1414/en-us/tags/chroma/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-TW"
-                href="//localhost:1414/tags/chroma/"
-                />
-  </url><url>
-    <loc>//localhost:1414/demo/syntax-highlighting.html</loc>
-    <lastmod>2022-06-07T19:09:52+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="//localhost:1414/en-us/demo/syntax-highlighting.html"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-TW"
-                href="//localhost:1414/demo/syntax-highlighting.html"
-                />
-  </url><url>
-    <loc>//localhost:1414/tags/%E9%AB%98%E4%BA%AE/</loc>
-    <lastmod>2022-06-07T19:09:52+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>//localhost:1414/tags/emoji/</loc>
-    <lastmod>2022-06-04T19:46:45+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="//localhost:1414/en-us/tags/emoji/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-TW"
-                href="//localhost:1414/tags/emoji/"
-                />
-  </url><url>
-    <loc>//localhost:1414/demo/emoji-support.html</loc>
-    <lastmod>2022-06-04T19:46:45+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="//localhost:1414/en-us/demo/emoji-support.html"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-TW"
-                href="//localhost:1414/demo/emoji-support.html"
-                />
-  </url><url>
-    <loc>//localhost:1414/tags/%E8%A1%A8%E6%83%85/</loc>
-    <lastmod>2022-06-04T19:46:45+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>//localhost:1414/tags/markdown/</loc>
-    <lastmod>2022-06-03T11:52:18+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="//localhost:1414/en-us/tags/markdown/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-TW"
-                href="//localhost:1414/tags/markdown/"
-                />
-  </url><url>
-    <loc>//localhost:1414/demo/markdown-syntax.html</loc>
-    <lastmod>2022-06-03T11:52:18+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="//localhost:1414/en-us/demo/markdown-syntax.html"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-TW"
-                href="//localhost:1414/demo/markdown-syntax.html"
-                />
-  </url><url>
-    <loc>//localhost:1414/categories/markdown%E8%AF%AD%E6%B3%95/</loc>
-    <lastmod>2022-06-03T11:52:18+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>//localhost:1414/tags/%E5%BC%80%E5%A7%8B/</loc>
-    <lastmod>2022-06-03T16:43:23+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>//localhost:1414/categories/%E5%BC%80%E5%A7%8B%E5%BB%BA%E7%AB%99/</loc>
-    <lastmod>2022-06-03T16:43:23+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>//localhost:1414/tags/next/</loc>
-    <lastmod>2022-06-01T15:59:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="//localhost:1414/en-us/tags/next/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-TW"
-                href="//localhost:1414/tags/next/"
-                />
-  </url><url>
-    <loc>//localhost:1414/post/e727c1e5-c50c-4db4-8f10-7a6816d6762f/</loc>
+    <loc>//localhost:1414///blog.ericchen.name/post/18a3c468-d156-4ca3-82c1-353dfd55feb4/</loc>
     <lastmod>2022-03-18T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>//localhost:1414/post/bda91734-19cb-47b0-909a-edd37b66201f/</loc>
-    <lastmod>2022-03-18T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>//localhost:1414/post/a8b194c4-f421-42e0-aae9-1ede49da2fdd/</loc>
+    <loc>//localhost:1414///blog.ericchen.name/post/587521d4-2c61-4ac2-847a-505c7ba9d6ea/</loc>
     <lastmod>2021-01-08T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>//localhost:1414/post/d62e4ab4-d116-4034-99c9-26d7fc613b95/</loc>
+    <loc>//localhost:1414///blog.ericchen.name/post/4fcc2e29-8f45-43de-89c9-3b0be70adacd/</loc>
     <lastmod>2021-01-07T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>//localhost:1414/post/cc3784b8-6d40-4983-9c58-4fc27acb6736/</loc>
+    <loc>//localhost:1414///blog.ericchen.name/post/322511ba-553b-4c12-a049-0396f8322727/</loc>
     <lastmod>2020-03-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>//localhost:1414/post/c835f7b6-f784-4acf-8cdd-10ef5fc9727c/</loc>
+    <loc>//localhost:1414///blog.ericchen.name/post/7c0aebf8-14f7-404a-8100-92c932e17723/</loc>
+    <lastmod>2019-05-18T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>//localhost:1414///blog.ericchen.name/post/72a82069-4596-42f1-adc5-165f259781ce/</loc>
+    <lastmod>2019-05-03T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>//localhost:1414///blog.ericchen.name/post/e5e96398-dae9-46fd-9f33-b64f63b1ef09/</loc>
     <lastmod>2019-04-28T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>//localhost:1414/post/c4cb2c78-dddd-46fd-a97e-9603206666f7/</loc>
+    <loc>//localhost:1414///blog.ericchen.name/post/0e98a7b8-bac4-443a-a7a9-93932a5d8a31/</loc>
     <lastmod>2019-01-29T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>//localhost:1414/post/0df2d74a-7f9b-4490-b84d-a0a6b71df6c2/</loc>
+    <loc>//localhost:1414///blog.ericchen.name/post/d32257ec-17af-43df-a994-70ef1ec1a523/</loc>
     <lastmod>2019-01-04T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>//localhost:1414/post/aa7ff1f2-c938-416e-b289-166a88e620d5/</loc>
+    <loc>//localhost:1414///blog.ericchen.name/post/8bca3eb4-8f26-4d4b-a212-7c09c5d08a6f/</loc>
     <lastmod>2018-11-14T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>//localhost:1414/post/96261f31-fdc3-45f8-ad11-bbc09aeee70c/</loc>
+    <loc>//localhost:1414///blog.ericchen.name/post/0a5be3c0-e2d6-493b-baff-5af171273bc4/</loc>
     <lastmod>2018-11-14T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>//localhost:1414/post/32af59e2-0a8d-4fbc-aff6-ac3182abac8a/</loc>
+    <loc>//localhost:1414///blog.ericchen.name/post/a55e1785-0cf5-4361-bb63-cdd366f74579/</loc>
     <lastmod>2018-08-02T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>//localhost:1414/post/6390a1f9-31dc-441e-9d5a-0a727cf9a6c9/</loc>
+    <loc>//localhost:1414///blog.ericchen.name/post/15212007-bae0-4b8e-aff7-0517d0f4c790/</loc>
     <lastmod>2018-04-26T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>//localhost:1414/post/5fe4f133-6a82-4e37-9b0a-f2a38891cb3d/</loc>
+    <loc>//localhost:1414///blog.ericchen.name/post/c5475c95-579e-463f-93f1-921ad7fcffd6/</loc>
     <lastmod>2018-03-05T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>//localhost:1414/post/report/</loc>
+    <loc>//localhost:1414///blog.ericchen.name/post/report/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>//localhost:1414/flinks.html</loc>
+    <loc>//localhost:1414///blog.ericchen.name/categories/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="//localhost:1414/en-us/flinks.html"
+                href="//localhost:1414///blog.ericchen.name/en-us/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-TW"
-                href="//localhost:1414/flinks.html"
+                href="//localhost:1414///blog.ericchen.name/categories/"
+                />
+  </url><url>
+    <loc>//localhost:1414///blog.ericchen.name/flinks.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="//localhost:1414///blog.ericchen.name/en-us/flinks.html"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-TW"
+                href="//localhost:1414///blog.ericchen.name/flinks.html"
                 />
   </url>
 </urlset>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Todo on 哲佑碎碎念</title>
-    <link>//localhost:1414/tags/todo/</link>
+    <link>//localhost:1414///blog.ericchen.name/tags/todo/</link>
     <description>Recent content in Todo on 哲佑碎碎念</description>
     <generator>Hugo</generator>
     <language>zh-TW</language>
     <lastBuildDate>Mon, 18 Mar 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="//localhost:1414/tags/todo/rss.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1414///blog.ericchen.name/tags/todo/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Balanced Allocations with the Choice of Noise</title>
-      <link>//localhost:1414/post/2ae157a5-afc0-4b65-bf04-4da2d97e14f0/</link>
+      <link>//localhost:1414///blog.ericchen.name/post/93b3123f-a580-42b0-802d-2a209b3369c2/</link>
       <pubDate>Mon, 18 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>//localhost:1414/post/2ae157a5-afc0-4b65-bf04-4da2d97e14f0/</guid>
+      <guid>//localhost:1414///blog.ericchen.name/post/93b3123f-a580-42b0-802d-2a209b3369c2/</guid>
       <description>&lt;p&gt;&#xA;&lt;a href=&#34;https://dl.acm.org/doi/10.1145/3625386&#34; title=&#34;Balanced Allocations with the Choice of Noise&#34; rel=&#34;noopener external nofollow noreferrer&#34; target=&#34;_blank&#34; class=&#34; exturl&#34;&gt;&#xA;    Balanced Allocations with the Choice of Noise&#xA;    &#xA;    &lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&#xA;    &#xA;&lt;/a&gt;&lt;/p&gt;</description>
     </item>
   </channel>

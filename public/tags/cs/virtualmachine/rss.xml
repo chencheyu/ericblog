@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>CS/VirtualMachine on 哲佑碎碎念</title>
-    <link>//localhost:1414/tags/cs/virtualmachine/</link>
+    <link>//localhost:1414///blog.ericchen.name/tags/cs/virtualmachine/</link>
     <description>Recent content in CS/VirtualMachine on 哲佑碎碎念</description>
     <generator>Hugo</generator>
     <language>zh-TW</language>
     <lastBuildDate>Wed, 16 Oct 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="//localhost:1414/tags/cs/virtualmachine/rss.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1414///blog.ericchen.name/tags/cs/virtualmachine/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Virtual Machine</title>
-      <link>//localhost:1414/post/6fb417d7-7230-4747-ad4d-01f7e55efcea/</link>
+      <link>//localhost:1414///blog.ericchen.name/post/1fc8bbc7-b8d8-4f8b-93a4-bfa25ba89e43/</link>
       <pubDate>Wed, 16 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>//localhost:1414/post/6fb417d7-7230-4747-ad4d-01f7e55efcea/</guid>
+      <guid>//localhost:1414///blog.ericchen.name/post/1fc8bbc7-b8d8-4f8b-93a4-bfa25ba89e43/</guid>
       <description>&lt;h3 id=&#34;qemu-user&#34;&gt;qemu-user&#xA;&lt;a class=&#34;header-anchor&#34; href=&#34;#qemu-user&#34;&gt;&lt;/a&gt;&#xA;&lt;/h3&gt;&lt;h3 id=&#34;qemu-system&#34;&gt;qemu-system&#xA;&lt;a class=&#34;header-anchor&#34; href=&#34;#qemu-system&#34;&gt;&lt;/a&gt;&#xA;&lt;/h3&gt;&lt;h3 id=&#34;virt-manager&#34;&gt;virt-manager&#xA;&lt;a class=&#34;header-anchor&#34; href=&#34;#virt-manager&#34;&gt;&lt;/a&gt;&#xA;&lt;/h3&gt;&lt;p&gt;libvirt 的 GUI&lt;/p&gt;&#xA;&lt;h3 id=&#34;libvirthttpslibvirtorg&#34;&gt;&#xA;&lt;a href=&#34;https://libvirt.org/&#34; title=&#34;libvirt&#34; rel=&#34;noopener external nofollow noreferrer&#34; target=&#34;_blank&#34; class=&#34; exturl&#34;&gt;&#xA;    libvirt&#xA;    &#xA;    &lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&#xA;    &#xA;&lt;/a&gt;&#xA;&lt;a class=&#34;header-anchor&#34; href=&#34;#libvirthttpslibvirtorg&#34;&gt;&lt;/a&gt;&#xA;&lt;/h3&gt;&lt;p&gt;&lt;code&gt;kvm-ok&lt;/code&gt; 用於檢察 CPU 是否支援虛擬化&#xA;&#xA;&lt;a href=&#34;https://libvirt.org/formatdomain.html&#34; title=&#34;libvirt: Domain XML format&#34; rel=&#34;noopener external nofollow noreferrer&#34; target=&#34;_blank&#34; class=&#34; exturl&#34;&gt;&#xA;    libvirt: Domain XML format&#xA;    &#xA;    &lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&#xA;    &#xA;&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h4 id=&#34;virtiofsd&#34;&gt;virtiofsd&#xA;&lt;a class=&#34;header-anchor&#34; href=&#34;#virtiofsd&#34;&gt;&lt;/a&gt;&#xA;&lt;/h4&gt;&lt;p&gt;qemu 再做 filesystem share 時沒裝 virtiofsd 啟動虛擬機時會報失敗&#xA;virt-manager 中 Add Hardware 選 filesystem&#xA;Source Path 選在 host  要往 guest share 的路徑&#xA;Target Path 是 virtiofs 在 guest 中要打的 Tag，不建議有斜線&lt;/p&gt;</description>
     </item>
   </channel>

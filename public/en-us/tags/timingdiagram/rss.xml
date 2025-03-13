@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>TimingDiagram on 哲佑碎碎念</title>
-    <link>//localhost:1414/en-us/tags/timingdiagram/</link>
+    <link>//localhost:1414///blog.ericchen.name/en-us/tags/timingdiagram/</link>
     <description>Recent content in TimingDiagram on 哲佑碎碎念</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <lastBuildDate>Wed, 29 Jan 2025 21:01:13 +0800</lastBuildDate>
-    <atom:link href="//localhost:1414/en-us/tags/timingdiagram/rss.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1414///blog.ericchen.name/en-us/tags/timingdiagram/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mermaid Support Flowchart</title>
-      <link>//localhost:1414/en-us/demo/mermaid-charts.html</link>
+      <link>//localhost:1414///blog.ericchen.name/en-us/demo/mermaid-charts.html</link>
       <pubDate>Wed, 29 Jan 2025 21:01:13 +0800</pubDate>
-      <guid>//localhost:1414/en-us/demo/mermaid-charts.html</guid>
+      <guid>//localhost:1414///blog.ericchen.name/en-us/demo/mermaid-charts.html</guid>
       <description>&lt;p&gt;This theme now supports the use of &lt;code&gt;Mermaid&lt;/code&gt; to draw flowcharts, sequence diagrams, Gantt charts, state diagrams, relationship diagrams, and more in plain text format. With the gradual development of &lt;code&gt;Mermaid&lt;/code&gt;, various types of diagrams will be introduced in the future. For more types and usage methods, please follow its official website:&#xA;&lt;a href=&#34;https://mermaid-js.github.io/&#34; title=&#34;https://mermaid-js.github.io/&#34; rel=&#34;noopener external nofollow noreferrer&#34; target=&#34;_blank&#34; class=&#34; exturl&#34;&gt;&#xA;    https://mermaid-js.github.io/&#xA;    &#xA;    &lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&#xA;    &#xA;&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
   </channel>

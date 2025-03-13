@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blockquote on 哲佑碎碎念</title>
-    <link>//localhost:1414/tags/blockquote/</link>
+    <link>//localhost:1414///blog.ericchen.name/tags/blockquote/</link>
     <description>Recent content in Blockquote on 哲佑碎碎念</description>
     <generator>Hugo</generator>
     <language>zh-TW</language>
     <lastBuildDate>Thu, 02 Jan 2025 19:08:02 +0800</lastBuildDate>
-    <atom:link href="//localhost:1414/tags/blockquote/rss.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1414///blog.ericchen.name/tags/blockquote/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>支持在Markdown文档中实现块信息强调标注</title>
-      <link>//localhost:1414/demo/hugo-blockquote.html</link>
+      <link>//localhost:1414///blog.ericchen.name/demo/hugo-blockquote.html</link>
       <pubDate>Thu, 02 Jan 2025 16:08:02 +0800</pubDate>
-      <guid>//localhost:1414/demo/hugo-blockquote.html</guid>
+      <guid>//localhost:1414///blog.ericchen.name/demo/hugo-blockquote.html</guid>
       <description>&lt;p&gt;过去 &lt;code&gt;HugoNexT&lt;/code&gt; 主题都是通过自定义短语来实现块信息的标注，近期发现 &lt;code&gt;Hugo&lt;/code&gt; 从&#xA;&lt;a href=&#34;https://github.com/gohugoio/hugo/releases/tag/v0.134.0&#34; title=&#34;v0.134.0&#34; rel=&#34;noopener external nofollow noreferrer&#34; target=&#34;_blank&#34; class=&#34; exturl&#34;&gt;&#xA;    v0.134.0&#xA;    &#xA;    &lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&#xA;    &#xA;&lt;/a&gt;版本开始便是可以支持通过hook方式渲染Markdown文档中的Blockquote样式（需要自己实现），实现类似Github的警告风格样式。于是便在 &lt;code&gt;HugoNexT&lt;/code&gt; 主题中添加7种不同风格供用户可选择使用，还可以自定义图标与颜色配置。&lt;/p&gt;</description>
     </item>
   </channel>

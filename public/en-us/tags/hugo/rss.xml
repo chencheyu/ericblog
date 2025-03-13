@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hugo on 哲佑碎碎念</title>
-    <link>//localhost:1414/en-us/tags/hugo/</link>
+    <link>//localhost:1414///blog.ericchen.name/en-us/tags/hugo/</link>
     <description>Recent content in Hugo on 哲佑碎碎念</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <lastBuildDate>Wed, 29 Jan 2025 21:24:02 +0800</lastBuildDate>
-    <atom:link href="//localhost:1414/en-us/tags/hugo/rss.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1414///blog.ericchen.name/en-us/tags/hugo/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Welcome to the Hugo NexT organization</title>
-      <link>//localhost:1414/en-us/post/02-external-link/</link>
+      <link>//localhost:1414///blog.ericchen.name/en-us/post/02-external-link/</link>
       <pubDate>Sat, 25 Jan 2025 20:59:12 +0800</pubDate>
-      <guid>//localhost:1414/en-us/post/02-external-link/</guid>
+      <guid>//localhost:1414///blog.ericchen.name/en-us/post/02-external-link/</guid>
       <description>&lt;p&gt;Welcome to the Hugo NexT documentation site! It is from &#xA;&lt;a href=&#34;https://theme-next.js.org/&#34; title=&#34;Theme NexT&#34; rel=&#34;noopener external nofollow noreferrer&#34; target=&#34;_blank&#34; class=&#34; exturl&#34;&gt;&#xA;    Theme NexT&#xA;    &#xA;    &lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&#xA;    &#xA;&lt;/a&gt; The transplanted one is &#xA;&lt;a href=&#34;https://gohugo.io/&#34; title=&#34;Hugo&#34; rel=&#34;noopener external nofollow noreferrer&#34; target=&#34;_blank&#34; class=&#34; exturl&#34;&gt;&#xA;    Hugo&#xA;    &#xA;    &lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&#xA;    &#xA;&lt;/a&gt; The high-quality and elegant theme created maintains its easy-to-use features and powerful functionality.&lt;/p&gt;&#xA;&lt;h2 id=&#34;user-guide&#34;&gt;User Guide&#xA;&lt;a class=&#34;header-anchor&#34; href=&#34;#user-guide&#34;&gt;&lt;/a&gt;&#xA;&lt;/h2&gt;&lt;p&gt;Setting up a NexT theme is easy. Simply follow the documentation to quickly create your personal website!&lt;/p&gt;&#xA;&lt;h2 id=&#34;feedback&#34;&gt;Feedback&#xA;&lt;a class=&#34;header-anchor&#34; href=&#34;#feedback&#34;&gt;&lt;/a&gt;&#xA;&lt;/h2&gt;&lt;ul&gt;&#xA;&lt;li&gt;Visit the Awesome NexT list to share plugins and tutorials with other users.&lt;/li&gt;&#xA;&lt;li&gt;Join our Gitter chat.&lt;/li&gt;&#xA;&lt;li&gt;Add or improve translations within seconds.&lt;/li&gt;&#xA;&lt;li&gt;Report one in GitHub Issues &amp;#x1f41b; .&lt;/li&gt;&#xA;&lt;li&gt;Apply for a new feature on GitHub.&lt;/li&gt;&#xA;&lt;li&gt;Request a vote for the most popular feature.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Hello world</title>
-      <link>//localhost:1414/en-us/demo/hello-world.html</link>
+      <link>//localhost:1414///blog.ericchen.name/en-us/demo/hello-world.html</link>
       <pubDate>Sat, 25 Jan 2025 19:12:32 +0800</pubDate>
-      <guid>//localhost:1414/en-us/demo/hello-world.html</guid>
+      <guid>//localhost:1414///blog.ericchen.name/en-us/demo/hello-world.html</guid>
       <description>&lt;blockquote&gt;&#xA;    &lt;p&gt;Use the keyword &lt;code&gt;weight&lt;/code&gt; to top the article.&lt;/p&gt;&#xA;  &lt;/blockquote&gt;&#xA;&lt;p&gt;&#xA;&lt;a href=&#34;https://gohugo.io/&#34; title=&#34;Hugo&#34; rel=&#34;noopener external nofollow noreferrer&#34; target=&#34;_blank&#34; class=&#34; exturl&#34;&gt;&#xA;    Hugo&#xA;    &#xA;    &lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&#xA;    &#xA;&lt;/a&gt;, It is currently the fastest website construction framework in the world and one of the most popular open-source static site generators. With its astonishing speed and flexibility, Hugo has once again made website construction interesting.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Support block information emphasis annotation in Markdown documents</title>
-      <link>//localhost:1414/en-us/demo/hugo-blockquote.html</link>
+      <link>//localhost:1414///blog.ericchen.name/en-us/demo/hugo-blockquote.html</link>
       <pubDate>Wed, 29 Jan 2025 21:24:02 +0800</pubDate>
-      <guid>//localhost:1414/en-us/demo/hugo-blockquote.html</guid>
+      <guid>//localhost:1414///blog.ericchen.name/en-us/demo/hugo-blockquote.html</guid>
       <description>&lt;p&gt;In the past, the &lt;code&gt;Hugo NexT&lt;/code&gt; theme used to annotate block information through custom phrases. Recently, it has been discovered that &lt;code&gt;Hugo&lt;/code&gt; has been updated from &#xA;&lt;a href=&#34;https://github.com/gohugoio/hugo/releases/tag/v0.134.0&#34; title=&#34;v0.134.0&#34; rel=&#34;noopener external nofollow noreferrer&#34; target=&#34;_blank&#34; class=&#34; exturl&#34;&gt;&#xA;    v0.134.0&#xA;    &#xA;    &lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&#xA;    &#xA;&lt;/a&gt;. From the beginning of the version, it is possible to support rendering Blockquote styles in Markdown documents through hook mode (which needs to be implemented by oneself), achieving warning style styles similar to Github. So 7 different styles were added to the &lt;code&gt;Hugo NexT&lt;/code&gt; theme for users to choose from, and they could also customize icons and color configurations.&lt;/p&gt;</description>
     </item>
   </channel>

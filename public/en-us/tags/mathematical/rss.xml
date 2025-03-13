@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mathematical on 哲佑碎碎念</title>
-    <link>//localhost:1414/en-us/tags/mathematical/</link>
+    <link>//localhost:1414///blog.ericchen.name/en-us/tags/mathematical/</link>
     <description>Recent content in Mathematical on 哲佑碎碎念</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <lastBuildDate>Wed, 29 Jan 2025 20:50:02 +0800</lastBuildDate>
-    <atom:link href="//localhost:1414/en-us/tags/mathematical/rss.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1414///blog.ericchen.name/en-us/tags/mathematical/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mathematical Formula Rendering</title>
-      <link>//localhost:1414/en-us/demo/math-formula.html</link>
+      <link>//localhost:1414///blog.ericchen.name/en-us/demo/math-formula.html</link>
       <pubDate>Wed, 29 Jan 2025 20:50:02 +0800</pubDate>
-      <guid>//localhost:1414/en-us/demo/math-formula.html</guid>
+      <guid>//localhost:1414///blog.ericchen.name/en-us/demo/math-formula.html</guid>
       <description>&lt;p&gt;This theme supports two different schemes, &lt;code&gt;mathjax&lt;/code&gt; and &lt;code&gt;katex&lt;/code&gt;, and supports rendering mathematical formulas. You can choose according to your own needs.&lt;/p&gt;</description>
     </item>
   </channel>

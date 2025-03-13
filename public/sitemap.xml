@@ -2,16 +2,16 @@
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <sitemap>
-    <loc>//localhost:1414/zh-tw/sitemap.xml</loc>
+    <loc>//localhost:1414/blog.ericchen.name/zh-tw/sitemap.xml</loc>
     
-      <lastmod>2025-02-28T00:00:00+00:00</lastmod>
+      <lastmod>2025-03-10T00:00:00+00:00</lastmod>
     
   </sitemap>
   
   <sitemap>
-    <loc>//localhost:1414/en-us/sitemap.xml</loc>
+    <loc>//localhost:1414/blog.ericchen.name/en-us/sitemap.xml</loc>
     
-      <lastmod>2025-01-29T21:24:02+08:00</lastmod>
+      <lastmod>2025-01-25T20:46:25+08:00</lastmod>
     
   </sitemap>
   

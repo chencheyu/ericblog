@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Title on 哲佑碎碎念</title>
-    <link>//localhost:1414/en-us/tags/title/</link>
+    <link>//localhost:1414///blog.ericchen.name/en-us/tags/title/</link>
     <description>Recent content in Title on 哲佑碎碎念</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <lastBuildDate>Wed, 29 Jan 2025 19:45:16 +0800</lastBuildDate>
-    <atom:link href="//localhost:1414/en-us/tags/title/rss.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1414///blog.ericchen.name/en-us/tags/title/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Articles without H1-6 header and comments</title>
-      <link>//localhost:1414/en-us/demo/no-header-title.html</link>
+      <link>//localhost:1414///blog.ericchen.name/en-us/demo/no-header-title.html</link>
       <pubDate>Wed, 29 Jan 2025 19:45:16 +0800</pubDate>
-      <guid>//localhost:1414/en-us/demo/no-header-title.html</guid>
+      <guid>//localhost:1414///blog.ericchen.name/en-us/demo/no-header-title.html</guid>
       <description>&lt;p&gt;Liu Cixin&amp;rsquo;s acceptance speech for the 2018 Clark Prize (excerpt from some content).&lt;/p&gt;&#xA;&#xA;&#xA;&#xA;  &lt;div class=&#34;post-alert-info&#34;&gt;&#xA;    &lt;div class=&#34;post-alert-title&#34;&gt;&#xA;      &lt;i class=&#34;fa-solid fa-circle-info&#34;&gt;&lt;/i&gt;&#xA;      &lt;span&gt;&#xA;        &#xA;          Info&#xA;        &#xA;      &lt;/span&gt;&#xA;    &lt;/div&gt;&#xA;    &lt;div class=&#34;post-alert-content&#34;&gt;&#xA;      &lt;p&gt;Used to test whether the directory navigation of an article will be directly closed and the comment function will be disabled without the H1-6 title header.&lt;/p&gt;&#xA;    &lt;/div&gt;&#xA;  &lt;/div&gt;</description>
     </item>
   </channel>

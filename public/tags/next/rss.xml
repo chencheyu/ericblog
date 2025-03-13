@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>NexT on 哲佑碎碎念</title>
-    <link>//localhost:1414/tags/next/</link>
+    <link>//localhost:1414///blog.ericchen.name/tags/next/</link>
     <description>Recent content in NexT on 哲佑碎碎念</description>
     <generator>Hugo</generator>
     <language>zh-TW</language>
     <lastBuildDate>Wed, 01 Jun 2022 15:59:41 +0800</lastBuildDate>
-    <atom:link href="//localhost:1414/tags/next/rss.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1414///blog.ericchen.name/tags/next/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>欢迎加入 Hugo NexT 组织！</title>
-      <link>//localhost:1414/post/02-external-link/</link>
+      <link>//localhost:1414///blog.ericchen.name/post/02-external-link/</link>
       <pubDate>Wed, 01 Jun 2022 15:59:41 +0800</pubDate>
-      <guid>//localhost:1414/post/02-external-link/</guid>
+      <guid>//localhost:1414///blog.ericchen.name/post/02-external-link/</guid>
       <description>&lt;p&gt;欢迎来到 &lt;code&gt;Hugo NexT&lt;/code&gt; 文档站点！ 它是从 &#xA;&lt;a href=&#34;https://theme-next.js.org/&#34; title=&#34;Theme NexT&#34; rel=&#34;noopener external nofollow noreferrer&#34; target=&#34;_blank&#34; class=&#34; exturl&#34;&gt;&#xA;    Theme NexT&#xA;    &#xA;    &lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&#xA;    &#xA;&lt;/a&gt; 移植过来的为 &#xA;&lt;a href=&#34;https://gohugo.io/&#34; title=&#34;Hugo&#34; rel=&#34;noopener external nofollow noreferrer&#34; target=&#34;_blank&#34; class=&#34; exturl&#34;&gt;&#xA;    Hugo&#xA;    &#xA;    &lt;i class=&#34;fa fa-external-link-alt&#34;&gt;&lt;/i&gt;&#xA;    &#xA;&lt;/a&gt;打造的高品质优雅主题，保持简单易用的特性和强大的功能。&lt;/p&gt;&#xA;&lt;h2 id=&#34;用户指南&#34;&gt;用户指南&#xA;&lt;a class=&#34;header-anchor&#34; href=&#34;#%e7%94%a8%e6%88%b7%e6%8c%87%e5%8d%97&#34;&gt;&lt;/a&gt;&#xA;&lt;/h2&gt;&lt;p&gt;设置 NexT 主题很容易。只需遵循文档，就可快速创建您的个人网站！&lt;/p&gt;</description>
     </item>
   </channel>

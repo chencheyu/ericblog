@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>&lt;% Tp.file.folder(true) %&gt; on 哲佑碎碎念</title>
-    <link>//localhost:1414/tags/-tp.file.foldertrue-/</link>
+    <link>//localhost:1414///blog.ericchen.name/tags/-tp.file.foldertrue-/</link>
     <description>Recent content in &lt;% Tp.file.folder(true) %&gt; on 哲佑碎碎念</description>
     <generator>Hugo</generator>
     <language>zh-TW</language>
-    <atom:link href="//localhost:1414/tags/-tp.file.foldertrue-/rss.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1414///blog.ericchen.name/tags/-tp.file.foldertrue-/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Publish.md</title>
-      <link>//localhost:1414/post/cf7ac070-4633-4d92-badd-5471707e1fd5/</link>
+      <link>//localhost:1414///blog.ericchen.name/post/d473194f-24d7-49af-a158-6a49e8c3f866/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1414/post/cf7ac070-4633-4d92-badd-5471707e1fd5/</guid>
+      <guid>//localhost:1414///blog.ericchen.name/post/d473194f-24d7-49af-a158-6a49e8c3f866/</guid>
       <description></description>
     </item>
   </channel>

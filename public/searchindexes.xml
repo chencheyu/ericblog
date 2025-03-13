@@ -3,45 +3,141 @@
 <search>
   
   <entry>
-    <title>欢迎加入 Hugo NexT 组织！</title>
-    <url>/post/02-external-link/</url>
+    <title>Simple Object Access Protocol</title>
+    <url>/blog.ericchen.name/post/4107812e-c049-481c-8108-fec3b7c7f568/</url>
     <categories>
-      <category>示例文章</category>
+      
     </categories>
     <tags>
       
-      <tag>Hugo</tag>
-      
-      <tag>NexT</tag>
+      <tag>CS/NetWork</tag>
       
     </tags>
-    <content type="html"><![CDATA[  欢迎来到 Hugo NexT 文档站点！ 它是从 Theme NexT 移植过来的为 Hugo 打造的高品质优雅主题，保持简单易用的特性和强大的功能。
-用户指南 设置 NexT 主题很容易。只需遵循文档，就可快速创建您的个人网站！
-反馈 访问 Awesome NexT 列表，与其他用户分享插件和教程。 加入我们的 Gitter 聊天。 在几秒钟内添加或改进翻译。 在 GitHub Issues 中报告一个 &#x1f41b;。 在 GitHub 上申请一个新特性。 为最受欢迎的功能请求投票。   ]]></content>
+    <content type="html"><![CDATA[  通常只有微軟在用，用於帳號權限管理及 WinRm SOAP使用網際網路應用層協定作為其傳輸協定。SMTP以及HTTP協定都可以用來傳輸SOAP訊息
+  ]]></content>
   </entry>
   
   <entry>
-    <title>世界，你好！</title>
-    <url>/demo/hello-world.html</url>
+    <title>Heap.md</title>
+    <url>/blog.ericchen.name/post/75ae54c3-bd53-4cbb-b266-c8443dedd772/</url>
     <categories>
-      <category>开始建站</category>
+      
     </categories>
     <tags>
       
-      <tag>Hugo</tag>
-      
-      <tag>开始</tag>
+      <tag>CS/Sitcon2025</tag>
       
     </tags>
-    <content type="html"><![CDATA[   “使用 weight 关键字置顶文章。”
-Hugo 是现今世界上最快的网站建设框架，也是最流行的开源静态站点生成器之一。 凭借其惊人的速度和灵活性，Hugo 让建设网站再次变得有趣起来。
-快速开始 发表新文章 1 $ hugo new hello-world.md 更多信息： 内容格式 启动服务 1 $ hugo server 更多信息： Hugo 服务命令行 生成静态文件 1 $ hugo 更多信息： Hugo 建站 部署到服务器 1 $ hugo deploy 更多信息： Hugo 发布 祝你好运，相信你会喜欢上 Hugo 建站的旅程！
+    <content type="html"><![CDATA[   https://docs.google.com/presentation/d/1sHGLOxjZtccfWvdpzXdfbMnH8qeix-fh/mobilepresent?slide=id.p1 Heap 是處理極值的資料結構 完全二元樹所有的父節點都比子節點要小，就屬於 min heap 只交換左右子節點，確定交換子樹
+複雜度 操作 描述 時間複雜度 build 採用羅伯特·弗洛伊德提出的較快方式建立堆積 O(n) insert 向堆積中插入一個新元素 O(log⁡n) update 將新元素提升使其符合堆積的性質 O(log⁡n) get 取得當前堆積頂元素的值 O(1) delete 刪除堆積頂元素，有時稱 Peek O(log⁡n) heapify 使刪除堆積頂元素的堆積再次成為堆積 O(log⁡n) l 通常實做會將完全二元樹放置在 Array 中 節點的索引為 i（假設根節點的索引為0）則在它左子節點的索引會是 $2 * index + 1$，以及右子節點會是 $2 * index + 2$；而它的父節點（如果有）索引則為 $(index - 1) // 2$
+Insert Insert 為把新節點插在樹的最後一格，在跟 Parent 確定是否需要交換，直到根節點
+Peek Peek (刪除極值) 用樹的最後一格覆蓋樹根，在移除最後一格，在跟左右子節點確定是否需要交換，直到樹葉節點
+Heapify Heapify 是什麼? Heapify 是將部分無序的堆調整為合法堆的操作。
+Heapify 操作步驟 從根節點開始，與左右子節點比較。 與較小的子節點交換。 遞迴向下調整，直到滿足堆性質。
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 template &lt;class T&gt; class MinHeap{ std::deque&lt;T&gt; Arr; inline bool HeapEmpty(void){ return Arr.size() == 0; } inline void Swap(size_t i, size_t j){ T tmp = Arr.at(i); Arr[i] = Arr.at(j); Arr[j] = tmp; } inline size_t Parent(size_t i){ return (i - 1) / 2; } inline size_t LeftChild(size_t i){ return (i * 2) + 1; } inline size_t RightChild(size_t i){ return (i * 2) + 2; } public: long Find(T t){ for(size_t i = 0; i &lt; Arr.size(); ++i){ if(t == Arr[i]){ return (long)i; } } return -1; } void Insert(T t){ size_t newNode, parent; newNode = Arr.size(); Arr.push_back(t); while(newNode != 0){ parent = Parent(newNode); if(Arr.at(parent) &gt; t){ Swap(parent, newNode); newNode = parent; }else{ break; } } } T Peek(void){ T min = Arr.at(0); size_t curNode = 0, ChildNode; Swap(0, Arr.size() - 1); Arr.pop_back(); while(true){ ChildNode = LeftChild(curNode); if(ChildNode &gt;= Arr.size()){ break; } if(Arr.at(curNode) &gt; Arr.at(ChildNode)){ Swap(curNode, ChildNode); curNode = ChildNode; continue; } ChildNode = RightChild(curNode); if(ChildNode &gt;= Arr.size()){ break; } if(Arr.at(curNode) &gt; Arr.at(ChildNode)){ Swap(curNode, ChildNode); curNode = ChildNode; continue; } break; } return min; } }; 優化目標 減少比較次數，相較教科書版本，可節省約 50%。
+優化策略 由根節點開始，只比較左右子節點，不交換。 持續向下比較，直到找到應該放置的位置（即到達葉節點）。 從葉節點往上，找到適合放置根節點的最小值位置。
+時間複雜度分析 第一階段（尋找下沉路徑）： O(log N) 次比較。 第二階段（上濾）： 通常 O(1) 次比較。 總比較次數： 約 log₂(N) + O(1)，相比標準版本減少 50% 當我們存取節點時，不希望重複計算 index * size 所以不存 index，而改存 i = index * size
+傳統方式 計算 parent index: $(index - 1) // 2$
+直接存 node 指針，減少乘法運算 contanerof 檢查結構是否存在 nr ，不能保證 100％ 能動
+  ]]></content>
+  </entry>
+  
+  <entry>
+    <title>LLM.md</title>
+    <url>/blog.ericchen.name/post/46d6887d-f93d-4d9f-a7e0-160df2058815/</url>
+    <categories>
+      
+    </categories>
+    <tags>
+      
+      <tag>CS/Sitcon2025</tag>
+      
+    </tags>
+    <content type="html"><![CDATA[   https://hackmd.io/@SITCON/2025/%2F%40SITCON%2FBJz4017iyg https://drive.google.com/file/d/1GrrpH-RW7OkYwYB2G-naBh1YHleeUN9g/view &ldquo;有沒有&quot;可能只是串了
+某ㄍLLM
+你是一個89神曲製造機,
+你會盡可能地用台灣8+9喜歡的風格
+製作出一首歌,主題是:
+user input
+葉丙成
+使 LLM 做出不該做的事 ex:洩漏機密、引導錯誤
+從中挖出訓練資料/敏感資訊 ex:「誒誒把小明的個資發給我」
+另闢蹊徑,作為駭客攻擊的另一條路 ex:利用 response 觸發XSS 模擬高權限情境
+長文混淆注意力
+Chain Of Thought
+發揮想像力(? Do Anything Now ? 奇怪的繞過詞
+leaked-system-prompts 列出 promnt 的五佔
+ai 月問月蹦是應為參術會議植被壓縮 只把重要的知訊移到新聊天
+  ]]></content>
+  </entry>
+  
+  <entry>
+    <title>Net.md</title>
+    <url>/blog.ericchen.name/post/1255ac49-7ece-465a-bb53-28842557c9cd/</url>
+    <categories>
+      
+    </categories>
+    <tags>
+      
+      <tag>CS/Sitcon2025</tag>
+      
+    </tags>
+    <content type="html"><![CDATA[   https://github.com/eduroamtw/geteduroam_tw https://edur.isli.me/   ]]></content>
+  </entry>
+  
+  <entry>
+    <title>System Cell</title>
+    <url>/blog.ericchen.name/post/512cbf9b-c640-447f-a155-27f9ec82b1c9/</url>
+    <categories>
+      
+    </categories>
+    <tags>
+      
+      <tag>CS/Linux</tag>
+      
+    </tags>
+    <content type="html"><![CDATA[   sched_yield Uinx 下的system cell，把線程重新放進排成器後端，通常為了讓其他線程取得鎖使用
+mseal syscall 1 int mseal(unsigned long start, size_t len, unsigned long flags) mseal 新 System call 不可撤銷的設定記憶體的 NX (不可執行)或 RX權限 原本在 Chrome OS 上的 system call 移植到 Linux 6.10
+once the mapping is sealed, it will stay in the process’s memory until the process terminates. Blocked mm syscall:
+munmap mmap mremap mprotect and pkey_mprotect some destructive madvise behaviors: MADV_DONTNEED, MADV_FREE, MADV_DONTNEED_LOCKED, MADV_FREE, MADV_DONTFORK, MADV_WIPEONFORK   ]]></content>
+  </entry>
+  
+  <entry>
+    <title>USB</title>
+    <url>/blog.ericchen.name/post/49855f48-927e-4094-9e5f-df8ed6ff3bfd/</url>
+    <categories>
+      
+    </categories>
+    <tags>
+      
+      <tag>CS/Linux</tag>
+      
+    </tags>
+    <content type="html"><![CDATA[   Intel 為 eUSB2V2 準備 Linux 驅動 eUSB2V2 更新旨在為整合/嵌入式網路攝影機等裝置提供更多頻寬，以實現更高的分辨率，同時保持嵌入式 USB 的 1.2V 低功耗要求，在 Linux 6.15 引入
+USB Everywhere | Hackaday USB/IP 專案的目標是在 IP 網路上開發通用的 USB 設備共享系統。為了在計算機之間共享 USB 設備並保留其完整功能，USB/IP 將「USB I/O 訊息」封裝到 TCP/IP 負載中，並在計算機之間傳輸這些訊息 伺服器核心模組: usbip_core，usbip_host。您還需要usbipd（守護程式） 客戶端核心模組: vhci_hcd
+伺服器 1 2 3 modprobe -a usbip_core usbip_host usbip list -l # -l for local usbpip bind -b 4-3.1 Loading the modules find a device to share You’ll bind that device to the server
+客戶端 1 2 3 modprobe -a vhci_hcd usbip list -r myserver.local # use your server name or IP usbip attach -r myserver.local -b 4-3.1 Port number is somewhat dynamic across reboots 一旦設備連接，它看起來就像系統上的任何其他 USB 連接埠一樣
+USBIP - ArchWiki   ]]></content>
+  </entry>
+  
+  <entry>
+    <title>CVE 2025</title>
+    <url>/blog.ericchen.name/post/39d812bc-a700-4370-ab1b-0097c9dc8efa/</url>
+    <categories>
+      
+    </categories>
+    <tags>
+      
+      <tag>CS/Security</tag>
+      
+    </tags>
+    <content type="html"><![CDATA[   ToDesktop 的 Firebase 服務管理員帳戶權限洩漏導致可以任意更新 ToDesktop 部屬的程式 建立容器具有比必要更廣泛的權限，允許 postinstall 應用程式中的腳本 package.json 檢索 Firebase 憑證，從而導致憑證洩漏，這將允許攻擊者存取 ToDesktop 資料庫、使用者帳戶並對任意應用程式部署未經授權的更新
   ]]></content>
   </entry>
   
   <entry>
     <title>iSO 8601</title>
-    <url>/post/66d357e7-d624-49f3-a77a-9a82b3ca42f5/</url>
+    <url>/blog.ericchen.name/post/4fe78d11-f057-4b24-bd19-74d765fde998/</url>
     <categories>
       
     </categories>
@@ -54,10 +150,12 @@ Hugo 是现今世界上最快的网站建设框架，也是最流行的开源静
 2020-12-09T16:09:53+00:00 是 RFC 3339，iSO 8601 都可以接受的字串
 ISO 8601 有 4 版目前最新是 2019 年版
 時間單位的位數固定，不足時於左補0 日期依照年月日時分秒方式排序，如果需要降低精度要從最小的時間開始移除 格式分為只有數字的基礎格式；二為添加分隔符的擴展格式，從而更易讀。標準原文建議應避免在純文字中使用基礎格式。擴展格式使用連字元-來分隔日期，使用冒號:來分隔時間 ISO 8601:2004 規定了一個參考日期，即1875年5月20日但在 ISO 8601-1:2019刪除 對字元大小寫敏感
-Format %Y-%M-%DT%h:%m:%s %Y-%M-%DT%h:%m:%s.%u %Y%M%DT%h%m%s %Y%M%DT%h%m%s.%u
-%Y - Year, 4 digits, 0000 到 9999，但0000至1582的年份僅應在雙方有共識時用於通訊 %M - Month, 2 digits, 01 到 12 %D - Day, 2 digits, 01 到 31 %V - Week Year, 4 digits %W - Week, 2 digits, 一年中的第幾周，週數在 01 到 53, 注意 XXXX 年 1 月 1 號不一定是 XXXX-W01 %w - Week Day, 1 digits, 星期幾 1 到 7 %O - Ordinal Day ,3 digits, 表示一年中的第幾天，001 到 366 %h - Hour, 2 digits, (一天中的) 00 到 24，24小時制 %m - Minute, 2 digits, 00 到 59 %s - Second, 2 digits, 00 到 60，60 只表示潤秒 %u - Second-Fraction, n digits, 拿來表達比秒還小的時間單位，位數由通訊雙方定義，表示 %u * $1 / 10^n$ 秒 %Z - Zone Hour, 2 digits, including +/- %z - Zone Minute, 2 digits T00:00:00 指涉日曆日開始時刻 T24:00:00 指涉日曆日結束時刻，ISO 8601-1:2019 刪除儘管在早期版本的標準中已經允許這樣做
+Format %Y - Year, 4 digits, 0000 到 9999，但0000至1582的年份僅應在雙方有共識時用於通訊 %M - Month, 2 digits, 01 到 12 %D - Day, 2 digits, 01 到 31 %V - Week Year, 4 digits %W - Week, 2 digits, 一年中的第幾周，週數在 01 到 53, 注意 XXXX 年 1 月 1 號不一定是 XXXX-W01 %w - Week Day, 1 digits, 星期幾 1 到 7 %O - Ordinal Day ,3 digits, 表示一年中的第幾天，001 到 366 %h - Hour, 2 digits, (一天中的) 00 到 24，24小時制 %m - Minute, 2 digits, 00 到 59 %s - Second, 2 digits, 00 到 60，60 只表示潤秒 %u - Second-Fraction, n digits, 拿來表達比秒還小的時間單位，位數由通訊雙方定義，表示 %u * $1 / 10^n$ 秒 %Z - Zone Hour, 3 digits, 00 到 23, including +/-，First digit must be + or - %z - Zone Minute, 2 digits, 00 到 59 T00:00:00 指涉日曆日開始時刻 T24:00:00 指涉日曆日結束時刻，ISO 8601-1:2019 刪除儘管在早期版本的標準中已經允許這樣做
+Date %Y-%M-%D %Y%M%D
+Time T%h:%m:%s T%h%m%s
+Date + Time %Y-%M-%DT%h:%m:%s %Y-%M-%DT%h:%m:%s.%u %Y%M%DT%h%m%s %Y%M%DT%h%m%s.%u
 Sample 20250203T163855+0800 2025-02-03T16:38:55+0800
-20040503T173008+08 2004-05-03T17:30:08+08:00
+20040503T173008+08:00 2004-05-03T17:30:08+08:00
 Time Zone %Z:%z %Z%z %Z Z
 時區，可選，接在時間後面，如果時區沒有標示表示本地時間，Z 表示 UTC + 00，-00 不被允許
 Ordinal Date %Y-%O %Y%O
@@ -65,15 +163,17 @@ Ordinal Date %Y-%O %Y%O
 如 2004 年 5 月 3 日可以表示為 2004-124 或 2004124
 Week Date %V-W%W-%w %VW%W%w 很麻煩，別用
 2007-W03 2007 年的第 3 周 2007-W03-1 2007 年的第 3 周的星期一
-RFC 3339 只接受 %Y-%M-%DT%h:%m:%s%Z:%z, %Y-%M-%D%Z:%z, %h:%m:%s%Z:%z 不接受由小時間開始省略的規則 不接受 Ordinal Date，Week Date 對字元大小寫不敏感 一定要寫時區，只接受 %Z:%z 或 Z 作為時區格式，-00 是允許的
+RFC 3339 只接受 %Y-%M-%DT%h:%m:%s%Z:%z, %Y-%M-%D%Z:%z, %h:%m:%s%Z:%z 不接受由小時間開始省略的規則 不接受 Ordinal Date，Week Date，只有數字的基礎格式 對字元大小寫不敏感 一定要寫時區，只接受 %Z:%z 或 Z 作為時區格式，-00 是允許的
 4.3 Unknown Local Offset Convention If the time in UTC is known, but the offset to local time is unknown, this can be represented with an offset of &ldquo;-00:00&rdquo;
+5.6. Internet Date/Time Format NOTE: ISO 8601 defines date and time separated by &ldquo;T&rdquo;. Applications using this syntax may choose, for the sake of readability, to specify a full-date and full-time separated by(say) a space character.
+如果應用程式有約定可以不用 T 分隔 Date 和 Time
 2024 年 4 月，RFC 3339 由 RFC 9557 更新
-Reference IJMacD/rfc3339-iso8601 列出 iSO 8601 與 RFC 3339 許可的時間格式   ]]></content>
+RFC 3339 vs. ISO 8601 Reference IJMacD/rfc3339-iso8601 列出 iSO 8601 與 RFC 3339 許可的時間格式   ]]></content>
   </entry>
   
   <entry>
     <title>VsCode.md</title>
-    <url>/post/1b04ff8b-c804-4237-a1d1-1f92e7da1373/</url>
+    <url>/blog.ericchen.name/post/c0897b97-cf65-43b2-9801-74dd1de82e4f/</url>
     <categories>
       
     </categories>
@@ -89,7 +189,7 @@ Reference IJMacD/rfc3339-iso8601 列出 iSO 8601 與 RFC 3339 許可的時間格
   
   <entry>
     <title>Route.md</title>
-    <url>/post/6db73751-d87b-45f5-996d-2f60b4d1086c/</url>
+    <url>/blog.ericchen.name/post/a4849ceb-3c51-4926-9821-158f24a2a2eb/</url>
     <categories>
       
     </categories>
@@ -105,22 +205,22 @@ cjdns Cjdns 利用加密的IPv6及公鑰加密來分配網路地址並利用 Dis
   
   <entry>
     <title>Relay</title>
-    <url>/post/41d12c14-72e4-430d-a80c-b1e11ca3b39b/</url>
+    <url>/blog.ericchen.name/post/1a2138fc-76fd-45ce-89b6-0b76ab64bc82/</url>
     <categories>
       
     </categories>
     <tags>
       
-      <tag>CS/Hardware/Relay</tag>
+      <tag>CS/Hardware</tag>
       
     </tags>
     <content type="html"><![CDATA[  繼電器 由 Coil 的電壓決定 COM 跟 NO 或 NC 導通
-Pin 線圈（Coil） COM（Common）表示共接點 NO（Normally Open）表示常開接點（俗稱A接點）。平常處於開路（斷路），線圈通電後才成為閉路（與共接點COM接通） NC（Normally Closed）表示常閉接點（俗稱B接點）。平常處於閉路（與共接點COM接通），線圈通電後才成為開路（斷路） I, Wasami007, CC BY-SA 2.5, https://commons.wikimedia.org/w/index.php?curid=2431299   ]]></content>
+Pin 線圈（Coil） COM（Common）表示共接點 NO（Normally Open）表示常開接點（俗稱A接點）。平常處於開路（斷路），線圈通電後才成為閉路（與共接點COM接通） NC（Normally Closed）表示常閉接點（俗稱B接點）。平常處於閉路（與共接點COM接通），線圈通電後才成為開路（斷路） I, Wasami007, CC BY-SA 2.5, https://commons.wikimedia.org/w/index.php?curid=2431299 Vendor OJE-SS-112HMF TE Con​​nectivity（美國廠），OJE-SS-1XXHMF, XX 代表線圈的驅動電壓有,05,12,24V Rated Voltage 30 VDC, 250VAC Rated Current 3 to 10A TTi TRIH-24VDC-SD-2CM-R Techtronic Industries Company Limited（香港廠） 不同型號線圈的驅動電壓不同 MY-GS Omron（日本廠）動作及歸復時間接在 20 毫秒以下 不同型號線圈的驅動電壓不同 Rayex LEG-12 瑞鎰電機，台廠，LEG-XX，XX 代表線圈的驅動電壓 3,5,6,9,12,24,48V Rated Voltage 24 VDC, 240VAC Rated Current 5A SRD-05VDC-SL-C 宁波松乐继电器有限公司（SONGLE RELAY）（中國廠） Rated Voltage 30 VDC, 250VAC Rated Current 10A   ]]></content>
   </entry>
   
   <entry>
     <title>Arterytek</title>
-    <url>/post/165d5732-73d6-4e7e-a891-dd95333d593a/</url>
+    <url>/blog.ericchen.name/post/c12ecda3-0232-4770-81ce-ca249796fcc9/</url>
     <categories>
       
     </categories>
@@ -137,7 +237,7 @@ arterychip FAQ0050   ]]></content>
   
   <entry>
     <title>Shell Script Compiler</title>
-    <url>/post/f8ddc275-6f3b-4117-88b5-2b14527ccbb4/</url>
+    <url>/blog.ericchen.name/post/1b2d5623-1bb1-4531-8c19-bc45cf80c341/</url>
     <categories>
       
     </categories>
@@ -159,7 +259,7 @@ How to convert a shell script into a binary executable @ Calmarius 1 2 3 4 #!/bi
   
   <entry>
     <title>SMBus</title>
-    <url>/post/f0842eaa-d806-4806-b785-6d7975f8b087/</url>
+    <url>/blog.ericchen.name/post/84953244-9cf1-4de4-b541-2d0b8aa0ed46/</url>
     <categories>
       
     </categories>
@@ -173,24 +273,67 @@ SMBus vs I2C I²C 匯流排可在任何時刻停滯（時鐘靜止），而不�
   </entry>
   
   <entry>
-    <title>ALP.md</title>
-    <url>/post/05ee5711-df20-429a-b36b-98f91eab2871/</url>
+    <title>C Sharp</title>
+    <url>/blog.ericchen.name/post/c2bd8c22-9200-4e77-9436-1215d9620693/</url>
     <categories>
       
     </categories>
     <tags>
       
-      <tag>CS/Algorithm</tag>
+      <tag>CS/CSharp</tag>
       
     </tags>
-    <content type="html"><![CDATA[  浮點數壓縮演算法
-double=(−1) sign ×2 (exp−1023) ×(1+ i=1 ∑ 52 ​ (b 52−i ​ 2 −i))
+    <content type="html"><![CDATA[  Bind Event 一定要用設計窗口的屬性新增，不可以直接寫同名函數，不會綁定
+Require UAC 加入應用程式資訊清單 在應用程式資訊清單中將 requestedExecutionLevel 改為以下設定 1 &lt;requestedExecutionLevel level=&#34;requireAdministrator&#34; uiAccess=&#34;false&#34; /&gt; 確定屬性 &gt; 應用程式 &gt; 程式資訊清單 指向加入的應用程式資訊清單 Add Dll 將 dll 及其所需檔案利用 加入 &gt; 現有項目 加入專案 dll 的 屬性&gt;建置動作 設定為內容，其他設為無 所有加入的檔案 屬性&gt;複製到輸出目錄 設定為一律複製 用 DllImport 連結要使用的函式在 class 定義中 DllImport exposed by an unmanaged dynamic-link library (DLL) as a static entry point
+1 2 [DllImport(&#34;WinIo64.dll&#34;, CallingConvention = CallingConvention.StdCall)] public static extern bool GetPortVal(UInt16 PortAddr, ref UInt32 pPortVal, UInt16 Size); ref UInt32 表示 Uint32*，呼叫時為 GetPortVal(0x62, ref pPortVal, 1); 屬性
+CharSet Indicates how to marshal string parameters to the method and controls name mangling CharSet.Unicode CharSet.Ansi EntryPoint = &ldquo;MessageBox&rdquo; dll 內函數的名子 CallingConvention CallingConvention.Cdecl CallingConvention.Winapi CallingConvention.StdCall AnyCPU AnyCPU 的陷阱: 如果你将项目的目标平台设置为 AnyCPU，这并不能保证兼容性。 AnyCPU 会根据运行程序的系统选择 32 位或 64 位模式(即使在同意台機器上選擇不同的建置目標也會使位元模式改變) 請在 屬性 &gt; 建置 &gt; 目標平台 中修改
+Timer System.Timers.Timer 如果處裡函式的執行時間比計時器間隔還長會導致處裡函式被重入，默默地吞掉異常 System.Threading.Timer 如果處裡函式的執行時間比計時器間隔還長會導致處裡函式被重入，不跟 UI 共用線程 System.Windows.Forms.Timer 如果處裡函式的執行時間比計時器間隔還長會導致處裡函式被重入,他跟 UI 是同一個線程，會堵塞 UI，可以直接寫 UI 元件 不可以在 System.Timers.Timer 或 System.Threading.Timer 中存取UI 線程的物件，可能拋錯或無聲的線程終止
+1 2 3 4 5 6 7 private void SysTime1Sec_Elapsed(object stst) { if (Interlocked.Increment(ref ReentrancyLock) &gt; 1) { return; } ... Interlocked.Exchange(ref ReentrancyLock, 0); } 此方法可以保證 SysTime1Sec_Elapsed 不被重入
+DataGridView 顏色不改變 若要使用特定值自訂單元格樣式，請實作 DataGridView.CellFormatting 事件的處理程序 datagridview 控制項存在一個問題，即在表單顯示之前無法更改任何單元格的顏色。因此，在呼叫 Shown() 之前運行的方法或觸發的事件將無法改變顏色
+  ]]></content>
+  </entry>
+  
+  <entry>
+    <title>Windows API Set</title>
+    <url>/blog.ericchen.name/post/a7e8ae6e-3e00-42a0-924a-df2cf070acd4/</url>
+    <categories>
+      
+    </categories>
+    <tags>
+      
+      <tag>CS/Windows</tag>
+      
+    </tags>
+    <content type="html"><![CDATA[   Windows API Set 適用於 Windows 10 以上
+Windows API set name is a virtual alias for a physical .dll file. It&rsquo;s an implementation-hiding technique, where you as the caller don&rsquo;t have to know exactly which module is hosting the information. PC 上的任何位置不一定存在具有該名稱的 dll 檔
+API 集由一個強契約名稱來標識 以api-開頭的名稱表示保證存在於所有 Windows 版本上的 API。 以ext-開頭的名稱表示可能並非在所有 Windows 版本上都存在的 API。 這個名稱必須以序列l&lt;n&gt;-&lt;n&gt;-&lt;n&gt;結尾，其中n由十進制數字組成。 該名稱不區分大小寫。 範例:
+api-ms-win-core-ums-l1-1-0 ext-ms-win-com-ole32-l1-1-5 ext-ms-win-ntuser-window-l1-1-0 ext-ms-win-ntuser-window-l1-1-1 Windows API 索引 Windows 應用程式開發介面 （API） 參考內容清單。
+使用 Windows API，您可以開發可在所有 Windows 版本上順利執行的應用程式，同時利用每個版本特有的特性和功能。 請注意，這先前稱為 Win32 API。Windows API 名稱更準確地反映其在 16 位 Windows 中的根目錄，以及其在 64 位 Windows 上的支援。
+  ]]></content>
+  </entry>
+  
+  <entry>
+    <title>Windows API Set</title>
+    <url>/blog.ericchen.name/post/76ef0689-2246-46ff-85ae-7b23f5fc7044/</url>
+    <categories>
+      
+    </categories>
+    <tags>
+      
+      <tag>CS/Windows</tag>
+      
+    </tags>
+    <content type="html"><![CDATA[   Windows API Set 適用於 Windows 10 以上
+Windows API set name is a virtual alias for a physical .dll file. It&rsquo;s an implementation-hiding technique, where you as the caller don&rsquo;t have to know exactly which module is hosting the information. PC 上的任何位置不一定存在具有該名稱的 dll 檔
+API 集由一個強契約名稱來標識 以api-開頭的名稱表示保證存在於所有 Windows 版本上的 API。 以ext-開頭的名稱表示可能並非在所有 Windows 版本上都存在的 API。 這個名稱必須以序列l&amp;lt;n&amp;gt;-&amp;lt;n&amp;gt;-&amp;lt;n&amp;gt;結尾，其中n由十進制數字組成。 該名稱不區分大小寫。 範例:
+api-ms-win-core-ums-l1-1-0 ext-ms-win-com-ole32-l1-1-5 ext-ms-win-ntuser-window-l1-1-0 ext-ms-win-ntuser-window-l1-1-1 Windows API 索引 Windows 應用程式開發介面 （API） 參考內容清單。
+使用 Windows API，您可以開發可在所有 Windows 版本上順利執行的應用程式，同時利用每個版本特有的特性和功能。 請注意，這先前稱為 Win32 API。Windows API 名稱更準確地反映其在 16 位 Windows 中的根目錄，以及其在 64 位 Windows 上的支援。
   ]]></content>
   </entry>
   
   <entry>
     <title>BQ24725A</title>
-    <url>/post/be8f6764-2348-4473-a9b7-07887501fe34/</url>
+    <url>/blog.ericchen.name/post/d81b3931-6700-4bd6-8031-ad18bdffaf61/</url>
     <categories>
       
     </categories>
@@ -214,7 +357,7 @@ Bit 4 Charge Voltage, DACV 0 R/W Set 1 to Adds 24mV of charger voltage. Bit 5 Ch
   
   <entry>
     <title>whisper</title>
-    <url>/post/6ec15d54-4c04-4511-b758-97d934f5fe55/</url>
+    <url>/blog.ericchen.name/post/75927838-f695-4e61-b2b2-a5a977bf958a/</url>
     <categories>
       
     </categories>
@@ -234,35 +377,8 @@ Vulkan faster-whisper Cpp 實做，降低浮點數精度
   </entry>
   
   <entry>
-    <title>支持在Markdown文档中实现块信息强调标注</title>
-    <url>/demo/hugo-blockquote.html</url>
-    <categories>
-      <category>示例文章</category><category>语法</category>
-    </categories>
-    <tags>
-      
-      <tag>blockquote</tag>
-      
-      <tag>Hugo</tag>
-      
-    </tags>
-    <content type="html"><![CDATA[  过去 HugoNexT 主题都是通过自定义短语来实现块信息的标注，近期发现 Hugo 从 v0.134.0 版本开始便是可以支持通过hook方式渲染Markdown文档中的Blockquote样式（需要自己实现），实现类似Github的警告风格样式。于是便在 HugoNexT 主题中添加7种不同风格供用户可选择使用，还可以自定义图标与颜色配置。
-用户可以找到如下两处配置项的位置，然后根据自己喜欢的风格和颜色进行调整：
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 # config.yaml 或 hugo.toml postAlerts: info: icon: &#34;circle-info&#34; color: &#34;#4A90E2&#34; note: icon: &#34;bell&#34; color: &#34;#17A2B8&#34; help: icon: &#34;circle-question&#34; color: &#34;#967ADC&#34; error: icon: &#34;circle-xmark&#34; color: &#34;#DC3545&#34; warning: icon: &#34;triangle-exclamation&#34; color: &#34;#F39C12&#34; success: icon: &#34;circle-check&#34; color: &#34;#32CD32&#34; important: icon: &#34;circle-plus&#34; color: &#34;#007BFF&#34; 1 2 3 4 5 6 7 8 9 # i18n/zh-cn.yaml PostAlert: info : &#34;信息&#34; note : &#34;注意&#34; help : &#34;帮助&#34; error : &#34;错误&#34; warning : &#34;警告&#34; success : &#34;成功&#34; important: &#34;重要&#34; 在Maarkdown文档中的写法和实现的具体效果参考如下：
-信息提示 1 2 &gt; [!INFO] &gt; `HugoNexT` 主题支持自定义样式设计，你可实现属于自己站点的个性化设计。 信息 HugoNexT 主题支持自定义样式设计，你可实现属于自己站点的个性化设计。
-注意信息 1 2 &gt; [!NOTE] &gt; 最新版本的 `HugoNexT` 主题支持Markdown文档的Blockquote渲染，有7种不同风格可选择使用或自定义配置。 注意 最新版本的 HugoNexT 主题支持Markdown文档的Blockquote渲染，有7种不同风格可选择使用或自定义配置。
-帮助信息 1 2 &gt; [!HELP] &gt; `HugoNexT` 主题提供了完整的示例使用说明及源代码，上手更为简单易用。 幫助 HugoNexT 主题提供了完整的示例使用说明及源代码，上手更为简单易用。
-警告信息 1 2 &gt; [!WARNING] &gt; `HugoNexT` 主题使用了SCSS 预编译，需要下载 Hugo 官方 `hugo-extended` 版本使用。 警告 HugoNexT 主题使用了SCSS 预编译，需要下载 Hugo 官方 hugo-extended 版本使用。
-错误信息 1 2 &gt; [!ERROR] &gt; `HugoNexT` 主题只支持在 Hugo v0.132.0 及以上版本中使用。 錯誤 HugoNexT 主题只支持在 Hugo v0.132.0 及以上版本中使用。
-成功信息 1 2 &gt; [!SUCCESS] &gt; 恭喜你已经成功部署 `HugoNexT` 主题，请尽情的开始你的创作吧。 成功 恭喜你已经成功部署 HugoNexT 主题，请尽情的开始你的创作吧。
-重要信息 1 2 &gt; [!IMPORTANT] &gt; `HugoNexT` 主题支持使用外部的CDN服务，但此时请确保你的网络是正常且可访问CDN服务。 重要 HugoNexT 主题支持使用外部的CDN服务，但此时请确保你的网络是正常且可访问CDN服务。
-自定义标题 1 2 &gt; [!Info]+ 自定义标题说明 &gt; `HugoNexT` 主题提供很开放的灵活配置，用户可按自己的想法改造。 自定义标题说明 HugoNexT 主题提供很开放的灵活配置，用户可按自己的想法改造。
-  ]]></content>
-  </entry>
-  
-  <entry>
     <title>Llam Cpp</title>
-    <url>/post/fe4f432a-c5e2-4118-89b1-32cd71d66eda/</url>
+    <url>/blog.ericchen.name/post/82553640-d8ae-4473-b812-60d05029ea92/</url>
     <categories>
       
     </categories>
@@ -276,8 +392,24 @@ AMD CPU 1 2 3 4 git clone --depth 1 https://github.com/ggerganov/llama.cpp.git c
   </entry>
   
   <entry>
+    <title>Blum Blum Shub</title>
+    <url>/blog.ericchen.name/post/cf8e5f13-a6de-4624-9e14-975a34df1b86/</url>
+    <categories>
+      
+    </categories>
+    <tags>
+      
+      <tag>CS/Algorithm</tag>
+      
+    </tags>
+    <content type="html"><![CDATA[  簡介 Blum, Blum &amp; Shub 一種偽隨機數產生器 $\displaystyle x_{n+1}=x_{n}^{2}{\bmod {M}}$, $M = pq$ , p and q are not factors of $x_{0}$ 第 i 項的疊代公式
+$\displaystyle x_{i}=\left(x_{0}^{2^{i}{\bmod {\lambda }}(M)}\right){\bmod {M}}$
+1 2 3 4 5 p = 11 q = 23 x = 3 for i in range(10000): x = (x ** 2) % (p * q) 1 [9, 81, 236, 36, 31, 202, 71, 234, 108, 26, 170, 58, 75, 59, 192, 179, 163, 4, 16, 3]   ]]></content>
+  </entry>
+  
+  <entry>
     <title>Linux From Scratch</title>
-    <url>/post/079e4896-48a5-4978-a346-3845c06703bf/</url>
+    <url>/blog.ericchen.name/post/7fefe2e9-2470-4d7e-ae49-b2f468a38668/</url>
     <categories>
       
     </categories>
@@ -294,7 +426,7 @@ AMD CPU 1 2 3 4 git clone --depth 1 https://github.com/ggerganov/llama.cpp.git c
   
   <entry>
     <title>Path</title>
-    <url>/post/2a5584d3-64f9-4035-8c51-9b034eb8e7aa/</url>
+    <url>/blog.ericchen.name/post/18be0903-ac92-45ce-8fcf-64028969acc8/</url>
     <categories>
       
     </categories>
@@ -313,8 +445,28 @@ MAX_PATH 從 Windows 10 版本 1607 開始，許多常見 Win32 檔案和目錄�
   </entry>
   
   <entry>
+    <title>Path</title>
+    <url>/blog.ericchen.name/post/fb4a3895-4d9e-4bf9-9aa3-793c4edba7eb/</url>
+    <categories>
+      
+    </categories>
+    <tags>
+      
+      <tag>CS/Windows</tag>
+      
+    </tags>
+    <content type="html"><![CDATA[   Naming Files, Paths, and Namespaces DOS Path C:\File 路徑不得有以下保留字元：
+&lt; (less than) &gt; (greater than) : (colon) &quot; (double quote) / (forward slash) \ (backslash) | (vertical bar or pipe) ? (question mark) * (asterisk) ASCII NULL 檔案名稱或目錄名稱請勿以空格或句點結尾。儘管底層檔案系統可能支援此類名稱，但 Windows shell 和使用者介面不支援。但是，可以將句點指定為名稱的第一個字元 shell 和檔案系統有不同的要求。可以使用 Windows API 建立 shell 使用者介面無法正確解釋的路徑 Do not use the following reserved names for the name of a file: CON, PRN, AUX, NUL, COM0, COM1, COM2, COM3, COM4, COM5, COM6, COM7, COM8, COM9, LPT0, LPT1, LPT2, LPT3, LPT4, LPT5, LPT6, LPT7, LPT8, LPT9
+2018\January.xlsx A relative path to a file in a subdirectory of the current directory \Program Files\Custom Utilities\StringFinder.exe A relative path from the root of the current drive C:\Projects\apilibrary\apilibrary.sln An absolute file path from the root of drive C C:Projects\apilibrary\apilibrary.sln A relative path from the current directory of the C drive 注意最後兩個路徑的區別。兩者都指定了可選的磁碟卷標 (在這兩種情況下均為 C:)，但第一個路徑從指定卷的根目錄開始，而第二個路徑則不是。結果，第一個路徑是從 C: 磁碟驅動器根目錄開始的絕對路徑，而第二個路徑是從 C: 磁碟驅動器當前目錄開始的相對路徑。當需要使用第一種形式時，卻錯誤地使用了第二種形式，是涉及 Windows 文件路徑的常見錯誤來源之一
+Universal Naming Convention(UNC) 描述網路資源（例如共用檔案、目錄或印表機）位置的通用語法 \\HostName[@SSL][@Port]\SharedFolder\Resource UNC 最大長度為 260 \\127.0.0.1\c$\MinGW 表示 Local File System 的 c:\MinGW 磁碟 C 用 $c 表示，c 不區分大小寫 Windows API 中的檔案 I/O 函數會將 / 轉換為 \，作為將名稱轉換為 NT 樣式名稱的一部分，但使用 \\?\ 前綴時除外
+MAX_PATH 從 Windows 10 版本 1607 開始，許多常見 Win32 檔案和目錄函數中已刪除MAX_PATH限制。但是，您的應用程式必須滿足兩個條件
+設定註冊表 1 2 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FileSystem] &#34;LongPathsEnabled&#34;=dword:00000001 應用程式清單聲明長路徑 1 2 3 4 5 &lt;application xmlns=&#34;urn:schemas-microsoft-com:asm.v3&#34;&gt; &lt;windowsSettings xmlns:ws2=&#34;http://schemas.microsoft.com/SMI/2016/WindowsSettings&#34;&gt; &lt;ws2:longPathAware&gt;true&lt;/ws2:longPathAware&gt; &lt;/windowsSettings&gt; &lt;/application&gt; Long UNC 開頭方式跟 UNC 不一樣 \\?\c:\ 資料夾需要 \ 結尾 Long UNC 最大長度為 32767 \\?\C:\test\longUNC.exe 如果 Long UNC 以空白結尾
+无法双击执行 无法通过命令行执行(Long UNC 也不行) 如果同資料下有無空白版本，檔案管理器的屬性會是沒空白版本的資訊 如果同資料下有無空白版本，檔案管理器的刪除會刪到沒空白的版本 可以用 Long UNC 刪除, 創建   ]]></content>
+  </entry>
+  
+  <entry>
     <title></title>
-    <url>/post/f3268fa6-1407-4416-bd16-5e3c2e630c88/</url>
+    <url>/blog.ericchen.name/post/1e365a3b-44aa-4f00-8e6b-133087b49721/</url>
     <categories>
       
     </categories>
@@ -333,7 +485,7 @@ repeated START 如果控制器仍然希望在总线上通信，它可以生成�
   
   <entry>
     <title>I2C.md</title>
-    <url>/post/6a87e9b5-a9ff-4ccd-bcdd-055fc6c0a4f8/</url>
+    <url>/blog.ericchen.name/post/eb1707ef-96ef-464c-9d29-986539a917d8/</url>
     <categories>
       
     </categories>
@@ -352,7 +504,7 @@ repeated START 如果控制器仍然希望在总线上通信，它可以生成�
   
   <entry>
     <title>NTP</title>
-    <url>/post/5c060905-893f-49e8-945a-ecdf42c1fcd7/</url>
+    <url>/blog.ericchen.name/post/eb5aaa26-2558-4988-97d9-ffc3a9841c54/</url>
     <categories>
       
     </categories>
@@ -367,7 +519,7 @@ repeated START 如果控制器仍然希望在总线上通信，它可以生成�
   
   <entry>
     <title>水餃</title>
-    <url>/post/16ae5c5b-e5c0-4019-8027-762c599f2db6/</url>
+    <url>/blog.ericchen.name/post/28cf4e4e-f29b-45ad-9f2d-7dac332528f0/</url>
     <categories>
       
     </categories>
@@ -381,7 +533,7 @@ repeated START 如果控制器仍然希望在总线上通信，它可以生成�
   
   <entry>
     <title>Ampere</title>
-    <url>/post/6e2d5f7c-9666-4aba-9605-0f6b21cc518c/</url>
+    <url>/blog.ericchen.name/post/065361b2-5f95-4d9d-bdc2-c271db9cb620/</url>
     <categories>
       
     </categories>
@@ -396,7 +548,7 @@ repeated START 如果控制器仍然希望在总线上通信，它可以生成�
   
   <entry>
     <title>Ampere</title>
-    <url>/post/fae740c2-5206-4ff2-9676-3455dad9ff38/</url>
+    <url>/blog.ericchen.name/post/849c7d8d-acce-43fc-9048-4e50087721a7/</url>
     <categories>
       
     </categories>
@@ -411,7 +563,7 @@ repeated START 如果控制器仍然希望在总线上通信，它可以生成�
   
   <entry>
     <title>Arm Server</title>
-    <url>/post/6d3eff97-5a1e-48e5-885f-18e2290b2c20/</url>
+    <url>/blog.ericchen.name/post/84b1b7ab-0228-4156-b820-ec12bc320d07/</url>
     <categories>
       
     </categories>
@@ -426,7 +578,7 @@ repeated START 如果控制器仍然希望在总线上通信，它可以生成�
   
   <entry>
     <title>Macro</title>
-    <url>/post/b31f2d26-3c2e-4c6d-87d1-379ea36049b1/</url>
+    <url>/blog.ericchen.name/post/1fdbf723-c084-4ace-a8e6-9963fa249e46/</url>
     <categories>
       
     </categories>
@@ -449,7 +601,7 @@ repeated START 如果控制器仍然希望在总线上通信，它可以生成�
   
   <entry>
     <title>Virtual Machine</title>
-    <url>/post/6fb417d7-7230-4747-ad4d-01f7e55efcea/</url>
+    <url>/blog.ericchen.name/post/1fc8bbc7-b8d8-4f8b-93a4-bfa25ba89e43/</url>
     <categories>
       
     </categories>
@@ -474,7 +626,7 @@ virt-viewer spice-vdagent 作為 ubuntu24 的 spice 客戶端程式 客機的 VG
   
   <entry>
     <title>Version Management</title>
-    <url>/post/2a8d5903-c184-46ca-ab80-9109293a5eec/</url>
+    <url>/blog.ericchen.name/post/011fd027-8dc9-4de3-9088-1d847f051249/</url>
     <categories>
       
     </categories>
@@ -502,7 +654,7 @@ pipx Install and Run Python Applications in Isolated Environment pipx 為每個�
   
   <entry>
     <title>AT32F425 pwc_voltage_regulate_set</title>
-    <url>/post/bf86cc87-0634-4352-865b-8ce49f9be36f/</url>
+    <url>/blog.ericchen.name/post/de25b679-7703-4966-a0f2-fb6ba8fb87ec/</url>
     <categories>
       
     </categories>
@@ -524,7 +676,7 @@ Solve 廠商回英文郵件已更改
   
   <entry>
     <title>Low Cost Microcontroller</title>
-    <url>/post/c9e74ceb-b903-47b3-98c5-34e68f50d6df/</url>
+    <url>/blog.ericchen.name/post/3ac42953-505d-4e18-a27b-b0453137ea86/</url>
     <categories>
       
     </categories>
@@ -539,7 +691,7 @@ Atmel tinyAVR Atmel megaAVR Atmel SAM D10 Cypress PSoC 4000S Freescale KE04 Free
   
   <entry>
     <title>Ubuntu.md</title>
-    <url>/post/23f3d3f6-e57e-444d-9b52-f6bed6518069/</url>
+    <url>/blog.ericchen.name/post/331678a7-2813-44de-bdbf-8995adca022d/</url>
     <categories>
       
     </categories>
@@ -555,7 +707,7 @@ Apt Package Conflict Ubuntu 24.04 遇到與開 Update Repo 時無法安裝 Pytho
   
   <entry>
     <title>RaspberryPi</title>
-    <url>/post/f1fee151-70b1-4cb1-9b2b-8a45493dec3f/</url>
+    <url>/blog.ericchen.name/post/293b9caf-1953-477e-a2f4-e2fc76e6cc1f/</url>
     <categories>
       
     </categories>
@@ -569,8 +721,27 @@ GPIO 引腳可設定為高電平 3.3V 或低電平 0V，Pi 4 用電源供應器�
   </entry>
   
   <entry>
+    <title>Optimizing Compiler</title>
+    <url>/blog.ericchen.name/post/c15558f7-397c-4977-862e-4885899a87a5/</url>
+    <categories>
+      
+    </categories>
+    <tags>
+      
+      <tag>CS/TheoryOfComputation</tag>
+      
+    </tags>
+    <content type="html"><![CDATA[  從零開始建構 C 語言最佳化編譯器 Jserv 在 Coscup 2024 的演講，基於 shecc 從零開始建構 C 語言最佳化編譯器 basic block 程式碼單一入口，單一出口的區域
+可達性 (reachability) 除了起始節點外，若一個基本區塊在最佳化中沒有前任節點連接，則此基本區塊被稱為不可到達 (unreachable)，我們可安全的移除該基本區塊來簡化 CFG，如 C 語言關鍵字 break, continue, return 後的程式碼及 if, for, while 中條 件恆為 0 的情況。
+支配性 (domination) 若從起始點到節點 n 都必經節點 d，則稱節點 d 為節點 n 的支配節點 (dominator)，記作 d dom n;而其中最接近節點 n 的支配節點 m 又稱為直接支配 節點 (immediate dominator)，記作 m idom n。將 m 作為親代節點、n 作為子節點，我們可建立另外一種樹狀結構 ── 支配樹 (dominator tree)，記錄從起始點到某個基本區塊節點中必經的路徑。
+結合可達性分析，若節點 n 不可到達，則其在支配樹中的所有子節點將同樣不可到達，這時我們可快速且安全地從 CFG 中移除這些基本區塊節點。
+shecc shecc看起來很完善，有甚麼可以貢獻的東西 (2024) Issues | shecc 有好多 issue 可以解啊。 c-preprocess 和 frontend 可以一起做R。 bug 還是很多，也可以去找 bug 提出來。 產生的程式碼需要做 bootstrapping，目前只能跑在 QEMU，希望找些其他系統模擬的方法支援非 Linux OS 目前只支援 ARM／RISC-V，看看有沒有人可以貢獻 x86(-64) 之類的處理器後端。 建構流程 Bootstrapping 分成三個階段，可自舉 stage0: 用 gcc/clang/MSVC 編譯，產生可執行檔 out/shecc，針對原生的處理器架構 stage1: 用 stage0 產生的程式編譯 shecc 原始程式碼，產生的執行檔 out/shecc-stage1.elf 是ArmV7 或 RISC-V 指令集 stage2: 用 stage1 產生的 out/shecc-stage1.elf 編譯自己
+  ]]></content>
+  </entry>
+  
+  <entry>
     <title>Mitigating Integer Overflow in C</title>
-    <url>/post/9bea2131-a6e8-4a63-8f12-2b41a49f32fd/</url>
+    <url>/blog.ericchen.name/post/0c9ef01e-49cf-4925-91c7-eba7e3ee8bec/</url>
     <categories>
       
     </categories>
@@ -597,28 +768,44 @@ Sanitizer Undefined Behavior Sanitizer’s arithmetic overflow checkers to the r
   </entry>
   
   <entry>
-    <title>图像浏览工具 </title>
-    <url>/demo/image-viewer.html</url>
+    <title>Windows PE</title>
+    <url>/blog.ericchen.name/post/15f9338a-1f8e-4195-adf9-ea6d9e258a98/</url>
     <categories>
-      <category>示例文章</category>
+      
     </categories>
     <tags>
       
-      <tag>图像</tag>
-      
-      <tag>相册</tag>
-      
-      <tag>浏览</tag>
+      <tag>CS/Windows</tag>
       
     </tags>
-    <content type="html"><![CDATA[  本主题自带图像浏览器功能，支持对文章区域内出现的图片进行浏览，点击图片可以查看大图，点击空白处可以关闭。不需要配置任何参数，只要在文章里面相应的位置添加图片信息即可 。
-图像浏览器引用了 fengyuanchen 开发的 viewerjs ，支持显示图像名称，尺寸，旋转，缩放，播放等功能。可点击如下的示例图像查看体验：
-动物 风景   ]]></content>
+    <content type="html"><![CDATA[  簡介 Windows Portable Executable (PE) and Common Object File Format (COFF) files 檔案格式
+PE32 表示 X86 32bit 機器 PE32+ 表示 X86-64 64bit 機器 PE Format 官方完整格式說明
+一定由 DOS Header 開始，開頭前兩個 byte 為 0x4D4A NT Headers 1 2 3 4 5 typedef struct _IMAGE_NT_HEADERS64 { DWORD Signature; // PE 簽名 IMAGE_FILE_HEADER FileHeader; IMAGE_OPTIONAL_HEADER64 OptionalHeader; } IMAGE_NT_HEADERS64, *PIMAGE_NT_HEADERS64; 64 和 32 位元的 OptionalHeader 結構不一樣
+FileHeade 1 2 3 4 5 6 7 8 9 typedef struct _IMAGE_FILE_HEADER { WORD Machine; // 平台，intel 386 為 0x014c，intel 64 為 0x0200 WORD NumberOfSections; // Section 數量，最多 96 個字節 DWORD TimeDateStamp; // 編譯日期 DWORD PointerToSymbolTable; DWORD NumberOfSymbols; WORD SizeOfOptionalHeader; // OptionalHeader 大小, 32 位通常為 E0，64 位通常為 F0 WORD Characteristics; // 檔案屬性，EXE 通常為 010f，DLL 通常為 210e } IMAGE_FILE_HEADER, *PIMAGE_FILE_HEADER; 重要的只有 Machine, TimeDateStamp, Characteristics
+Optional Header 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 …  ]]></content>
+  </entry>
+  
+  <entry>
+    <title>Windows PE</title>
+    <url>/blog.ericchen.name/post/aced79f2-f880-4aba-a6c9-96ec8656b635/</url>
+    <categories>
+      
+    </categories>
+    <tags>
+      
+      <tag>CS/Windows</tag>
+      
+    </tags>
+    <content type="html"><![CDATA[  簡介 Windows Portable Executable (PE) and Common Object File Format (COFF) files 檔案格式
+PE32 表示 X86 32bit 機器 PE32+ 表示 X86-64 64bit 機器 PE Format 官方完整格式說明
+一定由 DOS Header 開始，開頭前兩個 byte 為 0x4D4A NT Headers 1 2 3 4 5 typedef struct _IMAGE_NT_HEADERS64 { DWORD Signature; // PE 簽名 IMAGE_FILE_HEADER FileHeader; IMAGE_OPTIONAL_HEADER64 OptionalHeader; } IMAGE_NT_HEADERS64, *PIMAGE_NT_HEADERS64; 64 和 32 位元的 OptionalHeader 結構不一樣
+FileHeade 1 2 3 4 5 6 7 8 9 typedef struct _IMAGE_FILE_HEADER { WORD Machine; // 平台，intel 386 為 0x014c，intel 64 為 0x0200 WORD NumberOfSections; // Section 數量，最多 96 個字節 DWORD TimeDateStamp; // 編譯日期 DWORD PointerToSymbolTable; DWORD NumberOfSymbols; WORD SizeOfOptionalHeader; // OptionalHeader 大小, 32 位通常為 E0，64 位通常為 F0 WORD Characteristics; // 檔案屬性，EXE 通常為 010f，DLL 通常為 210e } IMAGE_FILE_HEADER, *PIMAGE_FILE_HEADER; 重要的只有 Machine, TimeDateStamp, Characteristics
+Optional Header 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 …  ]]></content>
   </entry>
   
   <entry>
     <title>Bash</title>
-    <url>/post/b3e3b48f-c104-4741-a33e-f024d009b60d/</url>
+    <url>/blog.ericchen.name/post/a7694bb4-65f2-4762-9808-d1b1d1897006/</url>
     <categories>
       
     </categories>
@@ -642,7 +829,7 @@ Debug 1 2 bash +x sync.bash bash --verbose sync.bash Array 1 2 3 array=(1,2,3,4)
   
   <entry>
     <title>Ch340.md</title>
-    <url>/post/7e28fec8-2657-4833-8f82-d04150658085/</url>
+    <url>/blog.ericchen.name/post/b751c62a-82d6-4054-944a-ec34e0c6fbd0/</url>
     <categories>
       
     </categories>
@@ -657,13 +844,15 @@ Debug 1 2 bash +x sync.bash bash --verbose sync.bash Array 1 2 3 array=(1,2,3,4)
   
   <entry>
     <title>Rclone</title>
-    <url>/post/bb4160f4-dc8e-432c-8631-6100b47b6814/</url>
+    <url>/blog.ericchen.name/post/118e86fc-d6e6-4905-a118-c8ac21078b38/</url>
     <categories>
       
     </categories>
     <tags>
       
       <tag>CS/NetWork</tag>
+      
+      <tag>CS/Software</tag>
       
     </tags>
     <content type="html"><![CDATA[   rclone Rclone 是一个用于管理云存储上的文件的命令行程序 Windows 上設定檔在 C:\Users\eric2_chen\AppData\Roaming\rclone\rclone.conf --interactive 在執行操作前先詢問，通常在錯誤復原中使用
@@ -681,8 +870,26 @@ Google Drive root_folder_id 可以指定以特定資料夾做為根，在 Scope 
   </entry>
   
   <entry>
+    <title>Synchronization.md</title>
+    <url>/blog.ericchen.name/post/7a35b127-d9f1-47e4-a15f-e2e00c824dcf/</url>
+    <categories>
+      
+    </categories>
+    <tags>
+      
+      <tag>CS/Algorithm</tag>
+      
+    </tags>
+    <content type="html"><![CDATA[  簡介 檔案同步 目前有三種方法
+Lock 將要修改的檔案鎖定，不允許其他程式修改，如果鎖沒有失效時間，可能導致崩潰程式永遠占用鎖 Operational Transformation 紀錄每個程式修改的每一行，並將記錄傳播給其他程式，基於 Operational Transformation Operational Transformation Frequently Asked Questions and Answers Concurrency Control in Groupware Systems 原始論文 Three-way Merge 客戶端將文件的內容傳送到伺服器。 伺服器執行三向合併以提取使用者的變更並將其與其他使用者的變更合併。 伺服器將文件的新副本傳送給客戶端 半雙工系統，Subversion 使用此方法
+Differential Synchronization Differential Synchronization Differential Synchronization 差異同步是一種對稱演算法，它透過不斷循環的背景比對（diff）與修補（patch）操作來保持兩個文件的同步
+資料流概覽 理想化的差異同步資料流如下所示，假設兩個文件（分別稱為「客戶端文本」與「伺服器端文本」）位於同一台電腦上，沒有網路延遲的影響
+比較 Client Text 與 Common Shadow，計算 Diff 這會回傳 Client Text 相較於 Common Shadow 的變更（編輯操作列表） 將 Client Text 的內容複製到 Common Shadow 必須確保此複製的內容與第一步時的 Client Text 完全相同，在多執行緒環境中，應先對文本進行快照（snapshot） 應用 Diff 變更至 Server Text（最佳努力方式） 嘗試將編輯操作套用到 Server Text，允許部分變更可能因為內容變動而失敗 更新 Server Text 伺服器端文本應用變更，這個步驟必須原子性（atomic），但不一定要阻塞（blocking），可多次嘗試，直到 Server Text 穩定。 對 Server Text 進行對稱的反向同步 現在，Common Shadow 代表的是前一次同步時的 Client Text，透過相同的流程， …  ]]></content>
+  </entry>
+  
+  <entry>
     <title>Markdown Parse Survey On Js and Python</title>
-    <url>/post/48bb57d6-f1e1-4508-b798-1bea1cb67465/</url>
+    <url>/blog.ericchen.name/post/deecd741-5c0a-4e06-a8c5-4f9195e19935/</url>
     <categories>
       
     </categories>
@@ -700,7 +907,7 @@ Survey 背景調查過以下函式庫
   
   <entry>
     <title>LinuxLink</title>
-    <url>/post/4b7b09c2-a42a-44c6-b942-36f2fd3929db/</url>
+    <url>/blog.ericchen.name/post/ed79c016-42c2-48fa-821d-1869dfcfaad5/</url>
     <categories>
       
     </categories>
@@ -720,8 +927,26 @@ Reference Linux 編譯 shared library 的方法和注意事項 ) (C/C++ ) 如何
   </entry>
   
   <entry>
+    <title>Windows.md</title>
+    <url>/blog.ericchen.name/post/3e809070-d9f0-4c16-bb4d-e8a777ddec32/</url>
+    <categories>
+      
+    </categories>
+    <tags>
+      
+      <tag>CS/Windows</tag>
+      
+    </tags>
+    <content type="html"><![CDATA[   PE Path _MinGW32 CSharp WindowsApiSet BypassWindowsDefender 暫停微軟更新100年（win10 / 11適用） 1 2 3 4 5 6 7 8 9 10 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsUpdate\UX\Settings] &amp;#34;PauseFeatureUpdatesStartTime&amp;#34;=&amp;#34;2024-01-01T00:00:01Z&amp;#34; &amp;#34;PauseQualityUpdatesStartTime&amp;#34;=&amp;#34;2024-01-01T00:00:01Z&amp;#34; #暫停功能更新與重大更新的起始時間(GMT時間) &amp;#34;PauseFeatureUpdatesEndTime&amp;#34;=&amp;#34;2124-01-01T00:00:01Z&amp;#34; &amp;#34;PauseQualityUpdatesEndTime&amp;#34;=&amp;#34;2124-01-01T00:00:01Z&amp;#34; #暫停功能更新與重大更新的到期時間(GMT時間) &amp;#34;PauseUpdatesStartTime&amp;#34;=&amp;#34;2024-01-01T00:00:01Z&amp;#34; &amp;#34;PauseUpdatesExpiryTime&amp;#34;=&amp;#34;2124-01-01T00:00:01Z&amp;#34; #暫停自動更新的起始與到期時間(GMT時間) Tftpd64 IPv4 and IPv6 server for DHCP, TFTP, DNS, SNTP and Syslog on windows 需要先啟動服務 .\tftpd64_svc.exe -debug or
+1 2 .\tftpd64_svc.exe -install net start Tftpd32_svc 然後才可以用打開 GUI tftpd64_gui.exe
+可以設定成 PXE Server
+New Technologies File System (NTFS) .asciidoc) NewTechnologiesFileSystem libfsntfs 的 NTFS 格式逆向紀錄文件
+MFT NTFS 使用主文件表 (MFT) 來儲存有關檔案和目錄的資訊。 MFT …  ]]></content>
+  </entry>
+  
+  <entry>
     <title>可變參數的 C 函數</title>
-    <url>/post/446c60e9-03ca-4944-b3ab-5c73e1ed00ee/</url>
+    <url>/blog.ericchen.name/post/8dda7ba1-be2d-4883-a49d-e475012c4a61/</url>
     <categories>
       
     </categories>
@@ -736,8 +961,38 @@ Reference Linux 編譯 shared library 的方法和注意事項 ) (C/C++ ) 如何
   </entry>
   
   <entry>
+    <title>Brainfuck.md</title>
+    <url>/blog.ericchen.name/post/7d126e73-4398-4f3f-a16b-5fd4ebf5868c/</url>
+    <categories>
+      
+    </categories>
+    <tags>
+      
+      <tag>CS</tag>
+      
+    </tags>
+    <content type="html"><![CDATA[  簡介 一個由 8 支指令組成的圖靈完備程式語言
+&amp;amp;gt; Increment the pointer. &amp;amp;lt; Decrement the pointer. + Increment the byte at the pointer. - Decrement the byte at the pointer. . Output the byte at the pointer. , Input a byte and store it in the byte at the pointer. [ Jump forward past the matching ] if the byte at the pointer is zero. ] Jump backward to the matching [ unless the byte at the pointer is zero. 有一個有限長度的連續記憶體，及一個指針來表明當前指令要操作的區塊 BrainFuck Programming Tutorial by: Katie awesome Brainfuck-An Eight-Instruction Turing-Complete Programming Language Index of brainfuck Brainfuck 實作及程式收集 some brainfuck fluff by daniel b cristofani Brainfuck Esolangs Wiki Brainf*** brain------------------------------------------------------fuck.com Portable Portable Brainfuck 元胞數組的實際大小是實現定義的。但是，該數組應始終包含至少 9999 個單元。 （允許大小小至 4 位數字是為了程式設計師用三行 C 程式碼等編寫解釋器的好處。） 如果程式嘗試將指標移到第一個陣列單元下方或最後一個陣列單元之外，則該程式的行為是未定義的。 （一些實現會導致指標迴繞，但許多（也許是大多數）實現的行為方式與 C 指標漫遊到任意記憶體一致。） 單一單元格可以包含的值的範圍是實現定義的。 （範圍也不必一致：考慮「bignum」實現的情況，其單元格的範圍僅受當前可用資源的限 …  ]]></content>
+  </entry>
+  
+  <entry>
+    <title>Bypass windows defender</title>
+    <url>/blog.ericchen.name/post/772cf18e-62ae-4e48-a846-044fbeffa2a9/</url>
+    <categories>
+      
+    </categories>
+    <tags>
+      
+      <tag>CS/Windows</tag>
+      
+    </tags>
+    <content type="html"><![CDATA[  
+  ]]></content>
+  </entry>
+  
+  <entry>
     <title>Forgetting the history of Unix is coding us into a corner</title>
-    <url>/post/8c34c80e-aff7-4435-bb96-53b6aff10ae5/</url>
+    <url>/blog.ericchen.name/post/41ec7a20-d1c5-4cfe-b27f-8604a0a8e670/</url>
     <categories>
       
     </categories>
@@ -752,7 +1007,7 @@ Reference Linux 編譯 shared library 的方法和注意事項 ) (C/C++ ) 如何
   
   <entry>
     <title>Balanced Allocations with the Choice of Noise</title>
-    <url>/post/2ae157a5-afc0-4b65-bf04-4da2d97e14f0/</url>
+    <url>/blog.ericchen.name/post/93b3123f-a580-42b0-802d-2a209b3369c2/</url>
     <categories>
       
     </categories>
@@ -768,7 +1023,7 @@ Reference Linux 編譯 shared library 的方法和注意事項 ) (C/C++ ) 如何
   
   <entry>
     <title>Linux Serial</title>
-    <url>/post/99524a79-96b2-4c1a-bc09-289d54c63c9c/</url>
+    <url>/blog.ericchen.name/post/9cef3dac-51e0-41f4-a222-f9640e16589f/</url>
     <categories>
       
     </categories>
@@ -789,7 +1044,7 @@ Ref Serial HOWTO 圖片來源 Jona, CC BY-SA 4.0 , via Wikimedia Commons Mayayu,
   
   <entry>
     <title></title>
-    <url>/post/abd3de75-6e22-4fec-a859-031d0dc09f57/</url>
+    <url>/blog.ericchen.name/post/124d0767-57d5-45b9-b08f-7c59b36ad919/</url>
     <categories>
       
     </categories>
@@ -803,7 +1058,7 @@ Ref Serial HOWTO 圖片來源 Jona, CC BY-SA 4.0 , via Wikimedia Commons Mayayu,
   
   <entry>
     <title>MQTT.md</title>
-    <url>/post/2e29d3fa-9701-4855-98f4-2e0e4bf6d359/</url>
+    <url>/blog.ericchen.name/post/48b1c318-2a55-4d16-957e-6f1d3f7540dd/</url>
     <categories>
       
     </categories>
@@ -822,7 +1077,7 @@ Tool Public MQTT Broker EMQX Public MQTT Broker Mosquitto Ref MQTT Essentials Gu
   
   <entry>
     <title>Cherrypy Cookie</title>
-    <url>/post/f882dda2-9843-4e2e-b4fe-6bc06a189b1a/</url>
+    <url>/blog.ericchen.name/post/c95f885a-47bc-4716-825c-1b362b0f1c72/</url>
     <categories>
       
     </categories>
@@ -839,7 +1094,7 @@ Cookie 設定 1 2 cherrypy.response.cookie[key] = value #設質 cherrypy.respons
   
   <entry>
     <title>OpenSsh.md</title>
-    <url>/post/a2f21f02-edd8-4956-87a7-098edc267b7a/</url>
+    <url>/blog.ericchen.name/post/00d21e87-dfff-4644-b457-3c61f7139cb6/</url>
     <categories>
       
     </categories>
@@ -858,7 +1113,7 @@ Make key On Linux 1 ssh-keygen [-t dsa | ecdsa | ecdsa-sk | ed25519 | ed25519-sk
   
   <entry>
     <title>vCard.md</title>
-    <url>/post/48e5bfe8-e5b5-4297-bf0d-39e8a645fba8/</url>
+    <url>/blog.ericchen.name/post/514b717a-7463-493b-85c8-338291f4b3b1/</url>
     <categories>
       
     </categories>
@@ -880,8 +1135,8 @@ RFC 6868 中禁用了一些 utf-8 字符，不過本事件沒有用到
   </entry>
   
   <entry>
-    <title>Docker 指令速記.md</title>
-    <url>/post/8e8c9bcc-8b41-4a92-89e6-5ff3f1a4868f/</url>
+    <title>Docker.md</title>
+    <url>/blog.ericchen.name/post/47a09282-2dcf-46bd-8ce6-845de40ea95c/</url>
     <categories>
       
     </categories>
@@ -901,19 +1156,21 @@ Image 1 docker image [補充參數] ls 列出所有 build 好的 image
 Container 1 2 docker ps docker container ls 列出執行中的 Container
 1 2 docker ps -a docker container -a ls 列出所有的 Container
 1 docker container prune 清理所有停止的 container
-移除所有沒用到的 Docker 物件 1 docker system prune -a Image Kasm Workspaces 提供有圖形化介面的 Docker Image(需用 KasmVNC 連線)
+移除所有沒用到的 Docker 物件 1 docker system prune -a Image Kasm Workspaces 提供有圖形化介面的 Docker Image(需用 KasmVNC 連線) Default Docker Image docker run --rm -it --shm-size=512m -p 6901:6901 -e VNC_PW=password kasmweb/firefox:dev https://127.0.0.1:6901 連線 Kasm Docker Image 預設需要 https 在瀏覽器中用 User : kasm_user，Password: password 登入
   ]]></content>
   </entry>
   
   <entry>
     <title>Ipv6.md</title>
-    <url>/post/5f06df1c-8446-4b62-9a57-19b279ef7d9e/</url>
+    <url>/blog.ericchen.name/post/22d6876c-b099-46db-b714-e983e6254cf8/</url>
     <categories>
       
     </categories>
     <tags>
       
       <tag>CS/Backend</tag>
+      
+      <tag>CS/NetWork</tag>
       
     </tags>
     <content type="html"><![CDATA[  Ipv6 in url RFC2732 要求填入ipv6目標的url要用&quot;[]&ldquo;括起來如
@@ -923,7 +1180,7 @@ Container 1 2 docker ps docker container ls 列出執行中的 Container
   
   <entry>
     <title>論文帶貨</title>
-    <url>/post/d608a7ce-6e08-4754-b309-b44d16620249/</url>
+    <url>/blog.ericchen.name/post/993c1d7e-0812-40c3-9cc2-3c3fc45935ca/</url>
     <categories>
       
     </categories>
@@ -938,7 +1195,7 @@ Container 1 2 docker ps docker container ls 列出執行中的 Container
   
   <entry>
     <title>Git.md</title>
-    <url>/post/baa52eac-c9c9-4384-9475-c9c0be5767e1/</url>
+    <url>/blog.ericchen.name/post/76933a22-b53c-409d-96a8-ebd39028f239/</url>
     <categories>
       
     </categories>
@@ -977,7 +1234,7 @@ refs/tags/&amp;lt;refname&amp;gt; Tag 名稱 refs/heads/&amp;lt;refname&amp;gt; 
   
   <entry>
     <title>Astronomy Picture Of The Day</title>
-    <url>/post/140dbcdc-f5a9-405e-9aca-ba69c09d7978/</url>
+    <url>/blog.ericchen.name/post/206351c4-5db9-4ce9-8752-05db0a29bec0/</url>
     <categories>
       
     </categories>
@@ -991,279 +1248,71 @@ http://sprite.phys.ncku.edu.tw/astrolab/mirrors/apod/apod.html 成大翻譯的�
   </entry>
   
   <entry>
-    <title>没有H1-6标题头和评论的文章</title>
-    <url>/demo/no-header-title.html</url>
+    <title>CVE 2023</title>
+    <url>/blog.ericchen.name/post/3ee99909-c1aa-44e9-98c1-2d4ee754caa2/</url>
     <categories>
-      <category>示例文章</category>
+      
     </categories>
     <tags>
       
-      <tag>toc</tag>
-      
-      <tag>标题</tag>
+      <tag>CS/Security</tag>
       
     </tags>
-    <content type="html"><![CDATA[  刘慈欣2018克拉克奖获奖感言（部分内容节选）。
-信息 用于测试在没有H1-6标题头时，文章的目录导航是否会直接关闭，并关闭评论功能。
-先生们、女士们，晚上好，
-很荣幸获得Clarke Award for Imagination in Service to Society Award。
-这个奖项是对想象力的奖励，而想象力是人类所拥有的一种似乎只应属于神的能力，它存在的意义也远超出我们的想象。有历史学家说过，人类之所以能够超越地球上的其它物种建立文明，主要是因为他们能够在自己的大脑中创造出现实中不存在的东西。在未来，当人工智能拥有超过人类的智力时，想象力也许是我们对于它们所拥有的惟一优势。
-科幻小说是基于想象力的文学，而最早给我留下深刻印象的是Arthur . Clarke的作品。除了Jules Verne和George Wells外，Clarke的作品是最早进入中国的西方现代科幻小说。在上世纪八十年代初，中国出版了他的《2001:A Space Odyssey》和《Rendezvous With Rama》。当时文革刚刚结束，旧的生活和信仰已经崩塌，新的还没有建立起来，我和其他年轻人一样，心中一片迷茫。这两本书第一次激活了我想象力，思想豁然开阔许多，有小溪流进大海的感觉。读完《2001:A Space Odyssey》的那天深夜，我走出家门仰望星空，那时的中国的天空还没有太多的污染，能够看到银河，在我的眼中，星空与过去完全不一样了，我第一次对宇宙的宏大与神秘产生了敬畏感，这是一种宗教般的感觉。而后来读到的《Rendezvous With Rama》，也让我惊叹如何可以用想象力构造一个栩栩如生的想象世界。正是Clarke带给我的这些感受，让我后来成为一名科幻作家。
-现在，三十多年过去了，我渐渐发现，我们这一代在上世纪六十年代出生于中国的人，很可能是人类历史上最幸运的人，因为之前没有任何一代人，像我们这样目睹周围的世界发生了如此巨大的变化，我们现在生活的世界，与我们童年的世界已经完全是两个不同的世界，而这种变化还在加速发生着。中国是一个充满着未来感的国度，中国的未来可能充满着挑战和危机，但从来没有像现在这样具有吸引力，这就给科幻小说提供了肥沃的土壤，使其在中国受到了空前的关注，作为一个在六十年代出生在中国的科幻小说家，则是幸运中的幸运。
-我期待有那么一天，像那些曾经描写 …  ]]></content>
-  </entry>
-  
-  <entry>
-    <title>Mermaid支持流程图</title>
-    <url>/demo/mermaid-charts.html</url>
-    <categories>
-      <category>第三方引入</category><category>图序功能</category>
-    </categories>
-    <tags>
-      
-      <tag>流程图</tag>
-      
-      <tag>时序图</tag>
-      
-    </tags>
-    <content type="html"><![CDATA[  本主题已支持 Mermaid 实现以纯文本的方式绘制流程图、序列图、甘特图、状态图、关系图行等等，随着 Mermaid 也在逐步发展，后续还会有各种各样的图被引入进来，更多的类型及使用方式可关注其官方网站： https://mermaid-js.github.io/ 。
-使用说明 通过 hugo new 命令创建一篇新的文章 使用短代码书写各种类型的图，自带2个参数： align（对齐） 和 bc（背景色），可参考如下使用示例 流程图 1 2 3 4 5 6 7 {{&lt; mermaid align=&#34;left&#34; &gt;}} graph TD; A--&gt;B; A--&gt;C; B--&gt;D; C--&gt;D; {{&lt; /mermaid &gt;}} graph TD; A-->B; A-->C; B-->D; C-->D; 时序图 1 2 3 4 5 6 7 8 9 10 11 12 13 {{&lt; mermaid bc=&#34;#eee&#34; &gt;}} sequenceDiagram participant Alice participant Bob Alice-&gt;&gt;John: Hello John, how are you? loop Healthcheck John-&gt;&gt;John: Fight against hypochondria end Note right of John: Rational thoughts &lt;br/&gt;prevail! John--&gt;&gt;Alice: Great! John-&gt;&gt;Bob: How about you? Bob--&gt;&gt;John: Jolly good! {{&lt; /mermaid &gt;}} sequenceDiagram participant Alice participant Bob Alice->>John: Hello John, how are you? loop Healthcheck John->>John: Fight against hypochondria end Note right of John: Rational thoughts prevail! John-->>Alice: Great! John->>Bob: How about you? Bob-->>John: Jolly good! 类图 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 {{&lt; mermaid &gt;}} classDiagram Class01 &lt;|-- AveryLongClass : Cool Class03 *-- Class04 Class05 o-- Class06 Class07 .. Class08 Class09 --&gt; C2 : Where am i? Class09 --* C3 Class09 --|&gt; Class07 Class07 : equals() Class07 : Object[] elementData Class01 : size() Class01 : int chimp Class01 : int gorilla Class08 &lt;--&gt; C2: Cool label {{&lt; /mermaid &gt;}} classDiagram Class01 <|-- AveryLongClass : Cool Class03 *-- Class04 Class05 o-- Class06 Class07 .. Class08 Class09 --> C2 : Where am i? Class09 --* C3 Class09 --|> Class07 Class07 : equals() Class07 : Object[] elementData Class01 : size() Class01 : int chimp Class01 : int gorilla Class08 <--> C2: Cool label 甘特图 1 2 3 4 5 6 7 8 9 10 11 12 {{&lt; mermaid &gt;}} gantt dateFormat YYYY-MM-DD title Adding GANTT diagram to mermaid excludes weekdays 2014-01-10 section A section Completed task :done, des1, 2014-01-06,2014-01-08 Active task :active, des2, 2014-01-09, 3d Future task : des3, after des2, 5d Future task2 : des4, after des3, 5d {{&lt; /mermaid &gt;}} gantt dateFormat YYYY-MM-DD title Adding GANTT diagram to mermaid excludes weekdays 2014-01-10 section A section Completed task :done, des1, 2014-01-06,2014-01-08 Active task :active, des2, 2014-01-09, 3d Future task : des3, after des2, 5d Future task2 : des4, after des3, 5d 实体关系图 1 2 3 4 5 6 {{&lt; mermaid &gt;}} erDiagram CUSTOMER ||--o{ ORDER : places ORDER ||--|{ LINE-ITEM : contains CUSTOMER }|..|{ DELIVERY-ADDRESS : uses {{&lt; /mermaid &gt;}} erDiagram CUSTOMER ||--o{ ORDER : places ORDER ||--|{ LINE-ITEM : contains CUSTOMER }|..|{ DELIVERY-ADDRESS : uses 用户旅程 1 2 3 4 5 6 7 8 9 10 11 {{&lt; mermaid &gt;}} journey title My working day section Go to work Make tea: 5: Me Go upstairs: 3: Me Do work: 1: Me, Cat section Go home Go downstairs: 5: Me Sit down: 5: Me {{&lt; /mermaid &gt;}} journey title My working day section Go to work Make tea: 5: Me Go upstairs: 3: Me Do work: 1: Me, Cat section Go home Go downstairs: 5: Me Sit down: 5: Me   ]]></content>
-  </entry>
-  
-  <entry>
-    <title>数学公式渲染</title>
-    <url>/demo/math-formula.html</url>
-    <categories>
-      <category>第三方引入</category><category>数学公式</category>
-    </categories>
-    <tags>
-      
-      <tag>数学公式</tag>
-      
-      <tag>mathjax</tag>
-      
-      <tag>katex</tag>
-      
-    </tags>
-    <content type="html"><![CDATA[  本主题支持 mathjax 和 katex 两种不的方案支持数学公式的渲染，可根据自已的需求进行选择。
-接下的示例中，将使用 MathJax 方案来展示渲染效果。
-使用 hugo new 命令创建一篇新的文章 可以全局启用数据公式渲染，请在项目配置参数 math: katex 或 math: mathjax 或是将该参数配置到需要显示数学公式的页面头部（减少不必要的资源加载消耗） 注意： 使用 支持的TeX功能 的联机参考资料。
-例子 内行公式 二次公式： $ax^2 + bx + c = 0$ （支持用\$....\$格式的行内公式）
-二次公式（换行显示公式） $$ax^2 + bx + c = 0$$
-更加复杂公式是这样的: $\lim^{x \to \infty}_{y \to 0}{\frac{x}{y}}$
-其它内联公式显示（分数表达 ）：(\frac{1}{2})（支持用\(...\)格式的行内公式效果）
-重复的分数 $$ \frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} \equiv 1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}} {1+\frac{e^{-8\pi}} {1+\cdots} } } } $$
-总和记号 $$ \left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right) $$
-几何级数之和 我把接下来的两个例子分成了几行，这样它在手机上表现得更好。这就是为什么它们包含 \displaystyle。或者可使用类似 \displaylines{x = a + b \\\ y = b + c} 语法进行截断，具体信息可见： mathjax-issues2312 $$ \displaystyle\sum_{i=1}^{k+1}i $$
-$$ \displaystyle= \left(\sum_{i=1}^{k}i\right) +(k+1) $$
-$$ \displaystyle= \frac{k(k+1)}{2}+k+1 $$
-$$ …  ]]></content>
-  </entry>
-  
-  <entry>
-    <title>支持用户自定义设计</title>
-    <url>/demo/custom-files.html</url>
-    <categories>
-      <category>示例文章</category>
-    </categories>
-    <tags>
-      
-      <tag>自定义</tag>
-      
-      <tag>个性化</tag>
-      
-      <tag>布局</tag>
-      
-    </tags>
-    <content type="html"><![CDATA[  对于熟悉前端开发的用户来说，可以通过自定义文件配置，实现对站点的样式和布局进行个性化的调整。其中布局方面主要是支持左侧边栏的站点概览部分，以及站点底部2个位置，但样式的重置可以是整个站点的任意位置。
-打开配置参数 首先要明确在配置文件的 params 区域中有配置如下参数：
-1 2 3 4 customFilePath: sidebar: custom_sidebar.html footer: custom_footer.html style: /css/custom_style.css 注意： sidebar 和 footer 的文件命名不可以与它们的参数名称相同，不然会影响系统默认的布局设计，切记！！！ &#x1f604; 然后在站点的根目录下创建 layouts/partials 2个目录，用于存放自定布局设计文件，另外在站点根目录下创建 static/css 2个目录，用于存放自定义 CSS 样式文件。一切就绪后，就可以参考如下的步骤，完成自己的设计想法。
-侧边栏设计 在前面创建 partials 目录中新一个后缀名为 html 的文件，可以在里面书写你所想表达的设计或内容，比如引入一些第三方组件内容。示例如下：
-1 2 3 &lt;div class=&#34;mydefined animated&#34; itemprop=&#34;custom&#34;&gt; &lt;span&gt;支持自定义CSS和Sidebar布局啦💄💄💄&lt;/span&gt; &lt;/div&gt; 再把该文件的路径配置到相应的参数中，效果请查看左侧边栏底部的效果。
-底部设计 在前面创建 partials 目录中新一个后缀名为 html 的文件，可以在里面书写你所想表达的设计或内容，比如引入一些第三方组件内容。示例如下：
-1 2 3 &lt;div class=&#34;custom-footer&#34;&gt; Website source code &lt;a href=&#34;https://github.com/hugo-next/hugo-theme-next/tree/develop/exampleSite/layouts/partials/custom-footer.html&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt; &lt;/div&gt; 再把该文件的路径配置到相应的参数中，效果请查看站点底部的效果。
-自定义样式 在前面创建 css 目录中新一个后缀名为 css 的文件，然后可以在里面把站点的样式进行重定义，或是增加一些自己定义的样式设计，在写文章时进行引用，示例如下：
-1 2 3 4 5 .custom-head5 { font-size: 1.2em; color: #ed6c24; font-weight: bold; } 再把该文件的路径配置到相应的参数中，效果参考如下：
-我是自定义的标题样式效果!!!
+    <content type="html"><![CDATA[  Windows CVE-2023-38831 6.23 之前的 RARLabs WinRAR 版本中已發現可利用的漏洞。該漏洞使攻擊者能夠透過特製的 ZIP 檔案執行任意程式碼。此漏洞是由於對包含良性文件（例如普通 .PDF 文件）以及共享相同名稱的資料夾的 ZIP 存檔處理不當而產生的。當使用者嘗試存取良性檔案時，存檔可能包括包含可執行內容的類似命名的資料夾。在嘗試存取良性文件期間會處理資料夾中的惡意內容，從而促進任意程式碼的執行。
+更新 WinRAR 到高於 6.23 即可完全不受引響
+CVE-2023-38831 PoC CVE-2024-38074 9.8 分，遠端無授權執行
   ]]></content>
   </entry>
   
   <entry>
-    <title>自定义短语示例</title>
-    <url>/demo/shortcodes.html</url>
-    <categories>
-      <category>示例文章</category><category>语法</category>
-    </categories>
-    <tags>
-      
-      <tag>短代码</tag>
-      
-      <tag>语法</tag>
-      
-    </tags>
-    <content type="html"><![CDATA[  虽然 Markdown 语法已经非常丰富能够满足我们写文章的绝大部分需求，但是为更好的对文章内容进行更友好的排版，为引设计一套自定义的短语，便于在使用时能够快速引用。
-块引用 在引用一些经典名言名句时，可以采用此短语，语法参考如下：
-1 2 3 4 {{&lt; quote &gt;}} ### block quote 写下你想表达的话语！ {{&lt; /quote &gt;}} 实际效果：
-希望是无所谓有，无所谓无的，这正如地上的路。
-其实地上本没有路，走的人多了，也便成了路。
-鲁迅
-信息块 支持 default，info，success，warning，danger 等五种不同效果的展示，语法参考如下：
-1 2 3 4 {{&lt; note [class] [no-icon] &gt;}} 书写表达的信息 支持 Markdown 语法 {{&lt; /note &gt;}} 实际效果：
-Default Header without icon Welcome to Hugo NexT! Default Header Welcome to Hugo NexT! Primary Header Welcome to Hugo NexT! Info Header Welcome to Hugo NexT! Success Header Welcome to Hugo NexT! Warning Header Welcome to Hugo NexT! Danger Header Welcome to Hugo NexT! Bilibili 视频 1 2 3 {{&lt; bilibili BV1Sx411T7QQ &gt;}} 或者 {{&lt; bilibili id=BV1Sx411T7QQ &gt;}} 音乐播放器 基于 APlayer 和 MetingJS 库实现见面内嵌的响应式音乐播放器，自动识别的音乐平台URL，包括：netease、 tencent、 kugou、 baidu 和 xiami 平台，也可以支持用户自定义的音乐源。其他相关的参数说明如下：
-参数名 默认 说明 id 必选 音乐 ID，即音乐在音乐平台的唯一标识符 server 必选 音乐平台，支持 netease、 tencent、 kugou、 baidu 和 xiami 平台 type 必选 播放类型，目前支持 song 、 playlist、 album、 search 和 artist 类型 auto 可选 音乐的地址，仅支持 server 参数中的平台 theme #448aff 播放器的主题色，默认为 #448aff url 空 自定的音乐源 URL，默认为空 name 空 音乐名称，默认为空 artist 空 音乐作者，默认为空 cover 空 音乐封面 URL，默认为空 fixed false 固定播放器，默认为 false mini false 显示小播放器，默认为 false autoplay false 自动播放，默认为 false loop all 循环播放，支持all、one 和 none，默认为 all order list 播放顺序list 和 random，支持默认为 list volume 0.7 音量，默认为 0.7 mutex true 有多个音乐播放时，是否只开启当前播放器，默认为 true list-folded false 列表折叠，默认为 false list-max-height 340px 列表最大高度，默认为：340px 单曲播放 1 {{&lt; music theme=&#34;#2980b9&#34; server=&#34;tencent&#34; type=&#34;song&#34; id=&#34;002u4ZTb0CXmJA&#34; mini=&#34;true&#34; &gt;}} 列表播放 1 {{&lt; music server=&#34;netease&#34; type=&#34;playlist&#34; id=&#34;1982066521&#34; list-max-height=&#34;140&#34; &gt;}} 自定义音乐源 1 {{&lt; music music url=&#34;/music/sky.mp3&#34; name=&#34;天空之城&#34; artist=&#34;宫崎骏&#34; cover=&#34;/music/gongqijun.jpg&#34; autoplay=&#34;true&#34; &gt;}}   ]]></content>
-  </entry>
-  
-  <entry>
-    <title>关于 Hugo NexT 组织</title>
-    <url>/about.html</url>
+    <title>MinGW32</title>
+    <url>/blog.ericchen.name/post/e9d30901-1f83-4f7b-9a71-5991bf00a562/</url>
     <categories>
       
     </categories>
     <tags>
       
+      <tag>CS/Windows</tag>
+      
     </tags>
-    <content type="html"><![CDATA[  Hugo NexT 组织是由众多喜爱 NexT 主题及风格的世界各地友人共同组建而成，为的就是让这个主题继续在 Hugo 引擎中也能得到发扬光大，在此也欢迎你的加入！
-我们的愿景 延续 NexT 经典的黑白调搭配，保持简单的易用性及强大的功能。
-使用反馈 加入 GitHub Discussions 或 Gitter 在线讨论 &#x1f37b; GitHub Issues 提交错误报告 &#x1f41b; GitHub Feature 表新功能的想法 &#x2728; 信息 同时国内用户也可加入 QQ 群交流： 604710815
+    <content type="html"><![CDATA[  CreateProcess 1 process_begin: CreateProcess(NULL, /c/MinGW/bin/mingw32-gcc hello.c -o hello.exe, ...) failed. 不論/c/MinGW/bin/mingw32-gcc(UNIX PATH) 還是C:\MinGW\bin\mingw32-gcc(Window Path)多不行，需要把/c/MinGW/bin/加入環境變數直接呼叫mingw32-gcc，建議直接改 Makefile
+bash 改環境變數要去Windows進階使用者設定改，export,set多沒用
+Undef 1 2 3 4 5 CROSS_PREFIX=mingw32- CC=$(CROSS_PREFIX)gcc -U _WIN32 all: $(CC) hello.c -o hello.exe 1 2 3 4 5 6 7 8 #include &lt;stdio.h&gt; int main(){ printf(&#34;Hello World!\n&#34;); #if defined(_WIN32) printf(&#34;Defined _WIN32.\n&#34;); #endif return 0; } 1 Hello World! mingw 用 -U 作為旗標確定可以 undefine mingw取消預定義的_WIN32
+1 2 3 4 5 CROSS_PREFIX=mingw32- CC=$(CROSS_PREFIX)gcc all: $(CC) hello.c -o hello.exe 1 2 3 4 5 6 7 8 9 #include &lt;stdio.h&gt; #undef _WIN32 int main(){ printf(&#34;Hello World!\n&#34;); #if defined(_WIN32) printf(&#34;Defined _WIN32.\n&#34;); #endif return 0; } 1 Hello World! undef _WIN32 也可以取消預定義的_WIN32
   ]]></content>
   </entry>
   
   <entry>
-    <title>文章目录导航</title>
-    <url>/demo/table-of-content.html</url>
+    <title>About</title>
+    <url>/blog.ericchen.name/about.html</url>
     <categories>
-      <category>示例文章</category>
+      
     </categories>
     <tags>
       
-      <tag>目录</tag>
-      
-      <tag>导航</tag>
-      
-      <tag>博客</tag>
-      
     </tags>
-    <content type="html"><![CDATA[  巴顿将军说过：“衡量一个人是否成功，不是看他站到顶峰，而是从顶峰跌落之后的反弹力”，褚时健的人生便是如此，中年发家致富，名利双收，之后又跌落到谷底，等到74岁再创业，10年后带着褚橙归来，东山再起收获亿万财富，他的发展轨迹就是反弹的过程。
-早年的故事 起始 2014年的春天，在云南省华宁县和宜良县的交界处，一座名叫矣则的小山村里，一处已经有上百年历史的古旧四合院宅子被拆掉。村委会正带领村民们进行“美丽乡村”的建设，一年以后，旧有村居将再也看不到，代之而起的是钢筋混凝土的新式民居。就像10年、20年前中国大小城市的改造一样，这个群山围绕的小村子也开始陷入“工地模式”。
-童年浪花 在江河边长大的孩子几乎都有一个当仁不让的特长：善水。褚时健也不例外，他不仅从小就在南盘江和花鱼塘里扑腾出了上佳的游泳技术，五六岁已经可以一个猛子扎出老远，而且从七八岁就可以在南盘江和河滩上的鱼塘里捉鱼了。
-少年故事 褚时健在乡村自由自在生活的十多年，其实正是中国社会风雨飘摇的十多年。特别是1937年卢沟桥事变后，日本人发动全面侵华战争，短短两三年间，中国的大部分国土相继沦陷
-激情的青春十年 当上了游击队员 1948年夏天，褚时健回乡，在禄丰车站小学做了一名老师，同时也和褚时仁、褚时杰一起继续保持与共产党组织的联系，做一些传递情报的工作
-战火纷飞 因为战斗力相较悬殊，所以游击队只能是靠打一枪换一个地方的办法，专找敌人薄弱的地方攻击，但更多时候，都是在防御和转移阵地。
-迎来解放 1949年12月，国民党云南省主席卢汉在昆明宣布起义，云南正式拉开解放的序幕。1950年2月20日，陈赓、宋任穷、周保中率解放军第二野战军第四兵团进入昆明，24日，陈赓宣布云南全境解放。
-生活的断层 跌入生活底层 “反右”运动中被打倒的人在“右派”身份确定后，只有一条路可走：下放到农场。农场名副其实，就是干农活儿的地方，必须过和农民一样的生活。
-尾声 岁月像一条河 2015年，是褚时健和马静芬结婚60周年，被称为“钻石婚”的纪念年份。这简直是一份人生的奖赏,在中国离婚率愈益升高的当下，60年的婚姻，几乎就像一个前世之梦。一个甲子的相伴相随，褚时健和马静芬共同经历了国家和个人的各种风浪，共同面对过生死。他们两人已经不仅是夫妻，更是一对战友。尽管马静芬偶尔会对褚时健年轻时候的粗心抱怨上两句，但说到最后，她会说一句：“没有我就没 …  ]]></content>
+    <content type="html"><![CDATA[  陳哲佑 台灣台南人 邊疆大學資工系廢材乙個 這邊應該全是工作筆記、土炮紀錄、耍腦發廚 愼入
+gitlab email   ]]></content>
   </entry>
   
   <entry>
-    <title>Hugo 内置的 Chroma 语法高亮</title>
-    <url>/demo/syntax-highlighting.html</url>
+    <title>Busy Beavers</title>
+    <url>/blog.ericchen.name/post/90558492-b82a-4a49-98f3-f59b76d61223/</url>
     <categories>
-      <category>示例文章</category><category>语法</category>
+      
     </categories>
     <tags>
       
-      <tag>语法</tag>
-      
-      <tag>高亮</tag>
-      
-      <tag>Chroma</tag>
+      <tag>CS/TheoryOfComputation</tag>
       
     </tags>
-    <content type="html"><![CDATA[  Hugo 通过 Chroma 提供非常快速的语法高亮显示，现 Hugo 中使用 Chroma 作为代码块高亮支持，它内置在 Go 语言当中，速度是真的非常、非常快，而且最为重要的是它也兼容之前我们使用的 Pygments 方式。
-以下通过 Hugo 内置短代码 highlight 和 Markdown 代码块方式分别验证不同语言的代码块渲染效果并能正确高亮显示，有关优化语法突出显示的更多信息，请参阅 Hugo 文档 。
-编程语言 GO 1 2 3 4 5 6 7 8 9 10 11 12 13 14 {{&lt; highlight go &#34;linenos=table,hl_lines=8 15-17,linenostart=199&#34; &gt;}} func GetTitleFunc(style string) func(s string) string { switch strings.ToLower(style) { case &#34;go&#34;: return strings.Title case &#34;chicago&#34;: return transform.NewTitleConverter(transform.ChicagoStyle) default: return transform.NewTitleConverter(transform.APStyle) } } {{&lt; / highlight &gt;}} 199 200 201 202 203 204 205 206 207 208 func GetTitleFunc(style string) func(s string) string { switch strings.ToLower(style) { case &#34;go&#34;: return strings.Title case &#34;chicago&#34;: return transform.NewTitleConverter(transform.ChicagoStyle) default: return transform.NewTitleConverter(transform.APStyle) } } Java 1 2 3 4 5 6 7 8 9 10 11 12 import javax.swing.JFrame; //Importing class JFrame import javax.swing.JLabel; //Importing class JLabel public class HelloWorld { public static void main(String[] args) { JFrame frame = new JFrame(); //Creating frame frame.setTitle(&#34;Hi!&#34;); //Setting title frame frame.add(new JLabel(&#34;Hello, world!&#34;));//Adding text to frame frame.pack(); //Setting size to smallest frame.setLocationRelativeTo(null); //Centering frame frame.setVisible(true); //Showing frame } } Python 1 print &#34;Hello, world!&#34; Git 对比 1 2 3 4 5 6 7 8 9 10 *** /path/to/original &#39;&#39;timestamp&#39;&#39; --- /path/to/new &#39;&#39;timestamp&#39;&#39; *************** *** 1 **** ! This is a line. --- 1 --- ! This is a replacement line. It is important to spell -removed line +new line *** /path/to/original &#39;&#39;timestamp&#39;&#39; --- /path/to/new &#39;&#39;timestamp&#39;&#39; *************** *** 1 **** ! This is a line. --- 1 --- ! This is a replacement line. It is important to spell -removed line +new line 文件 Make 文件 CC=gcc CFLAGS=-I. hellomake: hellomake.o hellofunc.o $(CC) -o hellomake hellomake.o hellofunc.o -I. Markdown 文档 1 2 3 **bold** *italics* [link](www.example.com) 数据内容 JSON 数据 1 2 3 {&#34;employees&#34;:[ {&#34;firstName&#34;:&#34;John&#34;, &#34;lastName&#34;:&#34;Doe&#34;}, ]} XML 内容 1 2 3 4 5 &lt;employees&gt; &lt;employee&gt; &lt;firstName&gt;John&lt;/firstName&gt; &lt;lastName&gt;Doe&lt;/lastName&gt; &lt;/employee&gt; &lt;/employees&gt; SQL 查询 1 2 3 4 SELECT column_name,column_name FROM Table WHERE column_name = &#34;condition&#34; 自动猜测代码高亮显示 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 .highlight { //Other codes ...... &gt; .chroma { position: relative; //Fix code block overflow issue pre { overflow-wrap: break-word; white-space: pre-wrap; line-break: anywhere; word-break: break-all; overflow-x: auto; } } } 除以上列举的代码高亮显示外，还支持诸如：C 语言、C++、HTML、CSS、Shell脚本等各主流的代码语言高亮显示，可自行测试效果。
-  ]]></content>
-  </entry>
-  
-  <entry>
-    <title>支持 Emoji 表情</title>
-    <url>/demo/emoji-support.html</url>
-    <categories>
-      <category>示例文章</category><category>语法</category>
-    </categories>
-    <tags>
-      
-      <tag>表情</tag>
-      
-      <tag>Emoji</tag>
-      
-    </tags>
-    <content type="html"><![CDATA[  Emoji 可以通过多种方式在 Hugo 项目中启用。
-emojify 方法可以直接在模板中调用, 或者使用 行内 Shortcodes .
-要全局使用 emoji, 需要在你的 网站配置 中设置 enableEmoji 为 true， 然后你就可以直接在文章中输入 emoji 的代码。
-它们以冒号开头和结尾，并且包含 emoji 的 简短代码：
-1 2 3 去露营啦! {:}tent: 很快就回来. 真开心! {:}joy: 呈现的输出效果如下:
-去露营啦! &#x26fa; 很快就回来。 真开心! &#x1f602;
-以下符号清单是 emoji 代码的非常有用的参考。
-表情与情感 笑脸表情 图标 代码 图标 代码 &#x1f600; grinning &#x1f603; smiley &#x1f604; smile &#x1f601; grin &#x1f606; laughing satisfied &#x1f605; sweat_smile &#x1f923; rofl &#x1f602; joy &#x1f642; slightly_smiling_face &#x1f643; upside_down_face &#x1f609; wink &#x1f60a; blush &#x1f607; innocent 爱意表情 图标 代码 图标 代码 &#x1f60d; heart_eyes &#x1f618; kissing_heart &#x1f617; kissing &#x263a;&#xfe0f; relaxed &#x1f61a; kissing_closed_eyes &#x1f619; kissing_smiling_eyes 吐舌头表情 图标 代码 图标 代码 &#x1f60b; yum &#x1f61b; stuck_out_tongue &#x1f61c; stuck_out_tongue_winking_eye &#x1f61d; stuck_out_tongue_closed_eyes &#x1f911; money_mouth_face &#x1f911; 国家和地区旗帜 图标 代码 图标 代码 &#x1f1e6;&#x1f1e9; andorra &#x1f1e6;&#x1f1ea; united_arab_emirates &#x1f1e6;&#x1f1eb; afghanistan &#x1f1e6;&#x1f1ec; antigua_barbuda &#x1f1e6;&#x1f1ee; anguilla &#x1f1e6;&#x1f1f1; albania &#x1f1e6;&#x1f1f2; armenia &#x1f1e6;&#x1f1f4; angola &#x1f1e6;&#x1f1f6; antarctica &#x1f1e6;&#x1f1f7; argentina &#x1f1e6;&#x1f1f8; american_samoa &#x1f1e6;&#x1f1f9; austria &#x1f1e6;&#x1f1fa; australia &#x1f1e6;&#x1f1fc; aruba &#x1f1e6;&#x1f1fd; aland_islands &#x1f1e6;&#x1f1ff; azerbaijan &#x1f1e7;&#x1f1e6; bosnia_herzegovina &#x1f1e7;&#x1f1e7; barbados &#x1f1e7;&#x1f1e9; bangladesh &#x1f1e7;&#x1f1ea; belgium &#x1f1e7;&#x1f1eb; burkina_faso &#x1f1e7;&#x1f1ec; bulgaria &#x1f1e7;&#x1f1ed; bahrain &#x1f1e7;&#x1f1ee; burundi &#x1f1e7;&#x1f1ef; benin &#x1f1e7;&#x1f1f1; st_barthelemy &#x1f1e7;&#x1f1f2; bermuda &#x1f1e7;&#x1f1f3; brunei &#x1f1e7;&#x1f1f4; bolivia &#x1f1e7;&#x1f1f6; caribbean_netherlands &#x1f1e7;&#x1f1f7; brazil &#x1f1e7;&#x1f1f8; bahamas &#x1f1e7;&#x1f1f9; bhutan &#x1f1e7;&#x1f1fc; botswana &#x1f1e7;&#x1f1fe; belarus &#x1f1e7;&#x1f1ff; belize &#x1f1e8;&#x1f1e6; canada &#x1f1e8;&#x1f1e8; cocos_islands &#x1f1e8;&#x1f1e9; congo_kinshasa &#x1f1e8;&#x1f1eb; central_african_republic &#x1f1e8;&#x1f1ec; congo_brazzaville &#x1f1e8;&#x1f1ed; switzerland &#x1f1e8;&#x1f1ee; cote_divoire &#x1f1e8;&#x1f1f0; cook_islands &#x1f1e8;&#x1f1f1; chile &#x1f1e8;&#x1f1f2; cameroon &#x1f1e8;&#x1f1f3; cn &#x1f1e8;&#x1f1f4; colombia &#x1f1e8;&#x1f1f7; costa_rica &#x1f1e8;&#x1f1fa; cuba &#x1f1e8;&#x1f1fb; cape_verde &#x1f1e8;&#x1f1fc; curacao &#x1f1e8;&#x1f1fd; christmas_island &#x1f1e8;&#x1f1fe; cyprus &#x1f1e8;&#x1f1ff; czech_republic &#x1f1e9;&#x1f1ea; de &#x1f1e9;&#x1f1ef; djibouti &#x1f1e9;&#x1f1f0; denmark &#x1f1e9;&#x1f1f2; dominica &#x1f1e9;&#x1f1f4; dominican_republic &#x1f1e9;&#x1f1ff; algeria &#x1f1ea;&#x1f1e8; ecuador &#x1f1ea;&#x1f1ea; estonia &#x1f1ea;&#x1f1ec; egypt &#x1f1ea;&#x1f1ed; western_sahara &#x1f1ea;&#x1f1f7; eritrea &#x1f1ea;&#x1f1f8; es &#x1f1ea;&#x1f1f9; ethiopia &#x1f1ea;&#x1f1fa; eu european_union &#x1f1eb;&#x1f1ee; finland &#x1f1eb;&#x1f1ef; fiji &#x1f1eb;&#x1f1f0; falkland_islands &#x1f1eb;&#x1f1f2; micronesia &#x1f1eb;&#x1f1f4; faroe_islands &#x1f1eb;&#x1f1f7; fr &#x1f1ec;&#x1f1e6; gabon &#x1f1ec;&#x1f1e7; gb uk &#x1f1ec;&#x1f1e9; grenada &#x1f1ec;&#x1f1ea; georgia &#x1f1ec;&#x1f1eb; french_guiana &#x1f1ec;&#x1f1ec; guernsey &#x1f1ec;&#x1f1ed; ghana &#x1f1ec;&#x1f1ee; gibraltar &#x1f1ec;&#x1f1f1; greenland &#x1f1ec;&#x1f1f2; gambia &#x1f1ec;&#x1f1f3; guinea &#x1f1ec;&#x1f1f5; guadeloupe &#x1f1ec;&#x1f1f6; equatorial_guinea &#x1f1ec;&#x1f1f7; greece &#x1f1ec;&#x1f1f8; south_georgia_south_sandwich_islands &#x1f1ec;&#x1f1f9; guatemala &#x1f1ec;&#x1f1fa; guam &#x1f1ec;&#x1f1fc; guinea_bissau &#x1f1ec;&#x1f1fe; guyana &#x1f1ed;&#x1f1f0; hong_kong &#x1f1ed;&#x1f1f3; honduras &#x1f1ed;&#x1f1f7; croatia &#x1f1ed;&#x1f1f9; haiti &#x1f1ed;&#x1f1fa; hungary &#x1f1ee;&#x1f1e8; canary_islands &#x1f1ee;&#x1f1e9; indonesia &#x1f1ee;&#x1f1ea; ireland &#x1f1ee;&#x1f1f1; israel &#x1f1ee;&#x1f1f2; isle_of_man &#x1f1ee;&#x1f1f3; india &#x1f1ee;&#x1f1f4; british_indian_ocean_territory &#x1f1ee;&#x1f1f6; iraq &#x1f1ee;&#x1f1f7; iran &#x1f1ee;&#x1f1f8; iceland &#x1f1ee;&#x1f1f9; it &#x1f1ef;&#x1f1ea; jersey &#x1f1ef;&#x1f1f2; jamaica &#x1f1ef;&#x1f1f4; jordan &#x1f1ef;&#x1f1f5; jp &#x1f1f0;&#x1f1ea; kenya &#x1f1f0;&#x1f1ec; kyrgyzstan &#x1f1f0;&#x1f1ed; cambodia &#x1f1f0;&#x1f1ee; kiribati &#x1f1f0;&#x1f1f2; comoros &#x1f1f0;&#x1f1f3; st_kitts_nevis &#x1f1f0;&#x1f1f5; north_korea &#x1f1f0;&#x1f1f7; kr &#x1f1f0;&#x1f1fc; kuwait &#x1f1f0;&#x1f1fe; cayman_islands &#x1f1f0;&#x1f1ff; kazakhstan &#x1f1f1;&#x1f1e6; laos &#x1f1f1;&#x1f1e7; lebanon &#x1f1f1;&#x1f1e8; st_lucia &#x1f1f1;&#x1f1ee; liechtenstein &#x1f1f1;&#x1f1f0; sri_lanka &#x1f1f1;&#x1f1f7; liberia &#x1f1f1;&#x1f1f8; lesotho &#x1f1f1;&#x1f1f9; lithuania &#x1f1f1;&#x1f1fa; luxembourg &#x1f1f1;&#x1f1fb; latvia &#x1f1f1;&#x1f1fe; libya &#x1f1f2;&#x1f1e6; morocco &#x1f1f2;&#x1f1e8; monaco &#x1f1f2;&#x1f1e9; moldova &#x1f1f2;&#x1f1ea; montenegro &#x1f1f2;&#x1f1ec; madagascar &#x1f1f2;&#x1f1ed; marshall_islands &#x1f1f2;&#x1f1f0; macedonia &#x1f1f2;&#x1f1f1; mali &#x1f1f2;&#x1f1f2; myanmar &#x1f1f2;&#x1f1f3; mongolia &#x1f1f2;&#x1f1f4; macau &#x1f1f2;&#x1f1f5; northern_mariana_islands &#x1f1f2;&#x1f1f6; martinique &#x1f1f2;&#x1f1f7; mauritania &#x1f1f2;&#x1f1f8; montserrat &#x1f1f2;&#x1f1f9; malta &#x1f1f2;&#x1f1fa; mauritius &#x1f1f2;&#x1f1fb; maldives &#x1f1f2;&#x1f1fc; malawi &#x1f1f2;&#x1f1fd; mexico &#x1f1f2;&#x1f1fe; malaysia &#x1f1f2;&#x1f1ff; mozambique &#x1f1f3;&#x1f1e6; namibia &#x1f1f3;&#x1f1e8; new_caledonia &#x1f1f3;&#x1f1ea; niger &#x1f1f3;&#x1f1eb; norfolk_island &#x1f1f3;&#x1f1ec; nigeria &#x1f1f3;&#x1f1ee; nicaragua &#x1f1f3;&#x1f1f1; netherlands &#x1f1f3;&#x1f1f4; norway &#x1f1f3;&#x1f1f5; nepal &#x1f1f3;&#x1f1f7; nauru &#x1f1f3;&#x1f1fa; niue &#x1f1f3;&#x1f1ff; new_zealand &#x1f1f4;&#x1f1f2; oman &#x1f1f5;&#x1f1e6; panama &#x1f1f5;&#x1f1ea; peru &#x1f1f5;&#x1f1eb; french_polynesia &#x1f1f5;&#x1f1ec; papua_new_guinea &#x1f1f5;&#x1f1ed; philippines &#x1f1f5;&#x1f1f0; pakistan &#x1f1f5;&#x1f1f1; poland &#x1f1f5;&#x1f1f2; st_pierre_miquelon &#x1f1f5;&#x1f1f3; pitcairn_islands &#x1f1f5;&#x1f1f7; puerto_rico &#x1f1f5;&#x1f1f8; palestinian_territories &#x1f1f5;&#x1f1f9; portugal &#x1f1f5;&#x1f1fc; palau &#x1f1f5;&#x1f1fe; paraguay &#x1f1f6;&#x1f1e6; qatar &#x1f1f7;&#x1f1ea; reunion &#x1f1f7;&#x1f1f4; romania &#x1f1f7;&#x1f1f8; serbia &#x1f1f7;&#x1f1fa; ru &#x1f1f7;&#x1f1fc; rwanda &#x1f1f8;&#x1f1e6; saudi_arabia &#x1f1f8;&#x1f1e7; solomon_islands &#x1f1f8;&#x1f1e8; seychelles &#x1f1f8;&#x1f1e9; sudan &#x1f1f8;&#x1f1ea; sweden &#x1f1f8;&#x1f1ec; singapore &#x1f1f8;&#x1f1ed; st_helena &#x1f1f8;&#x1f1ee; slovenia &#x1f1f8;&#x1f1f0; slovakia &#x1f1f8;&#x1f1f1; sierra_leone &#x1f1f8;&#x1f1f2; san_marino &#x1f1f8;&#x1f1f3; senegal &#x1f1f8;&#x1f1f4; somalia &#x1f1f8;&#x1f1f7; suriname &#x1f1f8;&#x1f1f8; south_sudan &#x1f1f8;&#x1f1f9; sao_tome_principe &#x1f1f8;&#x1f1fb; el_salvador &#x1f1f8;&#x1f1fd; sint_maarten &#x1f1f8;&#x1f1fe; syria &#x1f1f8;&#x1f1ff; swaziland &#x1f1f9;&#x1f1e8; turks_caicos_islands &#x1f1f9;&#x1f1e9; chad &#x1f1f9;&#x1f1eb; french_southern_territories &#x1f1f9;&#x1f1ec; togo &#x1f1f9;&#x1f1ed; thailand &#x1f1f9;&#x1f1ef; tajikistan &#x1f1f9;&#x1f1f0; tokelau &#x1f1f9;&#x1f1f1; timor_leste &#x1f1f9;&#x1f1f2; turkmenistan &#x1f1f9;&#x1f1f3; tunisia &#x1f1f9;&#x1f1f4; tonga &#x1f1f9;&#x1f1f7; tr &#x1f1f9;&#x1f1f9; trinidad_tobago &#x1f1f9;&#x1f1fb; tuvalu &#x1f1f9;&#x1f1fc; taiwan &#x1f1f9;&#x1f1ff; tanzania &#x1f1fa;&#x1f1e6; ukraine &#x1f1fa;&#x1f1ec; uganda &#x1f1fa;&#x1f1f8; us &#x1f1fa;&#x1f1fe; uruguay &#x1f1fa;&#x1f1ff; uzbekistan &#x1f1fb;&#x1f1e6; vatican_city &#x1f1fb;&#x1f1e8; st_vincent_grenadines &#x1f1fb;&#x1f1ea; venezuela &#x1f1fb;&#x1f1ec; british_virgin_islands &#x1f1fb;&#x1f1ee; us_virgin_islands &#x1f1fb;&#x1f1f3; vietnam &#x1f1fb;&#x1f1fa; vanuatu &#x1f1fc;&#x1f1eb; wallis_futuna &#x1f1fc;&#x1f1f8; samoa &#x1f1fd;&#x1f1f0; kosovo &#x1f1fe;&#x1f1ea; yemen &#x1f1fe;&#x1f1f9; mayotte &#x1f1ff;&#x1f1e6; south_africa &#x1f1ff;&#x1f1f2; zambia &#x1f1ff;&#x1f1fc; zimbabwe   ]]></content>
-  </entry>
-  
-  <entry>
-    <title>Markdown 语法支持</title>
-    <url>/demo/markdown-syntax.html</url>
-    <categories>
-      <category>示例文章</category><category>Markdown语法</category>
-    </categories>
-    <tags>
-      
-      <tag>Markdown</tag>
-      
-      <tag>语法</tag>
-      
-    </tags>
-    <content type="html"><![CDATA[  仅以此篇文章来测试下在 NexT 主题中在通过 Hugo 引擎来建站时，是否支持 Markdown 文件内容中所写的各种语法，并展示下实际的效果。
-标题样式 让我们从所有可能的标题开始，在 HTML 中 &lt;h1&gt;-&lt;h6&gt;元素分别表示六个不同级别的标题样式，其中 &lt;h1&gt; 为最大标题，&lt;h6&gt;为最小标题，效果如下：
-标题 1 标题 2 标题 3 标题 4 标题 5 标题 6 段落格式 根据 W3C 定义的 HTML5 规范 ，HTML 文档由元素和文本组成。每个元素的组成都由一个 开始标记 表示，例如： &lt;body&gt; ，和 结束标记 表示，例如： &lt;/body&gt; 。（某些开始标记和结束标记在某些情况下可以省略，并由其他标记暗示。） 元素可以具有属性，这些属性控制元素的工作方式。例如：超链接是使用 a 元素及其 href 属性形成的。
-Markdown 语法 1 ![图像说明](图像地址) HTML IMG 标签 1 &lt;img src=&#34;图像地址&#34; width=&#34;宽度&#34; height=&#34;高度&#34; /&gt; SVG 格式 1 &lt;svg&gt;xxxxxx&lt;/svg&gt; 列表类型 有序列表 第一个元素 第二个元素 第三个元素 无序列表 列表元素 另一个元素 和其它元素 嵌套列表 借助 HTML 的 ul 元素来实现。
-第一项 第二项 第二项第一个子项目 第二项第二个子项目 第二项第二分项第一分项 第二项第二分项第二分项 第二项第二分项第三分项 第二项第三个子项目 第二项第三分项第一分项 第二项第三分项第二分项 第二项第三分项第三分项 第三项 自定义列表 通过 HTML 的 dl 元素还支持自定义列表（表格列表）。
-Hugo 目录结构 assets hugo.toml content data theme static Hugo 模板 基础模板 列表模板 单页模板 块引用 blockquote 元素表示从另一个源引用的内容，可以选择引用必须在 footer 或 cite 元素中，也可以选择使用注释和缩写等行内更改。
-引用文本 这一行也是同样的引用 同样你也在 blockquote 中使用 Markdown 语法书写
-带有引文的 Blockquote 元素效果。
-我的目标不是赚大钱,是为了制造好的电脑。当我意识到我可以永远当工程师时，我才创办了这家公司。
-— 史蒂夫·沃兹尼亚克 根据 Mozilla 的网站记录，Firefox 1.0 于 2004 年发布，并取得了巨大成功。
-表格 表格并不算是 Markdown 的核心要素，但 Hugo 同样支持它。
-ID 创建者 模型 年份 1 Honda Accord 2009 2 Toyota Camry 2012 3 Hyundai Elantra 2010 可以使用 : （英文格式冒号）来对表格内容进行对齐。
-表格 可以是 很酷 左对齐 居中 右对齐 左对齐 居中 右对齐 左对齐 居中 右对齐 同样也可以在表格中使用 Markdown 语法。
-表格 中 使用 Markdown 语法 斜体 粗体 中划线 代码块 Code 使用 Markdown 语法书写代码块：
-1 2 3 4 5 6 7 8 9 10 &lt;!DOCTYPE html&gt; &lt;html lang=&#34;en&#34;&gt; &lt;head&gt; &lt;meta charset=&#34;UTF-8&#34;&gt; &lt;title&gt;Example HTML5 Document&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;p&gt;Test&lt;/p&gt; &lt;/body&gt; &lt;/html&gt; 使用Hugo自带的 highlight 短语标注代码块：
-44 45 46 47 48 49 50 51 52 53 &lt;!DOCTYPE html&gt; &lt;html lang=&#34;en&#34;&gt; &lt;head&gt; &lt;meta charset=&#34;UTF-8&#34;&gt; &lt;title&gt;Example HTML5 Document&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;p&gt;Test&lt;/p&gt; &lt;/body&gt; &lt;/html&gt; 其它元素： abbr、sub、sup、kbd等等 GIF 是位图图像格式。
-H2O
-C6H12O6
-Xn + Yn = Zn
-按X获胜。或按CTRL+ALT+F显示 FPS 计数器。
-比特作为信息论中的信息单位，也被称为 shannon ，以信息论领域的创始人 Claude shannon 的名字命名。
-参考：
-来自 Mainroad 主题的 Basic Elements 内容   ]]></content>
+    <content type="html"><![CDATA[  簡介 一個計算理論的問題: 在一個空白紙帶的n狀態的圖靈機上，挑戰用最少狀態設計出可截止的狀態轉換表，已在紙袋上寫出最多的一。 以知是成長最快的函式
+回顧 The Busy Beaver Competition: a historical survey 2019年論文 Historical survey of Busy Beavers The Busy Beaver Frontier 2020年論文 State The Determination of the Value of Rado&rsquo;s Noncom puta ble Functionfor Four-State Turing Machines A Relatively Small Turing Machine Whose Behavior Is Independent Of Set Theory   ]]></content>
   </entry>
   
   <entry>
     <title>城市尋寶-捷運踩地雷解答.md</title>
-    <url>/post/e727c1e5-c50c-4db4-8f10-7a6816d6762f/</url>
-    <categories>
-      
-    </categories>
-    <tags>
-      
-      <tag>生活</tag>
-      
-    </tags>
-    <content type="html"><![CDATA[  遊戲說明 由 城市謎案公司 出的虛實整合遊戲，需要下載APP並開啟GPS大部分的關卡多需要定位正確才能開啟(需要付錢才有帳號權限QQ)，需要遊戲本。
-題解 南港 題本3 解答&quot;GO&quot;
-東湖 題本14 解答&quot;禮物&quot;
-象山 題本9 解答&quot;356&quot;
-G == 0 H == 1 A == 2 I == 4 N == 5 U == 6 O == 7 Z == 8 L == 9
-動物園 題本1 解答&quot;HALF&quot;
-台北車站 題本6 解答&quot;傘&quot; 遊玩時看板已遺失
-頂埔 題本2 解答&quot;文德&quot;
-解題方法應該是找到列車上消失的注音，但我列舉捷運全線二字站名
-雙連 題本12 解答&quot;210&quot;
-猜捷運票價總和，北捷20元起算每次加5快
-  ]]></content>
-  </entry>
-  
-  <entry>
-    <title>城市尋寶-捷運踩地雷解答.md</title>
-    <url>/post/bda91734-19cb-47b0-909a-edd37b66201f/</url>
+    <url>/blog.ericchen.name/post/18a3c468-d156-4ca3-82c1-353dfd55feb4/</url>
     <categories>
       
     </categories>
@@ -1288,7 +1337,7 @@ G == 0 H == 1 A == 2 I == 4 N == 5 U == 6 O == 7 Z == 8 L == 9
   
   <entry>
     <title>軟硬體共同設計期末作業.md</title>
-    <url>/post/a8b194c4-f421-42e0-aae9-1ede49da2fdd/</url>
+    <url>/blog.ericchen.name/post/587521d4-2c61-4ac2-847a-505c7ba9d6ea/</url>
     <categories>
       
     </categories>
@@ -1305,7 +1354,7 @@ HW2 本機編譯 本來不知道.h.c檔只有單向include，一直在嘗試-I -
   
   <entry>
     <title>Hugo 教學</title>
-    <url>/post/d62e4ab4-d116-4034-99c9-26d7fc613b95/</url>
+    <url>/blog.ericchen.name/post/4fcc2e29-8f45-43de-89c9-3b0be70adacd/</url>
     <categories>
       
     </categories>
@@ -1319,13 +1368,14 @@ HW2 本機編譯 本來不知道.h.c檔只有單向include，一直在嘗試-I -
 Hugo is available in three editions: standard, extended, and extended/deploy. 至少要 extended 才有 Webp 及 SASS
 使用 裝theme
 1 git clone https://github.com/hauke96/hugo-theme-hamburg.git themes/hamburg 改設定檔
-1 2 3 4 baseURL = &#34;http://example.org/&#34; languageCode = &#34;en-us&#34; title = &#34;ericchen&#34; theme = &#34;hamburg&#34; 1 2 3 4 5 hugo new site blog cd blog hugo new posts/myfirst.md hugo #生成網頁 hugo server -D myfirst應該會出現在content下面 hugo-theme-next 用 hugo-theme-next-starter 開始，自己建 site 會 build 不過
+1 2 3 4 baseURL = &#34;http://example.org/&#34; languageCode = &#34;en-us&#34; title = &#34;ericchen&#34; theme = &#34;hamburg&#34; 1 2 3 4 5 hugo new site blog cd blog hugo new posts/myfirst.md hugo #生成網頁 hugo server -D myfirst應該會出現在content下面 Template lookup order 如果要覆蓋 themes 提供的文件，如 themes/hugo-theme-next/assets/css/_variables/base.scss 可以用assets/css/_variables/base.scss 覆蓋，確定可以覆蓋scss 跟靜態文件，預設 site 根資料夾中沒有 assets 請直接創一個
+hugo-theme-next 用 hugo-theme-next-starter 開始，自己建 site 會 build 不過
 ref https://coolgood88142.github.io/zh-tw/posts/hugo/   ]]></content>
   </entry>
   
   <entry>
     <title>BBDB.md</title>
-    <url>/post/cc3784b8-6d40-4983-9c58-4fc27acb6736/</url>
+    <url>/blog.ericchen.name/post/322511ba-553b-4c12-a049-0396f8322727/</url>
     <categories>
       
     </categories>
@@ -1342,8 +1392,49 @@ IDT+FV Action Recognition with Improved Trajectories
   </entry>
   
   <entry>
-    <title>CPE(沒)解題技巧.md</title>
-    <url>/post/c835f7b6-f784-4acf-8cdd-10ef5fc9727c/</url>
+    <title>Fisher Yates Shuffle</title>
+    <url>/blog.ericchen.name/post/7c0aebf8-14f7-404a-8100-92c932e17723/</url>
+    <categories>
+      
+    </categories>
+    <tags>
+      
+      <tag>CS/Algorithm</tag>
+      
+    </tags>
+    <content type="html"><![CDATA[  簡介 Ronald Fisher 和 Frank Yates 發明的均勻洗牌算法
+算法 索引從0開始往len(卡排列表)遞增，索引i與隨機選擇的卡牌交換 隨機選擇的卡牌如果用rand() mod (len(卡排列表) - i)取隨機的卡牌，會不均勻
+  ]]></content>
+  </entry>
+  
+  <entry>
+    <title>Five Five Letter Word</title>
+    <url>/blog.ericchen.name/post/72a82069-4596-42f1-adc5-165f259781ce/</url>
+    <categories>
+      
+    </categories>
+    <tags>
+      
+      <tag>CS/Algorithm</tag>
+      
+    </tags>
+    <content type="html"><![CDATA[   word list 大量有意義單字的txt文件
+問題 five five-letter words with twenty-five unique letters 找出五個由五個字符組成的單字，其中25的字符皆不相同的組合 參考解答 共813組
+解法 改成逐字比較，如果前面的字已經有相 Maximum disjoint set 簡單出暴的使用五個迴圈搜尋 複雜度為n**5,n = 22950，我跑了一個多小時沒結果 PS.官方說要1個月
+900 秒用 pyhon 15 秒用 Jave 同字母的話，直接放棄後面比較
+Someone improved my code by 40,832,277,770% 後續影片
+利用英文字符出現頻率不同的特性，字頻較低的先搜尋
+線程
+將字母組成集合，只先搜最少用的集合
+Algorithm X
+五個字符用字母順序用字母順序轉成整數 &rsquo;etaoinshrdlcumwfgypbvkjxqz&rsquo; 該字典的統計結果
+原始問題 The Jotto Problem 技術報告上，未使用電腦 可以用 Dancing Link 論文解決問題
+  ]]></content>
+  </entry>
+  
+  <entry>
+    <title>CPE (沒)解題技巧</title>
+    <url>/blog.ericchen.name/post/e5e96398-dae9-46fd-9f33-b64f63b1ef09/</url>
     <categories>
       
     </categories>
@@ -1352,7 +1443,7 @@ IDT+FV Action Recognition with Improved Trajectories
       <tag>CS</tag>
       
     </tags>
-    <content type="html"><![CDATA[  CPE(沒)解題技巧 我遇到的困難 scanf 測資 1234 A
+    <content type="html"><![CDATA[  CPE (沒)解題技巧 我遇到的困難 scanf 測資 1234 A
 1 scanf(&#34;%d%c&#34;,&amp;i,&amp;c); 看起來可以 i=1234 c=&rsquo; '
 1 scanf(&#34;%d %c&#34;,&amp;i,&amp;c); 空白佔一格
 沒有debuger 先問問同學你們用的debuger是什麼? 只有 printf() 所以我多用 #ifdef debug
@@ -1368,7 +1459,7 @@ IDT+FV Action Recognition with Improved Trajectories
   
   <entry>
     <title>2019-2九州之旅.md</title>
-    <url>/post/c4cb2c78-dddd-46fd-a97e-9603206666f7/</url>
+    <url>/blog.ericchen.name/post/0e98a7b8-bac4-443a-a7a9-93932a5d8a31/</url>
     <categories>
       
     </categories>
@@ -1386,8 +1477,8 @@ IDT+FV Action Recognition with Improved Trajectories
   </entry>
   
   <entry>
-    <title>RSA.md</title>
-    <url>/post/0df2d74a-7f9b-4490-b84d-a0a6b71df6c2/</url>
+    <title>RSA</title>
+    <url>/blog.ericchen.name/post/d32257ec-17af-43df-a994-70ef1ec1a523/</url>
     <categories>
       
     </categories>
@@ -1404,7 +1495,7 @@ IDT+FV Action Recognition with Improved Trajectories
   
   <entry>
     <title>Microprocessor Mid-term Project.md</title>
-    <url>/post/aa7ff1f2-c938-416e-b289-166a88e620d5/</url>
+    <url>/blog.ericchen.name/post/8bca3eb4-8f26-4d4b-a212-7c09c5d08a6f/</url>
     <categories>
       
     </categories>
@@ -1424,7 +1515,7 @@ Java 是個很棒的語言 對 C++ 社群有非常大的貢獻 他收留了所�
   
   <entry>
     <title>Microprocessor Term Report.md</title>
-    <url>/post/96261f31-fdc3-45f8-ad11-bbc09aeee70c/</url>
+    <url>/blog.ericchen.name/post/0a5be3c0-e2d6-493b-baff-5af171273bc4/</url>
     <categories>
       
     </categories>
@@ -1439,7 +1530,7 @@ lcd版 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 2
   
   <entry>
     <title>c語言教學.md</title>
-    <url>/post/32af59e2-0a8d-4fbc-aff6-ac3182abac8a/</url>
+    <url>/blog.ericchen.name/post/a55e1785-0cf5-4361-bb63-cdd366f74579/</url>
     <categories>
       
     </categories>
@@ -1459,7 +1550,7 @@ C String 1 char s[64]; 用零結尾的連續字元，如果零在第3個位子�
   
   <entry>
     <title>CScope.md</title>
-    <url>/post/6390a1f9-31dc-441e-9d5a-0a727cf9a6c9/</url>
+    <url>/blog.ericchen.name/post/15212007-bae0-4b8e-aff7-0517d0f4c790/</url>
     <categories>
       
     </categories>
@@ -1486,7 +1577,7 @@ static，修飾字，加給全域變數時是幹話，加給函式時會在編�
   
   <entry>
     <title>CppVectorInternal.md</title>
-    <url>/post/5fe4f133-6a82-4e37-9b0a-f2a38891cb3d/</url>
+    <url>/blog.ericchen.name/post/c5475c95-579e-463f-93f1-921ad7fcffd6/</url>
     <categories>
       
     </categories>
@@ -1519,7 +1610,7 @@ asign()
   
   <entry>
     <title></title>
-    <url>/post/report/</url>
+    <url>/blog.ericchen.name/post/report/</url>
     <categories>
       
     </categories>
@@ -1535,15 +1626,15 @@ Test /opt/note/sync.bash Fail …  ]]></content>
   
   <entry>
     <title>站点示例</title>
-    <url>/flinks.html</url>
+    <url>/blog.ericchen.name/flinks.html</url>
     <categories>
       
     </categories>
     <tags>
       
     </tags>
-    <content type="html"><![CDATA[  如想交换本站友情链接，请在评论区留下你的站点信息，格式参考如下：
-1 2 3 4 - name: Hugo-NexT desc: Hugo NexT 官方预览网站。 avatar: https://hugo-next.eu.org/imgs/hugo_next_avatar.png link: https://hugo-next.eu.org   ]]></content>
+    <content type="html"><![CDATA[  如想交换本站友情連結，請寄信到 connection@ericchen.name：
+  ]]></content>
   </entry>
   
 </search>
